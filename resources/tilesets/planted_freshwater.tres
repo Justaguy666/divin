@@ -1,0 +1,41 @@
+[gd_resource type="TileSet" format=3 uid="uid://dn13pg3bf3t4p"]
+
+[ext_resource type="Texture2D" uid="uid://dntp4hu26m2gs" path="res://assets/environments/freshwater/planted_freshwater/tiles/ground/pf_substrate_atlas.png" id="1_s5dty"]
+[ext_resource type="Texture2D" uid="uid://b52aq77ly3if5" path="res://assets/environments/freshwater/planted_freshwater/vegetation/grass/pf_monte_carlo_carpet_floor.png" id="2_j6pjq"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ekchn"]
+texture = ExtResource("1_s5dty")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+2:1/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+2:3/0 = 0
+1:3/0 = 0
+0:3/0 = 0
+3:0/0 = 0
+4:0/0 = 0
+4:1/0 = 0
+3:1/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+4:3/0 = 0
+3:3/0 = 0
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_g3ceq"]
+texture = ExtResource("2_j6pjq")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+3:0/0 = 0
+
+[resource]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_ekchn")
+sources/1 = SubResource("TileSetAtlasSource_g3ceq")

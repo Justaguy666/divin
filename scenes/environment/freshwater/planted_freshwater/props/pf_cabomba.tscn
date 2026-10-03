@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://e02ma87n7gb8"]
+
+[ext_resource type="Texture2D" uid="uid://bby6eorl4tqms" path="res://assets/environments/freshwater/planted_freshwater/vegetation/plants/pf_cabomba.png" id="1_tex"]
+
+[node name="PfCabomba" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-17, -75)

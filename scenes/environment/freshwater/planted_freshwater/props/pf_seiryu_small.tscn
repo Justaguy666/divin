@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bn3p3nvb5vewq"]
+
+[ext_resource type="Texture2D" uid="uid://b6t1wbox08v60" path="res://assets/environments/freshwater/planted_freshwater/decoration/rocks/pf_seiryu_small.png" id="1_tex"]
+
+[node name="PfSeiryuSmall" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-13, -18)

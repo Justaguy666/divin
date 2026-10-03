@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://eci0yffpbl50"]
+
+[ext_resource type="Texture2D" uid="uid://cvgdxsa1mwkps" path="res://assets/environments/freshwater/planted_freshwater/vegetation/plants/pf_java_fern.png" id="1_tex"]
+
+[node name="PfJavaFern" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-42, -43)

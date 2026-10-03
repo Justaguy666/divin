@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://o0pm5l84idgb"]
+
+[ext_resource type="Texture2D" uid="uid://bvpmvxx4vc2x3" path="res://assets/environments/freshwater/planted_freshwater/vegetation/roots/pf_spider_wood.png" id="1_tex"]
+
+[node name="PfSpiderWood" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-62, -63)

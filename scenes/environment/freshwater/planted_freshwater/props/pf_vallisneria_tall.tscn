@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bde3iww5b7jmn"]
+
+[ext_resource type="Texture2D" uid="uid://cahu3im7om8g0" path="res://assets/environments/freshwater/planted_freshwater/vegetation/plants/pf_vallisneria_tall.png" id="1_tex"]
+
+[node name="PfVallisneriaTall" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-14, -107)

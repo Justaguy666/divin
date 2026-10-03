@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://bdkq66k5yxh2n"]
+
+[node name="EnvironmentBase" type="Node2D" unique_id=90168738]
+
+[node name="BgFar" type="Parallax2D" parent="." unique_id=829465576]
+scroll_scale = Vector2(0.2, 0.2)
+
+[node name="Sprite2D" type="Sprite2D" parent="BgFar" unique_id=738316601]
+centered = false
+
+[node name="BgMid" type="Parallax2D" parent="." unique_id=1751391260]
+scroll_scale = Vector2(0.5, 0.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="BgMid" unique_id=1236876199]
+centered = false
+
+[node name="BgNear" type="Parallax2D" parent="." unique_id=1577890879]
+scroll_scale = Vector2(0.8, 0.8)
+
+[node name="Sprite2D" type="Sprite2D" parent="BgNear" unique_id=615000944]
+centered = false
+
+[node name="Ground" type="TileMapLayer" parent="." unique_id=1875096136]
+
+[node name="FloorOverlay" type="TileMapLayer" parent="." unique_id=1541574459]
+
+[node name="Props" type="Node2D" parent="." unique_id=1262492340]
+y_sort_enabled = true
+
+[node name="Fg" type="Parallax2D" parent="." unique_id=1713686165]
+scroll_scale = Vector2(1.2, 1.2)

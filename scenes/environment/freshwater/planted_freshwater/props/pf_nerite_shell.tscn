@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dqdg085b41hd1"]
+
+[ext_resource type="Texture2D" uid="uid://cgu0ldscsk2j6" path="res://assets/environments/freshwater/planted_freshwater/decoration/shells/pf_nerite_shell.png" id="1_tex"]
+
+[node name="PfNeriteShell" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-8, -13)

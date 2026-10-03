@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bbmhclp8mafir"]
+
+[ext_resource type="Texture2D" uid="uid://b3ifr25xm5jkj" path="res://assets/environments/freshwater/planted_freshwater/decoration/debris/pf_catappa_leaf.png" id="1_tex"]
+
+[node name="PfCatappaLeaf" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-13, -11)

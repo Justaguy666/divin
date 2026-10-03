@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dp67cnb36sr8o"]
+
+[ext_resource type="Texture2D" uid="uid://c1wpiabbmjnqc" path="res://assets/environments/freshwater/planted_freshwater/decoration/shells/pf_mystery_snail_shell.png" id="1_tex"]
+
+[node name="PfMysterySnailShell" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-8, -19)

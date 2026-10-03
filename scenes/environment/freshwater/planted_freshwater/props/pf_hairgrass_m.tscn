@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://d1xon6doet0je"]
+
+[ext_resource type="Texture2D" uid="uid://cu8j1q0es25oh" path="res://assets/environments/freshwater/planted_freshwater/vegetation/grass/pf_hairgrass_m.png" id="1_tex"]
+
+[node name="PfHairgrassM" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-16, -19)

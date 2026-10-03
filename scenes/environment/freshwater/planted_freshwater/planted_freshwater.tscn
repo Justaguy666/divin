@@ -1,0 +1,205 @@
+[gd_scene format=4 uid="uid://dtfq88khok2yw"]
+
+[ext_resource type="PackedScene" uid="uid://bdkq66k5yxh2n" path="res://scenes/environment/_shared/environment_base.tscn" id="1_bfovv"]
+[ext_resource type="Texture2D" uid="uid://d4g4gpy7anxin" path="res://assets/environments/freshwater/planted_freshwater/background/far/pf_bg_far.png" id="2_162o2"]
+[ext_resource type="Texture2D" uid="uid://6ib3eont73bq" path="res://assets/environments/freshwater/planted_freshwater/background/mid/pf_bg_mid.png" id="3_sgcey"]
+[ext_resource type="Texture2D" uid="uid://bwx07xceravx3" path="res://assets/environments/freshwater/planted_freshwater/background/near/pf_bg_near.png" id="4_qo1d1"]
+[ext_resource type="TileSet" uid="uid://dn13pg3bf3t4p" path="res://resources/tilesets/planted_freshwater.tres" id="5_bfovv"]
+[ext_resource type="PackedScene" uid="uid://cwslvc33g83fy" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_alder_cone.tscn" id="6_is4e1"]
+[ext_resource type="PackedScene" uid="uid://d1agqoaq4i6la" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_amazon_sword_a.tscn" id="7_01m6l"]
+[ext_resource type="PackedScene" uid="uid://e02ma87n7gb8" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_cabomba.tscn" id="8_4d7ww"]
+[ext_resource type="PackedScene" uid="uid://donmrtb53q4pf" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_dragon_stone.tscn" id="9_yr6no"]
+[ext_resource type="PackedScene" uid="uid://cf50ycxelvu8a" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_dragon_stone_small.tscn" id="10_4yyfn"]
+[ext_resource type="PackedScene" uid="uid://3nb4alsreohl" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_driftwood_log.tscn" id="11_dop4u"]
+[ext_resource type="PackedScene" uid="uid://gv1xbhpybj0b" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_frogbit_floating.tscn" id="12_ammy0"]
+[ext_resource type="PackedScene" uid="uid://bv0woh51tdtns" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_grass_tufts_strip.tscn" id="13_6cmg4"]
+[ext_resource type="PackedScene" uid="uid://bbxcccm2e5fr8" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_hairgrass_l.tscn" id="14_ccn41"]
+[ext_resource type="PackedScene" uid="uid://d1xon6doet0je" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_hairgrass_m.tscn" id="15_32qyp"]
+[ext_resource type="PackedScene" uid="uid://dmmm2mj1exek0" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_hairgrass_s.tscn" id="16_55iya"]
+[ext_resource type="PackedScene" uid="uid://orbgx1yw3bcd" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_hanging_roots.tscn" id="17_gfept"]
+[ext_resource type="PackedScene" uid="uid://x5pucxvorffn" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_hygrophila.tscn" id="18_gl612"]
+[ext_resource type="PackedScene" uid="uid://eci0yffpbl50" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_java_fern.tscn" id="19_h8tds"]
+[ext_resource type="PackedScene" uid="uid://h67od10isqd3" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_leaf_litter.tscn" id="20_pnj6i"]
+[ext_resource type="PackedScene" uid="uid://3bqeuvy1n735" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_ludwigia.tscn" id="21_7x4lq"]
+[ext_resource type="PackedScene" uid="uid://f53upt3h0g6l" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_mossy_stump_hide.tscn" id="22_cdm44"]
+[ext_resource type="PackedScene" uid="uid://dqdg085b41hd1" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_nerite_shell.tscn" id="24_1h8hn"]
+[ext_resource type="PackedScene" uid="uid://2flcl8fsyyas" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_ramshorn_shell.tscn" id="25_nsf5s"]
+[ext_resource type="PackedScene" uid="uid://dcsftp5nr6vlv" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_rotala_orange.tscn" id="26_jwom3"]
+[ext_resource type="PackedScene" uid="uid://dfus01wtkagy" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_rotala_red.tscn" id="27_hil5o"]
+[ext_resource type="PackedScene" uid="uid://dvor4rnwwahk8" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_seiryu_large.tscn" id="28_0wxkd"]
+[ext_resource type="PackedScene" uid="uid://6uhotgjr5j6x" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_seiryu_medium.tscn" id="29_2jvbf"]
+[ext_resource type="PackedScene" uid="uid://bn3p3nvb5vewq" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_seiryu_small.tscn" id="30_3amlb"]
+[ext_resource type="PackedScene" uid="uid://cqje17jqrm85f" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_trumpet_snail_shell.tscn" id="31_e0gxy"]
+[ext_resource type="PackedScene" uid="uid://ccmtqg3y4rtfy" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_twig.tscn" id="32_jb04m"]
+[ext_resource type="PackedScene" uid="uid://by002fkgjx7t6" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_vallisneria_short.tscn" id="33_q7g7u"]
+[ext_resource type="PackedScene" uid="uid://bde3iww5b7jmn" path="res://scenes/environment/freshwater/planted_freshwater/props/pf_vallisneria_tall.tscn" id="34_cgvax"]
+
+[node name="PlantedFreshwater" unique_id=90168738 instance=ExtResource("1_bfovv")]
+
+[node name="BgFar" parent="." index="0" unique_id=829465576]
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" parent="BgFar" index="0" unique_id=738316601]
+texture = ExtResource("2_162o2")
+metadata/_edit_lock_ = true
+
+[node name="BgMid" parent="." index="1" unique_id=1751391260]
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" parent="BgMid" index="0" unique_id=1236876199]
+texture = ExtResource("3_sgcey")
+metadata/_edit_lock_ = true
+
+[node name="BgNear" parent="." index="2" unique_id=1577890879]
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" parent="BgNear" index="0" unique_id=615000944]
+texture = ExtResource("4_qo1d1")
+metadata/_edit_lock_ = true
+
+[node name="Ground" parent="." index="3" unique_id=1875096136]
+tile_map_data = PackedByteArray("AAAAAAYAAAABAAAAAAABAAYAAAABAAAAAAACAAYAAAABAAAAAAADAAYAAAABAAAAAAAEAAYAAAABAAAAAAAFAAYAAAABAAAAAAAGAAYAAAABAAAAAAAHAAYAAAABAAAAAAAIAAYAAAABAAAAAAAJAAYAAAABAAAAAAAKAAYAAAABAAAAAAALAAYAAAABAAAAAAAAAAcAAAADAAEAAAABAAcAAAABAAEAAAACAAcAAAABAAEAAAADAAcAAAABAAEAAAAEAAcAAAABAAEAAAAFAAcAAAABAAEAAAAGAAcAAAADAAEAAAAHAAcAAAABAAEAAAAIAAcAAAABAAEAAAAJAAcAAAABAAEAAAAKAAcAAAABAAEAAAALAAcAAAABAAEAAAAAAAgAAAABAAIAAAABAAgAAAAEAAIAAAACAAgAAAABAAIAAAADAAgAAAADAAIAAAAEAAgAAAABAAIAAAAFAAgAAAABAAIAAAAGAAgAAAAEAAIAAAAHAAgAAAABAAIAAAAIAAgAAAABAAIAAAAJAAgAAAADAAIAAAAKAAgAAAABAAIAAAALAAgAAAAEAAIAAAA=")
+tile_set = ExtResource("5_bfovv")
+metadata/_edit_lock_ = true
+
+[node name="FloorOverlay" parent="." index="4" unique_id=1541574459]
+tile_map_data = PackedByteArray("AAAIAAYAAQABAAAAAAAHAAYAAQABAAAAAAAJAAYAAQACAAAAAAAGAAYAAQAAAAAAAAADAAYAAQADAAAAAAACAAYAAQACAAAAAAABAAYAAQAAAAAAAAAKAAYAAQADAAAAAAA=")
+tile_set = ExtResource("5_bfovv")
+metadata/_edit_lock_ = true
+
+[node name="Props" parent="." index="5" unique_id=1262492340]
+metadata/_edit_lock_ = true
+
+[node name="PfAlderCone" parent="Props" index="0" unique_id=2051764604 instance=ExtResource("6_is4e1")]
+position = Vector2(110, 252)
+metadata/_edit_lock_ = true
+
+[node name="PfAmazonSwordA" parent="Props" index="1" unique_id=2092214812 instance=ExtResource("7_01m6l")]
+position = Vector2(217, 208)
+metadata/_edit_lock_ = true
+
+[node name="PfCabomba" parent="Props" index="2" unique_id=1548988804 instance=ExtResource("8_4d7ww")]
+position = Vector2(281, 196)
+metadata/_edit_lock_ = true
+
+[node name="PfDragonStone" parent="Props" index="3" unique_id=881308169 instance=ExtResource("9_yr6no")]
+position = Vector2(148, 198)
+metadata/_edit_lock_ = true
+
+[node name="PfDragonStoneSmall" parent="Props" index="4" unique_id=1582115264 instance=ExtResource("10_4yyfn")]
+position = Vector2(139, 199)
+metadata/_edit_lock_ = true
+
+[node name="PfDriftwoodLog" parent="Props" index="5" unique_id=1223892068 instance=ExtResource("11_dop4u")]
+position = Vector2(85, 208)
+metadata/_edit_lock_ = true
+
+[node name="PfFrogbitFloating" parent="Props" index="6" unique_id=809844051 instance=ExtResource("12_ammy0")]
+position = Vector2(357, -4)
+metadata/_edit_lock_ = true
+
+[node name="PfFrogbitFloating2" parent="Props" index="7" unique_id=551501060 instance=ExtResource("12_ammy0")]
+position = Vector2(222, -6)
+metadata/_edit_lock_ = true
+
+[node name="PfFrogbitFloating3" parent="Props" index="8" unique_id=476471532 instance=ExtResource("12_ammy0")]
+position = Vector2(93, -3)
+metadata/_edit_lock_ = true
+
+[node name="PfFrogbitFloating4" parent="Props" index="9" unique_id=2036985049 instance=ExtResource("12_ammy0")]
+position = Vector2(38, -5)
+metadata/_edit_lock_ = true
+
+[node name="PfGrassTuftsStrip" parent="Props" index="10" unique_id=851319378 instance=ExtResource("13_6cmg4")]
+position = Vector2(72, 213)
+metadata/_edit_lock_ = true
+
+[node name="PfHairgrassL" parent="Props" index="11" unique_id=1634677054 instance=ExtResource("14_ccn41")]
+position = Vector2(73, 209)
+metadata/_edit_lock_ = true
+
+[node name="PfHairgrassM" parent="Props" index="12" unique_id=1241461437 instance=ExtResource("15_32qyp")]
+position = Vector2(287, 214)
+metadata/_edit_lock_ = true
+
+[node name="PfHairgrassS" parent="Props" index="13" unique_id=1847621704 instance=ExtResource("16_55iya")]
+position = Vector2(329, 213)
+metadata/_edit_lock_ = true
+
+[node name="PfHangingRoots" parent="Props" index="14" unique_id=399754972 instance=ExtResource("17_gfept")]
+position = Vector2(306, 226)
+metadata/_edit_lock_ = true
+
+[node name="PfHangingRoots3" parent="Props" index="15" unique_id=299283475 instance=ExtResource("17_gfept")]
+position = Vector2(238, 238)
+scale = Vector2(1, 0.9782609)
+metadata/_edit_lock_ = true
+
+[node name="PfHangingRoots2" parent="Props" index="16" unique_id=311215332 instance=ExtResource("17_gfept")]
+position = Vector2(82.000015, 229.00002)
+scale = Vector2(1, 0.8478258)
+metadata/_edit_lock_ = true
+
+[node name="PfHygrophila" parent="Props" index="17" unique_id=1824408841 instance=ExtResource("18_gl612")]
+position = Vector2(189, 196)
+metadata/_edit_lock_ = true
+
+[node name="PfJavaFern" parent="Props" index="18" unique_id=1829285353 instance=ExtResource("19_h8tds")]
+position = Vector2(52, 197)
+metadata/_edit_lock_ = true
+
+[node name="PfLeafLitter" parent="Props" index="19" unique_id=208801751 instance=ExtResource("20_pnj6i")]
+position = Vector2(307, 213)
+metadata/_edit_lock_ = true
+
+[node name="PfLudwigia" parent="Props" index="20" unique_id=1906339978 instance=ExtResource("21_7x4lq")]
+position = Vector2(353, 193)
+metadata/_edit_lock_ = true
+
+[node name="PfMossyStumpHide" parent="Props" index="21" unique_id=387610872 instance=ExtResource("22_cdm44")]
+position = Vector2(302, 209)
+metadata/_edit_lock_ = true
+
+[node name="PfNeriteShell" parent="Props" index="22" unique_id=1184095266 instance=ExtResource("24_1h8hn")]
+position = Vector2(12, 208)
+metadata/_edit_lock_ = true
+
+[node name="PfRamshornShell" parent="Props" index="23" unique_id=165445523 instance=ExtResource("25_nsf5s")]
+position = Vector2(21, 265)
+metadata/_edit_lock_ = true
+
+[node name="PfRotalaOrange" parent="Props" index="24" unique_id=2147353927 instance=ExtResource("26_jwom3")]
+position = Vector2(231, 195)
+metadata/_edit_lock_ = true
+
+[node name="PfRotalaRed" parent="Props" index="25" unique_id=1174269375 instance=ExtResource("27_hil5o")]
+position = Vector2(102, 197)
+metadata/_edit_lock_ = true
+
+[node name="PfSeiryuLarge" parent="Props" index="26" unique_id=1237301084 instance=ExtResource("28_0wxkd")]
+position = Vector2(352, 201)
+metadata/_edit_lock_ = true
+
+[node name="PfSeiryuMedium" parent="Props" index="27" unique_id=755844507 instance=ExtResource("29_2jvbf")]
+position = Vector2(187, 197)
+metadata/_edit_lock_ = true
+
+[node name="PfSeiryuSmall" parent="Props" index="28" unique_id=1800733017 instance=ExtResource("30_3amlb")]
+position = Vector2(217, 209)
+metadata/_edit_lock_ = true
+
+[node name="PfTrumpetSnailShell" parent="Props" index="29" unique_id=2012510829 instance=ExtResource("31_e0gxy")]
+position = Vector2(156, 209)
+metadata/_edit_lock_ = true
+
+[node name="PfTwig" parent="Props" index="30" unique_id=947718997 instance=ExtResource("32_jb04m")]
+position = Vector2(160, 267)
+metadata/_edit_lock_ = true
+
+[node name="PfVallisneriaShort" parent="Props" index="31" unique_id=1519093455 instance=ExtResource("33_q7g7u")]
+position = Vector2(141, 197)
+metadata/_edit_lock_ = true
+
+[node name="PfVallisneriaTall" parent="Props" index="32" unique_id=1539590207 instance=ExtResource("34_cgvax")]
+position = Vector2(26, 198)
+metadata/_edit_lock_ = true
