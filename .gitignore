@@ -14,3 +14,5 @@ desktop.ini
 
 # File phụ, không phải tài nguyên game
 /Claude outputs/
+
+.env
