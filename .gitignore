@@ -1,0 +1,16 @@
+# Godot 4+
+.godot/
+/android/
+*.tmp
+
+# Bản build export
+/build/
+/exports/
+
+# Rác hệ điều hành
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# File phụ, không phải tài nguyên game
+/Claude outputs/

@@ -1,0 +1,49 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+[application]
+
+config/name="Divin"
+run/main_scene="uid://cdek58jiv5wme"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[display]
+
+window/size/viewport_width=384
+window/size/viewport_height=288
+window/size/window_width_override=1152
+window/size/window_height_override=864
+window/stretch/mode="canvas_items"
+window/stretch/scale_mode="integer"
+
+[file_customization]
+
+folder_colors={
+"res://assets/": "teal",
+"res://data/": "blue",
+"res://editor/": "gray",
+"res://game/": "orange",
+"res://shaders/": "pink",
+"res://systems/": "yellow"
+}
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+textures/canvas_textures/default_texture_filter=0
+rendering_device/driver.windows="d3d12"
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+2d/snap/snap_2d_transforms_to_pixel=true
+2d/snap/snap_2d_vertices_to_pixel=true
