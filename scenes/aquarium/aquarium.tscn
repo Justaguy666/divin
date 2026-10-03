@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://cab6r8j3lyjum"]
+
+[ext_resource type="PackedScene" uid="uid://dtfq88khok2yw" path="res://scenes/environment/freshwater/planted_freshwater/planted_freshwater.tscn" id="1_kxf20"]
+
+[node name="Aquarium" type="Node2D" unique_id=770412284]
+
+[node name="PlantedFreshwater" parent="." unique_id=90168738 instance=ExtResource("1_kxf20")]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1716731383]
+position = Vector2(192, 144)
+
+[node name="Fish" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="Food" type="Node2D" parent="." unique_id=191782434]
+
+[node name="Effects" type="Node2D" parent="." unique_id=1755907393]

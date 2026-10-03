@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://cdek58jiv5wme"]
+
+[ext_resource type="PackedScene" uid="uid://cab6r8j3lyjum" path="res://scenes/aquarium/aquarium.tscn" id="1_hyk8p"]
+
+[node name="Main" type="Node2D" unique_id=1366203981]
+
+[node name="Aquarium" parent="." unique_id=770412284 instance=ExtResource("1_hyk8p")]
