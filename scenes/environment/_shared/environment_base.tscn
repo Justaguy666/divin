@@ -6,19 +6,31 @@
 scroll_scale = Vector2(0.2, 0.2)
 
 [node name="Sprite2D" type="Sprite2D" parent="BgFar" unique_id=738316601]
+texture_repeat = 3
+position = Vector2(-8, -8)
 centered = false
+region_enabled = true
+region_rect = Rect2(-8, -8, 400, 232)
 
 [node name="BgMid" type="Parallax2D" parent="." unique_id=1751391260]
 scroll_scale = Vector2(0.5, 0.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="BgMid" unique_id=1236876199]
+texture_repeat = 3
+position = Vector2(-8, -8)
 centered = false
+region_enabled = true
+region_rect = Rect2(-8, -8, 400, 232)
 
 [node name="BgNear" type="Parallax2D" parent="." unique_id=1577890879]
 scroll_scale = Vector2(0.8, 0.8)
 
 [node name="Sprite2D" type="Sprite2D" parent="BgNear" unique_id=615000944]
+texture_repeat = 3
+position = Vector2(-8, -8)
 centered = false
+region_enabled = true
+region_rect = Rect2(-8, -8, 400, 232)
 
 [node name="Ground" type="TileMapLayer" parent="." unique_id=1875096136]
 
