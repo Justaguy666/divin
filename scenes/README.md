@@ -1,12 +1,12 @@
 # scenes/ — cấu trúc
 
 Mỗi file .tscn = một "prefab" có thể instance. Script đi kèm nằm ở game/ theo cùng tên nhánh
-(vd. scenes/fish/_shared/fish_base.tscn  <->  game/fish/fish.gd).
+(vd. scenes/creatures/_shared/swimmer_base.tscn  <->  game/creatures/swimmer.gd).
 
 ```
 scenes/
 ├─ main/                    main.tscn (scene khởi chạy), boot / loading
-├─ aquarium/                aquarium.tscn — root của bể: camera cố định 384x216, chứa environment + fish + food + effects
+├─ aquarium/                aquarium.tscn — root của bể: camera cố định 384x216, chứa environment + creatures + food + effects
 │  └─ layers/               template các lớp: bg_far, bg_mid, bg_near, fg (TileMapLayer / Sprite2D)
 ├─ environment/
 │  ├─ _shared/              environment_base.tscn — khung chung: 4 lớp + water surface + ambient effects
@@ -14,14 +14,16 @@ scenes/
 │  │   └─ props/            (planted_freshwater) prefab cây/đá/lũa riêng của biome, dùng asset pf_*
 │  ├─ marine/<biome>/
 │  └─ special/<biome>/
-├─ fish/
-│  ├─ _shared/              fish_base.tscn (Sprite + AnimationPlayer + state machine)
-│  └─ freshwater|marine|special/<biome>/   mỗi loài một .tscn kế thừa fish_base
+├─ creatures/               mọi sinh vật di chuyển trong bể (chủ yếu là cá)
+│  ├─ _shared/              creature_base.tscn (phần chung)
+│  │                        swimmer_base.tscn (bơi: cá, tôm bơi) · crawler_base.tscn (bò đáy: cua, ốc, sên biển)
+│  │                        drifter_base.tscn (trôi: sứa) — đều kế thừa creature_base
+│  └─ freshwater|marine|special/<biome>/   mỗi loài một .tscn kế thừa swimmer/crawler/drifter_base
 ├─ decoration/              decor dùng chung nhiều biome (cây, đá, lũa, vỏ ốc, san hô, khác)
 │  └─ _shared/              decoration_base.tscn (Sprite2D + sway shader tuỳ chọn)
 ├─ effects/                 bubbles, particles, water, lighting (GPUParticles2D / AnimatedSprite2D)
 ├─ food/                    các loại thức ăn
-└─ ui/                      hud, aquarium, environment, fish, menus, components (nút, panel tái sử dụng)
+└─ ui/                      hud, aquarium, environment, creatures, menus, components (nút, panel tái sử dụng)
 ```
 
 Quy ước
