@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cn8euswp8mhye"
-path="res://.godot/imported/pf_neon_tetra_swim_24x24_4f.png-75af8532913ad8448388c3e9c6ec2f88.ctex"
+uid="uid://ow7xr4cvn0vh"
+path="res://.godot/imported/pf_harlequin_rasbora_swim_32x28_4f.png-a46b9fa86d62eee02654b23b99afbc04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/planted_freshwater/pf_neon_tetra_swim_24x24_4f.png"
-dest_files=["res://.godot/imported/pf_neon_tetra_swim_24x24_4f.png-75af8532913ad8448388c3e9c6ec2f88.ctex"]
+source_file="res://assets/creatures/freshwater/planted_freshwater/pf_harlequin_rasbora_swim_32x28_4f.png"
+dest_files=["res://.godot/imported/pf_harlequin_rasbora_swim_32x28_4f.png-a46b9fa86d62eee02654b23b99afbc04.ctex"]
 
 [params]
 

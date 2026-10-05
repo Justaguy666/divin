@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bwr43hj2blym2"
-path="res://.godot/imported/pf_cherry_shrimp_crawl_20x10_4f.png-e2bc40c4573cc8f8e0b1ef47154297b4.ctex"
+uid="uid://crhgvp2ilo13"
+path="res://.godot/imported/pf_amano_shrimp_crawl_40x18_4f.png-d0e9428ce99c45dd574432d144487159.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/planted_freshwater/pf_cherry_shrimp_crawl_20x10_4f.png"
-dest_files=["res://.godot/imported/pf_cherry_shrimp_crawl_20x10_4f.png-e2bc40c4573cc8f8e0b1ef47154297b4.ctex"]
+source_file="res://assets/creatures/freshwater/planted_freshwater/pf_amano_shrimp_crawl_40x18_4f.png"
+dest_files=["res://.godot/imported/pf_amano_shrimp_crawl_40x18_4f.png-d0e9428ce99c45dd574432d144487159.ctex"]
 
 [params]
 
