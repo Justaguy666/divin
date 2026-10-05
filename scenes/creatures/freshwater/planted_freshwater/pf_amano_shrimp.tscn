@@ -1,15 +1,15 @@
 [gd_scene format=3 uid="uid://dnn74xscp5rva"]
 
 [ext_resource type="PackedScene" uid="uid://dlpfppvngbl4j" path="res://scenes/creatures/_shared/crawler_base.tscn" id="1_base"]
-[ext_resource type="Texture2D" path="res://assets/creatures/freshwater/planted_freshwater/pf_amano_shrimp_crawl_40x18_4f.png" id="2_sheet"]
+[ext_resource type="Texture2D" uid="uid://crhgvp2ilo13" path="res://assets/creatures/freshwater/planted_freshwater/pf_amano_shrimp_crawl_40x18_4f.png" id="2_sheet"]
 
 [node name="PfAmanoShrimp" unique_id=1905958987 instance=ExtResource("1_base")]
+floor_height = 14.0
+bob_amount = 1.0
+move_time = Vector2(1, 3)
+idle_time = Vector2(1, 5)
 sheet = ExtResource("2_sheet")
 frame_size = Vector2i(40, 18)
 animation_names = ["walk_R", "walk_L", "idle_R", "idle_L"]
 animation_fps = 10.0
 speed = 5.0
-floor_height = 14.0
-bob_amount = 1.0
-move_time = Vector2(1, 3)
-idle_time = Vector2(1, 5)
