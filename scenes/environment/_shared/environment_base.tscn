@@ -36,7 +36,7 @@ region_rect = Rect2(-8, -8, 400, 232)
 
 [node name="FloorOverlay" type="TileMapLayer" parent="." unique_id=1541574459]
 
-[node name="Props" type="Node2D" parent="." unique_id=1262492340]
+[node name="Props" type="Node2D" parent="." unique_id=1262492340 groups=["floor_sort"]]
 y_sort_enabled = true
 
 [node name="Fg" type="Parallax2D" parent="." unique_id=1713686165]
