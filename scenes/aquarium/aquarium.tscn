@@ -2,6 +2,13 @@
 
 [ext_resource type="PackedScene" uid="uid://dtfq88khok2yw" path="res://scenes/environment/freshwater/planted_freshwater/planted_freshwater.tscn" id="1_kxf20"]
 [ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_feubu"]
+[ext_resource type="PackedScene" uid="uid://ck2ptxtanuqre" path="res://scenes/creatures/freshwater/planted_freshwater/pf_cherry_shrimp.tscn" id="3_yi3oq"]
+[ext_resource type="PackedScene" uid="uid://bgemc4kqtisof" path="res://scenes/creatures/freshwater/planted_freshwater/pf_mystery_snail.tscn" id="4_diytc"]
+[ext_resource type="PackedScene" uid="uid://ddx4bknnhr5bw" path="res://scenes/creatures/freshwater/planted_freshwater/pf_neon_tetra.tscn" id="5_yb4ch"]
+[ext_resource type="PackedScene" uid="uid://dnn74xscp5rva" path="res://scenes/creatures/freshwater/planted_freshwater/pf_amano_shrimp.tscn" id="6_6dvjd"]
+[ext_resource type="PackedScene" uid="uid://dswmqt7415xo0" path="res://scenes/creatures/freshwater/planted_freshwater/pf_angelfish.tscn" id="7_irk32"]
+[ext_resource type="PackedScene" uid="uid://shx6ggiyeiwi" path="res://scenes/creatures/freshwater/planted_freshwater/pf_harlequin_rasbora.tscn" id="8_qu7cg"]
+[ext_resource type="PackedScene" uid="uid://dr2pk0gwwxdbb" path="res://scenes/creatures/freshwater/planted_freshwater/pf_panda_cory.tscn" id="9_ei5vp"]
 
 [node name="Aquarium" type="Node2D" unique_id=770412284]
 
@@ -12,6 +19,36 @@ position = Vector2(192, 144)
 script = ExtResource("2_feubu")
 
 [node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="PfCherryShrimp" parent="Creatures" unique_id=1905958987 instance=ExtResource("3_yi3oq")]
+
+[node name="PfCherryShrimp2" parent="Creatures" unique_id=338532754 instance=ExtResource("3_yi3oq")]
+
+[node name="PfMysterySnail" parent="Creatures" unique_id=708294312 instance=ExtResource("4_diytc")]
+
+[node name="PfMysterySnail2" parent="Creatures" unique_id=1388667410 instance=ExtResource("4_diytc")]
+
+[node name="PfNeonTetra5" parent="Creatures" unique_id=2130562975 instance=ExtResource("5_yb4ch")]
+tilt_threshold = 0.3
+rest_time = Vector2(0.3, 1.5)
+frame_size = Vector2i(32, 28)
+frames_per_animation = 4
+animation_fps = 8.0
+
+[node name="PfNeonTetra6" parent="Creatures" unique_id=1638132866 instance=ExtResource("5_yb4ch")]
+tilt_threshold = 0.3
+rest_time = Vector2(0.3, 1.5)
+frame_size = Vector2i(32, 28)
+frames_per_animation = 4
+animation_fps = 8.0
+
+[node name="PfAmanoShrimp" parent="Creatures" unique_id=1541098811 instance=ExtResource("6_6dvjd")]
+
+[node name="PfAngelfish" parent="Creatures" unique_id=1782019148 instance=ExtResource("7_irk32")]
+
+[node name="PfHarlequinRasbora" parent="Creatures" unique_id=563291140 instance=ExtResource("8_qu7cg")]
+
+[node name="PfPandaCory" parent="Creatures" unique_id=19878357 instance=ExtResource("9_ei5vp")]
 
 [node name="Food" type="Node2D" parent="." unique_id=191782434]
 
