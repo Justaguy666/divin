@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://ddx4bknnhr5bw"]
+
+[ext_resource type="PackedScene" uid="uid://ua86u84h3ug2" path="res://scenes/creatures/_shared/swimmer_base.tscn" id="1_73dny"]
+[ext_resource type="Texture2D" uid="uid://b7p0w1sxo5rdf" path="res://assets/creatures/freshwater/planted_freshwater/pf_neon_tetra_swim_32x28_4f.png" id="2_sheet"]
+
+[node name="PfNeonTetra" unique_id=1782019148 instance=ExtResource("1_73dny")]
+sheet = ExtResource("2_sheet")
+animation_names = ["E", "SE", "SW", "W", "NW", "NE"]
+speed = 25.0
+area = Rect2(0, 0, 384, 196)

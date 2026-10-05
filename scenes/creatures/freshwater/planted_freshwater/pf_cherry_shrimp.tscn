@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://ck2ptxtanuqre"]
+
+[ext_resource type="PackedScene" uid="uid://dlpfppvngbl4j" path="res://scenes/creatures/_shared/crawler_base.tscn" id="1_xpr8y"]
+[ext_resource type="Texture2D" uid="uid://c6ibcstuwdayb" path="res://assets/creatures/freshwater/planted_freshwater/pf_cherry_shrimp_crawl_32x16_4f.png" id="2_sheet"]
+
+[node name="PfCherryShrimp" unique_id=1905958987 instance=ExtResource("1_xpr8y")]
+bob_amount = 1.0
+sheet = ExtResource("2_sheet")
+animation_names = ["walk_R", "walk_L", "idle_R", "idle_L"]
+frame_size = Vector2i(32, 16)
+animation_fps = 10.0
+speed = 6.0

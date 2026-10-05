@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bgemc4kqtisof"]
+
+[ext_resource type="PackedScene" uid="uid://dlpfppvngbl4j" path="res://scenes/creatures/_shared/crawler_base.tscn" id="1_dkmr6"]
+[ext_resource type="Texture2D" uid="uid://dm8jwkryq88cg" path="res://assets/creatures/freshwater/planted_freshwater/pf_mystery_snail_crawl_32x22_4f.png" id="2_sheet"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_3jp5c"]
+
+[node name="PfMysterySnail" unique_id=1905958987 instance=ExtResource("1_dkmr6")]
+move_prefix = "crawl_"
+bob_speed = 2.0
+bob_amount = 0.0
+move_time = Vector2(3, 8)
+idle_time = Vector2(2, 6)
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(32, 22)
+animation_names = ["crawl_R", "crawl_L", "idle_R", "idle_L"]
+animation_fps = 5.0
+speed = 2.0
+
+[node name="Sprite" parent="." index="0" unique_id=1762707184]
+sprite_frames = SubResource("SpriteFrames_3jp5c")
