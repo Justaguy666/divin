@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ci7gn63np2bxx"
-path="res://.godot/imported/pf_mystery_snail_crawl_22x14_4f.png-011a2689b34d1cc608659e3cedbbaf7f.ctex"
+uid="uid://c6ibcstuwdayb"
+path="res://.godot/imported/pf_cherry_shrimp_crawl_32x16_4f.png-20dd373a233c26abf7807e78913c64aa.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/planted_freshwater/pf_mystery_snail_crawl_22x14_4f.png"
-dest_files=["res://.godot/imported/pf_mystery_snail_crawl_22x14_4f.png-011a2689b34d1cc608659e3cedbbaf7f.ctex"]
+source_file="res://assets/creatures/freshwater/planted_freshwater/pf_cherry_shrimp_crawl_32x16_4f.png"
+dest_files=["res://.godot/imported/pf_cherry_shrimp_crawl_32x16_4f.png-20dd373a233c26abf7807e78913c64aa.ctex"]
 
 [params]
 
