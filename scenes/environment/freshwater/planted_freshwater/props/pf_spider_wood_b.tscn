@@ -6,3 +6,10 @@
 texture = ExtResource("1_tex")
 centered = false
 offset = Vector2(-44, -75)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-19, -6, -19, -5, -18, -5, -18, -4, -17, -4, -17, -3, -14, -3, -14, -2, -6, -2, -6, -1, -5, -1, -5, -2, 3, -2, 3, -3, 6, -3, 6, -4, 7, -4, 7, -5, 8, -5, 8, -6)
