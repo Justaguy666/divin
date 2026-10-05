@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://dlpfppvngbl4j"]
+
+[ext_resource type="Script" uid="uid://j717hrgo21c4" path="res://game/creatures/crawler.gd" id="1_tu5v6"]
+
+[node name="CrawlerBase" type="Node2D" unique_id=1905958987]
+script = ExtResource("1_tu5v6")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=1762707184]
