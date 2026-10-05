@@ -81,135 +81,143 @@ position = Vector2(217, 208)
 metadata/_edit_lock_ = true
 
 [node name="PfCabomba" parent="Props" index="3" unique_id=1548988804 instance=ExtResource("8_4d7ww")]
-position = Vector2(281, 196)
+position = Vector2(281, 197)
 metadata/_edit_lock_ = true
 
-[node name="PfDragonStone" parent="Props" index="4" unique_id=881308169 instance=ExtResource("9_yr6no")]
+[node name="PfCabomba2" parent="Props" index="4" unique_id=856325394 instance=ExtResource("8_4d7ww")]
+position = Vector2(399, 199)
+metadata/_edit_lock_ = true
+
+[node name="PfCabomba3" parent="Props" index="5" unique_id=502255476 instance=ExtResource("8_4d7ww")]
+position = Vector2(-8, 198)
+metadata/_edit_lock_ = true
+
+[node name="PfDragonStone" parent="Props" index="6" unique_id=881308169 instance=ExtResource("9_yr6no")]
 position = Vector2(148, 198)
 metadata/_edit_lock_ = true
 
-[node name="PfDragonStoneSmall" parent="Props" index="5" unique_id=1582115264 instance=ExtResource("10_4yyfn")]
+[node name="PfDragonStoneSmall" parent="Props" index="7" unique_id=1582115264 instance=ExtResource("10_4yyfn")]
 position = Vector2(139, 199)
 metadata/_edit_lock_ = true
 
-[node name="PfDriftwoodLog" parent="Props" index="6" unique_id=1223892068 instance=ExtResource("11_dop4u")]
+[node name="PfDriftwoodLog" parent="Props" index="8" unique_id=1223892068 instance=ExtResource("11_dop4u")]
 position = Vector2(85, 208)
 metadata/_edit_lock_ = true
 
-[node name="PfFrogbitFloating" parent="Props" index="7" unique_id=809844051 instance=ExtResource("12_ammy0")]
+[node name="PfFrogbitFloating" parent="Props" index="9" unique_id=809844051 instance=ExtResource("12_ammy0")]
 position = Vector2(357, -4)
 metadata/_edit_lock_ = true
 
-[node name="PfFrogbitFloating2" parent="Props" index="8" unique_id=551501060 instance=ExtResource("12_ammy0")]
+[node name="PfFrogbitFloating2" parent="Props" index="10" unique_id=551501060 instance=ExtResource("12_ammy0")]
 position = Vector2(222, -6)
 metadata/_edit_lock_ = true
 
-[node name="PfFrogbitFloating3" parent="Props" index="9" unique_id=476471532 instance=ExtResource("12_ammy0")]
+[node name="PfFrogbitFloating3" parent="Props" index="11" unique_id=476471532 instance=ExtResource("12_ammy0")]
 position = Vector2(93, -3)
 metadata/_edit_lock_ = true
 
-[node name="PfFrogbitFloating4" parent="Props" index="10" unique_id=2036985049 instance=ExtResource("12_ammy0")]
+[node name="PfFrogbitFloating4" parent="Props" index="12" unique_id=2036985049 instance=ExtResource("12_ammy0")]
 position = Vector2(38, -5)
 metadata/_edit_lock_ = true
 
-[node name="PfGrassTuftsStrip" parent="Props" index="11" unique_id=851319378 instance=ExtResource("13_6cmg4")]
+[node name="PfGrassTuftsStrip" parent="Props" index="13" unique_id=851319378 instance=ExtResource("13_6cmg4")]
 position = Vector2(72, 213)
 metadata/_edit_lock_ = true
 
-[node name="PfHairgrassL" parent="Props" index="12" unique_id=1634677054 instance=ExtResource("14_ccn41")]
+[node name="PfHairgrassL" parent="Props" index="14" unique_id=1634677054 instance=ExtResource("14_ccn41")]
 position = Vector2(73, 209)
 metadata/_edit_lock_ = true
 
-[node name="PfHairgrassM" parent="Props" index="13" unique_id=1241461437 instance=ExtResource("15_32qyp")]
+[node name="PfHairgrassM" parent="Props" index="15" unique_id=1241461437 instance=ExtResource("15_32qyp")]
 position = Vector2(287, 214)
 metadata/_edit_lock_ = true
 
-[node name="PfHairgrassS" parent="Props" index="14" unique_id=1847621704 instance=ExtResource("16_55iya")]
+[node name="PfHairgrassS" parent="Props" index="16" unique_id=1847621704 instance=ExtResource("16_55iya")]
 position = Vector2(329, 213)
 metadata/_edit_lock_ = true
 
-[node name="PfHangingRoots" parent="Props" index="15" unique_id=399754972 instance=ExtResource("17_gfept")]
+[node name="PfHangingRoots" parent="Props" index="17" unique_id=399754972 instance=ExtResource("17_gfept")]
 position = Vector2(306, 226)
 metadata/_edit_lock_ = true
 
-[node name="PfHangingRoots3" parent="Props" index="16" unique_id=299283475 instance=ExtResource("17_gfept")]
+[node name="PfHangingRoots3" parent="Props" index="18" unique_id=299283475 instance=ExtResource("17_gfept")]
 position = Vector2(238, 238)
 scale = Vector2(1, 0.9782609)
 metadata/_edit_lock_ = true
 
-[node name="PfHangingRoots2" parent="Props" index="17" unique_id=311215332 instance=ExtResource("17_gfept")]
+[node name="PfHangingRoots2" parent="Props" index="19" unique_id=311215332 instance=ExtResource("17_gfept")]
 position = Vector2(82.000015, 229.00002)
 scale = Vector2(1, 0.8478258)
 metadata/_edit_lock_ = true
 
-[node name="PfHygrophila" parent="Props" index="18" unique_id=1824408841 instance=ExtResource("18_gl612")]
+[node name="PfHygrophila" parent="Props" index="20" unique_id=1824408841 instance=ExtResource("18_gl612")]
 position = Vector2(189, 196)
 metadata/_edit_lock_ = true
 
-[node name="PfJavaFern" parent="Props" index="19" unique_id=1829285353 instance=ExtResource("19_h8tds")]
+[node name="PfJavaFern" parent="Props" index="21" unique_id=1829285353 instance=ExtResource("19_h8tds")]
 position = Vector2(52, 197)
 metadata/_edit_lock_ = true
 
-[node name="PfLeafLitter" parent="Props" index="20" unique_id=208801751 instance=ExtResource("20_pnj6i")]
+[node name="PfLeafLitter" parent="Props" index="22" unique_id=208801751 instance=ExtResource("20_pnj6i")]
 position = Vector2(307, 213)
 metadata/_edit_lock_ = true
 
-[node name="PfLudwigia" parent="Props" index="21" unique_id=1906339978 instance=ExtResource("21_7x4lq")]
+[node name="PfLudwigia" parent="Props" index="23" unique_id=1906339978 instance=ExtResource("21_7x4lq")]
 position = Vector2(353, 193)
 metadata/_edit_lock_ = true
 
-[node name="PfMossyStumpHide" parent="Props" index="22" unique_id=387610872 instance=ExtResource("22_cdm44")]
+[node name="PfMossyStumpHide" parent="Props" index="24" unique_id=387610872 instance=ExtResource("22_cdm44")]
 position = Vector2(302, 209)
 metadata/_edit_lock_ = true
 
-[node name="PfNeriteShell" parent="Props" index="23" unique_id=1184095266 instance=ExtResource("24_1h8hn")]
+[node name="PfNeriteShell" parent="Props" index="25" unique_id=1184095266 instance=ExtResource("24_1h8hn")]
 position = Vector2(12, 208)
 metadata/_edit_lock_ = true
 
-[node name="PfRamshornShell" parent="Props" index="24" unique_id=165445523 instance=ExtResource("25_nsf5s")]
+[node name="PfRamshornShell" parent="Props" index="26" unique_id=165445523 instance=ExtResource("25_nsf5s")]
 position = Vector2(21, 265)
 metadata/_edit_lock_ = true
 
-[node name="PfRotalaOrange" parent="Props" index="25" unique_id=2147353927 instance=ExtResource("26_jwom3")]
-position = Vector2(231, 195)
+[node name="PfRotalaOrange" parent="Props" index="27" unique_id=2147353927 instance=ExtResource("26_jwom3")]
+position = Vector2(231, 198)
 metadata/_edit_lock_ = true
 
-[node name="PfRotalaRed" parent="Props" index="26" unique_id=1174269375 instance=ExtResource("27_hil5o")]
+[node name="PfRotalaRed" parent="Props" index="28" unique_id=1174269375 instance=ExtResource("27_hil5o")]
 position = Vector2(102, 197)
 metadata/_edit_lock_ = true
 
-[node name="PfSeiryuLarge" parent="Props" index="27" unique_id=1237301084 instance=ExtResource("28_0wxkd")]
+[node name="PfSeiryuLarge" parent="Props" index="29" unique_id=1237301084 instance=ExtResource("28_0wxkd")]
 position = Vector2(352, 201)
 metadata/_edit_lock_ = true
 
-[node name="PfSeiryuMedium" parent="Props" index="28" unique_id=755844507 instance=ExtResource("29_2jvbf")]
+[node name="PfSeiryuMedium" parent="Props" index="30" unique_id=755844507 instance=ExtResource("29_2jvbf")]
 position = Vector2(187, 197)
 metadata/_edit_lock_ = true
 
-[node name="PfSeiryuSmall" parent="Props" index="29" unique_id=1800733017 instance=ExtResource("30_3amlb")]
+[node name="PfSeiryuSmall" parent="Props" index="31" unique_id=1800733017 instance=ExtResource("30_3amlb")]
 position = Vector2(217, 209)
 metadata/_edit_lock_ = true
 
-[node name="PfTrumpetSnailShell" parent="Props" index="30" unique_id=2012510829 instance=ExtResource("31_e0gxy")]
+[node name="PfTrumpetSnailShell" parent="Props" index="32" unique_id=2012510829 instance=ExtResource("31_e0gxy")]
 position = Vector2(156, 209)
 metadata/_edit_lock_ = true
 
-[node name="PfTwig" parent="Props" index="31" unique_id=947718997 instance=ExtResource("32_jb04m")]
+[node name="PfTwig" parent="Props" index="33" unique_id=947718997 instance=ExtResource("32_jb04m")]
 position = Vector2(160, 267)
 metadata/_edit_lock_ = true
 
-[node name="PfTwig2" parent="Props" index="32" unique_id=1147304123 instance=ExtResource("32_jb04m")]
+[node name="PfTwig2" parent="Props" index="34" unique_id=1147304123 instance=ExtResource("32_jb04m")]
 position = Vector2(217, 299)
 metadata/_edit_lock_ = true
 
-[node name="PfTwig3" parent="Props" index="33" unique_id=1814200475 instance=ExtResource("32_jb04m")]
+[node name="PfTwig3" parent="Props" index="35" unique_id=1814200475 instance=ExtResource("32_jb04m")]
 position = Vector2(388, 297)
 metadata/_edit_lock_ = true
 
-[node name="PfVallisneriaShort" parent="Props" index="34" unique_id=1519093455 instance=ExtResource("33_q7g7u")]
+[node name="PfVallisneriaShort" parent="Props" index="36" unique_id=1519093455 instance=ExtResource("33_q7g7u")]
 position = Vector2(141, 197)
 metadata/_edit_lock_ = true
 
-[node name="PfVallisneriaTall" parent="Props" index="35" unique_id=1539590207 instance=ExtResource("34_cgvax")]
+[node name="PfVallisneriaTall" parent="Props" index="37" unique_id=1539590207 instance=ExtResource("34_cgvax")]
 position = Vector2(26, 198)
 metadata/_edit_lock_ = true
