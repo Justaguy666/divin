@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://dj2ibikbs2wxc" path="res://assets/environments/freshwater/planted_freshwater/decoration/debris/pf_alder_cone.png" id="1_tex"]
 
-[node name="PfAlderCone" type="Sprite2D"]
+[node name="PfAlderCone" type="Sprite2D" unique_id=964937663]
 texture = ExtResource("1_tex")
 centered = false
 offset = Vector2(-6, -15)
