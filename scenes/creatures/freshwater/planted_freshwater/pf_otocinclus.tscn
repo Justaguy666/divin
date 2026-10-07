@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://eg0hya2l1aem"]
+
+[ext_resource type="PackedScene" uid="uid://dlpfppvngbl4j" path="res://scenes/creatures/_shared/crawler_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" uid="uid://ebq287im6vau" path="res://assets/creatures/freshwater/planted_freshwater/pf_otocinclus_crawl_32x16_4f.png" id="2_sheet"]
+
+[node name="PfOtocinclus" unique_id=1905958987 instance=ExtResource("1_base")]
+bob_amount = 0.5
+move_time = Vector2(1, 3)
+idle_time = Vector2(2, 6)
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(32, 16)
+animation_fps = 8.0
+speed = 6.0

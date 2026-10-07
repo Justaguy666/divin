@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://eivpltnv4s6j"]
+
+[ext_resource type="PackedScene" uid="uid://dlpfppvngbl4j" path="res://scenes/creatures/_shared/crawler_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" uid="uid://dynr3n88jj00s" path="res://assets/creatures/freshwater/planted_freshwater/pf_nerite_snail_crawl_32x20_4f.png" id="2_sheet"]
+
+[node name="PfNeriteSnail" unique_id=1905958987 instance=ExtResource("1_base")]
+move_prefix = "crawl_"
+bob_speed = 2.0
+bob_amount = 0.0
+move_time = Vector2(6, 10)
+idle_time = Vector2(2, 6)
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(32, 20)
+animation_fps = 5.0
+speed = 2.0
