@@ -17,11 +17,11 @@ config/icon="res://icon.svg"
 
 [display]
 
-window/size/viewport_width=384
-window/size/viewport_height=288
+window/size/viewport_width=576
+window/size/viewport_height=432
 window/size/window_width_override=1152
 window/size/window_height_override=864
-window/stretch/mode="canvas_items"
+window/stretch/mode="viewport"
 window/stretch/scale_mode="integer"
 
 [file_customization]
@@ -38,6 +38,7 @@ folder_colors={
 [layer_names]
 
 2d_physics/layer_2="floor_obstacle"
+2d_physics/layer_5="swim_obstacle"
 
 [physics]
 
