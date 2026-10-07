@@ -1,10 +1,10 @@
 extends Camera2D
 
 # Camera được lệch tối đa bao nhiêu pixel
-@export var max_left: float = 10.0
-@export var max_right: float = 10.0
-@export var max_up: float = 5.0
-@export var max_down: float = 10.0
+@export var max_left: float = 20.0
+@export var max_right: float = 20.0
+@export var max_up: float = 10.0
+@export var max_down: float = 20.0
 # Bật = camera đi ngược hướng chuột
 @export var invert: bool = true
 # Độ mượt mà (càng lớn camera phản ứng càng nhanh)

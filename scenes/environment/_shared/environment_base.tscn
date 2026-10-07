@@ -1,40 +1,57 @@
 [gd_scene format=3 uid="uid://bdkq66k5yxh2n"]
 
+[ext_resource type="Shader" uid="uid://dsjuytv3opfyu" path="res://shaders/environment/grass_sway.gdshader" id="1_eulsu"]
+[ext_resource type="Script" uid="uid://8e2j8h6w8mro" path="res://game/environment/editor_static_parallax.gd" id="2_parallax"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_k48uh"]
+shader = ExtResource("1_eulsu")
+shader_parameter/wind = 1.0
+shader_parameter/sway_speed = 1.5
+shader_parameter/wave_scale = 0.15
+shader_parameter/tile_height = 32.0
+
 [node name="EnvironmentBase" type="Node2D" unique_id=90168738]
 
 [node name="BgFar" type="Parallax2D" parent="." unique_id=829465576]
 scroll_scale = Vector2(0.2, 0.2)
+ignore_camera_scroll = true
+script = ExtResource("2_parallax")
 
 [node name="Sprite2D" type="Sprite2D" parent="BgFar" unique_id=738316601]
 texture_repeat = 3
-position = Vector2(-8, -8)
+position = Vector2(-24, -24)
 centered = false
 region_enabled = true
-region_rect = Rect2(-8, -8, 400, 232)
+region_rect = Rect2(-24, -24, 624, 408)
 
 [node name="BgMid" type="Parallax2D" parent="." unique_id=1751391260]
 scroll_scale = Vector2(0.5, 0.5)
+ignore_camera_scroll = true
+script = ExtResource("2_parallax")
 
 [node name="Sprite2D" type="Sprite2D" parent="BgMid" unique_id=1236876199]
 texture_repeat = 3
-position = Vector2(-8, -8)
+position = Vector2(-24, -24)
 centered = false
 region_enabled = true
-region_rect = Rect2(-8, -8, 400, 232)
+region_rect = Rect2(-24, -24, 624, 408)
 
 [node name="BgNear" type="Parallax2D" parent="." unique_id=1577890879]
 scroll_scale = Vector2(0.8, 0.8)
+ignore_camera_scroll = true
+script = ExtResource("2_parallax")
 
 [node name="Sprite2D" type="Sprite2D" parent="BgNear" unique_id=615000944]
 texture_repeat = 3
-position = Vector2(-8, -8)
+position = Vector2(-24, -24)
 centered = false
 region_enabled = true
-region_rect = Rect2(-8, -8, 400, 232)
+region_rect = Rect2(-24, -24, 624, 408)
 
 [node name="Ground" type="TileMapLayer" parent="." unique_id=1875096136]
 
 [node name="FloorOverlay" type="TileMapLayer" parent="." unique_id=1541574459]
+material = SubResource("ShaderMaterial_k48uh")
 
 [node name="Props" type="Node2D" parent="." unique_id=1262492340 groups=["floor_sort"]]
 y_sort_enabled = true
