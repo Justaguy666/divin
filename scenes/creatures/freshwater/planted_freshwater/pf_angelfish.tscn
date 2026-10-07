@@ -9,6 +9,6 @@ frame_size = Vector2i(44, 44)
 animation_names = ["E", "SE", "SW", "W", "NW", "NE"]
 animation_fps = 6.0
 speed = 12.0
-area = Rect2(0, 26, 384, 148)
+area = Rect2(0, 45, 576, 257)
 tilt_threshold = 0.25
 rest_time = Vector2(1, 3)

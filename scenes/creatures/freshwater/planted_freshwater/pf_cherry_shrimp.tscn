@@ -5,8 +5,8 @@
 
 [node name="PfCherryShrimp" unique_id=1905958987 instance=ExtResource("1_xpr8y")]
 bob_amount = 1.0
+move_time = Vector2(3, 10)
 sheet = ExtResource("2_sheet")
-animation_names = ["walk_R", "walk_L", "idle_R", "idle_L"]
 frame_size = Vector2i(32, 16)
 animation_fps = 10.0
 speed = 6.0

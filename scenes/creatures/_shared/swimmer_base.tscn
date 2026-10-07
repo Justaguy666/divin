@@ -4,13 +4,5 @@
 
 [node name="SwimmerBase" type="Node2D" unique_id=1782019148]
 script = ExtResource("1_y8wpr")
-tilt_threshold = null
-rest_time = null
-frame_size = null
-animation_names = null
-frames_per_animation = null
-animation_fps = null
-speed = null
-area = null
 
 [node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=140888640]

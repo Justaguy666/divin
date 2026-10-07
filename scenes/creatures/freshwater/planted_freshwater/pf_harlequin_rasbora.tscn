@@ -8,4 +8,4 @@ sheet = ExtResource("2_sheet")
 animation_names = ["E", "SE", "SW", "W", "NW", "NE"]
 animation_fps = 10.0
 speed = 30.0
-area = Rect2(0, 16, 384, 170)
+area = Rect2(0, 28, 576, 295)
