@@ -9,7 +9,7 @@
 move_prefix = "crawl_"
 bob_speed = 2.0
 bob_amount = 0.0
-move_time = Vector2(3, 8)
+move_time = Vector2(6, 10)
 idle_time = Vector2(2, 6)
 sheet = ExtResource("2_sheet")
 frame_size = Vector2i(32, 22)
