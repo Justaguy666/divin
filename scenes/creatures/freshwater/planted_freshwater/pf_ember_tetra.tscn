@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://gr0ub2ys05w3"]
+
+[ext_resource type="PackedScene" uid="uid://ua86u84h3ug2" path="res://scenes/creatures/_shared/swimmer_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" path="res://assets/creatures/freshwater/planted_freshwater/pf_ember_tetra_swim_32x28_4f.png" id="2_sheet"]
+
+[node name="PfEmberTetra" unique_id=1782019148 instance=ExtResource("1_base")]
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(32, 28)
+animation_fps = 10.0
+speed = 26.0
+area = Rect2(0, 40, 576, 260)
