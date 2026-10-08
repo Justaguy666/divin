@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://ctva2tjptqa8r"]
+
+[ext_resource type="Texture2D" uid="uid://ddjn87ndo5vbq" path="res://assets/environments/freshwater/blackwater/decoration/shells/bw_ramshorn_dark.png" id="1_tex"]
+
+[node name="BwRamshornDark" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-8, -15)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-6, -6, -6, -4, -5, -4, -5, -3, -4, -3, -4, -2, -2, -2, -2, -1, 3, -1, 3, -2, 4, -2, 4, -3, 5, -3, 5, -4, 6, -4, 6, -6)

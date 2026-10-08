@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://b6c06n88p53x8"]
+
+[ext_resource type="Texture2D" uid="uid://qb66j28tu866" path="res://assets/environments/freshwater/blackwater/vegetation/roots/bw_root_curtain.png" id="1_tex"]
+
+[node name="BwRootCurtain" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-18, 0)

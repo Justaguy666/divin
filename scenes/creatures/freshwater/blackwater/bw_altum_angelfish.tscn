@@ -1,0 +1,13 @@
+[gd_scene format=3 uid="uid://hr2lpnh51cmu"]
+
+[ext_resource type="PackedScene" uid="uid://ua86u84h3ug2" path="res://scenes/creatures/_shared/swimmer_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" path="res://assets/creatures/freshwater/blackwater/bw_altum_angelfish_swim_44x52_4f.png" id="2_sheet"]
+
+[node name="BwAltumAngelfish" unique_id=1782019148 instance=ExtResource("1_base")]
+tilt_threshold = 0.25
+rest_time = Vector2(1.5, 4)
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(44, 52)
+animation_fps = 6.0
+speed = 9.0
+area = Rect2(0, 50, 576, 220)

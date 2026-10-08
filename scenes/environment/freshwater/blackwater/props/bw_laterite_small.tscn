@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b57ssgqi4srsr"]
+
+[ext_resource type="Texture2D" uid="uid://bmd4656v3obo1" path="res://assets/environments/freshwater/blackwater/decoration/rocks/bw_laterite_small.png" id="1_tex"]
+
+[node name="BwLateriteSmall" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-14, -19)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-12, -6, -12, -5, -11, -5, -11, -4, -10, -4, -10, -3, -9, -3, -9, -2, -8, -2, -8, -1, 11, -1, 11, -2, 12, -2, 12, -6)

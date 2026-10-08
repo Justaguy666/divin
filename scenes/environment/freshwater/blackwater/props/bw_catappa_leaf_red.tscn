@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c06wi3swndg2m"]
+
+[ext_resource type="Texture2D" uid="uid://2ylyl0e7tsks" path="res://assets/environments/freshwater/blackwater/decoration/debris/bw_catappa_leaf_red.png" id="1_tex"]
+
+[node name="BwCatappaLeafRed" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-12, -13)

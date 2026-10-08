@@ -1,0 +1,281 @@
+[gd_scene format=4 uid="uid://ec1pk0evjj5d"]
+
+[ext_resource type="PackedScene" uid="uid://bdkq66k5yxh2n" path="res://scenes/environment/_shared/environment_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" uid="uid://dwogyoiyxtmd7" path="res://assets/environments/freshwater/blackwater/background/far/bw_bg_far.png" id="2_far"]
+[ext_resource type="Texture2D" uid="uid://ce4p1v05wwheh" path="res://assets/environments/freshwater/blackwater/background/mid/bw_bg_mid.png" id="3_mid"]
+[ext_resource type="Texture2D" uid="uid://b7u2oidng448e" path="res://assets/environments/freshwater/blackwater/background/near/bw_bg_near.png" id="4_near"]
+[ext_resource type="TileSet" uid="uid://c11s5n57l78p" path="res://resources/tilesets/blackwater.tres" id="5_tiles"]
+[ext_resource type="PackedScene" uid="uid://mldvbdpkg6ib" path="res://scenes/environment/freshwater/blackwater/props/bw_alder_cone.tscn" id="6_hccu5"]
+[ext_resource type="PackedScene" uid="uid://cj4gtqv2w018e" path="res://scenes/environment/freshwater/blackwater/props/bw_branch_tangle.tscn" id="7_1saav"]
+[ext_resource type="PackedScene" uid="uid://dyh7qol63rtkr" path="res://scenes/environment/freshwater/blackwater/props/bw_coconut_hide.tscn" id="8_4ydda"]
+[ext_resource type="PackedScene" uid="uid://6fit3ruyfde8" path="res://scenes/environment/freshwater/blackwater/props/bw_cork_bark.tscn" id="9_x40fj"]
+[ext_resource type="PackedScene" uid="uid://c8q6yek00w3wm" path="res://scenes/environment/freshwater/blackwater/props/bw_crypt_brown.tscn" id="10_pt2m4"]
+[ext_resource type="PackedScene" uid="uid://duvbs1dsvon6n" path="res://scenes/environment/freshwater/blackwater/props/bw_curled_leaf.tscn" id="11_sgott"]
+[ext_resource type="PackedScene" uid="uid://boo8hqxujdogn" path="res://scenes/environment/freshwater/blackwater/props/bw_dark_stone_moss.tscn" id="12_ou03j"]
+[ext_resource type="PackedScene" uid="uid://d2qo0kahiy3g3" path="res://scenes/environment/freshwater/blackwater/props/bw_flooded_grass_short.tscn" id="13_bchex"]
+[ext_resource type="PackedScene" uid="uid://dflqg5na7nxbb" path="res://scenes/environment/freshwater/blackwater/props/bw_flooded_grass_tall.tscn" id="14_slisv"]
+[ext_resource type="PackedScene" uid="uid://cajhr3qxu4j7s" path="res://scenes/environment/freshwater/blackwater/props/bw_flooded_tree_roots.tscn" id="15_q0e5o"]
+[ext_resource type="PackedScene" uid="uid://dxkoq3suufko" path="res://scenes/environment/freshwater/blackwater/props/bw_hollow_log_hide.tscn" id="16_74kku"]
+[ext_resource type="PackedScene" uid="uid://d0otdi0gwbwa8" path="res://scenes/environment/freshwater/blackwater/props/bw_laterite_large.tscn" id="17_jgtnc"]
+[ext_resource type="PackedScene" uid="uid://b57ssgqi4srsr" path="res://scenes/environment/freshwater/blackwater/props/bw_laterite_small.tscn" id="18_bj6b2"]
+[ext_resource type="PackedScene" uid="uid://c52bh2oxxhv" path="res://scenes/environment/freshwater/blackwater/props/bw_leaf_pile.tscn" id="19_udv26"]
+[ext_resource type="PackedScene" uid="uid://ctva2tjptqa8r" path="res://scenes/environment/freshwater/blackwater/props/bw_ramshorn_dark.tscn" id="20_ji2pa"]
+[ext_resource type="PackedScene" uid="uid://cxuggpwa75hw7" path="res://scenes/environment/freshwater/blackwater/props/bw_red_root_floater.tscn" id="21_nknbb"]
+[ext_resource type="PackedScene" uid="uid://p3g8pfgmw2q" path="res://scenes/environment/freshwater/blackwater/props/bw_red_sword.tscn" id="22_rfm6c"]
+[ext_resource type="PackedScene" uid="uid://b6c06n88p53x8" path="res://scenes/environment/freshwater/blackwater/props/bw_root_curtain.tscn" id="23_chrx1"]
+[ext_resource type="PackedScene" uid="uid://cww1i5w2dt1up" path="res://scenes/environment/freshwater/blackwater/props/bw_salvinia_strip_tile32.tscn" id="24_m252p"]
+[ext_resource type="PackedScene" uid="uid://cvrjlf3qtysxk" path="res://scenes/environment/freshwater/blackwater/props/bw_seed_pod.tscn" id="25_8btqu"]
+[ext_resource type="PackedScene" uid="uid://dg5hiltp14ns1" path="res://scenes/environment/freshwater/blackwater/props/bw_sprouts_s.tscn" id="26_n3bor"]
+[ext_resource type="PackedScene" uid="uid://bmq0gkscnw0cd" path="res://scenes/environment/freshwater/blackwater/props/bw_twigs.tscn" id="27_lk626"]
+
+[node name="Blackwater" unique_id=90168738 instance=ExtResource("1_base")]
+metadata/_edit_lock_ = true
+
+[node name="BgFar" parent="." index="0" unique_id=829465576]
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" parent="BgFar" index="0" unique_id=738316601]
+texture = ExtResource("2_far")
+metadata/_edit_lock_ = true
+
+[node name="BgMid" parent="." index="1" unique_id=1751391260]
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" parent="BgMid" index="0" unique_id=1236876199]
+texture = ExtResource("3_mid")
+metadata/_edit_lock_ = true
+
+[node name="BgNear" parent="." index="2" unique_id=1577890879]
+metadata/_edit_lock_ = true
+
+[node name="Sprite2D" parent="BgNear" index="0" unique_id=615000944]
+texture = ExtResource("4_near")
+metadata/_edit_lock_ = true
+
+[node name="Ground" parent="." index="3" unique_id=1875096136]
+position = Vector2(96, 144)
+tile_map_data = PackedByteArray("AAD8/wYAAAABAAAAAAD9/wYAAAAEAAAAAAD+/wYAAAADAAAAAAD//wYAAAABAAAAAAAAAAYAAAABAAAAAAABAAYAAAABAAAAAAACAAYAAAABAAAAAAADAAYAAAABAAAAAAAEAAYAAAABAAAAAAAFAAYAAAABAAAAAAAGAAYAAAABAAAAAAAHAAYAAAABAAAAAAAIAAYAAAABAAAAAAAJAAYAAAABAAAAAAAKAAYAAAABAAAAAAALAAYAAAADAAAAAAAMAAYAAAADAAAAAAANAAYAAAABAAAAAAAOAAYAAAABAAAAAAAPAAYAAAABAAAAAAD8/wcAAAABAAEAAAD9/wcAAAABAAEAAAD+/wcAAAADAAEAAAD//wcAAAADAAEAAAAAAAcAAAABAAEAAAABAAcAAAABAAEAAAACAAcAAAABAAEAAAADAAcAAAABAAEAAAAEAAcAAAABAAEAAAAFAAcAAAABAAEAAAAGAAcAAAABAAEAAAAHAAcAAAAEAAEAAAAIAAcAAAABAAEAAAAJAAcAAAABAAEAAAAKAAcAAAABAAEAAAALAAcAAAAEAAEAAAAMAAcAAAABAAEAAAANAAcAAAABAAEAAAAOAAcAAAABAAEAAAAPAAcAAAABAAEAAAD8/wgAAAABAAIAAAD9/wgAAAABAAIAAAD+/wgAAAABAAIAAAD//wgAAAAEAAIAAAAAAAgAAAADAAIAAAABAAgAAAABAAIAAAACAAgAAAABAAIAAAADAAgAAAABAAIAAAAEAAgAAAABAAIAAAAFAAgAAAABAAIAAAAGAAgAAAABAAIAAAAHAAgAAAABAAIAAAAIAAgAAAAEAAIAAAAJAAgAAAABAAIAAAAKAAgAAAABAAIAAAALAAgAAAABAAIAAAAMAAgAAAABAAIAAAANAAgAAAABAAIAAAAOAAgAAAADAAIAAAAPAAgAAAABAAIAAAD8/wkAAAABAAMAAAD9/wkAAAABAAMAAAD+/wkAAAABAAMAAAD//wkAAAABAAMAAAAAAAkAAAABAAMAAAABAAkAAAABAAMAAAACAAkAAAABAAMAAAADAAkAAAABAAMAAAAEAAkAAAABAAMAAAAFAAkAAAABAAMAAAAGAAkAAAABAAMAAAAHAAkAAAABAAMAAAAIAAkAAAABAAMAAAAJAAkAAAABAAMAAAAKAAkAAAADAAMAAAALAAkAAAABAAMAAAAMAAkAAAABAAMAAAANAAkAAAABAAMAAAAOAAkAAAAEAAMAAAAPAAkAAAAEAAMAAAA=")
+tile_set = ExtResource("5_tiles")
+metadata/_edit_lock_ = true
+
+[node name="FloorOverlay" parent="." index="4" unique_id=1541574459]
+position = Vector2(96, 144)
+tile_set = ExtResource("5_tiles")
+metadata/_edit_lock_ = true
+
+[node name="Props" parent="." index="5" unique_id=1262492340]
+metadata/_edit_lock_ = true
+
+[node name="BwAlderCone" parent="Props" index="0" unique_id=1116273775 instance=ExtResource("6_hccu5")]
+position = Vector2(199, 400)
+metadata/_edit_lock_ = true
+
+[node name="BwAlderCone2" parent="Props" index="1" unique_id=1607431682 instance=ExtResource("6_hccu5")]
+position = Vector2(413, 414)
+metadata/_edit_lock_ = true
+
+[node name="BwBranchTangle" parent="Props" index="2" unique_id=1155434084 instance=ExtResource("7_1saav")]
+position = Vector2(342, 343)
+metadata/_edit_lock_ = true
+
+[node name="BwCoconutHide" parent="Props" index="3" unique_id=1269766623 instance=ExtResource("8_4ydda")]
+position = Vector2(182, 344)
+metadata/_edit_lock_ = true
+
+[node name="BwCorkBark" parent="Props" index="4" unique_id=1667354705 instance=ExtResource("9_x40fj")]
+position = Vector2(13, 351)
+metadata/_edit_lock_ = true
+
+[node name="BwCryptBrown" parent="Props" index="5" unique_id=1532677132 instance=ExtResource("10_pt2m4")]
+position = Vector2(540, 343)
+metadata/_edit_lock_ = true
+
+[node name="BwCurledLeaf" parent="Props" index="6" unique_id=311778943 instance=ExtResource("11_sgott")]
+position = Vector2(436, 347)
+metadata/_edit_lock_ = true
+
+[node name="BwDarkStoneMoss" parent="Props" index="7" unique_id=451364740 instance=ExtResource("12_ou03j")]
+position = Vector2(456, 348)
+metadata/_edit_lock_ = true
+
+[node name="BwFloodedGrassShort" parent="Props" index="8" unique_id=1166189525 instance=ExtResource("13_bchex")]
+position = Vector2(259, 340)
+metadata/_edit_lock_ = true
+
+[node name="BwFloodedGrassShort3" parent="Props" index="9" unique_id=1266366708 instance=ExtResource("13_bchex")]
+position = Vector2(444, 345)
+metadata/_edit_lock_ = true
+
+[node name="BwFloodedGrassShort4" parent="Props" index="10" unique_id=1725018160 instance=ExtResource("13_bchex")]
+position = Vector2(459, 347)
+metadata/_edit_lock_ = true
+
+[node name="BwFloodedGrassShort2" parent="Props" index="11" unique_id=1491023446 instance=ExtResource("13_bchex")]
+position = Vector2(343, 340)
+metadata/_edit_lock_ = true
+
+[node name="BwFloodedGrassTall" parent="Props" index="12" unique_id=1692725554 instance=ExtResource("14_slisv")]
+position = Vector2(140, 340)
+metadata/_edit_lock_ = true
+
+[node name="BwFloodedGrassTall2" parent="Props" index="13" unique_id=846763667 instance=ExtResource("14_slisv")]
+position = Vector2(234, 341)
+metadata/_edit_lock_ = true
+
+[node name="BwFloodedGrassTall3" parent="Props" index="14" unique_id=2017594868 instance=ExtResource("14_slisv")]
+position = Vector2(248, 342)
+metadata/_edit_lock_ = true
+
+[node name="BwFloodedGrassTall4" parent="Props" index="15" unique_id=2145375126 instance=ExtResource("14_slisv")]
+position = Vector2(308, 338)
+metadata/_edit_lock_ = true
+
+[node name="BwFloodedGrassTall5" parent="Props" index="16" unique_id=1818887567 instance=ExtResource("14_slisv")]
+position = Vector2(308, 338)
+metadata/_edit_lock_ = true
+
+[node name="BwFloodedTreeRoots" parent="Props" index="17" unique_id=957440815 instance=ExtResource("15_q0e5o")]
+position = Vector2(40, 238)
+region_enabled = true
+region_rect = Rect2(0, 0, 192, 102)
+metadata/_edit_lock_ = true
+
+[node name="BwHollowLogHide" parent="Props" index="18" unique_id=287458310 instance=ExtResource("16_74kku")]
+position = Vector2(335, 349)
+metadata/_edit_lock_ = true
+
+[node name="BwLateriteLarge" parent="Props" index="19" unique_id=839012747 instance=ExtResource("17_jgtnc")]
+position = Vector2(244, 342)
+metadata/_edit_lock_ = true
+
+[node name="BwLateriteSmall" parent="Props" index="20" unique_id=1021254675 instance=ExtResource("18_bj6b2")]
+position = Vector2(218, 343)
+metadata/_edit_lock_ = true
+
+[node name="BwLateriteSmall2" parent="Props" index="21" unique_id=1299014254 instance=ExtResource("18_bj6b2")]
+position = Vector2(541, 347)
+metadata/_edit_lock_ = true
+
+[node name="BwLeafPile" parent="Props" index="22" unique_id=55020347 instance=ExtResource("19_udv26")]
+position = Vector2(198, 345)
+metadata/_edit_lock_ = true
+
+[node name="BwRamshornDark" parent="Props" index="23" unique_id=1184532472 instance=ExtResource("20_ji2pa")]
+position = Vector2(78, 345)
+metadata/_edit_lock_ = true
+
+[node name="BwRedRootFloater" parent="Props" index="24" unique_id=290387433 instance=ExtResource("21_nknbb")]
+position = Vector2(39, -7)
+metadata/_edit_lock_ = true
+
+[node name="BwRedRootFloater2" parent="Props" index="25" unique_id=2073778197 instance=ExtResource("21_nknbb")]
+position = Vector2(95, -7)
+metadata/_edit_lock_ = true
+
+[node name="BwRedRootFloater4" parent="Props" index="26" unique_id=495343947 instance=ExtResource("21_nknbb")]
+position = Vector2(152, -7)
+metadata/_edit_lock_ = true
+
+[node name="BwRedRootFloater5" parent="Props" index="27" unique_id=1506321152 instance=ExtResource("21_nknbb")]
+position = Vector2(209, -6)
+metadata/_edit_lock_ = true
+
+[node name="BwRedRootFloater6" parent="Props" index="28" unique_id=2008160748 instance=ExtResource("21_nknbb")]
+position = Vector2(540, -6)
+metadata/_edit_lock_ = true
+
+[node name="BwRedRootFloater7" parent="Props" index="29" unique_id=78621042 instance=ExtResource("21_nknbb")]
+position = Vector2(596, -6)
+metadata/_edit_lock_ = true
+
+[node name="BwRedRootFloater3" parent="Props" index="30" unique_id=632305987 instance=ExtResource("21_nknbb")]
+position = Vector2(-17, -7)
+metadata/_edit_lock_ = true
+
+[node name="BwRedSword" parent="Props" index="31" unique_id=402685966 instance=ExtResource("22_rfm6c")]
+position = Vector2(133, 346)
+metadata/_edit_lock_ = true
+
+[node name="BwRootCurtain" parent="Props" index="32" unique_id=1246821712 instance=ExtResource("23_chrx1")]
+position = Vector2(51, 384)
+metadata/_edit_lock_ = true
+
+[node name="BwRootCurtain2" parent="Props" index="33" unique_id=1125745212 instance=ExtResource("23_chrx1")]
+position = Vector2(286, 391)
+metadata/_edit_lock_ = true
+
+[node name="BwRootCurtain3" parent="Props" index="34" unique_id=18741043 instance=ExtResource("23_chrx1")]
+position = Vector2(498, 395)
+metadata/_edit_lock_ = true
+
+[node name="BwSalviniaStripTile32" parent="Props" index="35" unique_id=1886648423 instance=ExtResource("24_m252p")]
+position = Vector2(410, -5)
+metadata/_edit_lock_ = true
+
+[node name="BwSalviniaStripTile33" parent="Props" index="36" unique_id=1014138182 instance=ExtResource("24_m252p")]
+position = Vector2(441, -6)
+metadata/_edit_lock_ = true
+
+[node name="BwSalviniaStripTile34" parent="Props" index="37" unique_id=1949065843 instance=ExtResource("24_m252p")]
+position = Vector2(378, -6)
+metadata/_edit_lock_ = true
+
+[node name="BwSalviniaStripTile35" parent="Props" index="38" unique_id=1599667549 instance=ExtResource("24_m252p")]
+position = Vector2(348, -6)
+metadata/_edit_lock_ = true
+
+[node name="BwSalviniaStripTile36" parent="Props" index="39" unique_id=1482492811 instance=ExtResource("24_m252p")]
+position = Vector2(317, -5)
+metadata/_edit_lock_ = true
+
+[node name="BwSeedPod" parent="Props" index="40" unique_id=2015965538 instance=ExtResource("25_8btqu")]
+position = Vector2(157, 411)
+metadata/_edit_lock_ = true
+
+[node name="BwSproutsS" parent="Props" index="41" unique_id=1305288873 instance=ExtResource("26_n3bor")]
+position = Vector2(129, 349)
+metadata/_edit_lock_ = true
+
+[node name="BwSproutsS2" parent="Props" index="42" unique_id=604725789 instance=ExtResource("26_n3bor")]
+position = Vector2(146, 349)
+metadata/_edit_lock_ = true
+
+[node name="BwSproutsS3" parent="Props" index="43" unique_id=374757083 instance=ExtResource("26_n3bor")]
+position = Vector2(113, 347)
+metadata/_edit_lock_ = true
+
+[node name="BwSproutsS4" parent="Props" index="44" unique_id=1006146147 instance=ExtResource("26_n3bor")]
+position = Vector2(442, 349)
+metadata/_edit_lock_ = true
+
+[node name="BwSproutsS5" parent="Props" index="45" unique_id=1158394039 instance=ExtResource("26_n3bor")]
+position = Vector2(456, 350)
+metadata/_edit_lock_ = true
+
+[node name="BwSproutsS6" parent="Props" index="46" unique_id=1884612199 instance=ExtResource("26_n3bor")]
+position = Vector2(465, 349)
+metadata/_edit_lock_ = true
+
+[node name="BwTwigs" parent="Props" index="47" unique_id=1179902130 instance=ExtResource("27_lk626")]
+position = Vector2(226, 403)
+metadata/_edit_lock_ = true
+
+[node name="BwTwigs2" parent="Props" index="48" unique_id=1500392236 instance=ExtResource("27_lk626")]
+position = Vector2(330, 404)
+metadata/_edit_lock_ = true
+
+[node name="BwTwigs3" parent="Props" index="49" unique_id=211945423 instance=ExtResource("27_lk626")]
+position = Vector2(457, 405)
+metadata/_edit_lock_ = true
+
+[node name="BwTwigs4" parent="Props" index="50" unique_id=725604863 instance=ExtResource("27_lk626")]
+position = Vector2(16, 411)
+metadata/_edit_lock_ = true
+
+[node name="BwTwigs5" parent="Props" index="51" unique_id=839231846 instance=ExtResource("27_lk626")]
+position = Vector2(541, 391)
+metadata/_edit_lock_ = true
+
+[node name="Fg" parent="." index="6" unique_id=1713686165]
+scroll_offset = Vector2(43, 38)
+metadata/_edit_lock_ = true

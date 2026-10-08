@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://boo8hqxujdogn"]
+
+[ext_resource type="Texture2D" uid="uid://x0swgh1pbnwu" path="res://assets/environments/freshwater/blackwater/decoration/rocks/bw_dark_stone_moss.png" id="1_tex"]
+
+[node name="BwDarkStoneMoss" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-20, -27)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-19, -6, -19, -5, -18, -5, -18, -3, -17, -3, -17, -2, -16, -2, -16, -1, 16, -1, 16, -2, 17, -2, 17, -4, 18, -4, 18, -5, 19, -5, 19, -6)

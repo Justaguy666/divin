@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://ckwf7dfqkf87e"]
+
+[ext_resource type="PackedScene" uid="uid://ec1pk0evjj5d" path="res://scenes/environment/freshwater/blackwater/blackwater.tscn" id="1_mjtba"]
+[ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_vg0bc"]
+[ext_resource type="PackedScene" uid="uid://hr2lpnh51cmu" path="res://scenes/creatures/freshwater/blackwater/bw_altum_angelfish.tscn" id="3_wb44x"]
+[ext_resource type="PackedScene" uid="uid://gr01y0xun8eg" path="res://scenes/creatures/freshwater/blackwater/bw_apistogramma.tscn" id="4_pjnas"]
+[ext_resource type="PackedScene" uid="uid://g0qaq7wganan" path="res://scenes/creatures/freshwater/blackwater/bw_apple_snail.tscn" id="5_rfp6q"]
+[ext_resource type="PackedScene" uid="uid://h38mr82g51ot" path="res://scenes/creatures/freshwater/blackwater/bw_cardinal_tetra.tscn" id="6_ubfot"]
+[ext_resource type="PackedScene" uid="uid://gv2i24vxn54s" path="res://scenes/creatures/freshwater/blackwater/bw_discus.tscn" id="7_m6jr7"]
+[ext_resource type="PackedScene" uid="uid://fo7skmpkyvnj" path="res://scenes/creatures/freshwater/blackwater/bw_farlowella.tscn" id="8_73n7j"]
+[ext_resource type="PackedScene" uid="uid://guksrkdil0e5" path="res://scenes/creatures/freshwater/blackwater/bw_freshwater_stingray.tscn" id="9_ty07h"]
+[ext_resource type="PackedScene" uid="uid://eh2siiaugkjo" path="res://scenes/creatures/freshwater/blackwater/bw_marbled_hatchetfish.tscn" id="10_51q7r"]
+[ext_resource type="PackedScene" uid="uid://g6pw00mh47ix" path="res://scenes/creatures/freshwater/blackwater/bw_pencilfish.tscn" id="11_7vkub"]
+[ext_resource type="PackedScene" uid="uid://hvcjso44lxa3" path="res://scenes/creatures/freshwater/blackwater/bw_sterbai_cory.tscn" id="12_er1b0"]
+
+[node name="BwAquarium" type="Node2D" unique_id=770412284]
+
+[node name="Blackwater" parent="." unique_id=90168738 instance=ExtResource("1_mjtba")]
+
+[node name="AquariumCamera" type="Camera2D" parent="." unique_id=1716731383]
+position = Vector2(288, 216)
+script = ExtResource("2_vg0bc")
+
+[node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="BwAltumAngelfish" parent="Creatures" unique_id=1782019148 instance=ExtResource("3_wb44x")]
+
+[node name="BwApistogramma" parent="Creatures" unique_id=181284769 instance=ExtResource("4_pjnas")]
+
+[node name="BwAppleSnail" parent="Creatures" unique_id=1905958987 instance=ExtResource("5_rfp6q")]
+
+[node name="BwCardinalTetra" parent="Creatures" unique_id=1248031896 instance=ExtResource("6_ubfot")]
+
+[node name="BwDiscus" parent="Creatures" unique_id=1481858626 instance=ExtResource("7_m6jr7")]
+
+[node name="BwFarlowella" parent="Creatures" unique_id=1943192623 instance=ExtResource("8_73n7j")]
+
+[node name="BwFreshwaterStingray" parent="Creatures" unique_id=1985142559 instance=ExtResource("9_ty07h")]
+
+[node name="BwMarbledHatchetfish" parent="Creatures" unique_id=1990184243 instance=ExtResource("10_51q7r")]
+
+[node name="BwPencilfish" parent="Creatures" unique_id=81961477 instance=ExtResource("11_7vkub")]
+
+[node name="BwSterbaiCory" parent="Creatures" unique_id=1796886008 instance=ExtResource("12_er1b0")]
+
+[node name="Food" type="Node2D" parent="." unique_id=191782434]
+
+[node name="Effects" type="Node2D" parent="." unique_id=1755907393]
