@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://6fit3ruyfde8"]
+
+[ext_resource type="Texture2D" uid="uid://cav2i6qxaxyuh" path="res://assets/environments/freshwater/blackwater/decoration/misc/bw_cork_bark.png" id="1_tex"]
+
+[node name="BwCorkBark" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-24, -15)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-23, -6, -23, -2, -22, -2, -22, -1, 22, -1, 22, -2, 23, -2, 23, -6)

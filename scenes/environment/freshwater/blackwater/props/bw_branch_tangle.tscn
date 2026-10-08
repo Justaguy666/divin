@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://cj4gtqv2w018e"]
+
+[ext_resource type="Texture2D" uid="uid://cohai3poh3vbi" path="res://assets/environments/freshwater/blackwater/vegetation/roots/bw_branch_tangle.png" id="1_tex"]
+
+[node name="BwBranchTangle" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-59, -89)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-58, -6, -58, -5, -57, -5, -57, -4, -56, -4, -56, -2, -55, -2, -55, -1, 28, -1, 28, -2, 31, -2, 31, -3, 54, -3, 54, -4, 55, -4, 55, -6)

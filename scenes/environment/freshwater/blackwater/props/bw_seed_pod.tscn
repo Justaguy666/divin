@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cvrjlf3qtysxk"]
+
+[ext_resource type="Texture2D" uid="uid://du1eonwa10i1i" path="res://assets/environments/freshwater/blackwater/decoration/debris/bw_seed_pod.png" id="1_tex"]
+
+[node name="BwSeedPod" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-9, -19)

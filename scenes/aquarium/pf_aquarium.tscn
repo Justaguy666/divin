@@ -1,0 +1,133 @@
+[gd_scene format=3 uid="uid://cab6r8j3lyjum"]
+
+[ext_resource type="PackedScene" uid="uid://dtfq88khok2yw" path="res://scenes/environment/freshwater/planted_freshwater/planted_freshwater.tscn" id="1_kxf20"]
+[ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_feubu"]
+[ext_resource type="PackedScene" uid="uid://ck2ptxtanuqre" path="res://scenes/creatures/freshwater/planted_freshwater/pf_cherry_shrimp.tscn" id="3_yi3oq"]
+[ext_resource type="PackedScene" uid="uid://bgemc4kqtisof" path="res://scenes/creatures/freshwater/planted_freshwater/pf_mystery_snail.tscn" id="4_diytc"]
+[ext_resource type="PackedScene" uid="uid://ddx4bknnhr5bw" path="res://scenes/creatures/freshwater/planted_freshwater/pf_neon_tetra.tscn" id="5_yb4ch"]
+[ext_resource type="PackedScene" uid="uid://dnn74xscp5rva" path="res://scenes/creatures/freshwater/planted_freshwater/pf_amano_shrimp.tscn" id="6_6dvjd"]
+[ext_resource type="PackedScene" uid="uid://dswmqt7415xo0" path="res://scenes/creatures/freshwater/planted_freshwater/pf_angelfish.tscn" id="7_irk32"]
+[ext_resource type="PackedScene" uid="uid://shx6ggiyeiwi" path="res://scenes/creatures/freshwater/planted_freshwater/pf_harlequin_rasbora.tscn" id="8_qu7cg"]
+[ext_resource type="PackedScene" uid="uid://dr2pk0gwwxdbb" path="res://scenes/creatures/freshwater/planted_freshwater/pf_panda_cory.tscn" id="9_ei5vp"]
+[ext_resource type="PackedScene" uid="uid://cjyrlf3yaolq" path="res://scenes/creatures/freshwater/planted_freshwater/pf_betta.tscn" id="10_betta"]
+[ext_resource type="PackedScene" uid="uid://ce7lhhkjj16" path="res://scenes/creatures/freshwater/planted_freshwater/pf_rummy_nose_tetra.tscn" id="11_rummy"]
+[ext_resource type="PackedScene" uid="uid://dy4km4c5d4vg" path="res://scenes/creatures/freshwater/planted_freshwater/pf_honey_gourami.tscn" id="12_honey"]
+[ext_resource type="PackedScene" uid="uid://h5r7uubjpvmj" path="res://scenes/creatures/freshwater/planted_freshwater/pf_guppy.tscn" id="13_guppy"]
+[ext_resource type="PackedScene" uid="uid://cgqlvavxqw77" path="res://scenes/creatures/freshwater/planted_freshwater/pf_kuhli_loach.tscn" id="14_kuhli"]
+[ext_resource type="PackedScene" uid="uid://eg0hya2l1aem" path="res://scenes/creatures/freshwater/planted_freshwater/pf_otocinclus.tscn" id="15_otoci"]
+[ext_resource type="PackedScene" uid="uid://eivpltnv4s6j" path="res://scenes/creatures/freshwater/planted_freshwater/pf_nerite_snail.tscn" id="16_nerit"]
+[ext_resource type="PackedScene" uid="uid://f11m7tuaif3t" path="res://scenes/creatures/freshwater/planted_freshwater/pf_celestial_pearl_danio.tscn" id="17_celest"]
+[ext_resource type="PackedScene" uid="uid://gpedp0l67cda" path="res://scenes/creatures/freshwater/planted_freshwater/pf_cherry_barb.tscn" id="18_cherry"]
+[ext_resource type="PackedScene" uid="uid://cnqyovmldiaa" path="res://scenes/creatures/freshwater/planted_freshwater/pf_pearl_gourami.tscn" id="19_pearl_"]
+[ext_resource type="PackedScene" uid="uid://gr0ub2ys05w3" path="res://scenes/creatures/freshwater/planted_freshwater/pf_ember_tetra.tscn" id="20_ember_"]
+[ext_resource type="PackedScene" uid="uid://ck6ko05vne5y" path="res://scenes/creatures/freshwater/planted_freshwater/pf_bristlenose_pleco.tscn" id="21_bristl"]
+[ext_resource type="PackedScene" uid="uid://wqvonlxx4be" path="res://scenes/creatures/freshwater/planted_freshwater/pf_ghost_shrimp.tscn" id="22_ghost_"]
+[ext_resource type="PackedScene" uid="uid://cu6lknqc8ish" path="res://scenes/creatures/freshwater/planted_freshwater/pf_ramshorn_snail.tscn" id="23_ramsho"]
+
+[node name="PfAquarium" type="Node2D" unique_id=770412284]
+
+[node name="PlantedFreshwater" parent="." unique_id=90168738 instance=ExtResource("1_kxf20")]
+
+[node name="AquariumCamera" type="Camera2D" parent="." unique_id=1716731383]
+position = Vector2(288, 216)
+script = ExtResource("2_feubu")
+
+[node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="PfCherryShrimp" parent="Creatures" unique_id=1905958987 instance=ExtResource("3_yi3oq")]
+
+[node name="PfCherryShrimp2" parent="Creatures" unique_id=338532754 instance=ExtResource("3_yi3oq")]
+
+[node name="PfMysterySnail" parent="Creatures" unique_id=708294312 instance=ExtResource("4_diytc")]
+animation_names = []
+
+[node name="PfMysterySnail2" parent="Creatures" unique_id=1388667410 instance=ExtResource("4_diytc")]
+animation_names = []
+
+[node name="PfNeonTetra5" parent="Creatures" unique_id=2130562975 instance=ExtResource("5_yb4ch")]
+animation_names = []
+
+[node name="PfNeonTetra6" parent="Creatures" unique_id=1638132866 instance=ExtResource("5_yb4ch")]
+animation_names = []
+
+[node name="PfAmanoShrimp" parent="Creatures" unique_id=1541098811 instance=ExtResource("6_6dvjd")]
+animation_names = []
+
+[node name="PfAngelfish" parent="Creatures" unique_id=1782019148 instance=ExtResource("7_irk32")]
+animation_names = []
+
+[node name="PfHarlequinRasbora" parent="Creatures" unique_id=563291140 instance=ExtResource("8_qu7cg")]
+animation_names = []
+
+[node name="PfPandaCory" parent="Creatures" unique_id=19878357 instance=ExtResource("9_ei5vp")]
+move_time = Vector2(6, 10)
+
+[node name="PfBetta" parent="Creatures" unique_id=559762203 instance=ExtResource("10_betta")]
+
+[node name="PfRummyNoseTetra" parent="Creatures" unique_id=466992753 instance=ExtResource("11_rummy")]
+
+[node name="PfRummyNoseTetra2" parent="Creatures" unique_id=475335938 instance=ExtResource("11_rummy")]
+
+[node name="PfRummyNoseTetra3" parent="Creatures" unique_id=133069906 instance=ExtResource("11_rummy")]
+
+[node name="PfHoneyGourami" parent="Creatures" unique_id=1383442222 instance=ExtResource("12_honey")]
+
+[node name="PfHoneyGourami2" parent="Creatures" unique_id=288236821 instance=ExtResource("12_honey")]
+
+[node name="PfGuppy" parent="Creatures" unique_id=695071290 instance=ExtResource("13_guppy")]
+
+[node name="PfGuppy2" parent="Creatures" unique_id=1040615441 instance=ExtResource("13_guppy")]
+
+[node name="PfGuppy3" parent="Creatures" unique_id=2134205120 instance=ExtResource("13_guppy")]
+
+[node name="PfKuhliLoach" parent="Creatures" unique_id=1673933725 instance=ExtResource("14_kuhli")]
+position = Vector2(186, 0)
+
+[node name="PfKuhliLoach2" parent="Creatures" unique_id=1245968027 instance=ExtResource("14_kuhli")]
+position = Vector2(366, 0)
+
+[node name="PfOtocinclus" parent="Creatures" unique_id=211150204 instance=ExtResource("15_otoci")]
+position = Vector2(246, 0)
+
+[node name="PfOtocinclus2" parent="Creatures" unique_id=1763745725 instance=ExtResource("15_otoci")]
+position = Vector2(426, 0)
+
+[node name="PfNeriteSnail" parent="Creatures" unique_id=105118086 instance=ExtResource("16_nerit")]
+position = Vector2(156, 0)
+
+[node name="PfNeriteSnail2" parent="Creatures" unique_id=1114931146 instance=ExtResource("16_nerit")]
+position = Vector2(336, 0)
+
+[node name="PfCelestialPearlDanio" parent="Creatures" unique_id=356998610 instance=ExtResource("17_celest")]
+
+[node name="PfCelestialPearlDanio2" parent="Creatures" unique_id=536697912 instance=ExtResource("17_celest")]
+
+[node name="PfCelestialPearlDanio3" parent="Creatures" unique_id=257418125 instance=ExtResource("17_celest")]
+
+[node name="PfCherryBarb" parent="Creatures" unique_id=803986443 instance=ExtResource("18_cherry")]
+
+[node name="PfCherryBarb2" parent="Creatures" unique_id=128784368 instance=ExtResource("18_cherry")]
+
+[node name="PfCherryBarb3" parent="Creatures" unique_id=1434128901 instance=ExtResource("18_cherry")]
+
+[node name="PfPearlGourami" parent="Creatures" unique_id=1228857623 instance=ExtResource("19_pearl_")]
+
+[node name="PfEmberTetra" parent="Creatures" unique_id=1662828701 instance=ExtResource("20_ember_")]
+
+[node name="PfEmberTetra2" parent="Creatures" unique_id=1570985316 instance=ExtResource("20_ember_")]
+
+[node name="PfEmberTetra3" parent="Creatures" unique_id=1262388305 instance=ExtResource("20_ember_")]
+
+[node name="PfBristlenosePleco" parent="Creatures" unique_id=2060621785 instance=ExtResource("21_bristl")]
+
+[node name="PfGhostShrimp" parent="Creatures" unique_id=1459619718 instance=ExtResource("22_ghost_")]
+
+[node name="PfGhostShrimp2" parent="Creatures" unique_id=811597424 instance=ExtResource("22_ghost_")]
+
+[node name="PfRamshornSnail" parent="Creatures" unique_id=1419977748 instance=ExtResource("23_ramsho")]
+
+[node name="PfRamshornSnail2" parent="Creatures" unique_id=1021890262 instance=ExtResource("23_ramsho")]
+
+[node name="Food" type="Node2D" parent="." unique_id=191782434]
+
+[node name="Effects" type="Node2D" parent="." unique_id=1755907393]
