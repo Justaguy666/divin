@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://calrfrt0hh0kk" path="res://assets/environments/freshwater/bayou/vegetation/roots/by_cypress_root_flare.png" id="1_tex"]
+
+[node name="ByCypressRootFlare" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-49, -23)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-46, -6, -46, -5, -47, -5, -47, -4, -48, -4, -48, -3, -45, -3, -45, -2, -44, -2, -44, -1, 44, -1, 44, -2, 45, -2, 45, -3, 48, -3, 48, -4, 47, -4, 47, -5, 46, -5, 46, -6)

@@ -2,6 +2,46 @@
 
 [ext_resource type="PackedScene" path="res://scenes/environment/freshwater/bayou/bayou.tscn" id="1_env"]
 [ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_cam"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_western_mosquitofish.tscn" id="3_wester"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_least_killifish.tscn" id="4_least_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_golden_topminnow.tscn" id="5_golden"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_blackstripe_topminnow.tscn" id="6_blacks"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_bluefin_killifish.tscn" id="7_bluefi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_rainwater_killifish.tscn" id="8_rainwa"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_taillight_shiner.tscn" id="9_tailli"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_pugnose_minnow.tscn" id="10_pugnos"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_bantam_sunfish.tscn" id="11_bantam"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_cypress_darter.tscn" id="12_cypres"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_brook_silverside.tscn" id="13_brook_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_threadfin_shad.tscn" id="14_thread"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_bluegill.tscn" id="15_bluegi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_redear_sunfish.tscn" id="16_redear"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_warmouth.tscn" id="17_warmou"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_flier.tscn" id="18_flier"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_white_crappie.tscn" id="19_white_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_largemouth_bass.tscn" id="20_largem"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_pirate_perch.tscn" id="21_pirate"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_central_mudminnow.tscn" id="22_centra"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_channel_catfish.tscn" id="23_channe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_freshwater_drum.tscn" id="24_freshw"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_spotted_gar.tscn" id="25_spotte"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_longnose_gar.tscn" id="26_longno"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_alligator_gar.tscn" id="27_alliga"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_bowfin.tscn" id="28_bowfin"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_paddlefish.tscn" id="29_paddle"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_flathead_catfish.tscn" id="30_flathe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_bigmouth_buffalo.tscn" id="31_bigmou"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_american_alligator.tscn" id="32_americ"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_red_swamp_crawfish.tscn" id="33_red_sw"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_alligator_snapping_turtle.tscn" id="34_alliga"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_common_musk_turtle.tscn" id="35_common"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_three_toed_amphiuma.tscn" id="36_three_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_lesser_siren.tscn" id="37_lesser"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_mississippi_grass_shrimp.tscn" id="38_missis"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_giant_water_bug.tscn" id="39_giant_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_tadpole_madtom.tscn" id="40_tadpol"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_hogchoker.tscn" id="41_hogcho"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_blue_crab.tscn" id="42_blue_c"]
 
 [node name="ByAquarium" type="Node2D" unique_id=770412284]
 
@@ -12,6 +52,228 @@ position = Vector2(320, 180)
 script = ExtResource("2_cam")
 
 [node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="ByWesternMosquitofish" parent="Creatures" unique_id=1109130909 instance=ExtResource("3_wester")]
+position = Vector2(106.7, 48.2)
+
+[node name="ByWesternMosquitofish2" parent="Creatures" unique_id=1908632805 instance=ExtResource("3_wester")]
+position = Vector2(402.4, 78.8)
+
+[node name="ByWesternMosquitofish3" parent="Creatures" unique_id=1205201396 instance=ExtResource("3_wester")]
+position = Vector2(165.0, 54.9)
+
+[node name="ByWesternMosquitofish4" parent="Creatures" unique_id=1819043942 instance=ExtResource("3_wester")]
+position = Vector2(275.5, 52.9)
+
+[node name="ByLeastKillifish" parent="Creatures" unique_id=1622815966 instance=ExtResource("4_least_")]
+position = Vector2(449.1, 90.2)
+
+[node name="ByLeastKillifish2" parent="Creatures" unique_id=15443529 instance=ExtResource("4_least_")]
+position = Vector2(472.9, 59.5)
+
+[node name="ByLeastKillifish3" parent="Creatures" unique_id=1763981654 instance=ExtResource("4_least_")]
+position = Vector2(384.0, 28.4)
+
+[node name="ByGoldenTopminnow" parent="Creatures" unique_id=1923329923 instance=ExtResource("5_golden")]
+position = Vector2(94.9, 14.8)
+
+[node name="ByGoldenTopminnow2" parent="Creatures" unique_id=461454016 instance=ExtResource("5_golden")]
+position = Vector2(423.7, 60.2)
+
+[node name="ByGoldenTopminnow3" parent="Creatures" unique_id=775870089 instance=ExtResource("5_golden")]
+position = Vector2(262.4, 37.6)
+
+[node name="ByBlackstripeTopminnow" parent="Creatures" unique_id=1112920858 instance=ExtResource("6_blacks")]
+position = Vector2(490.9, 92.0)
+
+[node name="ByBlackstripeTopminnow2" parent="Creatures" unique_id=202554048 instance=ExtResource("6_blacks")]
+position = Vector2(397.1, 70.4)
+
+[node name="ByBlackstripeTopminnow3" parent="Creatures" unique_id=992361665 instance=ExtResource("6_blacks")]
+position = Vector2(352.2, 36.8)
+
+[node name="ByBluefinKillifish" parent="Creatures" unique_id=1548490248 instance=ExtResource("7_bluefi")]
+position = Vector2(118.9, 95.1)
+
+[node name="ByBluefinKillifish2" parent="Creatures" unique_id=1536565232 instance=ExtResource("7_bluefi")]
+position = Vector2(363.4, 30.6)
+
+[node name="ByBluefinKillifish3" parent="Creatures" unique_id=204742841 instance=ExtResource("7_bluefi")]
+position = Vector2(246.6, 76.0)
+
+[node name="ByRainwaterKillifish" parent="Creatures" unique_id=1080424140 instance=ExtResource("8_rainwa")]
+position = Vector2(263.3, 94.8)
+
+[node name="ByRainwaterKillifish2" parent="Creatures" unique_id=1733461376 instance=ExtResource("8_rainwa")]
+position = Vector2(525.6, 76.5)
+
+[node name="ByRainwaterKillifish3" parent="Creatures" unique_id=1064480422 instance=ExtResource("8_rainwa")]
+position = Vector2(460.1, 96.4)
+
+[node name="ByTaillightShiner" parent="Creatures" unique_id=1823502072 instance=ExtResource("9_tailli")]
+position = Vector2(263.0, 103.1)
+
+[node name="ByTaillightShiner2" parent="Creatures" unique_id=1039052623 instance=ExtResource("9_tailli")]
+position = Vector2(275.2, 152.9)
+
+[node name="ByTaillightShiner3" parent="Creatures" unique_id=1245911712 instance=ExtResource("9_tailli")]
+position = Vector2(327.3, 137.8)
+
+[node name="ByPugnoseMinnow" parent="Creatures" unique_id=114985539 instance=ExtResource("10_pugnos")]
+position = Vector2(165.7, 64.0)
+
+[node name="ByPugnoseMinnow2" parent="Creatures" unique_id=1449851399 instance=ExtResource("10_pugnos")]
+position = Vector2(579.1, 112.9)
+
+[node name="ByPugnoseMinnow3" parent="Creatures" unique_id=1019403914 instance=ExtResource("10_pugnos")]
+position = Vector2(97.4, 125.2)
+
+[node name="ByBantamSunfish" parent="Creatures" unique_id=1834563884 instance=ExtResource("11_bantam")]
+position = Vector2(119.8, 187.7)
+
+[node name="ByBantamSunfish2" parent="Creatures" unique_id=990962682 instance=ExtResource("11_bantam")]
+position = Vector2(536.1, 155.7)
+
+[node name="ByCypressDarter" parent="Creatures" unique_id=1181736371 instance=ExtResource("12_cypres")]
+position = Vector2(417.6, 225.2)
+
+[node name="ByCypressDarter2" parent="Creatures" unique_id=670624554 instance=ExtResource("12_cypres")]
+position = Vector2(180.6, 208.9)
+
+[node name="ByBrookSilverside" parent="Creatures" unique_id=1509638417 instance=ExtResource("13_brook_")]
+position = Vector2(347.0, 50.8)
+
+[node name="ByBrookSilverside2" parent="Creatures" unique_id=940003948 instance=ExtResource("13_brook_")]
+position = Vector2(308.2, 65.1)
+
+[node name="ByBrookSilverside3" parent="Creatures" unique_id=29921982 instance=ExtResource("13_brook_")]
+position = Vector2(153.4, 61.9)
+
+[node name="ByBrookSilverside4" parent="Creatures" unique_id=1292634459 instance=ExtResource("13_brook_")]
+position = Vector2(58.5, 51.3)
+
+[node name="ByThreadfinShad" parent="Creatures" unique_id=1061230891 instance=ExtResource("14_thread")]
+position = Vector2(578.0, 127.6)
+
+[node name="ByThreadfinShad2" parent="Creatures" unique_id=1497450111 instance=ExtResource("14_thread")]
+position = Vector2(241.6, 52.8)
+
+[node name="ByThreadfinShad3" parent="Creatures" unique_id=1784194105 instance=ExtResource("14_thread")]
+position = Vector2(311.9, 91.4)
+
+[node name="ByThreadfinShad4" parent="Creatures" unique_id=1435709118 instance=ExtResource("14_thread")]
+position = Vector2(318.4, 81.8)
+
+[node name="ByBluegill" parent="Creatures" unique_id=690015955 instance=ExtResource("15_bluegi")]
+position = Vector2(548.1, 169.4)
+
+[node name="ByBluegill2" parent="Creatures" unique_id=951566439 instance=ExtResource("15_bluegi")]
+position = Vector2(296.3, 166.8)
+
+[node name="ByRedearSunfish" parent="Creatures" unique_id=1116326317 instance=ExtResource("16_redear")]
+position = Vector2(426.0, 195.4)
+
+[node name="ByRedearSunfish2" parent="Creatures" unique_id=403094368 instance=ExtResource("16_redear")]
+position = Vector2(184.9, 212.3)
+
+[node name="ByWarmouth" parent="Creatures" unique_id=1038958731 instance=ExtResource("17_warmou")]
+position = Vector2(581.7, 209.8)
+
+[node name="ByFlier" parent="Creatures" unique_id=1949743989 instance=ExtResource("18_flier")]
+position = Vector2(566.5, 134.9)
+
+[node name="ByFlier2" parent="Creatures" unique_id=1615354225 instance=ExtResource("18_flier")]
+position = Vector2(319.1, 61.0)
+
+[node name="ByWhiteCrappie" parent="Creatures" unique_id=1978127322 instance=ExtResource("19_white_")]
+position = Vector2(519.7, 67.6)
+
+[node name="ByWhiteCrappie2" parent="Creatures" unique_id=1256914894 instance=ExtResource("19_white_")]
+position = Vector2(47.9, 48.0)
+
+[node name="ByLargemouthBass" parent="Creatures" unique_id=1320252184 instance=ExtResource("20_largem")]
+position = Vector2(346.1, 176.8)
+
+[node name="ByPiratePerch" parent="Creatures" unique_id=1343747693 instance=ExtResource("21_pirate")]
+position = Vector2(484.5, 193.4)
+
+[node name="ByCentralMudminnow" parent="Creatures" unique_id=586677607 instance=ExtResource("22_centra")]
+position = Vector2(65.0, 222.0)
+
+[node name="ByChannelCatfish" parent="Creatures" unique_id=342346521 instance=ExtResource("23_channe")]
+position = Vector2(414.3, 230.9)
+
+[node name="ByFreshwaterDrum" parent="Creatures" unique_id=1243264613 instance=ExtResource("24_freshw")]
+position = Vector2(42.9, 210.5)
+
+[node name="BySpottedGar" parent="Creatures" unique_id=1066538156 instance=ExtResource("25_spotte")]
+position = Vector2(470.9, 145.8)
+
+[node name="ByLongnoseGar" parent="Creatures" unique_id=1182104329 instance=ExtResource("26_longno")]
+position = Vector2(426.3, 124.9)
+
+[node name="ByAlligatorGar" parent="Creatures" unique_id=1294488164 instance=ExtResource("27_alliga")]
+position = Vector2(164.8, 152.7)
+
+[node name="ByBowfin" parent="Creatures" unique_id=191318940 instance=ExtResource("28_bowfin")]
+position = Vector2(530.6, 197.9)
+
+[node name="ByPaddlefish" parent="Creatures" unique_id=300653602 instance=ExtResource("29_paddle")]
+position = Vector2(274.0, 87.9)
+
+[node name="ByFlatheadCatfish" parent="Creatures" unique_id=667139295 instance=ExtResource("30_flathe")]
+position = Vector2(478.7, 241.8)
+
+[node name="ByBigmouthBuffalo" parent="Creatures" unique_id=328979278 instance=ExtResource("31_bigmou")]
+position = Vector2(324.3, 164.7)
+
+[node name="ByAmericanAlligator" parent="Creatures" unique_id=40347965 instance=ExtResource("32_americ")]
+position = Vector2(331.2, 16.7)
+
+[node name="ByRedSwampCrawfish" parent="Creatures" unique_id=846118410 instance=ExtResource("33_red_sw")]
+position = Vector2(586.1, 267.1)
+
+[node name="ByRedSwampCrawfish2" parent="Creatures" unique_id=120327760 instance=ExtResource("33_red_sw")]
+position = Vector2(544.9, 267.1)
+
+[node name="ByAlligatorSnappingTurtle" parent="Creatures" unique_id=1397859509 instance=ExtResource("34_alliga")]
+position = Vector2(513.6, 267.1)
+
+[node name="ByCommonMuskTurtle" parent="Creatures" unique_id=1662561109 instance=ExtResource("35_common")]
+position = Vector2(235.0, 267.1)
+
+[node name="ByThreeToedAmphiuma" parent="Creatures" unique_id=64937544 instance=ExtResource("36_three_")]
+position = Vector2(578.1, 267.1)
+
+[node name="ByLesserSiren" parent="Creatures" unique_id=713859355 instance=ExtResource("37_lesser")]
+position = Vector2(326.0, 267.1)
+
+[node name="ByMississippiGrassShrimp" parent="Creatures" unique_id=976669115 instance=ExtResource("38_missis")]
+position = Vector2(426.0, 267.1)
+
+[node name="ByMississippiGrassShrimp2" parent="Creatures" unique_id=270646204 instance=ExtResource("38_missis")]
+position = Vector2(219.1, 267.1)
+
+[node name="ByMississippiGrassShrimp3" parent="Creatures" unique_id=1011978954 instance=ExtResource("38_missis")]
+position = Vector2(318.6, 267.1)
+
+[node name="ByGiantWaterBug" parent="Creatures" unique_id=1738592513 instance=ExtResource("39_giant_")]
+position = Vector2(361.5, 267.1)
+
+[node name="ByTadpoleMadtom" parent="Creatures" unique_id=1279725117 instance=ExtResource("40_tadpol")]
+position = Vector2(129.0, 267.1)
+
+[node name="ByTadpoleMadtom2" parent="Creatures" unique_id=941165154 instance=ExtResource("40_tadpol")]
+position = Vector2(331.4, 267.1)
+
+[node name="ByHogchoker" parent="Creatures" unique_id=995302549 instance=ExtResource("41_hogcho")]
+position = Vector2(391.5, 267.1)
+
+[node name="ByBlueCrab" parent="Creatures" unique_id=1467064010 instance=ExtResource("42_blue_c")]
+position = Vector2(377.0, 267.1)
+
+[node name="ByBlueCrab2" parent="Creatures" unique_id=1185433667 instance=ExtResource("42_blue_c")]
+position = Vector2(442.3, 267.1)
 
 [node name="Food" type="Node2D" parent="." unique_id=191782434]
 

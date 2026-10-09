@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://cpuostxvyri4m" path="res://assets/environments/freshwater/bayou/vegetation/plants/by_spatterdock_underwater.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://cvo60uvkuyu08" path="res://game/environment/swaying_plant.gd" id="2_sway"]
+
+[node name="BySpatterdockUnderwater" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-19, -32)
+script = ExtResource("2_sway")
+max_angle = 0.05

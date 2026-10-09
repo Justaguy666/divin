@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://chccje3lyigbx" path="res://assets/environments/freshwater/bayou/decoration/rocks/by_clay_clod_small.png" id="1_tex"]
+
+[node name="ByClayClodSmall" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-12, -15)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-11, -6, -11, -5, -10, -5, -10, -4, -9, -4, -9, -3, -8, -3, -8, -2, -7, -2, -7, -1, 8, -1, 8, -2, 9, -2, 9, -3, 10, -3, 10, -6)
