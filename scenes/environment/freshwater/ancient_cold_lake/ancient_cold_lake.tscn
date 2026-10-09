@@ -19,7 +19,6 @@
 [ext_resource type="PackedScene" path="res://scenes/environment/freshwater/ancient_cold_lake/props/ac_lubomirskia_sponge_large.tscn" id="17_8266i"]
 [ext_resource type="PackedScene" path="res://scenes/environment/freshwater/ancient_cold_lake/props/ac_lubomirskia_sponge_small.tscn" id="18_lcbcy"]
 [ext_resource type="PackedScene" path="res://scenes/environment/freshwater/ancient_cold_lake/props/ac_sponge_crusted_rock.tscn" id="19_t0vae"]
-[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/ancient_cold_lake/props/ac_ulothrix_fringe_stone.tscn" id="20_5e8d8"]
 
 [node name="AncientColdLake" unique_id=90168738 instance=ExtResource("1_base")]
 
@@ -40,7 +39,7 @@ air_color = Color(0.769, 0.878, 0.929, 1)
 
 [node name="Ground" parent="." index="4" unique_id=1875096136]
 position = Vector2(96, 72)
-tile_map_data = PackedByteArray("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")
+tile_map_data = PackedByteArray("AADz/wYAAAAEAAAAAAD0/wYAAAABAAAAAAD1/wYAAAAEAAAAAAD2/wYAAAABAAAAAAD3/wYAAAABAAAAAAD4/wYAAAABAAAAAAD5/wYAAAABAAAAAAD6/wYAAAAEAAAAAAD7/wYAAAABAAAAAAD8/wYAAAABAAAAAAD9/wYAAAABAAAAAAD+/wYAAAABAAAAAAD//wYAAAABAAAAAAAAAAYAAAABAAAAAAABAAYAAAABAAAAAAACAAYAAAABAAAAAAADAAYAAAAEAAAAAAAEAAYAAAABAAAAAAAFAAYAAAABAAAAAAAGAAYAAAABAAAAAAAHAAYAAAABAAAAAAAIAAYAAAABAAAAAAAJAAYAAAABAAAAAAAKAAYAAAABAAAAAAALAAYAAAABAAAAAAAMAAYAAAABAAAAAAANAAYAAAABAAAAAAAOAAYAAAABAAAAAAAPAAYAAAABAAAAAAAQAAYAAAADAAAAAAARAAYAAAABAAAAAAASAAYAAAABAAAAAAATAAYAAAABAAAAAAAUAAYAAAABAAAAAAAVAAYAAAABAAAAAAAWAAYAAAABAAAAAAAXAAYAAAABAAAAAAAYAAYAAAADAAAAAAAZAAYAAAABAAAAAAAaAAYAAAABAAAAAAAbAAYAAAABAAAAAAD0/wcAAAAEAAEAAAD1/wcAAAABAAEAAAD2/wcAAAABAAEAAAD3/wcAAAAEAAEAAAD4/wcAAAABAAEAAAD5/wcAAAABAAEAAAD6/wcAAAABAAEAAAD7/wcAAAABAAEAAAD8/wcAAAAEAAEAAAD9/wcAAAABAAEAAAD+/wcAAAABAAEAAAD//wcAAAABAAEAAAAAAAcAAAABAAEAAAABAAcAAAABAAEAAAACAAcAAAAEAAEAAAADAAcAAAABAAEAAAAEAAcAAAABAAEAAAAFAAcAAAABAAEAAAAGAAcAAAABAAEAAAAHAAcAAAAEAAEAAAAIAAcAAAAEAAEAAAAJAAcAAAABAAEAAAAKAAcAAAADAAEAAAALAAcAAAABAAEAAAAMAAcAAAABAAEAAAANAAcAAAABAAEAAAAOAAcAAAABAAEAAAAPAAcAAAABAAEAAAAQAAcAAAABAAEAAAARAAcAAAABAAEAAAASAAcAAAABAAEAAAATAAcAAAABAAEAAAAUAAcAAAABAAEAAAAVAAcAAAABAAEAAAAWAAcAAAABAAEAAAAXAAcAAAADAAEAAAAYAAcAAAAEAAEAAAAZAAcAAAABAAEAAAAaAAcAAAABAAEAAAAbAAcAAAABAAEAAADz/wgAAAABAAIAAAD0/wgAAAABAAIAAAD1/wgAAAABAAIAAAD2/wgAAAABAAIAAAD3/wgAAAAEAAIAAAD4/wgAAAABAAIAAAD5/wgAAAAEAAIAAAD6/wgAAAABAAIAAAD7/wgAAAADAAIAAAD8/wgAAAADAAIAAAD9/wgAAAAEAAIAAAD+/wgAAAABAAIAAAD//wgAAAAEAAIAAAAAAAgAAAAEAAIAAAABAAgAAAABAAIAAAACAAgAAAABAAIAAAADAAgAAAADAAIAAAAEAAgAAAABAAIAAAAFAAgAAAABAAIAAAAGAAgAAAABAAIAAAAHAAgAAAADAAIAAAAIAAgAAAABAAIAAAAJAAgAAAAEAAIAAAAKAAgAAAABAAIAAAALAAgAAAABAAIAAAAMAAgAAAAEAAIAAAANAAgAAAABAAIAAAAOAAgAAAABAAIAAAAPAAgAAAADAAIAAAAQAAgAAAABAAIAAAARAAgAAAABAAIAAAASAAgAAAADAAIAAAATAAgAAAABAAIAAAAUAAgAAAAEAAIAAAAVAAgAAAABAAIAAAAWAAgAAAABAAIAAAAXAAgAAAABAAIAAAAYAAgAAAADAAIAAAAZAAgAAAABAAIAAAAaAAgAAAADAAIAAAAbAAgAAAABAAIAAADz/wkAAAADAAMAAAD0/wkAAAABAAMAAAD1/wkAAAABAAMAAAD2/wkAAAABAAMAAAD3/wkAAAABAAMAAAD4/wkAAAABAAMAAAD5/wkAAAABAAMAAAD6/wkAAAABAAMAAAD7/wkAAAAEAAMAAAD8/wkAAAABAAMAAAD9/wkAAAABAAMAAAD+/wkAAAADAAMAAAD//wkAAAABAAMAAAAAAAkAAAAEAAMAAAABAAkAAAABAAMAAAACAAkAAAAEAAMAAAADAAkAAAABAAMAAAAEAAkAAAABAAMAAAAFAAkAAAABAAMAAAAGAAkAAAABAAMAAAAHAAkAAAABAAMAAAAIAAkAAAABAAMAAAAJAAkAAAAEAAMAAAAKAAkAAAABAAMAAAALAAkAAAADAAMAAAAMAAkAAAABAAMAAAANAAkAAAADAAMAAAAOAAkAAAABAAMAAAAPAAkAAAABAAMAAAAQAAkAAAABAAMAAAARAAkAAAABAAMAAAASAAkAAAABAAMAAAATAAkAAAABAAMAAAAUAAkAAAADAAMAAAAVAAkAAAABAAMAAAAWAAkAAAABAAMAAAAXAAkAAAABAAMAAAAYAAkAAAABAAMAAAAZAAkAAAABAAMAAAAaAAkAAAABAAMAAAAbAAkAAAABAAMAAADz/wcAAAABAAEAAAA=")
 tile_set = ExtResource("5_tiles")
 
 [node name="FloorOverlay" parent="." index="5" unique_id=1541574459]
@@ -54,7 +53,7 @@ position = Vector2(491, 279)
 position = Vector2(678, 270)
 
 [node name="AcAncientLarchLog2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="2" unique_id=1011839272 instance=ExtResource("6_2uvf8")]
-position = Vector2(-109, 279)
+position = Vector2(-6, 271)
 
 [node name="AcBaicaliaShell" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="3" unique_id=78317920 instance=ExtResource("7_xwevl")]
 position = Vector2(-224, 328)
@@ -65,95 +64,80 @@ position = Vector2(101, 329)
 [node name="AcBoulderCaveHide" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="5" unique_id=1331793394 instance=ExtResource("9_llxts")]
 position = Vector2(370, 272)
 
-[node name="AcBoulderCaveHide2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="6" unique_id=1938448425 instance=ExtResource("9_llxts")]
-position = Vector2(-245, 270)
-
-[node name="AcColdWaterMoss" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="7" unique_id=921587801 instance=ExtResource("10_k8e46")]
+[node name="AcColdWaterMoss" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="6" unique_id=921587801 instance=ExtResource("10_k8e46")]
 position = Vector2(154, 270)
 
-[node name="AcColdWaterMoss2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="8" unique_id=68394395 instance=ExtResource("10_k8e46")]
+[node name="AcColdWaterMoss2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="7" unique_id=68394395 instance=ExtResource("10_k8e46")]
 position = Vector2(290, 276)
 
-[node name="AcColdWaterMoss3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="9" unique_id=1693828520 instance=ExtResource("10_k8e46")]
+[node name="AcColdWaterMoss3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="8" unique_id=1693828520 instance=ExtResource("10_k8e46")]
 position = Vector2(495, 276)
 
-[node name="AcColdWaterMoss4" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="10" unique_id=861317673 instance=ExtResource("10_k8e46")]
+[node name="AcColdWaterMoss4" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="9" unique_id=861317673 instance=ExtResource("10_k8e46")]
 position = Vector2(469, 278)
 
-[node name="AcColdWaterMoss5" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="11" unique_id=334040913 instance=ExtResource("10_k8e46")]
+[node name="AcColdWaterMoss5" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="10" unique_id=334040913 instance=ExtResource("10_k8e46")]
 position = Vector2(523, 278)
 
-[node name="AcDraparnaldiaTuft" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="12" unique_id=436307737 instance=ExtResource("11_a8lnu")]
-position = Vector2(22, 268)
+[node name="AcDraparnaldiaTuft3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="11" unique_id=1168023204 instance=ExtResource("11_a8lnu")]
+position = Vector2(-45, 265)
 
-[node name="AcDraparnaldiaTuft2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="13" unique_id=1670761103 instance=ExtResource("11_a8lnu")]
-position = Vector2(-17, 270)
+[node name="AcDraparnaldiaTuft4" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="12" unique_id=1445093324 instance=ExtResource("11_a8lnu")]
+position = Vector2(-11, 264)
 
-[node name="AcDraparnaldiaTuft3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="14" unique_id=1168023204 instance=ExtResource("11_a8lnu")]
-position = Vector2(-148, 273)
+[node name="AcDraparnaldiaTuft5" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="13" unique_id=534950157 instance=ExtResource("11_a8lnu")]
+position = Vector2(28, 258)
 
-[node name="AcDraparnaldiaTuft4" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="15" unique_id=1445093324 instance=ExtResource("11_a8lnu")]
-position = Vector2(-114, 272)
-
-[node name="AcDraparnaldiaTuft5" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="16" unique_id=534950157 instance=ExtResource("11_a8lnu")]
-position = Vector2(-75, 266)
-
-[node name="AcDraparnaldiaTuft6" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="17" unique_id=1536288334 instance=ExtResource("11_a8lnu")]
+[node name="AcDraparnaldiaTuft6" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="14" unique_id=1536288334 instance=ExtResource("11_a8lnu")]
 position = Vector2(395, 268)
 
-[node name="AcDraparnaldiaTuft8" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="18" unique_id=1597244028 instance=ExtResource("11_a8lnu")]
+[node name="AcDraparnaldiaTuft8" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="15" unique_id=1597244028 instance=ExtResource("11_a8lnu")]
 position = Vector2(722, 269)
 
-[node name="AcDraparnaldiaTuft10" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="19" unique_id=355968216 instance=ExtResource("11_a8lnu")]
+[node name="AcDraparnaldiaTuft10" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="16" unique_id=355968216 instance=ExtResource("11_a8lnu")]
 position = Vector2(860, 272)
 
-[node name="AcDraparnaldiaTuft9" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="20" unique_id=609841322 instance=ExtResource("11_a8lnu")]
+[node name="AcDraparnaldiaTuft9" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="17" unique_id=609841322 instance=ExtResource("11_a8lnu")]
 position = Vector2(892, 272)
 
-[node name="AcDraparnaldiaTuft7" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="21" unique_id=1766204166 instance=ExtResource("11_a8lnu")]
+[node name="AcDraparnaldiaTuft7" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="18" unique_id=1766204166 instance=ExtResource("11_a8lnu")]
 position = Vector2(335, 269)
 
-[node name="AcDrownedRootPlate" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="22" unique_id=825002724 instance=ExtResource("12_nenqy")]
+[node name="AcDrownedRootPlate" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="19" unique_id=825002724 instance=ExtResource("12_nenqy")]
 position = Vector2(84, 272)
 
-[node name="AcGneissBoulderLarge" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="23" unique_id=127420552 instance=ExtResource("13_3n4fe")]
+[node name="AcGneissBoulderLarge" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="20" unique_id=127420552 instance=ExtResource("13_3n4fe")]
 position = Vector2(203, 268)
 
-[node name="AcGneissBoulderLarge2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="24" unique_id=1495967849 instance=ExtResource("13_3n4fe")]
+[node name="AcGneissBoulderLarge2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="21" unique_id=1495967849 instance=ExtResource("13_3n4fe")]
 position = Vector2(608, 271)
 
-[node name="AcGneissBoulderLarge3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="25" unique_id=202504871 instance=ExtResource("13_3n4fe")]
+[node name="AcGneissBoulderLarge3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="22" unique_id=202504871 instance=ExtResource("13_3n4fe")]
 position = Vector2(877, 274)
 
-[node name="AcGneissBoulderMedium" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="26" unique_id=569464362 instance=ExtResource("14_urur3")]
+[node name="AcGneissBoulderMedium" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="23" unique_id=569464362 instance=ExtResource("14_urur3")]
 position = Vector2(145, 271)
 
-[node name="AcGneissBoulderMedium2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="27" unique_id=1165814776 instance=ExtResource("14_urur3")]
+[node name="AcGneissBoulderMedium2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="24" unique_id=1165814776 instance=ExtResource("14_urur3")]
 position = Vector2(281, 277)
 
-[node name="AcGneissBoulderSmall" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="28" unique_id=269018785 instance=ExtResource("15_a6hks")]
+[node name="AcGneissBoulderSmall" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="25" unique_id=269018785 instance=ExtResource("15_a6hks")]
 position = Vector2(139, 270)
 
-[node name="AcLarchCones" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="29" unique_id=1926276781 instance=ExtResource("16_lo16r")]
+[node name="AcLarchCones" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="26" unique_id=1926276781 instance=ExtResource("16_lo16r")]
 position = Vector2(252, 323)
 
-[node name="AcLubomirskiaSpongeLarge" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="30" unique_id=43310014 instance=ExtResource("17_8266i")]
+[node name="AcLubomirskiaSpongeLarge" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="27" unique_id=43310014 instance=ExtResource("17_8266i")]
 position = Vector2(95, 271)
 
-[node name="AcLubomirskiaSpongeLarge2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="31" unique_id=13793967 instance=ExtResource("17_8266i")]
+[node name="AcLubomirskiaSpongeLarge2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="28" unique_id=13793967 instance=ExtResource("17_8266i")]
 position = Vector2(210, 267)
 
-[node name="AcLubomirskiaSpongeSmall" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="32" unique_id=1457075004 instance=ExtResource("18_lcbcy")]
+[node name="AcLubomirskiaSpongeSmall" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="29" unique_id=1457075004 instance=ExtResource("18_lcbcy")]
 position = Vector2(74, 271)
 
-[node name="AcSpongeCrustedRock" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="33" unique_id=1224248658 instance=ExtResource("19_t0vae")]
-position = Vector2(6, 270)
-
-[node name="AcSpongeCrustedRock2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="34" unique_id=99137393 instance=ExtResource("19_t0vae")]
+[node name="AcSpongeCrustedRock2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="30" unique_id=99137393 instance=ExtResource("19_t0vae")]
 position = Vector2(263, 274)
 
-[node name="AcUlothrixFringeStone" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="35" unique_id=1071541737 instance=ExtResource("20_5e8d8")]
-position = Vector2(5, 272)
-
 [node name="Fg" parent="." index="7" unique_id=1713686165]
-scroll_offset = Vector2(-111, 275)
+scroll_offset = Vector2(-8, 267)

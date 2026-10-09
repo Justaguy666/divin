@@ -1,7 +1,7 @@
-[gd_resource type="TileSet" format=3]
+[gd_resource type="TileSet" format=3 uid="uid://bdmhdhhwfic0d"]
 
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/marsh_swamp/tiles/ground/ms_substrate_atlas.png" id="1_sub"]
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/marsh_swamp/tiles/terrain/ms_muck_slopes_atlas.png" id="2_bank"]
+[ext_resource type="Texture2D" uid="uid://43rt5nnod4g3" path="res://assets/environments/freshwater/marsh_swamp/tiles/ground/ms_substrate_atlas.png" id="1_sub"]
+[ext_resource type="Texture2D" uid="uid://cgkghayd88tof" path="res://assets/environments/freshwater/marsh_swamp/tiles/terrain/ms_muck_slopes_atlas.png" id="2_bank"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sub"]
 texture = ExtResource("1_sub")

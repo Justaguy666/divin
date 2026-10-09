@@ -1,33 +1,188 @@
-[gd_scene format=4]
+[gd_scene format=4 uid="uid://b3mwel0jehq3e"]
 
 [ext_resource type="PackedScene" uid="uid://bdkq66k5yxh2n" path="res://scenes/environment/_shared/environment_base.tscn" id="1_base"]
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/marsh_swamp/background/far/ms_bg_far.png" id="2_far"]
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/marsh_swamp/background/mid/ms_bg_mid.png" id="3_mid"]
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/marsh_swamp/background/near/ms_bg_near.png" id="4_near"]
-[ext_resource type="TileSet" path="res://resources/tilesets/marsh_swamp.tres" id="5_tiles"]
+[ext_resource type="Texture2D" uid="uid://d3lg5mdubodbm" path="res://assets/environments/freshwater/marsh_swamp/background/far/ms_bg_far.png" id="2_far"]
+[ext_resource type="Texture2D" uid="uid://dg1morerf0glf" path="res://assets/environments/freshwater/marsh_swamp/background/mid/ms_bg_mid.png" id="3_mid"]
+[ext_resource type="Texture2D" uid="uid://xxid3xf45s4x" path="res://assets/environments/freshwater/marsh_swamp/background/near/ms_bg_near.png" id="4_near"]
+[ext_resource type="TileSet" uid="uid://bdmhdhhwfic0d" path="res://resources/tilesets/marsh_swamp.tres" id="5_tiles"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_bladderwort.tscn" id="7_yy05h"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_bog_stone_large.tscn" id="8_g0lp5"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_bog_stone_small.tscn" id="9_5ogbe"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_bog_wood_tangle.tscn" id="10_4osjf"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_cattail_short.tscn" id="11_ibi1k"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_cattail_tall.tscn" id="12_3lvms"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_cypress_knees_dark.tscn" id="13_rn3ig"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_duckweed_dense_tile32.tscn" id="15_lbo1k"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_frogbit.tscn" id="16_r8aqn"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_hanging_moss.tscn" id="17_2xgok"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_hornwort_dark.tscn" id="18_iicli"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_peat_clump.tscn" id="19_5re0h"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_pond_snail_shell.tscn" id="20_dn7h3"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_ramshorn_shell.tscn" id="21_x5akb"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_rotten_stump_hide.tscn" id="22_7k828"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_sedge.tscn" id="23_28g6i"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_sphagnum_l.tscn" id="24_f5c0s"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_sphagnum_s.tscn" id="25_kyuax"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_water_lily_short.tscn" id="26_xruv5"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/props/ms_water_lily_tall.tscn" id="27_cbs4s"]
 
 [node name="MarshSwamp" unique_id=90168738 instance=ExtResource("1_base")]
 
-[node name="Sprite2D" parent="BgFar" index="0" unique_id=738316601]
+[node name="Sprite2D" parent="BgFar" parent_id_path=PackedInt32Array(829465576) index="0" unique_id=738316601]
 texture = ExtResource("2_far")
 
-[node name="Sprite2D" parent="BgMid" index="0" unique_id=1236876199]
+[node name="Sprite2D" parent="BgMid" parent_id_path=PackedInt32Array(1751391260) index="0" unique_id=1236876199]
 texture = ExtResource("3_mid")
 
-[node name="Sprite2D" parent="BgNear" index="0" unique_id=615000944]
+[node name="Sprite2D" parent="BgNear" parent_id_path=PackedInt32Array(1577890879) index="0" unique_id=615000944]
 texture = ExtResource("4_near")
 
 [node name="WaterSurface" parent="." index="3" unique_id=1469277271]
-line_color = Color(0.498, 0.588, 0.376, 1.0)
+line_color = Color(0.498, 0.588, 0.376, 1)
 band_color = Color(0.345, 0.443, 0.251, 0.63)
-spark_color = Color(0.537, 0.635, 0.404, 1.0)
-air_color = Color(0.616, 0.647, 0.600, 1.0)
+spark_color = Color(0.537, 0.635, 0.404, 1)
+air_color = Color(0.616, 0.647, 0.6, 1)
 
 [node name="Ground" parent="." index="4" unique_id=1875096136]
 position = Vector2(96, 72)
-tile_map_data = PackedByteArray("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")
+tile_map_data = PackedByteArray("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")
 tile_set = ExtResource("5_tiles")
 
 [node name="FloorOverlay" parent="." index="5" unique_id=1541574459]
 position = Vector2(96, 72)
 tile_set = ExtResource("5_tiles")
+
+[node name="MsBladderwort" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="0" unique_id=1804708471 instance=ExtResource("7_yy05h")]
+position = Vector2(312, -8)
+
+[node name="MsBladderwort2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="1" unique_id=647194753 instance=ExtResource("7_yy05h")]
+position = Vector2(376, -8)
+
+[node name="MsBladderwort3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="2" unique_id=164035183 instance=ExtResource("7_yy05h")]
+position = Vector2(440, -8)
+
+[node name="MsBladderwort4" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="3" unique_id=625025911 instance=ExtResource("7_yy05h")]
+position = Vector2(504, -8)
+
+[node name="MsBogStoneLarge" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="4" unique_id=398110699 instance=ExtResource("8_g0lp5")]
+position = Vector2(136, 280)
+
+[node name="MsBogStoneSmall" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="5" unique_id=776286302 instance=ExtResource("9_5ogbe")]
+position = Vector2(168, 272)
+
+[node name="MsBogWoodTangle" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="6" unique_id=788853590 instance=ExtResource("10_4osjf")]
+position = Vector2(448, 288)
+scale = Vector2(1, 0.82417583)
+
+[node name="MsCattailShort" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="7" unique_id=1814252215 instance=ExtResource("11_ibi1k")]
+position = Vector2(160, 272)
+
+[node name="MsCattailShort2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="8" unique_id=2036817318 instance=ExtResource("11_ibi1k")]
+position = Vector2(56, 272)
+
+[node name="MsCattailShort3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="9" unique_id=241691800 instance=ExtResource("11_ibi1k")]
+position = Vector2(72, 272)
+
+[node name="MsCattailTall" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="10" unique_id=1883825410 instance=ExtResource("12_3lvms")]
+position = Vector2(128, 272)
+
+[node name="MsCattailTall2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="11" unique_id=2119047149 instance=ExtResource("12_3lvms")]
+position = Vector2(272, 272)
+
+[node name="MsCattailTall3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="12" unique_id=267334435 instance=ExtResource("12_3lvms")]
+position = Vector2(64, 264)
+
+[node name="MsCypressKneesDark" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="13" unique_id=932835169 instance=ExtResource("13_rn3ig")]
+position = Vector2(584, 272)
+
+[node name="MsDuckweedDenseTile41" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="14" unique_id=1221507602 instance=ExtResource("15_lbo1k")]
+position = Vector2(16, -6)
+
+[node name="MsDuckweedDenseTile42" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="15" unique_id=269750037 instance=ExtResource("15_lbo1k")]
+position = Vector2(192, -6)
+
+[node name="MsDuckweedDenseTile43" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="16" unique_id=2051300472 instance=ExtResource("15_lbo1k")]
+position = Vector2(224, -6)
+
+[node name="MsDuckweedDenseTile44" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="17" unique_id=628763056 instance=ExtResource("15_lbo1k")]
+position = Vector2(256, -6)
+
+[node name="MsDuckweedDenseTile45" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="18" unique_id=936049794 instance=ExtResource("15_lbo1k")]
+position = Vector2(560, -6)
+
+[node name="MsDuckweedDenseTile46" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="19" unique_id=31049819 instance=ExtResource("15_lbo1k")]
+position = Vector2(592, -6)
+
+[node name="MsDuckweedDenseTile47" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="20" unique_id=1918596510 instance=ExtResource("15_lbo1k")]
+position = Vector2(624, -6)
+
+[node name="MsFrogbit" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="21" unique_id=557783347 instance=ExtResource("16_r8aqn")]
+position = Vector2(104, -8)
+
+[node name="MsFrogbit2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="22" unique_id=2009278558 instance=ExtResource("16_r8aqn")]
+position = Vector2(152, -8)
+
+[node name="MsFrogbit5" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="23" unique_id=722062868 instance=ExtResource("16_r8aqn")]
+position = Vector2(56, -8)
+
+[node name="MsHangingMoss" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="24" unique_id=207335359 instance=ExtResource("17_2xgok")]
+
+[node name="MsHangingMoss2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="25" unique_id=1396208959 instance=ExtResource("17_2xgok")]
+position = Vector2(640, 0)
+
+[node name="MsHornwortDark" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="26" unique_id=2038607061 instance=ExtResource("18_iicli")]
+position = Vector2(520, 272)
+
+[node name="MsHornwortDark9" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="27" unique_id=1127933593 instance=ExtResource("18_iicli")]
+position = Vector2(592, 264)
+
+[node name="MsHornwortDark2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="28" unique_id=930092095 instance=ExtResource("18_iicli")]
+position = Vector2(312, 272)
+
+[node name="MsHornwortDark3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="29" unique_id=1385911601 instance=ExtResource("18_iicli")]
+position = Vector2(392, 272)
+
+[node name="MsHornwortDark4" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="30" unique_id=143369445 instance=ExtResource("18_iicli")]
+position = Vector2(416, 272)
+
+[node name="MsHornwortDark5" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="31" unique_id=288633499 instance=ExtResource("18_iicli")]
+position = Vector2(440, 272)
+
+[node name="MsHornwortDark6" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="32" unique_id=1328454783 instance=ExtResource("18_iicli")]
+position = Vector2(464, 272)
+
+[node name="MsHornwortDark7" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="33" unique_id=509768992 instance=ExtResource("18_iicli")]
+position = Vector2(480, 272)
+
+[node name="MsHornwortDark8" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="34" unique_id=1270419673 instance=ExtResource("18_iicli")]
+position = Vector2(504, 272)
+
+[node name="MsPeatClump" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="35" unique_id=1689965012 instance=ExtResource("19_5re0h")]
+position = Vector2(72, 272)
+
+[node name="MsPondSnailShell" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="36" unique_id=840532299 instance=ExtResource("20_dn7h3")]
+position = Vector2(256, 312)
+
+[node name="MsRamshornShell" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="37" unique_id=1774654957 instance=ExtResource("21_x5akb")]
+position = Vector2(48, 312)
+
+[node name="MsRottenStumpHide" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="38" unique_id=247758958 instance=ExtResource("22_7k828")]
+position = Vector2(288, 280)
+
+[node name="MsSedge" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="39" unique_id=2035749384 instance=ExtResource("23_28g6i")]
+position = Vector2(176, 272)
+
+[node name="MsSphagnumL" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="40" unique_id=2093015686 instance=ExtResource("24_f5c0s")]
+position = Vector2(56, 272)
+
+[node name="MsSphagnumS" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="41" unique_id=54799438 instance=ExtResource("25_kyuax")]
+position = Vector2(64, 272)
+
+[node name="MsWaterLilyShort" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="42" unique_id=1457111500 instance=ExtResource("26_xruv5")]
+position = Vector2(288, 272)
+
+[node name="MsWaterLilyTall" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="43" unique_id=1354284049 instance=ExtResource("27_cbs4s")]
+position = Vector2(136, 272)
+
+[node name="MsWaterLilyTall2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="44" unique_id=1252341192 instance=ExtResource("27_cbs4s")]
+position = Vector2(560, 264)

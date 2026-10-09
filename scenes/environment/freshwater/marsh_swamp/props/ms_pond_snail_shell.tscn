@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://c62d8c27e2j0a" path="res://assets/environments/freshwater/marsh_swamp/decoration/shells/ms_pond_snail_shell.png" id="1_tex"]
+
+[node name="MsPondSnailShell" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-6, -19)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-5, -6, -5, -5, -4, -5, -4, -4, -3, -4, -3, -3, -2, -3, -2, -2, -1, -2, -1, -1, 1, -1, 1, -2, 2, -2, 2, -3, 3, -3, 3, -4, 4, -4, 4, -5, 5, -5, 5, -6)
