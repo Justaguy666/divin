@@ -2,12 +2,12 @@
 
 [ext_resource type="Shader" uid="uid://dsjuytv3opfyu" path="res://shaders/environment/grass_sway.gdshader" id="1_eulsu"]
 [ext_resource type="Script" uid="uid://8e2j8h6w8mro" path="res://game/environment/editor_static_parallax.gd" id="2_parallax"]
+[ext_resource type="Script" path="res://game/environment/water_surface.gd" id="3_surface"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_k48uh"]
 shader = ExtResource("1_eulsu")
 shader_parameter/wind = 1.0
 shader_parameter/sway_speed = 1.5
-shader_parameter/wave_scale = 0.15
 shader_parameter/tile_height = 32.0
 
 [node name="EnvironmentBase" type="Node2D" unique_id=90168738]
@@ -19,10 +19,10 @@ script = ExtResource("2_parallax")
 
 [node name="Sprite2D" type="Sprite2D" parent="BgFar" unique_id=738316601]
 texture_repeat = 3
-position = Vector2(-24, -24)
+position = Vector2(-320, -40)
 centered = false
 region_enabled = true
-region_rect = Rect2(-24, -24, 624, 408)
+region_rect = Rect2(0, 32, 1280, 440)
 
 [node name="BgMid" type="Parallax2D" parent="." unique_id=1751391260]
 scroll_scale = Vector2(0.5, 0.5)
@@ -31,10 +31,10 @@ script = ExtResource("2_parallax")
 
 [node name="Sprite2D" type="Sprite2D" parent="BgMid" unique_id=1236876199]
 texture_repeat = 3
-position = Vector2(-24, -24)
+position = Vector2(-320, -40)
 centered = false
 region_enabled = true
-region_rect = Rect2(-24, -24, 624, 408)
+region_rect = Rect2(0, 32, 1280, 440)
 
 [node name="BgNear" type="Parallax2D" parent="." unique_id=1577890879]
 scroll_scale = Vector2(0.8, 0.8)
@@ -43,10 +43,19 @@ script = ExtResource("2_parallax")
 
 [node name="Sprite2D" type="Sprite2D" parent="BgNear" unique_id=615000944]
 texture_repeat = 3
-position = Vector2(-24, -24)
+position = Vector2(-320, -40)
 centered = false
 region_enabled = true
-region_rect = Rect2(-24, -24, 624, 408)
+region_rect = Rect2(0, 32, 1280, 440)
+
+[node name="WaterSurface" type="ColorRect" parent="." unique_id=1469277271]
+offset_left = -320.0
+offset_top = -48.0
+offset_right = 960.0
+offset_bottom = 8.0
+mouse_filter = 2
+color = Color(1, 1, 1, 0)
+script = ExtResource("3_surface")
 
 [node name="Ground" type="TileMapLayer" parent="." unique_id=1875096136]
 
