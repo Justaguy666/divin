@@ -2,6 +2,46 @@
 
 [ext_resource type="PackedScene" path="res://scenes/environment/freshwater/ancient_cold_lake/ancient_cold_lake.tscn" id="1_env"]
 [ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_cam"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_siberian_dace.tscn" id="3_siberi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_ohrid_spirlin.tscn" id="4_ohrid_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_ohrid_roach.tscn" id="5_ohrid_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_honmoroko.tscn" id="6_honmor"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_isaza_goby.tscn" id="7_isaza_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_koayu.tscn" id="8_koayu"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_small_golomyanka.tscn" id="9_small_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_biwa_higai.tscn" id="10_biwa_h"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_omul.tscn" id="11_omul"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_baikal_whitefish.tscn" id="12_baikal"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_black_grayling.tscn" id="13_black_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_white_grayling.tscn" id="14_white_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_khovsgol_grayling.tscn" id="15_khovsg"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_lenok.tscn" id="16_lenok"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_frolikha_char.tscn" id="17_frolik"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_ohrid_belvica.tscn" id="18_ohrid_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_yellowfin_sculpin.tscn" id="19_yellow"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_longfin_sculpin.tscn" id="20_longfi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_nigorobuna.tscn" id="21_nigoro"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_gengoro_buna.tscn" id="22_gengor"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_ohrid_trout.tscn" id="23_ohrid_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_biwa_rock_catfish.tscn" id="24_biwa_r"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_burbot.tscn" id="25_burbot"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_sevan_khramulya.tscn" id="26_sevan_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_big_golomyanka.tscn" id="27_big_go"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_baikal_sturgeon.tscn" id="28_baikal"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_taimen.tscn" id="29_taimen"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_biwa_trout.tscn" id="30_biwa_t"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_biwa_giant_catfish.tscn" id="31_biwa_g"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_sevan_trout.tscn" id="32_sevan_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_giant_spiny_amphipod.tscn" id="33_giant_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_blue_baikal_amphipod.tscn" id="34_blue_b"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_stone_sculpin.tscn" id="35_stone_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_fat_sculpin.tscn" id="36_fat_sc"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_deepwater_sculpin.tscn" id="37_deepwa"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_benedictia_snail.tscn" id="38_benedi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_baicalia_snail.tscn" id="39_baical"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_baikal_giant_flatworm.tscn" id="40_baikal"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_ohrid_spined_loach.tscn" id="41_ohrid_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/ancient_cold_lake/ac_biwa_yoshinobori.tscn" id="42_biwa_y"]
 
 [node name="AcAquarium" type="Node2D" unique_id=770412284]
 
@@ -12,6 +52,219 @@ position = Vector2(320, 180)
 script = ExtResource("2_cam")
 
 [node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="AcSiberianDace" parent="Creatures" unique_id=1109130909 instance=ExtResource("3_siberi")]
+position = Vector2(106.7, 85.3)
+
+[node name="AcSiberianDace2" parent="Creatures" unique_id=1908632805 instance=ExtResource("3_siberi")]
+position = Vector2(402.4, 136.6)
+
+[node name="AcSiberianDace3" parent="Creatures" unique_id=1205201396 instance=ExtResource("3_siberi")]
+position = Vector2(165.0, 96.5)
+
+[node name="AcSiberianDace4" parent="Creatures" unique_id=1819043942 instance=ExtResource("3_siberi")]
+position = Vector2(275.5, 93.3)
+
+[node name="AcOhridSpirlin" parent="Creatures" unique_id=1622815966 instance=ExtResource("4_ohrid_")]
+position = Vector2(449.1, 133.2)
+
+[node name="AcOhridSpirlin2" parent="Creatures" unique_id=15443529 instance=ExtResource("4_ohrid_")]
+position = Vector2(472.9, 92.7)
+
+[node name="AcOhridSpirlin3" parent="Creatures" unique_id=1763981654 instance=ExtResource("4_ohrid_")]
+position = Vector2(384.0, 51.7)
+
+[node name="AcOhridSpirlin4" parent="Creatures" unique_id=1923329923 instance=ExtResource("4_ohrid_")]
+position = Vector2(94.9, 39.4)
+
+[node name="AcOhridRoach" parent="Creatures" unique_id=461454016 instance=ExtResource("5_ohrid_")]
+position = Vector2(423.7, 149.0)
+
+[node name="AcOhridRoach2" parent="Creatures" unique_id=775870089 instance=ExtResource("5_ohrid_")]
+position = Vector2(262.4, 104.6)
+
+[node name="AcOhridRoach3" parent="Creatures" unique_id=1112920858 instance=ExtResource("5_ohrid_")]
+position = Vector2(490.9, 192.0)
+
+[node name="AcHonmoroko" parent="Creatures" unique_id=202554048 instance=ExtResource("6_honmor")]
+position = Vector2(397.1, 134.9)
+
+[node name="AcHonmoroko2" parent="Creatures" unique_id=992361665 instance=ExtResource("6_honmor")]
+position = Vector2(352.2, 77.1)
+
+[node name="AcHonmoroko3" parent="Creatures" unique_id=1548490248 instance=ExtResource("6_honmor")]
+position = Vector2(118.9, 124.4)
+
+[node name="AcHonmoroko4" parent="Creatures" unique_id=1536565232 instance=ExtResource("6_honmor")]
+position = Vector2(363.4, 41.3)
+
+[node name="AcIsazaGoby" parent="Creatures" unique_id=204742841 instance=ExtResource("7_isaza_")]
+position = Vector2(246.6, 155.2)
+
+[node name="AcIsazaGoby2" parent="Creatures" unique_id=1080424140 instance=ExtResource("7_isaza_")]
+position = Vector2(263.3, 170.6)
+
+[node name="AcIsazaGoby3" parent="Creatures" unique_id=1733461376 instance=ExtResource("7_isaza_")]
+position = Vector2(525.6, 150.8)
+
+[node name="AcKoayu" parent="Creatures" unique_id=1064480422 instance=ExtResource("8_koayu")]
+position = Vector2(460.1, 80.4)
+
+[node name="AcKoayu2" parent="Creatures" unique_id=1823502072 instance=ExtResource("8_koayu")]
+position = Vector2(263.0, 72.6)
+
+[node name="AcKoayu3" parent="Creatures" unique_id=1039052623 instance=ExtResource("8_koayu")]
+position = Vector2(275.2, 114.3)
+
+[node name="AcSmallGolomyanka" parent="Creatures" unique_id=1245911712 instance=ExtResource("9_small_")]
+position = Vector2(327.3, 206.6)
+
+[node name="AcSmallGolomyanka2" parent="Creatures" unique_id=114985539 instance=ExtResource("9_small_")]
+position = Vector2(165.7, 132.2)
+
+[node name="AcSmallGolomyanka3" parent="Creatures" unique_id=1449851399 instance=ExtResource("9_small_")]
+position = Vector2(579.1, 175.6)
+
+[node name="AcBiwaHigai" parent="Creatures" unique_id=1019403914 instance=ExtResource("10_biwa_h")]
+position = Vector2(97.4, 190.2)
+
+[node name="AcBiwaHigai2" parent="Creatures" unique_id=1834563884 instance=ExtResource("10_biwa_h")]
+position = Vector2(119.8, 216.4)
+
+[node name="AcOmul" parent="Creatures" unique_id=990962682 instance=ExtResource("11_omul")]
+position = Vector2(536.1, 138.2)
+
+[node name="AcOmul2" parent="Creatures" unique_id=1181736371 instance=ExtResource("11_omul")]
+position = Vector2(417.6, 150.9)
+
+[node name="AcOmul3" parent="Creatures" unique_id=670624554 instance=ExtResource("11_omul")]
+position = Vector2(180.6, 105.9)
+
+[node name="AcBaikalWhitefish" parent="Creatures" unique_id=1509638417 instance=ExtResource("12_baikal")]
+position = Vector2(347.0, 174.7)
+
+[node name="AcBaikalWhitefish2" parent="Creatures" unique_id=940003948 instance=ExtResource("12_baikal")]
+position = Vector2(308.2, 206.5)
+
+[node name="AcBlackGrayling" parent="Creatures" unique_id=29921982 instance=ExtResource("13_black_")]
+position = Vector2(153.4, 112.8)
+
+[node name="AcBlackGrayling2" parent="Creatures" unique_id=1292634459 instance=ExtResource("13_black_")]
+position = Vector2(58.5, 92.7)
+
+[node name="AcWhiteGrayling" parent="Creatures" unique_id=1061230891 instance=ExtResource("14_white_")]
+position = Vector2(578.0, 127.6)
+
+[node name="AcKhovsgolGrayling" parent="Creatures" unique_id=1497450111 instance=ExtResource("15_khovsg")]
+position = Vector2(241.6, 42.8)
+
+[node name="AcLenok" parent="Creatures" unique_id=1784194105 instance=ExtResource("16_lenok")]
+position = Vector2(311.9, 121.6)
+
+[node name="AcFrolikhaChar" parent="Creatures" unique_id=1435709118 instance=ExtResource("17_frolik")]
+position = Vector2(318.4, 146.2)
+
+[node name="AcOhridBelvica" parent="Creatures" unique_id=690015955 instance=ExtResource("18_ohrid_")]
+position = Vector2(548.1, 149.4)
+
+[node name="AcOhridBelvica2" parent="Creatures" unique_id=951566439 instance=ExtResource("18_ohrid_")]
+position = Vector2(296.3, 146.8)
+
+[node name="AcYellowfinSculpin" parent="Creatures" unique_id=1116326317 instance=ExtResource("19_yellow")]
+position = Vector2(426.0, 173.2)
+
+[node name="AcYellowfinSculpin2" parent="Creatures" unique_id=403094368 instance=ExtResource("19_yellow")]
+position = Vector2(184.9, 191.5)
+
+[node name="AcLongfinSculpin" parent="Creatures" unique_id=1038958731 instance=ExtResource("20_longfi")]
+position = Vector2(581.7, 202.5)
+
+[node name="AcNigorobuna" parent="Creatures" unique_id=1949743989 instance=ExtResource("21_nigoro")]
+position = Vector2(566.5, 189.3)
+
+[node name="AcNigorobuna2" parent="Creatures" unique_id=1615354225 instance=ExtResource("21_nigoro")]
+position = Vector2(319.1, 128.6)
+
+[node name="AcGengoroBuna" parent="Creatures" unique_id=1978127322 instance=ExtResource("22_gengor")]
+position = Vector2(519.7, 107.6)
+
+[node name="AcOhridTrout" parent="Creatures" unique_id=1256914894 instance=ExtResource("23_ohrid_")]
+position = Vector2(47.9, 38.0)
+
+[node name="AcBiwaRockCatfish" parent="Creatures" unique_id=1320252184 instance=ExtResource("24_biwa_r")]
+position = Vector2(346.1, 234.8)
+
+[node name="AcBurbot" parent="Creatures" unique_id=1343747693 instance=ExtResource("25_burbot")]
+position = Vector2(484.5, 216.9)
+
+[node name="AcSevanKhramulya" parent="Creatures" unique_id=586677607 instance=ExtResource("26_sevan_")]
+position = Vector2(65.0, 182.6)
+
+[node name="AcSevanKhramulya2" parent="Creatures" unique_id=342346521 instance=ExtResource("26_sevan_")]
+position = Vector2(414.3, 191.5)
+
+[node name="AcBigGolomyanka" parent="Creatures" unique_id=1243264613 instance=ExtResource("27_big_go")]
+position = Vector2(42.9, 210.5)
+
+[node name="AcBaikalSturgeon" parent="Creatures" unique_id=1066538156 instance=ExtResource("28_baikal")]
+position = Vector2(470.9, 242.9)
+
+[node name="AcTaimen" parent="Creatures" unique_id=1182104329 instance=ExtResource("29_taimen")]
+position = Vector2(426.3, 183.0)
+
+[node name="AcBiwaTrout" parent="Creatures" unique_id=1294488164 instance=ExtResource("30_biwa_t")]
+position = Vector2(164.8, 106.8)
+
+[node name="AcBiwaGiantCatfish" parent="Creatures" unique_id=191318940 instance=ExtResource("31_biwa_g")]
+position = Vector2(530.6, 228.6)
+
+[node name="AcSevanTrout" parent="Creatures" unique_id=300653602 instance=ExtResource("32_sevan_")]
+position = Vector2(274.0, 69.5)
+
+[node name="AcGiantSpinyAmphipod" parent="Creatures" unique_id=1974982201 instance=ExtResource("33_giant_")]
+position = Vector2(484.4, 267.1)
+
+[node name="AcGiantSpinyAmphipod2" parent="Creatures" unique_id=1100281509 instance=ExtResource("33_giant_")]
+position = Vector2(369.9, 267.1)
+
+[node name="AcBlueBaikalAmphipod" parent="Creatures" unique_id=1745156034 instance=ExtResource("34_blue_b")]
+position = Vector2(269.0, 267.1)
+
+[node name="AcBlueBaikalAmphipod2" parent="Creatures" unique_id=1742821252 instance=ExtResource("34_blue_b")]
+position = Vector2(116.2, 267.1)
+
+[node name="AcBlueBaikalAmphipod3" parent="Creatures" unique_id=40347965 instance=ExtResource("34_blue_b")]
+position = Vector2(144.1, 267.1)
+
+[node name="AcStoneSculpin" parent="Creatures" unique_id=846118410 instance=ExtResource("35_stone_")]
+position = Vector2(586.1, 267.1)
+
+[node name="AcFatSculpin" parent="Creatures" unique_id=120327760 instance=ExtResource("36_fat_sc")]
+position = Vector2(544.9, 267.1)
+
+[node name="AcDeepwaterSculpin" parent="Creatures" unique_id=1397859509 instance=ExtResource("37_deepwa")]
+position = Vector2(513.6, 267.1)
+
+[node name="AcBenedictiaSnail" parent="Creatures" unique_id=1662561109 instance=ExtResource("38_benedi")]
+position = Vector2(235.0, 267.1)
+
+[node name="AcBaicaliaSnail" parent="Creatures" unique_id=64937544 instance=ExtResource("39_baical")]
+position = Vector2(578.1, 267.1)
+
+[node name="AcBaicaliaSnail2" parent="Creatures" unique_id=713859355 instance=ExtResource("39_baical")]
+position = Vector2(326.0, 267.1)
+
+[node name="AcBaikalGiantFlatworm" parent="Creatures" unique_id=976669115 instance=ExtResource("40_baikal")]
+position = Vector2(426.0, 267.1)
+
+[node name="AcOhridSpinedLoach" parent="Creatures" unique_id=270646204 instance=ExtResource("41_ohrid_")]
+position = Vector2(219.1, 267.1)
+
+[node name="AcBiwaYoshinobori" parent="Creatures" unique_id=1011978954 instance=ExtResource("42_biwa_y")]
+position = Vector2(318.6, 267.1)
+
+[node name="AcBiwaYoshinobori2" parent="Creatures" unique_id=1738592513 instance=ExtResource("42_biwa_y")]
+position = Vector2(361.5, 267.1)
 
 [node name="Food" type="Node2D" parent="." unique_id=191782434]
 

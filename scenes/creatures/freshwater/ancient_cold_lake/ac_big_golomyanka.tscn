@@ -1,0 +1,13 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" uid="uid://ua86u84h3ug2" path="res://scenes/creatures/_shared/swimmer_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" path="res://assets/creatures/freshwater/ancient_cold_lake/ac_big_golomyanka_swim_44x24_4f.png" id="2_sheet"]
+
+[node name="AcBigGolomyanka" unique_id=1782019148 instance=ExtResource("1_base")]
+rest_time = Vector2(1.5, 4)
+crowd_radius = 70.0
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(44, 24)
+animation_fps = 6.0
+speed = 10.0
+area = Rect2(0, 140, 640, 110)

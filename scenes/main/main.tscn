@@ -1,11 +1,15 @@
 [gd_scene format=3 uid="uid://cdek58jiv5wme"]
 
 [ext_resource type="PackedScene" uid="uid://cab6r8j3lyjum" path="res://scenes/aquarium/pf_aquarium.tscn" id="1_hyk8p"]
+[ext_resource type="PackedScene" path="res://scenes/aquarium/ac_aquarium.tscn" id="1_k2fmo"]
 [ext_resource type="PackedScene" uid="uid://ckwf7dfqkf87e" path="res://scenes/aquarium/bw_aquarium.tscn" id="2_iuonh"]
 
 [node name="Main" type="Node2D" unique_id=1366203981]
 
-[node name="BwAquarium" parent="." unique_id=770412284 instance=ExtResource("2_iuonh")]
+[node name="AcAquarium" parent="." unique_id=770412284 instance=ExtResource("1_k2fmo")]
+
+[node name="BwAquarium" parent="." unique_id=1126426542 instance=ExtResource("2_iuonh")]
+visible = false
 
 [node name="PfAquarium" parent="." unique_id=562744122 instance=ExtResource("1_hyk8p")]
 visible = false

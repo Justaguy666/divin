@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://dxtc1e0ob0djw" path="res://assets/environments/freshwater/ancient_cold_lake/decoration/rocks/ac_gneiss_boulder_large.png" id="1_tex"]
+
+[node name="AcGneissBoulderLarge" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-30, -36)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-27, -6, -27, -5, -26, -5, -26, -3, -25, -3, -25, -2, -24, -2, -24, -1, 22, -1, 22, -2, 23, -2, 23, -3, 24, -3, 24, -4, 25, -4, 25, -5, 26, -5, 26, -6)
