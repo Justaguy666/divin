@@ -1,0 +1,13 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" uid="uid://ua86u84h3ug2" path="res://scenes/creatures/_shared/swimmer_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" path="res://assets/creatures/freshwater/blackwater/bw_silver_arowana_swim_64x24_4f.png" id="2_sheet"]
+
+[node name="BwSilverArowana" unique_id=1782019148 instance=ExtResource("1_base")]
+rest_time = Vector2(0.5, 2)
+crowd_radius = 110.0
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(64, 24)
+animation_fps = 6.0
+speed = 16.0
+area = Rect2(0, 0, 576, 90)
