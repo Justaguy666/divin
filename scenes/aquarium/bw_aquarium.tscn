@@ -12,13 +12,43 @@
 [ext_resource type="PackedScene" uid="uid://eh2siiaugkjo" path="res://scenes/creatures/freshwater/blackwater/bw_marbled_hatchetfish.tscn" id="10_51q7r"]
 [ext_resource type="PackedScene" uid="uid://g6pw00mh47ix" path="res://scenes/creatures/freshwater/blackwater/bw_pencilfish.tscn" id="11_7vkub"]
 [ext_resource type="PackedScene" uid="uid://hvcjso44lxa3" path="res://scenes/creatures/freshwater/blackwater/bw_sterbai_cory.tscn" id="12_er1b0"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_black_phantom_tetra.tscn" id="13_black_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_green_neon_tetra.tscn" id="14_green_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_bumblebee_catfish.tscn" id="15_bumble"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_wood_shrimp.tscn" id="16_wood_s"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_bleeding_heart_tetra.tscn" id="17_bleedi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_penguin_tetra.tscn" id="18_pengui"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_ruby_tetra.tscn" id="19_ruby_t"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_black_neon_tetra.tscn" id="20_black_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_red_phantom_tetra.tscn" id="21_red_ph"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_pygmy_cory.tscn" id="22_pygmy_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_glass_bloodfin.tscn" id="23_glass_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_diamond_tetra.tscn" id="24_diamon"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_spotted_headstander.tscn" id="25_spotte"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_checkerboard_cichlid.tscn" id="26_checke"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_festivum.tscn" id="27_festiv"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_eartheater.tscn" id="28_earthe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_dwarf_pike_cichlid.tscn" id="29_dwarf_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_silver_dollar.tscn" id="30_silver"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_freshwater_needlefish.tscn" id="31_freshw"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_hemiodus.tscn" id="32_hemiod"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_banded_leporinus.tscn" id="33_banded"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_uaru.tscn" id="34_uaru"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_severum.tscn" id="35_severu"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_leaf_fish.tscn" id="36_leaf_f"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_black_ghost_knifefish.tscn" id="37_black_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_silver_arowana.tscn" id="38_silver"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_banjo_catfish.tscn" id="39_banjo_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_clown_pleco.tscn" id="40_clown_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_spotted_raphael.tscn" id="41_spotte"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/blackwater/bw_amazon_crab.tscn" id="42_amazon"]
 
 [node name="BwAquarium" type="Node2D" unique_id=770412284]
 
 [node name="Blackwater" parent="." unique_id=90168738 instance=ExtResource("1_mjtba")]
 
 [node name="AquariumCamera" type="Camera2D" parent="." unique_id=1716731383]
-position = Vector2(288, 216)
+position = Vector2(320, 180)
 script = ExtResource("2_vg0bc")
 
 [node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
@@ -42,6 +72,198 @@ script = ExtResource("2_vg0bc")
 [node name="BwPencilfish" parent="Creatures" unique_id=81961477 instance=ExtResource("11_7vkub")]
 
 [node name="BwSterbaiCory" parent="Creatures" unique_id=1796886008 instance=ExtResource("12_er1b0")]
+
+[node name="BwBlackPhantomTetra" parent="Creatures" unique_id=705425564 instance=ExtResource("13_black_")]
+position = Vector2(583.3, 84.9)
+
+[node name="BwBlackPhantomTetra2" parent="Creatures" unique_id=857876999 instance=ExtResource("13_black_")]
+position = Vector2(414.4, 64.4)
+
+[node name="BwBlackPhantomTetra3" parent="Creatures" unique_id=165555737 instance=ExtResource("13_black_")]
+position = Vector2(511.1, 162.6)
+
+[node name="BwGreenNeonTetra" parent="Creatures" unique_id=212142728 instance=ExtResource("14_green_")]
+position = Vector2(252.2, 156.4)
+
+[node name="BwGreenNeonTetra2" parent="Creatures" unique_id=134551738 instance=ExtResource("14_green_")]
+position = Vector2(561.1, 140.6)
+
+[node name="BwGreenNeonTetra3" parent="Creatures" unique_id=471060838 instance=ExtResource("14_green_")]
+position = Vector2(65.6, 56.6)
+
+[node name="BwGreenNeonTetra4" parent="Creatures" unique_id=941247021 instance=ExtResource("14_green_")]
+position = Vector2(282.2, 52.6)
+
+[node name="BwBumblebeeCatfish" parent="Creatures" unique_id=526819858 instance=ExtResource("15_bumble")]
+position = Vector2(117.8, 267.1)
+
+[node name="BwWoodShrimp" parent="Creatures" unique_id=1193364967 instance=ExtResource("16_wood_s")]
+position = Vector2(307.8, 267.1)
+
+[node name="BwWoodShrimp2" parent="Creatures" unique_id=136938843 instance=ExtResource("16_wood_s")]
+position = Vector2(536.7, 267.1)
+
+[node name="BwBleedingHeartTetra" parent="Creatures" unique_id=1614795771 instance=ExtResource("17_bleedi")]
+position = Vector2(571.1, 88.8)
+
+[node name="BwBleedingHeartTetra2" parent="Creatures" unique_id=1426238234 instance=ExtResource("17_bleedi")]
+position = Vector2(172.2, 135.1)
+
+[node name="BwBleedingHeartTetra3" parent="Creatures" unique_id=1300116109 instance=ExtResource("17_bleedi")]
+position = Vector2(364.4, 59.7)
+
+[node name="BwBleedingHeartTetra4" parent="Creatures" unique_id=284604011 instance=ExtResource("17_bleedi")]
+position = Vector2(496.7, 201.9)
+
+[node name="BwPenguinTetra" parent="Creatures" unique_id=1034894873 instance=ExtResource("18_pengui")]
+position = Vector2(78.9, 171.3)
+
+[node name="BwPenguinTetra2" parent="Creatures" unique_id=1477579461 instance=ExtResource("18_pengui")]
+position = Vector2(410, 125.7)
+
+[node name="BwPenguinTetra3" parent="Creatures" unique_id=378545717 instance=ExtResource("18_pengui")]
+position = Vector2(416.7, 110.8)
+
+[node name="BwRubyTetra" parent="Creatures" unique_id=530656916 instance=ExtResource("19_ruby_t")]
+position = Vector2(480, 138.3)
+
+[node name="BwRubyTetra2" parent="Creatures" unique_id=1550220561 instance=ExtResource("19_ruby_t")]
+position = Vector2(535.6, 96.6)
+
+[node name="BwRubyTetra3" parent="Creatures" unique_id=1698575909 instance=ExtResource("19_ruby_t")]
+position = Vector2(448.9, 62.1)
+
+[node name="BwRubyTetra4" parent="Creatures" unique_id=1441641572 instance=ExtResource("19_ruby_t")]
+position = Vector2(541.1, 100.6)
+
+[node name="BwBlackNeonTetra" parent="Creatures" unique_id=319674165 instance=ExtResource("20_black_")]
+position = Vector2(128.9, 84.1)
+
+[node name="BwBlackNeonTetra2" parent="Creatures" unique_id=1293031017 instance=ExtResource("20_black_")]
+position = Vector2(330, 209)
+
+[node name="BwBlackNeonTetra3" parent="Creatures" unique_id=1653408623 instance=ExtResource("20_black_")]
+position = Vector2(276.7, 113.9)
+
+[node name="BwRedPhantomTetra" parent="Creatures" unique_id=533224720 instance=ExtResource("21_red_ph")]
+position = Vector2(525.6, 165.8)
+
+[node name="BwRedPhantomTetra2" parent="Creatures" unique_id=76122452 instance=ExtResource("21_red_ph")]
+position = Vector2(72.2, 196.4)
+
+[node name="BwRedPhantomTetra3" parent="Creatures" unique_id=640200225 instance=ExtResource("21_red_ph")]
+position = Vector2(535.6, 157.9)
+
+[node name="BwPygmyCory" parent="Creatures" unique_id=1162539200 instance=ExtResource("22_pygmy_")]
+position = Vector2(125.6, 221.6)
+
+[node name="BwPygmyCory2" parent="Creatures" unique_id=104119379 instance=ExtResource("22_pygmy_")]
+position = Vector2(421.1, 120.2)
+
+[node name="BwPygmyCory3" parent="Creatures" unique_id=1007143450 instance=ExtResource("22_pygmy_")]
+position = Vector2(396.7, 231.8)
+
+[node name="BwPygmyCory4" parent="Creatures" unique_id=683484078 instance=ExtResource("22_pygmy_")]
+position = Vector2(518.9, 183.1)
+
+[node name="BwGlassBloodfin" parent="Creatures" unique_id=1837808829 instance=ExtResource("23_glass_")]
+position = Vector2(434.4, 94.3)
+
+[node name="BwGlassBloodfin2" parent="Creatures" unique_id=937737585 instance=ExtResource("23_glass_")]
+position = Vector2(536.7, 49.5)
+
+[node name="BwGlassBloodfin3" parent="Creatures" unique_id=130696076 instance=ExtResource("23_glass_")]
+position = Vector2(556.7, 59.7)
+
+[node name="BwDiamondTetra" parent="Creatures" unique_id=433862080 instance=ExtResource("24_diamon")]
+position = Vector2(410, 117.9)
+
+[node name="BwDiamondTetra2" parent="Creatures" unique_id=1871677818 instance=ExtResource("24_diamon")]
+position = Vector2(298.9, 162.6)
+
+[node name="BwDiamondTetra3" parent="Creatures" unique_id=1123083874 instance=ExtResource("24_diamon")]
+position = Vector2(143.3, 52.6)
+
+[node name="BwSpottedHeadstander" parent="Creatures" unique_id=223516061 instance=ExtResource("25_spotte")]
+position = Vector2(97.8, 155.6)
+
+[node name="BwSpottedHeadstander2" parent="Creatures" unique_id=1180244662 instance=ExtResource("25_spotte")]
+position = Vector2(366.7, 214.5)
+
+[node name="BwCheckerboardCichlid" parent="Creatures" unique_id=1683233136 instance=ExtResource("26_checke")]
+position = Vector2(80, 163.4)
+
+[node name="BwCheckerboardCichlid2" parent="Creatures" unique_id=883491342 instance=ExtResource("26_checke")]
+position = Vector2(178.9, 195.6)
+
+[node name="BwFestivum" parent="Creatures" unique_id=1290261824 instance=ExtResource("27_festiv")]
+position = Vector2(498.9, 74.6)
+
+[node name="BwFestivum2" parent="Creatures" unique_id=1844691044 instance=ExtResource("27_festiv")]
+position = Vector2(364.4, 121.8)
+
+[node name="BwEartheater" parent="Creatures" unique_id=233735985 instance=ExtResource("28_earthe")]
+position = Vector2(286.7, 170.5)
+
+[node name="BwEartheater2" parent="Creatures" unique_id=912963484 instance=ExtResource("28_earthe")]
+position = Vector2(456.7, 212.1)
+
+[node name="BwDwarfPikeCichlid" parent="Creatures" unique_id=1258850874 instance=ExtResource("29_dwarf_")]
+position = Vector2(97.8, 154.8)
+
+[node name="BwSilverDollar" parent="Creatures" unique_id=766533603 instance=ExtResource("30_silver")]
+position = Vector2(110, 176)
+
+[node name="BwSilverDollar2" parent="Creatures" unique_id=524698643 instance=ExtResource("30_silver")]
+position = Vector2(506.7, 56.6)
+
+[node name="BwFreshwaterNeedlefish" parent="Creatures" unique_id=297302306 instance=ExtResource("31_freshw")]
+position = Vector2(441.1, 15.7)
+
+[node name="BwFreshwaterNeedlefish2" parent="Creatures" unique_id=757159186 instance=ExtResource("31_freshw")]
+position = Vector2(555.6, 29.1)
+
+[node name="BwHemiodus" parent="Creatures" unique_id=1643880762 instance=ExtResource("32_hemiod")]
+position = Vector2(398.9, 177.6)
+
+[node name="BwHemiodus2" parent="Creatures" unique_id=1508751536 instance=ExtResource("32_hemiod")]
+position = Vector2(303.3, 110)
+
+[node name="BwBandedLeporinus" parent="Creatures" unique_id=1129330122 instance=ExtResource("33_banded")]
+position = Vector2(322.2, 224.7)
+
+[node name="BwBandedLeporinus2" parent="Creatures" unique_id=847671877 instance=ExtResource("33_banded")]
+position = Vector2(460, 110)
+
+[node name="BwUaru" parent="Creatures" unique_id=104677765 instance=ExtResource("34_uaru")]
+position = Vector2(141.1, 186.2)
+
+[node name="BwSeverum" parent="Creatures" unique_id=27510071 instance=ExtResource("35_severu")]
+position = Vector2(352.2, 78.6)
+
+[node name="BwLeafFish" parent="Creatures" unique_id=1342746631 instance=ExtResource("36_leaf_f")]
+position = Vector2(521.1, 198.8)
+
+[node name="BwBlackGhostKnifefish" parent="Creatures" unique_id=81442173 instance=ExtResource("37_black_")]
+position = Vector2(385.6, 200.4)
+
+[node name="BwSilverArowana" parent="Creatures" unique_id=1761374231 instance=ExtResource("38_silver")]
+position = Vector2(402.2, 12.6)
+
+[node name="BwBanjoCatfish" parent="Creatures" unique_id=1501910125 instance=ExtResource("39_banjo_")]
+position = Vector2(76.7, 267.1)
+
+[node name="BwClownPleco" parent="Creatures" unique_id=1745306274 instance=ExtResource("40_clown_")]
+position = Vector2(310, 267.1)
+
+[node name="BwSpottedRaphael" parent="Creatures" unique_id=114573633 instance=ExtResource("41_spotte")]
+position = Vector2(232.2, 267.1)
+
+[node name="BwAmazonCrab" parent="Creatures" unique_id=929324624 instance=ExtResource("42_amazon")]
+position = Vector2(158.9, 267.1)
+
+[node name="BwAmazonCrab2" parent="Creatures" unique_id=147463791 instance=ExtResource("42_amazon")]
+position = Vector2(232.2, 267.1)
 
 [node name="Food" type="Node2D" parent="." unique_id=191782434]
 
