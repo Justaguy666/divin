@@ -23,13 +23,32 @@
 [ext_resource type="PackedScene" uid="uid://ck6ko05vne5y" path="res://scenes/creatures/freshwater/planted_freshwater/pf_bristlenose_pleco.tscn" id="21_bristl"]
 [ext_resource type="PackedScene" uid="uid://wqvonlxx4be" path="res://scenes/creatures/freshwater/planted_freshwater/pf_ghost_shrimp.tscn" id="22_ghost_"]
 [ext_resource type="PackedScene" uid="uid://cu6lknqc8ish" path="res://scenes/creatures/freshwater/planted_freshwater/pf_ramshorn_snail.tscn" id="23_ramsho"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_zebra_danio.tscn" id="24_zebra_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_white_cloud_minnow.tscn" id="25_white_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_tiger_barb.tscn" id="26_tiger_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_platy.tscn" id="27_platy"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_swordtail.tscn" id="28_swordt"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_boesemani_rainbow.tscn" id="29_boesem"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_congo_tetra.tscn" id="30_congo_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_neon_rainbow.tscn" id="31_neon_r"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_chili_rasbora.tscn" id="32_chili_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_black_molly.tscn" id="33_black_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_endler_guppy.tscn" id="34_endler"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_serpae_tetra.tscn" id="35_serpae"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_dwarf_gourami.tscn" id="36_dwarf_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_german_blue_ram.tscn" id="37_german"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_scarlet_badis.tscn" id="38_scarle"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_clown_killifish.tscn" id="39_clown_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_sparkling_gourami.tscn" id="40_sparkl"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_threadfin_rainbow.tscn" id="41_thread"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/planted_freshwater/pf_pea_puffer.tscn" id="42_pea_pu"]
 
 [node name="PfAquarium" type="Node2D" unique_id=770412284]
 
 [node name="PlantedFreshwater" parent="." unique_id=90168738 instance=ExtResource("1_kxf20")]
 
 [node name="AquariumCamera" type="Camera2D" parent="." unique_id=1716731383]
-position = Vector2(288, 216)
+position = Vector2(320, 180)
 script = ExtResource("2_feubu")
 
 [node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
@@ -81,22 +100,22 @@ move_time = Vector2(6, 10)
 [node name="PfGuppy3" parent="Creatures" unique_id=2134205120 instance=ExtResource("13_guppy")]
 
 [node name="PfKuhliLoach" parent="Creatures" unique_id=1673933725 instance=ExtResource("14_kuhli")]
-position = Vector2(186, 0)
+position = Vector2(206.7, 0)
 
 [node name="PfKuhliLoach2" parent="Creatures" unique_id=1245968027 instance=ExtResource("14_kuhli")]
-position = Vector2(366, 0)
+position = Vector2(406.7, 0)
 
 [node name="PfOtocinclus" parent="Creatures" unique_id=211150204 instance=ExtResource("15_otoci")]
-position = Vector2(246, 0)
+position = Vector2(273.3, 0)
 
 [node name="PfOtocinclus2" parent="Creatures" unique_id=1763745725 instance=ExtResource("15_otoci")]
-position = Vector2(426, 0)
+position = Vector2(473.3, 0)
 
 [node name="PfNeriteSnail" parent="Creatures" unique_id=105118086 instance=ExtResource("16_nerit")]
-position = Vector2(156, 0)
+position = Vector2(173.3, 0)
 
 [node name="PfNeriteSnail2" parent="Creatures" unique_id=1114931146 instance=ExtResource("16_nerit")]
-position = Vector2(336, 0)
+position = Vector2(373.3, 0)
 
 [node name="PfCelestialPearlDanio" parent="Creatures" unique_id=356998610 instance=ExtResource("17_celest")]
 
@@ -127,6 +146,132 @@ position = Vector2(336, 0)
 [node name="PfRamshornSnail" parent="Creatures" unique_id=1419977748 instance=ExtResource("23_ramsho")]
 
 [node name="PfRamshornSnail2" parent="Creatures" unique_id=1021890262 instance=ExtResource("23_ramsho")]
+
+[node name="PfZebraDanio" parent="Creatures" unique_id=1383158606 instance=ExtResource("24_zebra_")]
+position = Vector2(107.8, 17.3)
+
+[node name="PfZebraDanio2" parent="Creatures" unique_id=1602467581 instance=ExtResource("24_zebra_")]
+position = Vector2(200, 61.3)
+
+[node name="PfZebraDanio3" parent="Creatures" unique_id=489341423 instance=ExtResource("24_zebra_")]
+position = Vector2(123.3, 160.3)
+
+[node name="PfWhiteCloudMinnow" parent="Creatures" unique_id=230106707 instance=ExtResource("25_white_")]
+position = Vector2(428.9, 168.9)
+
+[node name="PfWhiteCloudMinnow2" parent="Creatures" unique_id=1925941032 instance=ExtResource("25_white_")]
+position = Vector2(354.4, 37.7)
+
+[node name="PfWhiteCloudMinnow3" parent="Creatures" unique_id=1278073012 instance=ExtResource("25_white_")]
+position = Vector2(284.4, 26.7)
+
+[node name="PfTigerBarb" parent="Creatures" unique_id=73989047 instance=ExtResource("26_tiger_")]
+position = Vector2(96.7, 102.9)
+
+[node name="PfTigerBarb2" parent="Creatures" unique_id=509635468 instance=ExtResource("26_tiger_")]
+position = Vector2(331.1, 180.7)
+
+[node name="PfTigerBarb3" parent="Creatures" unique_id=66985561 instance=ExtResource("26_tiger_")]
+position = Vector2(363.3, 99)
+
+[node name="PfPlaty" parent="Creatures" unique_id=1547640408 instance=ExtResource("27_platy")]
+position = Vector2(413.3, 176.8)
+
+[node name="PfPlaty2" parent="Creatures" unique_id=1180252923 instance=ExtResource("27_platy")]
+position = Vector2(282.2, 80.1)
+
+[node name="PfSwordtail" parent="Creatures" unique_id=974669077 instance=ExtResource("28_swordt")]
+position = Vector2(378.9, 84.1)
+
+[node name="PfSwordtail2" parent="Creatures" unique_id=1748238661 instance=ExtResource("28_swordt")]
+position = Vector2(538.9, 29.1)
+
+[node name="PfBoesemaniRainbow" parent="Creatures" unique_id=1639526405 instance=ExtResource("29_boesem")]
+position = Vector2(502.2, 67.6)
+
+[node name="PfBoesemaniRainbow2" parent="Creatures" unique_id=1509242941 instance=ExtResource("29_boesem")]
+position = Vector2(284.4, 104.5)
+
+[node name="PfCongoTetra" parent="Creatures" unique_id=606724164 instance=ExtResource("30_congo_")]
+position = Vector2(132.2, 87.2)
+
+[node name="PfCongoTetra2" parent="Creatures" unique_id=1649591159 instance=ExtResource("30_congo_")]
+position = Vector2(235.6, 64.4)
+
+[node name="PfNeonRainbow" parent="Creatures" unique_id=209170184 instance=ExtResource("31_neon_r")]
+position = Vector2(260, 47.1)
+
+[node name="PfNeonRainbow2" parent="Creatures" unique_id=780902343 instance=ExtResource("31_neon_r")]
+position = Vector2(525.6, 97.4)
+
+[node name="PfNeonRainbow3" parent="Creatures" unique_id=1306491777 instance=ExtResource("31_neon_r")]
+position = Vector2(194.4, 190.1)
+
+[node name="PfChiliRasbora" parent="Creatures" unique_id=103309105 instance=ExtResource("32_chili_")]
+position = Vector2(458.9, 190.9)
+
+[node name="PfChiliRasbora2" parent="Creatures" unique_id=1161541058 instance=ExtResource("32_chili_")]
+position = Vector2(114.4, 174.4)
+
+[node name="PfChiliRasbora3" parent="Creatures" unique_id=179222132 instance=ExtResource("32_chili_")]
+position = Vector2(357.8, 157.9)
+
+[node name="PfChiliRasbora4" parent="Creatures" unique_id=1791132953 instance=ExtResource("32_chili_")]
+position = Vector2(401.1, 223.1)
+
+[node name="PfBlackMolly" parent="Creatures" unique_id=1911493143 instance=ExtResource("33_black_")]
+position = Vector2(534.4, 165.8)
+
+[node name="PfEndlerGuppy" parent="Creatures" unique_id=1249854303 instance=ExtResource("34_endler")]
+position = Vector2(153.3, 154)
+
+[node name="PfEndlerGuppy2" parent="Creatures" unique_id=159368553 instance=ExtResource("34_endler")]
+position = Vector2(70, 145.4)
+
+[node name="PfEndlerGuppy3" parent="Creatures" unique_id=499407815 instance=ExtResource("34_endler")]
+position = Vector2(483.3, 70.7)
+
+[node name="PfSerpaeTetra" parent="Creatures" unique_id=181351960 instance=ExtResource("35_serpae")]
+position = Vector2(530, 106.1)
+
+[node name="PfSerpaeTetra2" parent="Creatures" unique_id=1870759513 instance=ExtResource("35_serpae")]
+position = Vector2(101.1, 135.9)
+
+[node name="PfSerpaeTetra3" parent="Creatures" unique_id=606943772 instance=ExtResource("35_serpae")]
+position = Vector2(302.2, 187)
+
+[node name="PfDwarfGourami" parent="Creatures" unique_id=1801238511 instance=ExtResource("36_dwarf_")]
+position = Vector2(251.1, 76.2)
+
+[node name="PfGermanBlueRam" parent="Creatures" unique_id=804957572 instance=ExtResource("37_german")]
+position = Vector2(245.6, 174.4)
+
+[node name="PfGermanBlueRam2" parent="Creatures" unique_id=1449190226 instance=ExtResource("37_german")]
+position = Vector2(195.6, 223.9)
+
+[node name="PfScarletBadis" parent="Creatures" unique_id=1477907436 instance=ExtResource("38_scarle")]
+position = Vector2(412.2, 176.8)
+
+[node name="PfClownKillifish" parent="Creatures" unique_id=1318098873 instance=ExtResource("39_clown_")]
+position = Vector2(405.6, 20.4)
+
+[node name="PfClownKillifish2" parent="Creatures" unique_id=1157056643 instance=ExtResource("39_clown_")]
+position = Vector2(458.9, 24.4)
+
+[node name="PfSparklingGourami" parent="Creatures" unique_id=360904183 instance=ExtResource("40_sparkl")]
+position = Vector2(306.7, 120.2)
+
+[node name="PfSparklingGourami2" parent="Creatures" unique_id=589708537 instance=ExtResource("40_sparkl")]
+position = Vector2(570, 172.1)
+
+[node name="PfThreadfinRainbow" parent="Creatures" unique_id=1487816546 instance=ExtResource("41_thread")]
+position = Vector2(361.1, 72.3)
+
+[node name="PfThreadfinRainbow2" parent="Creatures" unique_id=1480197911 instance=ExtResource("41_thread")]
+position = Vector2(228.9, 39.3)
+
+[node name="PfPeaPuffer" parent="Creatures" unique_id=501876988 instance=ExtResource("42_pea_pu")]
+position = Vector2(511.1, 81.7)
 
 [node name="Food" type="Node2D" parent="." unique_id=191782434]
 
