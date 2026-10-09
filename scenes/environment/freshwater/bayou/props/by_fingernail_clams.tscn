@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://cgopshv6fjqq2" path="res://assets/environments/freshwater/bayou/decoration/shells/by_fingernail_clams.png" id="1_tex"]
+
+[node name="ByFingernailClams" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-14, -9)

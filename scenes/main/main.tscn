@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://cdek58jiv5wme"]
 
-[ext_resource type="PackedScene" path="res://scenes/aquarium/ms_aquarium.tscn" id="2_l3cfh"]
+[ext_resource type="PackedScene" path="res://scenes/aquarium/by_aquarium.tscn" id="1_hyk8p"]
 
 [node name="Main" type="Node2D" unique_id=1366203981]
 
-[node name="MsAquarium" parent="." unique_id=1082039044 instance=ExtResource("2_l3cfh")]
+[node name="ByAquarium" parent="." unique_id=770412284 instance=ExtResource("1_hyk8p")]
