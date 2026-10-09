@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://bsxo1g8viktrc" path="res://assets/environments/freshwater/ancient_cold_lake/decoration/coral/ac_lubomirskia_sponge_small.png" id="1_tex"]
+
+[node name="AcLubomirskiaSpongeSmall" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-19, -38)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-16, -6, -16, -5, -15, -5, -15, -4, -14, -4, -14, -3, -11, -3, -11, -2, -2, -2, 7, -2, 7, -3, 10, -3, 10, -4, 11, -4, 11, -5, 12, -5, 12, -6)
