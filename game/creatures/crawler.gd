@@ -16,7 +16,7 @@ const REF_SIZE: Vector2 = Vector2(30, 16)
 @export var move_prefix: String = "walk_"
 
 ## Vùng mặt sàn mà CHÂN của crawler được phép di chuyển
-@export var floor_y: float = 340.0
+@export var floor_y: float = 268.0
 @export var floor_height: float = 16.0
 
 ## Chuyển động bob theo trục Y
