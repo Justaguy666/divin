@@ -9,4 +9,3 @@ centered = false
 offset = Vector2(-17, -60)
 script = ExtResource("2_sway")
 max_angle = 0.075
-sway_speed = 1.2
