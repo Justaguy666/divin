@@ -10,4 +10,3 @@ offset = Vector2(-7, -12)
 hframes = 5
 script = ExtResource("2_2grdm")
 max_angle = 0.17
-sway_speed = 1.9

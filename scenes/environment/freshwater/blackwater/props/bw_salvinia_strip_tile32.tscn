@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://cww1i5w2dt1up"]
 
 [ext_resource type="Texture2D" path="res://assets/environments/freshwater/blackwater/vegetation/plants/bw_salvinia_strip_tile32_sway_32x8_10f.png" id="1_sheet"]
+[ext_resource type="Script" path="res://game/environment/synced_sway_anim.gd" id="2_sync"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_f0"]
 atlas = ExtResource("1_sheet")
@@ -86,9 +87,9 @@ size = Vector2(32, 6)
 [node name="BwSalviniaStripTile32" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_sway")
 animation = &"sway"
-autoplay = "sway"
 centered = false
 offset = Vector2(-16, 0)
+script = ExtResource("2_sync")
 
 [node name="Leaves" type="StaticBody2D" parent="."]
 collision_layer = 16
