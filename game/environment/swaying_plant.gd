@@ -2,29 +2,19 @@
 class_name SwayingPlant
 extends Sprite2D
 ## Cây tự lắc lư theo dòng nước, gốc đứng yên, ngọn nghiêng (skew).
+## Mọi cây dùng chung đồng hồ và tốc độ -> lắc cùng lúc, cùng hướng.
 
 
-## Góc nghiêng tối đa (radian)
+## Tốc độ lắc chung cho mọi cây (rad/s), bằng sway_speed trong grass_sway.gdshader
+const SWAY_SPEED: float = 1.5
+
+## Góc nghiêng tối đa (radian): chỉ đổi biên độ, không đổi nhịp
 @export var max_angle: float = 0.06
-## Tốc độ lắc (rad/s): cây mềm thì chậm, cây cứng thì nhanh
-@export var sway_speed: float = 1.5
-## Lệch pha theo vị trí ngang, tạo làn sóng lướt qua các cây
-## (nên bằng wave_scale trong grass_sway.gdshader để cây và thảm cỏ cùng nhịp)
-@export var wave_scale: float = 0.15
-
-var _time: float = 0.0
-var _phase: float = 0.0
 
 
-func _ready() -> void:
-	_phase = global_position.x * wave_scale
-	# Lệch thời gian ngẫu nhiên nhẹ để các cây cạnh nhau không giống hệt
-	_time = randf() * 0.5
-
-
-func _process(delta: float) -> void:
-	_time += delta
-	var t: float = _time * sway_speed + _phase
+func _process(_delta: float) -> void:
+	# Đồng hồ chung của game (không cộng dồn riêng từng cây) -> cây thêm sau vẫn cùng nhịp
+	var t: float = Time.get_ticks_msec() / 1000.0 * SWAY_SPEED
 	# Sóng chính + một sóng nhỏ nhanh hơn để chuyển động không đều như con lắc
 	var wave: float = sin(t) * 0.8 + sin(t * 2.3 + 1.7) * 0.2
 	skew = wave * max_angle
