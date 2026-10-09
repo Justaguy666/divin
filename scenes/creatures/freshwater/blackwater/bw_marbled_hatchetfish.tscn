@@ -8,4 +8,4 @@ sheet = ExtResource("2_sheet")
 frame_size = Vector2i(32, 28)
 animation_fps = 10.0
 speed = 22.0
-area = Rect2(0, 8, 576, 50)
+area = Rect2(0, 6, 640, 40)

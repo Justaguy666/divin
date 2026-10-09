@@ -14,19 +14,38 @@ extends Node2D
 @export var animation_fps: float = 8.0
 ## Tốc độ di chuyển (px/s)
 @export var speed: float = 20.0
-## Vùng được phép hoạt động trong bể
-@export var area: Rect2 = Rect2(0, 0, 576, 356)
+## Vùng được phép hoạt động trong bể (theo khung gốc 640 px)
+@export var area: Rect2 = Rect2(0, 0, 640, 280)
+## Giãn vùng hoạt động theo chiều ngang khi màn hình rộng hơn khung gốc
+## (vd. điện thoại 20:9, cửa sổ maximize) để sinh vật dùng hết phần bể đang thấy
+@export var fit_screen_width: bool = true
 
 @onready var sprite: AnimatedSprite2D = $Sprite
 
 ## Kích thước thân thật (phần có pixel của frame đầu tiên), đo trong _build_body()
 var body_size: Vector2 = Vector2.ZERO
 
+## area gốc trong Inspector, dùng để tính lại khi cửa sổ đổi kích thước
+var _base_area: Rect2
+
 
 func _ready() -> void:
+	_base_area = area
+	if fit_screen_width:
+		get_viewport().size_changed.connect(_fit_area_to_screen)
+		_fit_area_to_screen()
 	sprite.sprite_frames = _build_frames()
 	add_to_group("creatures")
 	_build_body()
+
+
+# Camera đứng giữa khung gốc, phần màn rộng thêm chia đều hai bên
+# -> nới area ra mỗi bên đúng một nửa phần rộng thêm
+func _fit_area_to_screen() -> void:
+	var base_width: float = ProjectSettings.get_setting("display/window/size/viewport_width")
+	var extra: float = maxf(0.0, get_viewport_rect().size.x - base_width) / 2.0
+	area.position.x = _base_area.position.x - extra
+	area.size.x = _base_area.size.x + extra * 2.0
 
 
 # Đo thân thật và tạo vùng thân (Area2D, layer 4)
