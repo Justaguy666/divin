@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://d0s6kpr0fsnuq" path="res://assets/environments/freshwater/marsh_swamp/vegetation/plants/ms_hornwort_dark.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://cvo60uvkuyu08" path="res://game/environment/swaying_plant.gd" id="2_sway"]
+
+[node name="MsHornwortDark" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-16, -83)
+script = ExtResource("2_sway")
+max_angle = 0.06

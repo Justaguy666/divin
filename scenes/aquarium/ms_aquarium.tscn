@@ -2,6 +2,46 @@
 
 [ext_resource type="PackedScene" path="res://scenes/environment/freshwater/marsh_swamp/marsh_swamp.tscn" id="1_env"]
 [ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_cam"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_european_bitterling.tscn" id="3_europe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_rosy_bitterling.tscn" id="4_rosy_b"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_sunbleak.tscn" id="5_sunble"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_medaka.tscn" id="6_medaka"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_topmouth_gudgeon.tscn" id="7_topmou"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_three_spined_stickleback.tscn" id="8_three_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_ninespine_stickleback.tscn" id="9_ninesp"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_okefenokee_pygmy_sunfish.tscn" id="10_okefen"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_blackbanded_sunfish.tscn" id="11_blackb"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_bluespotted_sunfish.tscn" id="12_bluesp"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_banded_killifish.tscn" id="13_banded"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_northern_redbelly_dace.tscn" id="14_northe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_frog_tadpole.tscn" id="15_frog_t"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_great_diving_beetle.tscn" id="16_great_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_paradise_fish.tscn" id="17_paradi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_rudd.tscn" id="18_rudd"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_tench.tscn" id="19_tench"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_golden_shiner.tscn" id="20_golden"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_pumpkinseed.tscn" id="21_pumpki"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_amur_sleeper.tscn" id="22_amur_s"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_european_perch.tscn" id="23_europe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_grass_pickerel.tscn" id="24_grass_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_asian_swamp_eel.tscn" id="25_asian_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_black_bullhead.tscn" id="26_black_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_northern_pike.tscn" id="27_northe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_northern_snakehead.tscn" id="28_northe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_european_eel.tscn" id="29_europe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_wels_catfish.tscn" id="30_wels_c"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_mandarin_fish.tscn" id="31_mandar"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_chinese_softshell_turtle.tscn" id="32_chines"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_european_weatherfish.tscn" id="33_europe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_great_crested_newt.tscn" id="34_great_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_axolotl.tscn" id="35_axolot"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_chinese_fire_bellied_newt.tscn" id="36_chines"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_european_pond_turtle.tscn" id="37_europe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_noble_crayfish.tscn" id="38_noble_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_great_pond_snail.tscn" id="39_great_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_swan_mussel.tscn" id="40_swan_m"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_dragonfly_nymph.tscn" id="41_dragon"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/marsh_swamp/ms_caddisfly_larva.tscn" id="42_caddis"]
 
 [node name="MsAquarium" type="Node2D" unique_id=770412284]
 
@@ -12,6 +52,231 @@ position = Vector2(320, 180)
 script = ExtResource("2_cam")
 
 [node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="MsEuropeanBitterling" parent="Creatures" unique_id=1109130909 instance=ExtResource("3_europe")]
+position = Vector2(106.7, 120.3)
+
+[node name="MsEuropeanBitterling2" parent="Creatures" unique_id=1908632805 instance=ExtResource("3_europe")]
+position = Vector2(402.4, 176.2)
+
+[node name="MsEuropeanBitterling3" parent="Creatures" unique_id=1205201396 instance=ExtResource("3_europe")]
+position = Vector2(165.0, 132.5)
+
+[node name="MsRosyBitterling" parent="Creatures" unique_id=1819043942 instance=ExtResource("4_rosy_b")]
+position = Vector2(275.5, 129.0)
+
+[node name="MsRosyBitterling2" parent="Creatures" unique_id=1622815966 instance=ExtResource("4_rosy_b")]
+position = Vector2(449.1, 153.2)
+
+[node name="MsRosyBitterling3" parent="Creatures" unique_id=15443529 instance=ExtResource("4_rosy_b")]
+position = Vector2(472.9, 112.7)
+
+[node name="MsSunbleak" parent="Creatures" unique_id=1763981654 instance=ExtResource("5_sunble")]
+position = Vector2(384.0, 25.5)
+
+[node name="MsSunbleak2" parent="Creatures" unique_id=1923329923 instance=ExtResource("5_sunble")]
+position = Vector2(94.9, 17.0)
+
+[node name="MsSunbleak3" parent="Creatures" unique_id=461454016 instance=ExtResource("5_sunble")]
+position = Vector2(423.7, 74.4)
+
+[node name="MsSunbleak4" parent="Creatures" unique_id=775870089 instance=ExtResource("5_sunble")]
+position = Vector2(262.4, 45.9)
+
+[node name="MsMedaka" parent="Creatures" unique_id=1112920858 instance=ExtResource("6_medaka")]
+position = Vector2(490.9, 82.0)
+
+[node name="MsMedaka2" parent="Creatures" unique_id=202554048 instance=ExtResource("6_medaka")]
+position = Vector2(397.1, 63.2)
+
+[node name="MsMedaka3" parent="Creatures" unique_id=992361665 instance=ExtResource("6_medaka")]
+position = Vector2(352.2, 33.9)
+
+[node name="MsMedaka4" parent="Creatures" unique_id=1548490248 instance=ExtResource("6_medaka")]
+position = Vector2(118.9, 57.8)
+
+[node name="MsTopmouthGudgeon" parent="Creatures" unique_id=1536565232 instance=ExtResource("7_topmou")]
+position = Vector2(363.4, 30.8)
+
+[node name="MsTopmouthGudgeon2" parent="Creatures" unique_id=204742841 instance=ExtResource("7_topmou")]
+position = Vector2(246.6, 80.6)
+
+[node name="MsTopmouthGudgeon3" parent="Creatures" unique_id=1080424140 instance=ExtResource("7_topmou")]
+position = Vector2(263.3, 94.8)
+
+[node name="MsThreeSpinedStickleback" parent="Creatures" unique_id=1733461376 instance=ExtResource("8_three_")]
+position = Vector2(525.6, 109.3)
+
+[node name="MsThreeSpinedStickleback2" parent="Creatures" unique_id=1064480422 instance=ExtResource("8_three_")]
+position = Vector2(460.1, 134.4)
+
+[node name="MsThreeSpinedStickleback3" parent="Creatures" unique_id=1823502072 instance=ExtResource("8_three_")]
+position = Vector2(263.0, 123.5)
+
+[node name="MsNinespineStickleback" parent="Creatures" unique_id=1039052623 instance=ExtResource("9_ninesp")]
+position = Vector2(275.2, 208.4)
+
+[node name="MsNinespineStickleback2" parent="Creatures" unique_id=1245911712 instance=ExtResource("9_ninesp")]
+position = Vector2(327.3, 192.7)
+
+[node name="MsOkefenokeePygmySunfish" parent="Creatures" unique_id=114985539 instance=ExtResource("10_okefen")]
+position = Vector2(165.7, 132.2)
+
+[node name="MsOkefenokeePygmySunfish2" parent="Creatures" unique_id=1449851399 instance=ExtResource("10_okefen")]
+position = Vector2(579.1, 175.6)
+
+[node name="MsOkefenokeePygmySunfish3" parent="Creatures" unique_id=1019403914 instance=ExtResource("10_okefen")]
+position = Vector2(97.4, 186.5)
+
+[node name="MsBlackbandedSunfish" parent="Creatures" unique_id=1834563884 instance=ExtResource("11_blackb")]
+position = Vector2(119.8, 186.5)
+
+[node name="MsBlackbandedSunfish2" parent="Creatures" unique_id=990962682 instance=ExtResource("11_blackb")]
+position = Vector2(536.1, 152.0)
+
+[node name="MsBluespottedSunfish" parent="Creatures" unique_id=1181736371 instance=ExtResource("12_bluesp")]
+position = Vector2(417.6, 173.7)
+
+[node name="MsBluespottedSunfish2" parent="Creatures" unique_id=670624554 instance=ExtResource("12_bluesp")]
+position = Vector2(180.6, 131.9)
+
+[node name="MsBandedKillifish" parent="Creatures" unique_id=1509638417 instance=ExtResource("13_banded")]
+position = Vector2(347.0, 70.9)
+
+[node name="MsBandedKillifish2" parent="Creatures" unique_id=940003948 instance=ExtResource("13_banded")]
+position = Vector2(308.2, 91.8)
+
+[node name="MsBandedKillifish3" parent="Creatures" unique_id=29921982 instance=ExtResource("13_banded")]
+position = Vector2(153.4, 87.2)
+
+[node name="MsNorthernRedbellyDace" parent="Creatures" unique_id=1292634459 instance=ExtResource("14_northe")]
+position = Vector2(58.5, 119.3)
+
+[node name="MsNorthernRedbellyDace2" parent="Creatures" unique_id=1061230891 instance=ExtResource("14_northe")]
+position = Vector2(578.0, 137.6)
+
+[node name="MsNorthernRedbellyDace3" parent="Creatures" unique_id=1497450111 instance=ExtResource("14_northe")]
+position = Vector2(241.6, 62.8)
+
+[node name="MsFrogTadpole" parent="Creatures" unique_id=1784194105 instance=ExtResource("15_frog_t")]
+position = Vector2(311.9, 81.2)
+
+[node name="MsFrogTadpole2" parent="Creatures" unique_id=1435709118 instance=ExtResource("15_frog_t")]
+position = Vector2(318.4, 73.2)
+
+[node name="MsFrogTadpole3" parent="Creatures" unique_id=690015955 instance=ExtResource("15_frog_t")]
+position = Vector2(548.1, 114.5)
+
+[node name="MsFrogTadpole4" parent="Creatures" unique_id=951566439 instance=ExtResource("15_frog_t")]
+position = Vector2(296.3, 112.4)
+
+[node name="MsGreatDivingBeetle" parent="Creatures" unique_id=1116326317 instance=ExtResource("16_great_")]
+position = Vector2(426.0, 154.6)
+
+[node name="MsParadiseFish" parent="Creatures" unique_id=403094368 instance=ExtResource("17_paradi")]
+position = Vector2(184.9, 152.3)
+
+[node name="MsParadiseFish2" parent="Creatures" unique_id=1038958731 instance=ExtResource("17_paradi")]
+position = Vector2(581.7, 142.5)
+
+[node name="MsRudd" parent="Creatures" unique_id=1949743989 instance=ExtResource("18_rudd")]
+position = Vector2(566.5, 108.4)
+
+[node name="MsRudd2" parent="Creatures" unique_id=1615354225 instance=ExtResource("18_rudd")]
+position = Vector2(319.1, 40.0)
+
+[node name="MsTench" parent="Creatures" unique_id=1978127322 instance=ExtResource("19_tench")]
+position = Vector2(519.7, 187.1)
+
+[node name="MsGoldenShiner" parent="Creatures" unique_id=1256914894 instance=ExtResource("20_golden")]
+position = Vector2(47.9, 18.0)
+
+[node name="MsGoldenShiner2" parent="Creatures" unique_id=1320252184 instance=ExtResource("20_golden")]
+position = Vector2(346.1, 113.3)
+
+[node name="MsPumpkinseed" parent="Creatures" unique_id=1343747693 instance=ExtResource("21_pumpki")]
+position = Vector2(484.5, 101.2)
+
+[node name="MsPumpkinseed2" parent="Creatures" unique_id=586677607 instance=ExtResource("21_pumpki")]
+position = Vector2(65.0, 141.2)
+
+[node name="MsAmurSleeper" parent="Creatures" unique_id=342346521 instance=ExtResource("22_amur_s")]
+position = Vector2(414.3, 213.7)
+
+[node name="MsEuropeanPerch" parent="Creatures" unique_id=1243264613 instance=ExtResource("23_europe")]
+position = Vector2(42.9, 147.1)
+
+[node name="MsEuropeanPerch2" parent="Creatures" unique_id=1066538156 instance=ExtResource("23_europe")]
+position = Vector2(470.9, 185.3)
+
+[node name="MsGrassPickerel" parent="Creatures" unique_id=1182104329 instance=ExtResource("24_grass_")]
+position = Vector2(426.3, 163.6)
+
+[node name="MsAsianSwampEel" parent="Creatures" unique_id=1294488164 instance=ExtResource("25_asian_")]
+position = Vector2(164.8, 236.5)
+
+[node name="MsBlackBullhead" parent="Creatures" unique_id=191318940 instance=ExtResource("26_black_")]
+position = Vector2(530.6, 220.2)
+
+[node name="MsNorthernPike" parent="Creatures" unique_id=300653602 instance=ExtResource("27_northe")]
+position = Vector2(274.0, 69.5)
+
+[node name="MsNorthernSnakehead" parent="Creatures" unique_id=667139295 instance=ExtResource("28_northe")]
+position = Vector2(478.7, 236.6)
+
+[node name="MsEuropeanEel" parent="Creatures" unique_id=328979278 instance=ExtResource("29_europe")]
+position = Vector2(324.3, 228.9)
+
+[node name="MsWelsCatfish" parent="Creatures" unique_id=40347965 instance=ExtResource("30_wels_c")]
+position = Vector2(331.2, 219.1)
+
+[node name="MsMandarinFish" parent="Creatures" unique_id=167696881 instance=ExtResource("31_mandar")]
+position = Vector2(576.9, 164.6)
+
+[node name="MsChineseSoftshellTurtle" parent="Creatures" unique_id=768926745 instance=ExtResource("32_chines")]
+position = Vector2(68.8, 108.4)
+
+[node name="MsEuropeanWeatherfish" parent="Creatures" unique_id=65384119 instance=ExtResource("33_europe")]
+position = Vector2(572.0, 267.1)
+
+[node name="MsEuropeanWeatherfish2" parent="Creatures" unique_id=1032254656 instance=ExtResource("33_europe")]
+position = Vector2(44.8, 267.1)
+
+[node name="MsGreatCrestedNewt" parent="Creatures" unique_id=662130049 instance=ExtResource("34_great_")]
+position = Vector2(220.1, 267.1)
+
+[node name="MsAxolotl" parent="Creatures" unique_id=1972707522 instance=ExtResource("35_axolot")]
+position = Vector2(291.1, 267.1)
+
+[node name="MsChineseFireBelliedNewt" parent="Creatures" unique_id=1011978954 instance=ExtResource("36_chines")]
+position = Vector2(100.4, 267.1)
+
+[node name="MsChineseFireBelliedNewt2" parent="Creatures" unique_id=1738592513 instance=ExtResource("36_chines")]
+position = Vector2(361.5, 267.1)
+
+[node name="MsEuropeanPondTurtle" parent="Creatures" unique_id=1279725117 instance=ExtResource("37_europe")]
+position = Vector2(129.0, 267.1)
+
+[node name="MsNobleCrayfish" parent="Creatures" unique_id=941165154 instance=ExtResource("38_noble_")]
+position = Vector2(331.4, 267.1)
+
+[node name="MsGreatPondSnail" parent="Creatures" unique_id=995302549 instance=ExtResource("39_great_")]
+position = Vector2(391.5, 267.1)
+
+[node name="MsGreatPondSnail2" parent="Creatures" unique_id=1467064010 instance=ExtResource("39_great_")]
+position = Vector2(377.0, 267.1)
+
+[node name="MsSwanMussel" parent="Creatures" unique_id=1185433667 instance=ExtResource("40_swan_m")]
+position = Vector2(442.3, 267.1)
+
+[node name="MsDragonflyNymph" parent="Creatures" unique_id=429820028 instance=ExtResource("41_dragon")]
+position = Vector2(261.5, 267.1)
+
+[node name="MsCaddisflyLarva" parent="Creatures" unique_id=382296166 instance=ExtResource("42_caddis")]
+position = Vector2(405.4, 267.1)
+
+[node name="MsCaddisflyLarva2" parent="Creatures" unique_id=1179877013 instance=ExtResource("42_caddis")]
+position = Vector2(56.2, 267.1)
 
 [node name="Food" type="Node2D" parent="." unique_id=191782434]
 

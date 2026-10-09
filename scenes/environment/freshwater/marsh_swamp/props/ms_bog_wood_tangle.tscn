@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://80v0ywcykq2e" path="res://assets/environments/freshwater/marsh_swamp/vegetation/roots/ms_bog_wood_tangle.png" id="1_tex"]
+
+[node name="MsBogWoodTangle" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-50, -91)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-3, -6, -3, -6)

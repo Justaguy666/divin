@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://dhcoepfoq2kng" path="res://assets/environments/freshwater/marsh_swamp/decoration/debris/ms_dead_reeds.png" id="1_tex"]
+
+[node name="MsDeadReeds" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-34, -12)

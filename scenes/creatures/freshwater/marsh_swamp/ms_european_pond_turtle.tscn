@@ -1,0 +1,14 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" uid="uid://dlpfppvngbl4j" path="res://scenes/creatures/_shared/crawler_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" path="res://assets/creatures/freshwater/marsh_swamp/ms_european_pond_turtle_crawl_36x20_4f.png" id="2_sheet"]
+
+[node name="MsEuropeanPondTurtle" unique_id=1905958987 instance=ExtResource("1_base")]
+floor_height = 16.0
+bob_amount = 0.0
+move_time = Vector2(2, 5)
+idle_time = Vector2(2, 6)
+sheet = ExtResource("2_sheet")
+frame_size = Vector2i(36, 20)
+animation_fps = 6.0
+speed = 4.0
