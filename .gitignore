@@ -16,3 +16,5 @@ desktop.ini
 /Claude outputs/
 
 .env
+*.gdignore.disabled
+.agents/mcp_config.json

@@ -1,0 +1,18 @@
+[gd_scene format=3]
+
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/billabong.tscn" id="1_env"]
+[ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_cam"]
+
+[node name="BbAquarium" type="Node2D" unique_id=770412284]
+
+[node name="Billabong" parent="." unique_id=90168738 instance=ExtResource("1_env")]
+
+[node name="AquariumCamera" type="Camera2D" parent="." unique_id=1716731383]
+position = Vector2(320, 180)
+script = ExtResource("2_cam")
+
+[node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="Food" type="Node2D" parent="." unique_id=191782434]
+
+[node name="Effects" type="Node2D" parent="." unique_id=1755907393]
