@@ -1,0 +1,23 @@
+[gd_scene format=4]
+
+[ext_resource type="PackedScene" uid="uid://bdkq66k5yxh2n" path="res://scenes/environment/_shared/environment_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" path="res://assets/environments/marine/open_pelagic/background/far/op_bg_far.png" id="2_far"]
+[ext_resource type="Texture2D" path="res://assets/environments/marine/open_pelagic/background/mid/op_bg_mid.png" id="3_mid"]
+[ext_resource type="Texture2D" path="res://assets/environments/marine/open_pelagic/background/near/op_bg_near.png" id="4_near"]
+
+[node name="OpenPelagic" unique_id=90168738 instance=ExtResource("1_base")]
+
+[node name="Sprite2D" parent="BgFar" index="0" unique_id=738316601]
+texture = ExtResource("2_far")
+
+[node name="Sprite2D" parent="BgMid" index="0" unique_id=1236876199]
+texture = ExtResource("3_mid")
+
+[node name="Sprite2D" parent="BgNear" index="0" unique_id=615000944]
+texture = ExtResource("4_near")
+
+[node name="WaterSurface" parent="." index="3" unique_id=1469277271]
+line_color = Color(0.945, 0.969, 0.992, 1.0)
+band_color = Color(0.471, 0.690, 0.925, 0.63)
+spark_color = Color(1.000, 1.000, 1.000, 1.0)
+air_color = Color(0.761, 0.859, 0.965, 1.0)
