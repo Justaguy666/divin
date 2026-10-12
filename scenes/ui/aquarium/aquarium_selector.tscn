@@ -42,63 +42,76 @@ layout_mode = 2
 
 [node name="VBox" type="VBoxContainer" parent="Center/Panel" unique_id=727461434]
 layout_mode = 2
-theme_override_constants/separation = 4
+theme_override_constants/separation = 6
 
 [node name="Header" type="HBoxContainer" parent="Center/Panel/VBox" unique_id=1255212773]
 layout_mode = 2
 
 [node name="Title" type="Label" parent="Center/Panel/VBox/Header" unique_id=1090520191]
 layout_mode = 2
-text = "Select Aquarium"
-
-[node name="spacer" type="Control" parent="Center/Panel/VBox/Header" unique_id=795702066]
-layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_type_variation = &"HeadingLabel"
+text = "Select Aquarium"
 
 [node name="CloseButton" type="TextureButton" parent="Center/Panel/VBox/Header" unique_id=946680809]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_vertical = 4
 texture_normal = ExtResource("close_normal")
 texture_pressed = ExtResource("close_pressed")
 texture_hover = ExtResource("close_hover")
 
-[node name="Tabs" type="HBoxContainer" parent="Center/Panel/VBox" unique_id=1335970415]
+[node name="HeaderDivider" type="HSeparator" parent="Center/Panel/VBox" unique_id=2064813371]
+layout_mode = 2
+
+[node name="Browser" type="VBoxContainer" parent="Center/Panel/VBox" unique_id=1491275518]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 0
+
+[node name="Tabs" type="HBoxContainer" parent="Center/Panel/VBox/Browser" unique_id=1335970415]
+z_index = 1
 layout_mode = 2
 theme_override_constants/separation = 2
 
-[node name="TabFresh" type="Button" parent="Center/Panel/VBox/Tabs" unique_id=444724932]
+[node name="TabFresh" type="Button" parent="Center/Panel/VBox/Browser/Tabs" unique_id=444724932]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 theme_type_variation = &"TabButton"
 text = "Fresh Water"
 
-[node name="TabMarine" type="Button" parent="Center/Panel/VBox/Tabs" unique_id=918322865]
+[node name="TabMarine" type="Button" parent="Center/Panel/VBox/Browser/Tabs" unique_id=918322865]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 theme_type_variation = &"TabButton"
 text = "Marine"
 
-[node name="TabSpecial" type="Button" parent="Center/Panel/VBox/Tabs" unique_id=1761733315]
+[node name="TabSpecial" type="Button" parent="Center/Panel/VBox/Browser/Tabs" unique_id=1761733315]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
 theme_type_variation = &"TabButton"
 text = "Special"
 
-[node name="Scroll" type="ScrollContainer" parent="Center/Panel/VBox" unique_id=1094033739]
+[node name="Content" type="PanelContainer" parent="Center/Panel/VBox/Browser" unique_id=1748360029]
 layout_mode = 2
 size_flags_vertical = 3
+theme_type_variation = &"ContentPanel"
+
+[node name="Scroll" type="ScrollContainer" parent="Center/Panel/VBox/Browser/Content" unique_id=1094033739]
+layout_mode = 2
 horizontal_scroll_mode = 0
 scroll_deadzone = 8
 
-[node name="Grid" type="GridContainer" parent="Center/Panel/VBox/Scroll" unique_id=1320521542]
+[node name="Grid" type="GridContainer" parent="Center/Panel/VBox/Browser/Content/Scroll" unique_id=1320521542]
 unique_name_in_owner = true
 layout_mode = 2
 theme_override_constants/h_separation = 4
 theme_override_constants/v_separation = 4
 columns = 4
+
+[node name="FooterDivider" type="HSeparator" parent="Center/Panel/VBox" unique_id=1203556846]
+layout_mode = 2
 
 [node name="Footer" type="HBoxContainer" parent="Center/Panel/VBox" unique_id=1033844234]
 layout_mode = 2
@@ -107,7 +120,8 @@ layout_mode = 2
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
-clip_text = true
+size_flags_vertical = 4
+text_overrun_behavior = 3
 
 [node name="GoButton" type="Button" parent="Center/Panel/VBox/Footer" unique_id=66115610]
 unique_name_in_owner = true

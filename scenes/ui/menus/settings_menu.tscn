@@ -6,10 +6,6 @@
 [ext_resource type="Texture2D" uid="uid://cw0w8gqc48ghq" path="res://assets/ui/ui_close_pressed.png" id="4_cheay"]
 [ext_resource type="Texture2D" uid="uid://b2tglkdi5nagw" path="res://assets/ui/ui_close_hover.png" id="5_mqqf1"]
 
-[sub_resource type="Theme" id="Theme_ga76u"]
-
-[sub_resource type="Theme" id="Theme_so6yi"]
-
 [node name="SettingsMenu" type="Control" unique_id=749575962]
 layout_mode = 3
 anchors_preset = 15
@@ -52,67 +48,103 @@ layout_mode = 2
 [node name="Title" type="Label" parent="Center/Panel/VBox/Header" unique_id=199758844]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 4
+theme_type_variation = &"HeadingLabel"
 text = "Settings"
 
 [node name="CloseButton" type="TextureButton" parent="Center/Panel/VBox/Header" unique_id=1470994949]
 unique_name_in_owner = true
 layout_mode = 2
+size_flags_vertical = 4
 texture_normal = ExtResource("3_mbts0")
 texture_pressed = ExtResource("4_cheay")
 texture_hover = ExtResource("5_mqqf1")
 
+[node name="HeaderDivider" type="HSeparator" parent="Center/Panel/VBox" unique_id=1840237711]
+layout_mode = 2
+
 [node name="Body" type="HBoxContainer" parent="Center/Panel/VBox" unique_id=169842614]
 layout_mode = 2
 size_flags_vertical = 3
-theme_override_constants/separation = 8
+theme_override_constants/separation = 0
 
 [node name="Tabs" type="VBoxContainer" parent="Center/Panel/VBox/Body" unique_id=1704527270]
+z_index = 1
 custom_minimum_size = Vector2(84, 0)
 layout_mode = 2
 theme_override_constants/separation = 2
 
 [node name="TabGeneral" type="Button" parent="Center/Panel/VBox/Body/Tabs" unique_id=642662812]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 20)
 layout_mode = 2
-theme = SubResource("Theme_ga76u")
-theme_type_variation = &"TabButton"
+theme_type_variation = &"SideTabButton"
 text = "General"
 alignment = 0
-autowrap_trim_flags = 192
 clip_text = true
 
 [node name="TabAudio" type="Button" parent="Center/Panel/VBox/Body/Tabs" unique_id=343769395]
 unique_name_in_owner = true
 layout_mode = 2
-theme = SubResource("Theme_so6yi")
-theme_type_variation = &"TabButton"
+theme_type_variation = &"SideTabButton"
 text = "Audio"
 alignment = 0
-autowrap_trim_flags = 192
 clip_text = true
 
-[node name="Pages" type="MarginContainer" parent="Center/Panel/VBox/Body" unique_id=2130663350]
+[node name="Content" type="PanelContainer" parent="Center/Panel/VBox/Body" unique_id=1377902154]
 layout_mode = 2
 size_flags_horizontal = 3
+theme_type_variation = &"ContentPanel"
 
-[node name="GeneralPage" type="VBoxContainer" parent="Center/Panel/VBox/Body/Pages" unique_id=469297141]
+[node name="Pages" type="MarginContainer" parent="Center/Panel/VBox/Body/Content" unique_id=2130663350]
+layout_mode = 2
+
+[node name="GeneralPage" type="VBoxContainer" parent="Center/Panel/VBox/Body/Content/Pages" unique_id=469297141]
 unique_name_in_owner = true
 layout_mode = 2
+theme_override_constants/separation = 0
 
-[node name="LanguageRow" type="HBoxContainer" parent="Center/Panel/VBox/Body/Pages/GeneralPage" unique_id=235035440]
+[node name="Section" type="Label" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage" unique_id=903455127]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+theme_type_variation = &"SectionLabel"
+text = "General"
+
+[node name="LanguageRow" type="HBoxContainer" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage" unique_id=235035440]
+custom_minimum_size = Vector2(0, 24)
 layout_mode = 2
 
-[node name="LanguageLabel" type="Label" parent="Center/Panel/VBox/Body/Pages/GeneralPage/LanguageRow" unique_id=130057130]
+[node name="LanguageLabel" type="Label" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage/LanguageRow" unique_id=130057130]
 layout_mode = 2
 size_flags_horizontal = 3
+size_flags_vertical = 4
 text = "Language"
 
-[node name="LanguageOption" type="OptionButton" parent="Center/Panel/VBox/Body/Pages/GeneralPage/LanguageRow" unique_id=1811494635]
+[node name="LanguageOption" type="OptionButton" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage/LanguageRow" unique_id=1811494635]
 unique_name_in_owner = true
+custom_minimum_size = Vector2(120, 0)
 layout_mode = 2
+size_flags_vertical = 4
 theme_override_constants/h_separation = 6
 
-[node name="AudioPage" type="VBoxContainer" parent="Center/Panel/VBox/Body/Pages" unique_id=1956554143]
-unique_name_in_owner = true
+[node name="LanguageDivider" type="HSeparator" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage" unique_id=1592846630]
 layout_mode = 2
+theme_type_variation = &"RowSeparator"
+
+[node name="AudioPage" type="VBoxContainer" parent="Center/Panel/VBox/Body/Content/Pages" unique_id=1956554143]
+unique_name_in_owner = true
+visible = false
+layout_mode = 2
+theme_override_constants/separation = 0
+
+[node name="Section" type="Label" parent="Center/Panel/VBox/Body/Content/Pages/AudioPage" unique_id=1125893604]
+custom_minimum_size = Vector2(0, 18)
+layout_mode = 2
+theme_type_variation = &"SectionLabel"
+text = "Audio"
+
+[node name="SoonLabel" type="Label" parent="Center/Panel/VBox/Body/Content/Pages/AudioPage" unique_id=478221093]
+custom_minimum_size = Vector2(0, 24)
+layout_mode = 2
+theme_type_variation = &"MutedLabel"
+text = "Soon"
+vertical_alignment = 1
