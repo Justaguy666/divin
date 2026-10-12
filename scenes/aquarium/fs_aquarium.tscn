@@ -2,6 +2,46 @@
 
 [ext_resource type="PackedScene" path="res://scenes/environment/freshwater/forest_stream/forest_stream.tscn" id="1_env"]
 [ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_cam"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_rainbow_darter.tscn" id="3_rainbo"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_greenside_darter.tscn" id="4_greens"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_redline_darter.tscn" id="5_redlin"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_tangerine_darter.tscn" id="6_tanger"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_fantail_darter.tscn" id="7_fantai"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_blacknose_dace.tscn" id="8_blackn"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_longnose_dace.tscn" id="9_longno"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_southern_redbelly_dace.tscn" id="10_southe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_rosyside_dace.tscn" id="11_rosysi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_warpaint_shiner.tscn" id="12_warpai"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_saffron_shiner.tscn" id="13_saffro"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_rosyface_shiner.tscn" id="14_rosyfa"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_creek_chub.tscn" id="15_creek_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_fallfish.tscn" id="16_fallfi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_central_stoneroller.tscn" id="17_centra"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_bluehead_chub.tscn" id="18_bluehe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_northern_hog_sucker.tscn" id="19_northe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_white_sucker.tscn" id="20_white_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_rock_bass.tscn" id="21_rock_b"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_longear_sunfish.tscn" id="22_longea"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_northern_studfish.tscn" id="23_northe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_stonecat.tscn" id="24_stonec"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_logperch.tscn" id="25_logper"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_american_brook_lamprey.tscn" id="26_americ"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_smallmouth_bass.tscn" id="27_smallm"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_walleye.tscn" id="28_walley"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_sauger.tscn" id="29_sauger"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_muskellunge.tscn" id="30_muskel"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_river_redhorse.tscn" id="31_river_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_american_shad.tscn" id="32_americ"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_hellbender.tscn" id="33_hellbe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_mudpuppy.tscn" id="34_mudpup"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_appalachian_brook_crayfish.tscn" id="35_appala"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_mottled_sculpin.tscn" id="36_mottle"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_hellgrammite.tscn" id="37_hellgr"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_stonefly_nymph.tscn" id="38_stonef"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_flatheaded_mayfly_nymph.tscn" id="39_flathe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_water_penny.tscn" id="40_water_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_eastern_elliptio.tscn" id="41_easter"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/forest_stream/fs_silty_hornsnail.tscn" id="42_silty_"]
 
 [node name="FsAquarium" type="Node2D" unique_id=770412284]
 
@@ -12,6 +52,219 @@ position = Vector2(320, 180)
 script = ExtResource("2_cam")
 
 [node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="FsRainbowDarter" parent="Creatures" unique_id=1109130909 instance=ExtResource("3_rainbo")]
+position = Vector2(106.7, 225.1)
+
+[node name="FsRainbowDarter2" parent="Creatures" unique_id=1908632805 instance=ExtResource("3_rainbo")]
+position = Vector2(402.4, 240.4)
+
+[node name="FsGreensideDarter" parent="Creatures" unique_id=1205201396 instance=ExtResource("4_greens")]
+position = Vector2(165.0, 226.4)
+
+[node name="FsGreensideDarter2" parent="Creatures" unique_id=1819043942 instance=ExtResource("4_greens")]
+position = Vector2(275.5, 225.3)
+
+[node name="FsRedlineDarter" parent="Creatures" unique_id=1622815966 instance=ExtResource("5_redlin")]
+position = Vector2(449.1, 234.1)
+
+[node name="FsRedlineDarter2" parent="Creatures" unique_id=15443529 instance=ExtResource("5_redlin")]
+position = Vector2(472.9, 223.0)
+
+[node name="FsTangerineDarter" parent="Creatures" unique_id=1763981654 instance=ExtResource("6_tanger")]
+position = Vector2(384.0, 198.2)
+
+[node name="FsTangerineDarter2" parent="Creatures" unique_id=1923329923 instance=ExtResource("6_tanger")]
+position = Vector2(94.9, 193.5)
+
+[node name="FsFantailDarter" parent="Creatures" unique_id=461454016 instance=ExtResource("7_fantai")]
+position = Vector2(423.7, 234.1)
+
+[node name="FsFantailDarter2" parent="Creatures" unique_id=775870089 instance=ExtResource("7_fantai")]
+position = Vector2(262.4, 223.8)
+
+[node name="FsBlacknoseDace" parent="Creatures" unique_id=1112920858 instance=ExtResource("8_blackn")]
+position = Vector2(490.9, 192.0)
+
+[node name="FsBlacknoseDace2" parent="Creatures" unique_id=202554048 instance=ExtResource("8_blackn")]
+position = Vector2(397.1, 157.7)
+
+[node name="FsBlacknoseDace3" parent="Creatures" unique_id=992361665 instance=ExtResource("8_blackn")]
+position = Vector2(352.2, 104.2)
+
+[node name="FsBlacknoseDace4" parent="Creatures" unique_id=1548490248 instance=ExtResource("8_blackn")]
+position = Vector2(118.9, 148.0)
+
+[node name="FsLongnoseDace" parent="Creatures" unique_id=1536565232 instance=ExtResource("9_longno")]
+position = Vector2(363.4, 179.5)
+
+[node name="FsLongnoseDace2" parent="Creatures" unique_id=204742841 instance=ExtResource("9_longno")]
+position = Vector2(246.6, 205.2)
+
+[node name="FsSouthernRedbellyDace" parent="Creatures" unique_id=1080424140 instance=ExtResource("10_southe")]
+position = Vector2(263.3, 110.6)
+
+[node name="FsSouthernRedbellyDace2" parent="Creatures" unique_id=1733461376 instance=ExtResource("10_southe")]
+position = Vector2(525.6, 90.8)
+
+[node name="FsSouthernRedbellyDace3" parent="Creatures" unique_id=1064480422 instance=ExtResource("10_southe")]
+position = Vector2(460.1, 112.4)
+
+[node name="FsRosysideDace" parent="Creatures" unique_id=1823502072 instance=ExtResource("11_rosysi")]
+position = Vector2(263.0, 103.1)
+
+[node name="FsRosysideDace2" parent="Creatures" unique_id=1039052623 instance=ExtResource("11_rosysi")]
+position = Vector2(275.2, 152.9)
+
+[node name="FsRosysideDace3" parent="Creatures" unique_id=1245911712 instance=ExtResource("11_rosysi")]
+position = Vector2(327.3, 137.8)
+
+[node name="FsWarpaintShiner" parent="Creatures" unique_id=114985539 instance=ExtResource("12_warpai")]
+position = Vector2(165.7, 44.0)
+
+[node name="FsWarpaintShiner2" parent="Creatures" unique_id=1449851399 instance=ExtResource("12_warpai")]
+position = Vector2(579.1, 92.9)
+
+[node name="FsWarpaintShiner3" parent="Creatures" unique_id=1019403914 instance=ExtResource("12_warpai")]
+position = Vector2(97.4, 105.2)
+
+[node name="FsSaffronShiner" parent="Creatures" unique_id=1834563884 instance=ExtResource("13_saffro")]
+position = Vector2(119.8, 147.7)
+
+[node name="FsSaffronShiner2" parent="Creatures" unique_id=990962682 instance=ExtResource("13_saffro")]
+position = Vector2(536.1, 115.7)
+
+[node name="FsSaffronShiner3" parent="Creatures" unique_id=1181736371 instance=ExtResource("13_saffro")]
+position = Vector2(417.6, 126.6)
+
+[node name="FsRosyfaceShiner" parent="Creatures" unique_id=670624554 instance=ExtResource("14_rosyfa")]
+position = Vector2(180.6, 63.8)
+
+[node name="FsRosyfaceShiner2" parent="Creatures" unique_id=1509638417 instance=ExtResource("14_rosyfa")]
+position = Vector2(347.0, 91.7)
+
+[node name="FsRosyfaceShiner3" parent="Creatures" unique_id=940003948 instance=ExtResource("14_rosyfa")]
+position = Vector2(308.2, 118.8)
+
+[node name="FsCreekChub" parent="Creatures" unique_id=29921982 instance=ExtResource("15_creek_")]
+position = Vector2(153.4, 167.8)
+
+[node name="FsCreekChub2" parent="Creatures" unique_id=1292634459 instance=ExtResource("15_creek_")]
+position = Vector2(58.5, 142.4)
+
+[node name="FsFallfish" parent="Creatures" unique_id=1061230891 instance=ExtResource("16_fallfi")]
+position = Vector2(578.0, 153.7)
+
+[node name="FsFallfish2" parent="Creatures" unique_id=1497450111 instance=ExtResource("16_fallfi")]
+position = Vector2(241.6, 66.8)
+
+[node name="FsCentralStoneroller" parent="Creatures" unique_id=1784194105 instance=ExtResource("17_centra")]
+position = Vector2(311.9, 209.7)
+
+[node name="FsCentralStoneroller2" parent="Creatures" unique_id=1435709118 instance=ExtResource("17_centra")]
+position = Vector2(318.4, 204.9)
+
+[node name="FsBlueheadChub" parent="Creatures" unique_id=690015955 instance=ExtResource("18_bluehe")]
+position = Vector2(548.1, 187.7)
+
+[node name="FsNorthernHogSucker" parent="Creatures" unique_id=951566439 instance=ExtResource("19_northe")]
+position = Vector2(296.3, 237.2)
+
+[node name="FsWhiteSucker" parent="Creatures" unique_id=1116326317 instance=ExtResource("20_white_")]
+position = Vector2(426.0, 232.5)
+
+[node name="FsRockBass" parent="Creatures" unique_id=403094368 instance=ExtResource("21_rock_b")]
+position = Vector2(184.9, 223.9)
+
+[node name="FsLongearSunfish" parent="Creatures" unique_id=1038958731 instance=ExtResource("22_longea")]
+position = Vector2(581.7, 202.5)
+
+[node name="FsLongearSunfish2" parent="Creatures" unique_id=1949743989 instance=ExtResource("22_longea")]
+position = Vector2(566.5, 178.4)
+
+[node name="FsNorthernStudfish" parent="Creatures" unique_id=1615354225 instance=ExtResource("23_northe")]
+position = Vector2(319.1, 27.1)
+
+[node name="FsNorthernStudfish2" parent="Creatures" unique_id=1978127322 instance=ExtResource("23_northe")]
+position = Vector2(519.7, 31.8)
+
+[node name="FsStonecat" parent="Creatures" unique_id=1256914894 instance=ExtResource("24_stonec")]
+position = Vector2(47.9, 223.0)
+
+[node name="FsLogperch" parent="Creatures" unique_id=1320252184 instance=ExtResource("25_logper")]
+position = Vector2(346.1, 236.4)
+
+[node name="FsAmericanBrookLamprey" parent="Creatures" unique_id=1343747693 instance=ExtResource("26_americ")]
+position = Vector2(484.5, 201.4)
+
+[node name="FsSmallmouthBass" parent="Creatures" unique_id=586677607 instance=ExtResource("27_smallm")]
+position = Vector2(65.0, 146.7)
+
+[node name="FsWalleye" parent="Creatures" unique_id=342346521 instance=ExtResource("28_walley")]
+position = Vector2(414.3, 201.4)
+
+[node name="FsSauger" parent="Creatures" unique_id=1243264613 instance=ExtResource("29_sauger")]
+position = Vector2(42.9, 213.9)
+
+[node name="FsMuskellunge" parent="Creatures" unique_id=1066538156 instance=ExtResource("30_muskel")]
+position = Vector2(470.9, 184.8)
+
+[node name="FsRiverRedhorse" parent="Creatures" unique_id=1182104329 instance=ExtResource("31_river_")]
+position = Vector2(426.3, 236.1)
+
+[node name="FsAmericanShad" parent="Creatures" unique_id=1294488164 instance=ExtResource("32_americ")]
+position = Vector2(164.8, 106.8)
+
+[node name="FsAmericanShad2" parent="Creatures" unique_id=191318940 instance=ExtResource("32_americ")]
+position = Vector2(530.6, 95.6)
+
+[node name="FsHellbender" parent="Creatures" unique_id=353858326 instance=ExtResource("33_hellbe")]
+position = Vector2(272.3, 267.1)
+
+[node name="FsMudpuppy" parent="Creatures" unique_id=1692420203 instance=ExtResource("34_mudpup")]
+position = Vector2(572.3, 267.1)
+
+[node name="FsAppalachianBrookCrayfish" parent="Creatures" unique_id=1268488104 instance=ExtResource("35_appala")]
+position = Vector2(483.8, 267.1)
+
+[node name="FsAppalachianBrookCrayfish2" parent="Creatures" unique_id=894847333 instance=ExtResource("35_appala")]
+position = Vector2(207.5, 267.1)
+
+[node name="FsMottledSculpin" parent="Creatures" unique_id=328979278 instance=ExtResource("36_mottle")]
+position = Vector2(256.4, 267.1)
+
+[node name="FsMottledSculpin2" parent="Creatures" unique_id=432403830 instance=ExtResource("36_mottle")]
+position = Vector2(331.6, 267.1)
+
+[node name="FsHellgrammite" parent="Creatures" unique_id=237920903 instance=ExtResource("37_hellgr")]
+position = Vector2(248.1, 267.1)
+
+[node name="FsStoneflyNymph" parent="Creatures" unique_id=167696881 instance=ExtResource("38_stonef")]
+position = Vector2(255.8, 267.1)
+
+[node name="FsStoneflyNymph2" parent="Creatures" unique_id=755215138 instance=ExtResource("38_stonef")]
+position = Vector2(59.8, 267.1)
+
+[node name="FsFlatheadedMayflyNymph" parent="Creatures" unique_id=1662561109 instance=ExtResource("39_flathe")]
+position = Vector2(404.8, 267.1)
+
+[node name="FsFlatheadedMayflyNymph2" parent="Creatures" unique_id=64937544 instance=ExtResource("39_flathe")]
+position = Vector2(578.1, 267.1)
+
+[node name="FsWaterPenny" parent="Creatures" unique_id=713859355 instance=ExtResource("40_water_")]
+position = Vector2(326.0, 267.1)
+
+[node name="FsWaterPenny2" parent="Creatures" unique_id=976669115 instance=ExtResource("40_water_")]
+position = Vector2(426.0, 267.1)
+
+[node name="FsEasternElliptio" parent="Creatures" unique_id=270646204 instance=ExtResource("41_easter")]
+position = Vector2(219.1, 267.1)
+
+[node name="FsSiltyHornsnail" parent="Creatures" unique_id=1011978954 instance=ExtResource("42_silty_")]
+position = Vector2(318.6, 267.1)
+
+[node name="FsSiltyHornsnail2" parent="Creatures" unique_id=1738592513 instance=ExtResource("42_silty_")]
+position = Vector2(361.5, 267.1)
 
 [node name="Food" type="Node2D" parent="." unique_id=191782434]
 

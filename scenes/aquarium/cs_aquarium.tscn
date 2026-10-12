@@ -2,6 +2,46 @@
 
 [ext_resource type="PackedScene" path="res://scenes/environment/freshwater/clear_spring/clear_spring.tscn" id="1_env"]
 [ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_cam"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_sailfin_molly.tscn" id="3_sailfi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_florida_flagfish.tscn" id="4_florid"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_seminole_killifish.tscn" id="5_semino"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_coastal_shiner.tscn" id="6_coasta"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_ironcolor_shiner.tscn" id="7_ironco"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_spotted_sunfish.tscn" id="8_spotte"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_swamp_darter.tscn" id="9_swamp_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_tidewater_silverside.tscn" id="10_tidewa"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_yellowtail_lambari.tscn" id="11_yellow"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_moenkhausia_bonita.tscn" id="12_moenkh"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_buenos_aires_tetra.tscn" id="13_buenos"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_spotted_pyrrhulina.tscn" id="14_spotte"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_redbreast_sunfish.tscn" id="15_redbre"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_suwannee_bass.tscn" id="16_suwann"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_striped_mullet.tscn" id="17_stripe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_florida_gar.tscn" id="18_florid"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_lake_chubsucker.tscn" id="19_lake_c"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_piraputanga.tscn" id="20_pirapu"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_curimbata.tscn" id="21_curimb"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_three_spot_piau.tscn" id="22_three_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_chanchito.tscn" id="23_chanch"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_pike_cichlid.tscn" id="24_pike_c"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_banded_knifefish.tscn" id="25_banded"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_banded_cichlid.tscn" id="26_banded"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_florida_manatee.tscn" id="27_florid"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_golden_dorado.tscn" id="28_golden"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_pacu.tscn" id="29_pacu"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_pintado.tscn" id="30_pintad"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_common_snook.tscn" id="31_common"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_gulf_sturgeon.tscn" id="32_gulf_s"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_cascudo.tscn" id="33_cascud"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_loggerhead_musk_turtle.tscn" id="34_logger"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_toad_headed_turtle.tscn" id="35_toad_h"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_florida_cave_crayfish.tscn" id="36_florid"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_pantanal_crab.tscn" id="37_pantan"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_florida_cave_amphipod.tscn" id="38_florid"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_rasp_elimia.tscn" id="39_rasp_e"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_florida_pondhorn.tscn" id="40_florid"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_cascarudo.tscn" id="41_cascar"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_southern_flounder.tscn" id="42_southe"]
 
 [node name="CsAquarium" type="Node2D" unique_id=770412284]
 
@@ -12,6 +52,231 @@ position = Vector2(320, 180)
 script = ExtResource("2_cam")
 
 [node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="CsSailfinMolly" parent="Creatures" unique_id=1109130909 instance=ExtResource("3_sailfi")]
+position = Vector2(106.7, 47.2)
+
+[node name="CsSailfinMolly2" parent="Creatures" unique_id=1908632805 instance=ExtResource("3_sailfi")]
+position = Vector2(402.4, 78.7)
+
+[node name="CsSailfinMolly3" parent="Creatures" unique_id=1205201396 instance=ExtResource("3_sailfi")]
+position = Vector2(165.0, 54.1)
+
+[node name="CsFloridaFlagfish" parent="Creatures" unique_id=1819043942 instance=ExtResource("4_florid")]
+position = Vector2(275.5, 139.0)
+
+[node name="CsFloridaFlagfish2" parent="Creatures" unique_id=1622815966 instance=ExtResource("4_florid")]
+position = Vector2(449.1, 163.2)
+
+[node name="CsFloridaFlagfish3" parent="Creatures" unique_id=15443529 instance=ExtResource("4_florid")]
+position = Vector2(472.9, 122.7)
+
+[node name="CsSeminoleKillifish" parent="Creatures" unique_id=1763981654 instance=ExtResource("5_semino")]
+position = Vector2(384.0, 23.7)
+
+[node name="CsSeminoleKillifish2" parent="Creatures" unique_id=1923329923 instance=ExtResource("5_semino")]
+position = Vector2(94.9, 15.0)
+
+[node name="CsSeminoleKillifish3" parent="Creatures" unique_id=461454016 instance=ExtResource("5_semino")]
+position = Vector2(423.7, 73.8)
+
+[node name="CsCoastalShiner" parent="Creatures" unique_id=775870089 instance=ExtResource("6_coasta")]
+position = Vector2(262.4, 71.1)
+
+[node name="CsCoastalShiner2" parent="Creatures" unique_id=1112920858 instance=ExtResource("6_coasta")]
+position = Vector2(490.9, 152.0)
+
+[node name="CsCoastalShiner3" parent="Creatures" unique_id=202554048 instance=ExtResource("6_coasta")]
+position = Vector2(397.1, 117.7)
+
+[node name="CsIroncolorShiner" parent="Creatures" unique_id=992361665 instance=ExtResource("7_ironco")]
+position = Vector2(352.2, 74.2)
+
+[node name="CsIroncolorShiner2" parent="Creatures" unique_id=1548490248 instance=ExtResource("7_ironco")]
+position = Vector2(118.9, 118.0)
+
+[node name="CsIroncolorShiner3" parent="Creatures" unique_id=1536565232 instance=ExtResource("7_ironco")]
+position = Vector2(363.4, 41.1)
+
+[node name="CsSpottedSunfish" parent="Creatures" unique_id=204742841 instance=ExtResource("8_spotte")]
+position = Vector2(246.6, 155.2)
+
+[node name="CsSpottedSunfish2" parent="Creatures" unique_id=1080424140 instance=ExtResource("8_spotte")]
+position = Vector2(263.3, 170.6)
+
+[node name="CsSwampDarter" parent="Creatures" unique_id=1733461376 instance=ExtResource("9_swamp_")]
+position = Vector2(525.6, 216.7)
+
+[node name="CsSwampDarter2" parent="Creatures" unique_id=1064480422 instance=ExtResource("9_swamp_")]
+position = Vector2(460.1, 224.4)
+
+[node name="CsTidewaterSilverside" parent="Creatures" unique_id=1823502072 instance=ExtResource("10_tidewa")]
+position = Vector2(263.0, 43.5)
+
+[node name="CsTidewaterSilverside2" parent="Creatures" unique_id=1039052623 instance=ExtResource("10_tidewa")]
+position = Vector2(275.2, 67.6)
+
+[node name="CsTidewaterSilverside3" parent="Creatures" unique_id=1245911712 instance=ExtResource("10_tidewa")]
+position = Vector2(327.3, 60.3)
+
+[node name="CsYellowtailLambari" parent="Creatures" unique_id=114985539 instance=ExtResource("11_yellow")]
+position = Vector2(165.7, 45.3)
+
+[node name="CsYellowtailLambari2" parent="Creatures" unique_id=1449851399 instance=ExtResource("11_yellow")]
+position = Vector2(579.1, 98.1)
+
+[node name="CsYellowtailLambari3" parent="Creatures" unique_id=1019403914 instance=ExtResource("11_yellow")]
+position = Vector2(97.4, 111.4)
+
+[node name="CsMoenkhausiaBonita" parent="Creatures" unique_id=1834563884 instance=ExtResource("12_moenkh")]
+position = Vector2(119.8, 156.5)
+
+[node name="CsMoenkhausiaBonita2" parent="Creatures" unique_id=990962682 instance=ExtResource("12_moenkh")]
+position = Vector2(536.1, 122.0)
+
+[node name="CsMoenkhausiaBonita3" parent="Creatures" unique_id=1181736371 instance=ExtResource("12_moenkh")]
+position = Vector2(417.6, 133.7)
+
+[node name="CsBuenosAiresTetra" parent="Creatures" unique_id=670624554 instance=ExtResource("13_buenos")]
+position = Vector2(180.6, 101.9)
+
+[node name="CsBuenosAiresTetra2" parent="Creatures" unique_id=1509638417 instance=ExtResource("13_buenos")]
+position = Vector2(347.0, 134.7)
+
+[node name="CsBuenosAiresTetra3" parent="Creatures" unique_id=940003948 instance=ExtResource("13_buenos")]
+position = Vector2(308.2, 166.5)
+
+[node name="CsSpottedPyrrhulina" parent="Creatures" unique_id=29921982 instance=ExtResource("14_spotte")]
+position = Vector2(153.4, 78.5)
+
+[node name="CsSpottedPyrrhulina2" parent="Creatures" unique_id=1292634459 instance=ExtResource("14_spotte")]
+position = Vector2(58.5, 64.5)
+
+[node name="CsRedbreastSunfish" parent="Creatures" unique_id=1061230891 instance=ExtResource("15_redbre")]
+position = Vector2(578.0, 195.7)
+
+[node name="CsRedbreastSunfish2" parent="Creatures" unique_id=1497450111 instance=ExtResource("15_redbre")]
+position = Vector2(241.6, 114.8)
+
+[node name="CsSuwanneeBass" parent="Creatures" unique_id=1784194105 instance=ExtResource("16_suwann")]
+position = Vector2(311.9, 141.6)
+
+[node name="CsStripedMullet" parent="Creatures" unique_id=1435709118 instance=ExtResource("17_stripe")]
+position = Vector2(318.4, 71.8)
+
+[node name="CsStripedMullet2" parent="Creatures" unique_id=690015955 instance=ExtResource("17_stripe")]
+position = Vector2(548.1, 121.1)
+
+[node name="CsStripedMullet3" parent="Creatures" unique_id=951566439 instance=ExtResource("17_stripe")]
+position = Vector2(296.3, 118.7)
+
+[node name="CsFloridaGar" parent="Creatures" unique_id=1116326317 instance=ExtResource("18_florid")]
+position = Vector2(426.0, 115.4)
+
+[node name="CsLakeChubsucker" parent="Creatures" unique_id=403094368 instance=ExtResource("19_lake_c")]
+position = Vector2(184.9, 230.8)
+
+[node name="CsPiraputanga" parent="Creatures" unique_id=1038958731 instance=ExtResource("20_pirapu")]
+position = Vector2(581.7, 140.9)
+
+[node name="CsPiraputanga2" parent="Creatures" unique_id=1949743989 instance=ExtResource("20_pirapu")]
+position = Vector2(566.5, 114.9)
+
+[node name="CsPiraputanga3" parent="Creatures" unique_id=1615354225 instance=ExtResource("20_pirapu")]
+position = Vector2(319.1, 41.0)
+
+[node name="CsCurimbata" parent="Creatures" unique_id=1978127322 instance=ExtResource("21_curimb")]
+position = Vector2(519.7, 195.9)
+
+[node name="CsCurimbata2" parent="Creatures" unique_id=1256914894 instance=ExtResource("21_curimb")]
+position = Vector2(47.9, 188.0)
+
+[node name="CsThreeSpotPiau" parent="Creatures" unique_id=1320252184 instance=ExtResource("22_three_")]
+position = Vector2(346.1, 215.0)
+
+[node name="CsThreeSpotPiau2" parent="Creatures" unique_id=1343747693 instance=ExtResource("22_three_")]
+position = Vector2(484.5, 153.8)
+
+[node name="CsChanchito" parent="Creatures" unique_id=586677607 instance=ExtResource("23_chanch")]
+position = Vector2(65.0, 184.8)
+
+[node name="CsPikeCichlid" parent="Creatures" unique_id=342346521 instance=ExtResource("24_pike_c")]
+position = Vector2(414.3, 186.8)
+
+[node name="CsBandedKnifefish" parent="Creatures" unique_id=1243264613 instance=ExtResource("25_banded")]
+position = Vector2(42.9, 228.6)
+
+[node name="CsBandedCichlid" parent="Creatures" unique_id=1066538156 instance=ExtResource("26_banded")]
+position = Vector2(470.9, 226.3)
+
+[node name="CsFloridaManatee" parent="Creatures" unique_id=1182104329 instance=ExtResource("27_florid")]
+position = Vector2(426.3, 163.0)
+
+[node name="CsGoldenDorado" parent="Creatures" unique_id=1294488164 instance=ExtResource("28_golden")]
+position = Vector2(164.8, 126.8)
+
+[node name="CsPacu" parent="Creatures" unique_id=191318940 instance=ExtResource("29_pacu")]
+position = Vector2(530.6, 135.6)
+
+[node name="CsPintado" parent="Creatures" unique_id=300653602 instance=ExtResource("30_pintad")]
+position = Vector2(274.0, 213.8)
+
+[node name="CsCommonSnook" parent="Creatures" unique_id=667139295 instance=ExtResource("31_common")]
+position = Vector2(478.7, 199.8)
+
+[node name="CsGulfSturgeon" parent="Creatures" unique_id=328979278 instance=ExtResource("32_gulf_s")]
+position = Vector2(324.3, 225.1)
+
+[node name="CsCascudo" parent="Creatures" unique_id=432403830 instance=ExtResource("33_cascud")]
+position = Vector2(331.6, 267.1)
+
+[node name="CsCascudo2" parent="Creatures" unique_id=237920903 instance=ExtResource("33_cascud")]
+position = Vector2(248.1, 267.1)
+
+[node name="CsLoggerheadMuskTurtle" parent="Creatures" unique_id=167696881 instance=ExtResource("34_logger")]
+position = Vector2(255.8, 267.1)
+
+[node name="CsToadHeadedTurtle" parent="Creatures" unique_id=755215138 instance=ExtResource("35_toad_h")]
+position = Vector2(59.8, 267.1)
+
+[node name="CsFloridaCaveCrayfish" parent="Creatures" unique_id=1662561109 instance=ExtResource("36_florid")]
+position = Vector2(404.8, 267.1)
+
+[node name="CsFloridaCaveCrayfish2" parent="Creatures" unique_id=64937544 instance=ExtResource("36_florid")]
+position = Vector2(578.1, 267.1)
+
+[node name="CsPantanalCrab" parent="Creatures" unique_id=713859355 instance=ExtResource("37_pantan")]
+position = Vector2(326.0, 267.1)
+
+[node name="CsPantanalCrab2" parent="Creatures" unique_id=976669115 instance=ExtResource("37_pantan")]
+position = Vector2(426.0, 267.1)
+
+[node name="CsFloridaCaveAmphipod" parent="Creatures" unique_id=270646204 instance=ExtResource("38_florid")]
+position = Vector2(219.1, 267.1)
+
+[node name="CsFloridaCaveAmphipod2" parent="Creatures" unique_id=1011978954 instance=ExtResource("38_florid")]
+position = Vector2(318.6, 267.1)
+
+[node name="CsFloridaCaveAmphipod3" parent="Creatures" unique_id=1738592513 instance=ExtResource("38_florid")]
+position = Vector2(361.5, 267.1)
+
+[node name="CsRaspElimia" parent="Creatures" unique_id=1279725117 instance=ExtResource("39_rasp_e")]
+position = Vector2(129.0, 267.1)
+
+[node name="CsRaspElimia2" parent="Creatures" unique_id=941165154 instance=ExtResource("39_rasp_e")]
+position = Vector2(331.4, 267.1)
+
+[node name="CsFloridaPondhorn" parent="Creatures" unique_id=995302549 instance=ExtResource("40_florid")]
+position = Vector2(391.5, 267.1)
+
+[node name="CsCascarudo" parent="Creatures" unique_id=1467064010 instance=ExtResource("41_cascar")]
+position = Vector2(377.0, 267.1)
+
+[node name="CsCascarudo2" parent="Creatures" unique_id=1185433667 instance=ExtResource("41_cascar")]
+position = Vector2(442.3, 267.1)
+
+[node name="CsSouthernFlounder" parent="Creatures" unique_id=429820028 instance=ExtResource("42_southe")]
+position = Vector2(261.5, 267.1)
 
 [node name="Food" type="Node2D" parent="." unique_id=191782434]
 
