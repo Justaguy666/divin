@@ -1,0 +1,118 @@
+[gd_scene format=3 uid="uid://b3pmxc5iicpii"]
+
+[ext_resource type="Theme" uid="uid://crxte4q5turqc" path="res://resources/ui/divin_theme.tres" id="1_80b2v"]
+[ext_resource type="Script" uid="uid://bciyo2wo6wgvn" path="res://game/ui/menus/settings_menu.gd" id="2_dvvvn"]
+[ext_resource type="Texture2D" uid="uid://dnl2wb8pm4o86" path="res://assets/ui/ui_close_normal.png" id="3_mbts0"]
+[ext_resource type="Texture2D" uid="uid://cw0w8gqc48ghq" path="res://assets/ui/ui_close_pressed.png" id="4_cheay"]
+[ext_resource type="Texture2D" uid="uid://b2tglkdi5nagw" path="res://assets/ui/ui_close_hover.png" id="5_mqqf1"]
+
+[sub_resource type="Theme" id="Theme_ga76u"]
+
+[sub_resource type="Theme" id="Theme_so6yi"]
+
+[node name="SettingsMenu" type="Control" unique_id=749575962]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_80b2v")
+script = ExtResource("2_dvvvn")
+
+[node name="Dim" type="ColorRect" parent="." unique_id=301691452]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 0.49803922)
+
+[node name="Center" type="CenterContainer" parent="." unique_id=1952197107]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Center" unique_id=343049727]
+custom_minimum_size = Vector2(360, 200)
+layout_mode = 2
+
+[node name="VBox" type="VBoxContainer" parent="Center/Panel" unique_id=608472210]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Header" type="HBoxContainer" parent="Center/Panel/VBox" unique_id=172377949]
+layout_mode = 2
+
+[node name="Title" type="Label" parent="Center/Panel/VBox/Header" unique_id=199758844]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Settings"
+
+[node name="CloseButton" type="TextureButton" parent="Center/Panel/VBox/Header" unique_id=1470994949]
+unique_name_in_owner = true
+layout_mode = 2
+texture_normal = ExtResource("3_mbts0")
+texture_pressed = ExtResource("4_cheay")
+texture_hover = ExtResource("5_mqqf1")
+
+[node name="Body" type="HBoxContainer" parent="Center/Panel/VBox" unique_id=169842614]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="Tabs" type="VBoxContainer" parent="Center/Panel/VBox/Body" unique_id=1704527270]
+custom_minimum_size = Vector2(84, 0)
+layout_mode = 2
+theme_override_constants/separation = 2
+
+[node name="TabGeneral" type="Button" parent="Center/Panel/VBox/Body/Tabs" unique_id=642662812]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 20)
+layout_mode = 2
+theme = SubResource("Theme_ga76u")
+theme_type_variation = &"TabButton"
+text = "General"
+alignment = 0
+autowrap_trim_flags = 192
+clip_text = true
+
+[node name="TabAudio" type="Button" parent="Center/Panel/VBox/Body/Tabs" unique_id=343769395]
+unique_name_in_owner = true
+layout_mode = 2
+theme = SubResource("Theme_so6yi")
+theme_type_variation = &"TabButton"
+text = "Audio"
+alignment = 0
+autowrap_trim_flags = 192
+clip_text = true
+
+[node name="Pages" type="MarginContainer" parent="Center/Panel/VBox/Body" unique_id=2130663350]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="GeneralPage" type="VBoxContainer" parent="Center/Panel/VBox/Body/Pages" unique_id=469297141]
+unique_name_in_owner = true
+layout_mode = 2
+
+[node name="LanguageRow" type="HBoxContainer" parent="Center/Panel/VBox/Body/Pages/GeneralPage" unique_id=235035440]
+layout_mode = 2
+
+[node name="LanguageLabel" type="Label" parent="Center/Panel/VBox/Body/Pages/GeneralPage/LanguageRow" unique_id=130057130]
+layout_mode = 2
+size_flags_horizontal = 3
+text = "Language"
+
+[node name="LanguageOption" type="OptionButton" parent="Center/Panel/VBox/Body/Pages/GeneralPage/LanguageRow" unique_id=1811494635]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_constants/h_separation = 6
+
+[node name="AudioPage" type="VBoxContainer" parent="Center/Panel/VBox/Body/Pages" unique_id=1956554143]
+unique_name_in_owner = true
+layout_mode = 2

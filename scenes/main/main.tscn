@@ -1,7 +1,32 @@
 [gd_scene format=3 uid="uid://cdek58jiv5wme"]
 
-[ext_resource type="PackedScene" path="res://scenes/aquarium/by_aquarium.tscn" id="1_hyk8p"]
+[ext_resource type="Script" uid="uid://caj4mt7o160r7" path="res://game/main/main.gd" id="1_hyk8p"]
+[ext_resource type="PackedScene" uid="uid://da87vkdx3d3i3" path="res://scenes/ui/aquarium/aquarium_selector.tscn" id="2_iuonh"]
+[ext_resource type="PackedScene" uid="uid://nm7bvvl8fvp2" path="res://scenes/ui/hud/hud.tscn" id="2_k2fmo"]
+[ext_resource type="PackedScene" uid="uid://b3pmxc5iicpii" path="res://scenes/ui/menus/settings_menu.tscn" id="4_l3cfh"]
 
 [node name="Main" type="Node2D" unique_id=1366203981]
+script = ExtResource("1_hyk8p")
 
-[node name="ByAquarium" parent="." unique_id=770412284 instance=ExtResource("1_hyk8p")]
+[node name="AquariumHolder" type="Node2D" parent="." unique_id=1775379855]
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=871549871]
+layer = 10
+
+[node name="HUD" parent="UI" unique_id=667711894 instance=ExtResource("2_k2fmo")]
+
+[node name="AquariumSelector" parent="UI" unique_id=105245070 instance=ExtResource("2_iuonh")]
+
+[node name="SettingsMenu" parent="UI" unique_id=749575962 instance=ExtResource("4_l3cfh")]
+
+[node name="FadeLayer" type="CanvasLayer" parent="." unique_id=526818942]
+layer = 100
+
+[node name="Fade" type="ColorRect" parent="FadeLayer" unique_id=1651490894]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.043137256, 0.101960786, 0.16470589, 1)
