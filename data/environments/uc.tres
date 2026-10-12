@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="AquariumInfo" format=3]
+
+[ext_resource type="Script" uid="uid://bqvvotesiihnm" path="res://game/aquarium/aquarium_info.gd" id="1_info"]
+[ext_resource type="Texture2D" path="res://assets/ui/thumbnails/uc.png" id="2_thumb"]
+
+[resource]
+script = ExtResource("1_info")
+id = "uc"
+display_name = "Underwater Cave"
+category = 2
+scene_path = "res://scenes/aquarium/uc_aquarium.tscn"
+thumbnail = ExtResource("2_thumb")
+available = false
+description = "A pitch-dark flooded cave."
+metadata/_custom_type_script = "uid://bqvvotesiihnm"

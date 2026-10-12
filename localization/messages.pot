@@ -1,0 +1,355 @@
+# LANGUAGE translation for Divin for the following files:
+# res://scenes/ui/menus/settings_menu.tscn
+# res://scenes/ui/aquarium/aquarium_card.tscn
+# res://scenes/ui/aquarium/aquarium_selector.tscn
+# res://game/ui/aquarium/aquarium_selector.gd
+# res://localization/extra_strings.gd
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Divin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+
+#: scenes/ui/menus/settings_menu.tscn
+msgid "Settings"
+msgstr ""
+
+#: scenes/ui/menus/settings_menu.tscn
+msgid "General"
+msgstr ""
+
+#: scenes/ui/menus/settings_menu.tscn
+msgid "Audio"
+msgstr ""
+
+#: scenes/ui/menus/settings_menu.tscn
+msgid "Language"
+msgstr ""
+
+#: scenes/ui/aquarium/aquarium_card.tscn
+msgid "SoonLabel"
+msgstr ""
+
+#: scenes/ui/aquarium/aquarium_card.tscn
+msgid "Soon"
+msgstr ""
+
+#: scenes/ui/aquarium/aquarium_selector.tscn
+msgid "Select Aquarium"
+msgstr ""
+
+#: scenes/ui/aquarium/aquarium_selector.tscn
+msgid "Fresh Water"
+msgstr ""
+
+#: scenes/ui/aquarium/aquarium_selector.tscn
+msgid "Marine"
+msgstr ""
+
+#: scenes/ui/aquarium/aquarium_selector.tscn
+msgid "Special"
+msgstr ""
+
+#: scenes/ui/aquarium/aquarium_selector.tscn
+msgid "Go ›"
+msgstr ""
+
+#: localization/extra_strings.gd:12
+msgid "Ancient Cold Lake"
+msgstr ""
+
+#: localization/extra_strings.gd:13
+msgid "An ultra-clear, icy lake full of ancient endemics."
+msgstr ""
+
+#: localization/extra_strings.gd:15
+msgid "Antarctic Water"
+msgstr ""
+
+#: localization/extra_strings.gd:16
+msgid "An icy polar sea beneath the Antarctic ice."
+msgstr ""
+
+#: localization/extra_strings.gd:18
+msgid "Asian Peat Swamp"
+msgstr ""
+
+#: localization/extra_strings.gd:19
+msgid "Wine-dark peat water in a tropical swamp forest."
+msgstr ""
+
+#: localization/extra_strings.gd:21
+msgid "Arctic Water"
+msgstr ""
+
+#: localization/extra_strings.gd:22
+msgid "Cold, ice-grey Arctic shallows."
+msgstr ""
+
+#: localization/extra_strings.gd:24
+msgid "Billabong"
+msgstr ""
+
+#: localization/extra_strings.gd:25
+msgid "A teal Australian oxbow pool."
+msgstr ""
+
+#: localization/extra_strings.gd:27
+msgid "Blackwater"
+msgstr ""
+
+#: localization/extra_strings.gd:28
+msgid "A tea-coloured Amazon stream under amber light."
+msgstr ""
+
+#: localization/extra_strings.gd:30
+msgid "Bayou"
+msgstr ""
+
+#: localization/extra_strings.gd:31
+msgid "Slow olive water among cypress roots."
+msgstr ""
+
+#: localization/extra_strings.gd:33
+msgid "Coral Reef"
+msgstr ""
+
+#: localization/extra_strings.gd:34
+msgid "A busy reef bursting with coral and colour."
+msgstr ""
+
+#: localization/extra_strings.gd:36
+msgid "Cenote"
+msgstr ""
+
+#: localization/extra_strings.gd:37
+msgid "A sunlit sinkhole of clear turquoise water."
+msgstr ""
+
+#: localization/extra_strings.gd:39
+msgid "Clear Spring"
+msgstr ""
+
+#: localization/extra_strings.gd:40
+msgid "Crystal-clear spring water over pale sand."
+msgstr ""
+
+#: localization/extra_strings.gd:42
+msgid "Cold Water"
+msgstr ""
+
+#: localization/extra_strings.gd:43
+msgid "A steel-blue northern sea, cold and rich."
+msgstr ""
+
+#: localization/extra_strings.gd:45
+msgid "Desert Spring"
+msgstr ""
+
+#: localization/extra_strings.gd:46
+msgid "A tiny warm spring hidden in the desert."
+msgstr ""
+
+#: localization/extra_strings.gd:48
+msgid "Deep Water"
+msgstr ""
+
+#: localization/extra_strings.gd:49
+msgid "Dark depths far below the sunlight."
+msgstr ""
+
+#: localization/extra_strings.gd:51
+msgid "Forest Stream"
+msgstr ""
+
+#: localization/extra_strings.gd:52
+msgid "A shaded woodland brook full of roots and moss."
+msgstr ""
+
+#: localization/extra_strings.gd:54
+msgid "Galapagos Upwelling"
+msgstr ""
+
+#: localization/extra_strings.gd:55
+msgid "Nutrient-rich currents around volcanic islands."
+msgstr ""
+
+#: localization/extra_strings.gd:57
+msgid "High Andes Lake"
+msgstr ""
+
+#: localization/extra_strings.gd:58
+msgid "A cold, clear lake high in the Andes."
+msgstr ""
+
+#: localization/extra_strings.gd:60
+msgid "Hillstream"
+msgstr ""
+
+#: localization/extra_strings.gd:61
+msgid "Fast, oxygen-rich rapids over smooth pebbles."
+msgstr ""
+
+#: localization/extra_strings.gd:63
+msgid "Hydrothermal Vent"
+msgstr ""
+
+#: localization/extra_strings.gd:64
+msgid "Black smokers glowing on the deep-sea floor."
+msgstr ""
+
+#: localization/extra_strings.gd:66
+msgid "Kelp Forest"
+msgstr ""
+
+#: localization/extra_strings.gd:67
+msgid "Tall golden-green kelp in cool coastal water."
+msgstr ""
+
+#: localization/extra_strings.gd:69
+msgid "Koi Pond"
+msgstr ""
+
+#: localization/extra_strings.gd:70
+msgid "A calm garden pond with jade-green water."
+msgstr ""
+
+#: localization/extra_strings.gd:72
+msgid "Mangrove"
+msgstr ""
+
+#: localization/extra_strings.gd:73
+msgid "Tangled mangrove roots where the sea meets the land."
+msgstr ""
+
+#: localization/extra_strings.gd:75
+msgid "Muck Sand"
+msgstr ""
+
+#: localization/extra_strings.gd:76
+msgid "Dark volcanic sand hiding strange critters."
+msgstr ""
+
+#: localization/extra_strings.gd:78
+msgid "Muddy River"
+msgstr ""
+
+#: localization/extra_strings.gd:79
+msgid "A murky lowland river with soft silt banks."
+msgstr ""
+
+#: localization/extra_strings.gd:81
+msgid "Marsh Swamp"
+msgstr ""
+
+#: localization/extra_strings.gd:82
+msgid "Still, weedy wetland water under green shade."
+msgstr ""
+
+#: localization/extra_strings.gd:84
+msgid "Ocean"
+msgstr ""
+
+#: localization/extra_strings.gd:85
+msgid "Open blue water near the sea surface."
+msgstr ""
+
+#: localization/extra_strings.gd:87
+msgid "Open Pelagic"
+msgstr ""
+
+#: localization/extra_strings.gd:88
+msgid "Endless blue open ocean."
+msgstr ""
+
+#: localization/extra_strings.gd:90
+msgid "Planted Freshwater"
+msgstr ""
+
+#: localization/extra_strings.gd:91
+msgid "A bright, plant-filled tank of clear water."
+msgstr ""
+
+#: localization/extra_strings.gd:93
+msgid "Rocky Coast"
+msgstr ""
+
+#: localization/extra_strings.gd:94
+msgid "Wave-washed rocks and tide pools."
+msgstr ""
+
+#: localization/extra_strings.gd:96
+msgid "Rift Lake"
+msgstr ""
+
+#: localization/extra_strings.gd:97
+msgid "A deep blue African lake with rocky reefs."
+msgstr ""
+
+#: localization/extra_strings.gd:99
+msgid "Rocky River"
+msgstr ""
+
+#: localization/extra_strings.gd:100
+msgid "Cool, fast water over smooth river stones."
+msgstr ""
+
+#: localization/extra_strings.gd:102
+msgid "Seagrass Meadow"
+msgstr ""
+
+#: localization/extra_strings.gd:103
+msgid "Swaying seagrass beds in sunlit shallows."
+msgstr ""
+
+#: localization/extra_strings.gd:105
+msgid "Cold Seep"
+msgstr ""
+
+#: localization/extra_strings.gd:106
+msgid "Methane seeps on the dark ocean floor."
+msgstr ""
+
+#: localization/extra_strings.gd:108
+msgid "Sargassum Sea"
+msgstr ""
+
+#: localization/extra_strings.gd:109
+msgid "Floating golden seaweed mats far out at sea."
+msgstr ""
+
+#: localization/extra_strings.gd:111
+msgid "Tropical"
+msgstr ""
+
+#: localization/extra_strings.gd:112
+msgid "Warm, clear tropical shallows."
+msgstr ""
+
+#: localization/extra_strings.gd:114
+msgid "Twilight Zone"
+msgstr ""
+
+#: localization/extra_strings.gd:115
+msgid "Dim midwater where the light fades to black."
+msgstr ""
+
+#: localization/extra_strings.gd:117
+msgid "Underwater Cave"
+msgstr ""
+
+#: localization/extra_strings.gd:118
+msgid "A pitch-dark flooded cave."
+msgstr ""
+
+msgid "Divin"
+msgstr ""
+
+#: localization/extra_strings.gd
+msgid "You're here"
+msgstr ""
