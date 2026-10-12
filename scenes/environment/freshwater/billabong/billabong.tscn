@@ -1,27 +1,48 @@
-[gd_scene format=4]
+[gd_scene format=4 uid="uid://cj3gwu2o1fw2a"]
 
 [ext_resource type="PackedScene" uid="uid://bdkq66k5yxh2n" path="res://scenes/environment/_shared/environment_base.tscn" id="1_base"]
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/billabong/background/far/bb_bg_far.png" id="2_far"]
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/billabong/background/mid/bb_bg_mid.png" id="3_mid"]
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/billabong/background/near/bb_bg_near.png" id="4_near"]
-[ext_resource type="TileSet" path="res://resources/tilesets/billabong.tres" id="5_tiles"]
+[ext_resource type="Texture2D" uid="uid://oc8pj47c83uo" path="res://assets/environments/freshwater/billabong/background/far/bb_bg_far.png" id="2_far"]
+[ext_resource type="Texture2D" uid="uid://cvqnd0h8x8c3p" path="res://assets/environments/freshwater/billabong/background/mid/bb_bg_mid.png" id="3_mid"]
+[ext_resource type="Texture2D" uid="uid://0ncajadd4x1h" path="res://assets/environments/freshwater/billabong/background/near/bb_bg_near.png" id="4_near"]
+[ext_resource type="TileSet" uid="uid://cqh23a78qig83" path="res://resources/tilesets/billabong.tres" id="5_tiles"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_aponogeton.tscn" id="6_cuydk"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_blue_waterlily_short.tscn" id="7_rpjrv"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_blue_waterlily_tall.tscn" id="8_4fbd2"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_blyxa_l.tscn" id="9_kujyw"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_blyxa_s.tscn" id="10_aw0my"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_gumnuts.tscn" id="11_8nfbw"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_ironstone_pebbles_strip.tscn" id="12_8gi4r"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_nardoo.tscn" id="13_mqb8h"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_notopala_snail_shell.tscn" id="14_0cg3x"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_ochre_sandstone_large.tscn" id="15_lkpc7"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_ochre_sandstone_medium.tscn" id="16_8b5ev"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_ochre_sandstone_small.tscn" id="17_jiogs"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_ottelia_swamp_lily.tscn" id="18_moir2"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_pandanus_key.tscn" id="19_kbym5"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_pandanus_prop_roots.tscn" id="20_vmku1"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_paperbark_root_curtain.tscn" id="21_nndea"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_paperbark_sheets.tscn" id="22_n6nxc"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_paperbark_stump_hide.tscn" id="23_rqaet"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_red_gum_snag.tscn" id="24_mony0"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_velesunio_mussel_open.tscn" id="25_77cx5"]
+[ext_resource type="PackedScene" path="res://scenes/environment/freshwater/billabong/props/bb_water_snowflake_floating.tscn" id="26_bbyxk"]
 
 [node name="Billabong" unique_id=90168738 instance=ExtResource("1_base")]
 
-[node name="Sprite2D" parent="BgFar" index="0" unique_id=738316601]
+[node name="Sprite2D" parent="BgFar" parent_id_path=PackedInt32Array(829465576) index="0" unique_id=738316601]
 texture = ExtResource("2_far")
 
-[node name="Sprite2D" parent="BgMid" index="0" unique_id=1236876199]
+[node name="Sprite2D" parent="BgMid" parent_id_path=PackedInt32Array(1751391260) index="0" unique_id=1236876199]
 texture = ExtResource("3_mid")
 
-[node name="Sprite2D" parent="BgNear" index="0" unique_id=615000944]
+[node name="Sprite2D" parent="BgNear" parent_id_path=PackedInt32Array(1577890879) index="0" unique_id=615000944]
 texture = ExtResource("4_near")
 
 [node name="WaterSurface" parent="." index="3" unique_id=1469277271]
-line_color = Color(0.565, 0.706, 0.627, 1.0)
+line_color = Color(0.565, 0.706, 0.627, 1)
 band_color = Color(0.345, 0.502, 0.439, 0.63)
-spark_color = Color(0.639, 0.792, 0.706, 1.0)
-air_color = Color(0.702, 0.773, 0.745, 1.0)
+spark_color = Color(0.639, 0.792, 0.706, 1)
+air_color = Color(0.702, 0.773, 0.745, 1)
 
 [node name="Ground" parent="." index="4" unique_id=1875096136]
 position = Vector2(96, 72)
@@ -31,3 +52,132 @@ tile_set = ExtResource("5_tiles")
 [node name="FloorOverlay" parent="." index="5" unique_id=1541574459]
 position = Vector2(96, 72)
 tile_set = ExtResource("5_tiles")
+
+[node name="BbAponogeton" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="0" unique_id=1274449896 instance=ExtResource("6_cuydk")]
+position = Vector2(480, 272)
+
+[node name="BbAponogeton2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="1" unique_id=943815240 instance=ExtResource("6_cuydk")]
+position = Vector2(352, 272)
+
+[node name="BbAponogeton4" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="2" unique_id=1419056183 instance=ExtResource("6_cuydk")]
+position = Vector2(184, 272)
+
+[node name="BbBlueWaterlilyShort" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="3" unique_id=44728197 instance=ExtResource("7_rpjrv")]
+position = Vector2(312, 272)
+
+[node name="BbBlueWaterlilyShort2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="4" unique_id=1948657230 instance=ExtResource("7_rpjrv")]
+position = Vector2(560, 272)
+
+[node name="BbBlueWaterlilyTall" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="5" unique_id=2076378317 instance=ExtResource("8_4fbd2")]
+position = Vector2(600, 280)
+
+[node name="BbBlueWaterlilyTall2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="6" unique_id=2041856781 instance=ExtResource("8_4fbd2")]
+position = Vector2(232, 272)
+
+[node name="BbBlyxaL" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="7" unique_id=1380412347 instance=ExtResource("9_kujyw")]
+position = Vector2(304, 280)
+
+[node name="BbBlyxaL2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="8" unique_id=1829099132 instance=ExtResource("9_kujyw")]
+position = Vector2(144, 272)
+
+[node name="BbBlyxaS" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="9" unique_id=865578682 instance=ExtResource("10_aw0my")]
+position = Vector2(480, 272)
+
+[node name="BbBlyxaS2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="10" unique_id=804572308 instance=ExtResource("10_aw0my")]
+position = Vector2(144, 272)
+
+[node name="BbGumnuts" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="11" unique_id=1174133417 instance=ExtResource("11_8nfbw")]
+position = Vector2(72, 328)
+
+[node name="BbIronstonePebblesStrip" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="12" unique_id=1172111128 instance=ExtResource("12_8gi4r")]
+position = Vector2(504, 274)
+
+[node name="BbAponogeton3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="13" unique_id=169384605 instance=ExtResource("6_cuydk")]
+position = Vector2(76, 272)
+
+[node name="BbBlyxaS3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="14" unique_id=450938739 instance=ExtResource("10_aw0my")]
+position = Vector2(76, 272)
+
+[node name="BbNardoo" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="15" unique_id=110734031 instance=ExtResource("13_mqb8h")]
+position = Vector2(616, 280)
+
+[node name="BbNardoo2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="16" unique_id=2089058217 instance=ExtResource("13_mqb8h")]
+position = Vector2(224, 272)
+
+[node name="BbNotopalaSnailShell" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="17" unique_id=1154985083 instance=ExtResource("14_0cg3x")]
+position = Vector2(336, 328)
+
+[node name="BbOchreSandstoneLarge" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="18" unique_id=1445381348 instance=ExtResource("15_lkpc7")]
+position = Vector2(336, 280)
+
+[node name="BbOchreSandstoneMedium" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="19" unique_id=1107282317 instance=ExtResource("16_8b5ev")]
+position = Vector2(312, 280)
+
+[node name="BbOchreSandstoneSmall" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="20" unique_id=911420398 instance=ExtResource("17_jiogs")]
+position = Vector2(528, 272)
+
+[node name="BbOchreSandstoneSmall2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="21" unique_id=798940103 instance=ExtResource("17_jiogs")]
+position = Vector2(144, 280)
+
+[node name="BbOtteliaSwampLily" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="22" unique_id=956590927 instance=ExtResource("18_moir2")]
+position = Vector2(560, 272)
+
+[node name="BbOtteliaSwampLily3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="23" unique_id=565927054 instance=ExtResource("18_moir2")]
+position = Vector2(16, 272)
+
+[node name="BbOtteliaSwampLily2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="24" unique_id=1681813085 instance=ExtResource("18_moir2")]
+position = Vector2(256, 272)
+
+[node name="BbPandanusKey" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="25" unique_id=806757362 instance=ExtResource("19_kbym5")]
+position = Vector2(416, 336)
+
+[node name="BbPandanusPropRoots" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="26" unique_id=1609207169 instance=ExtResource("20_vmku1")]
+position = Vector2(328, 272)
+
+[node name="BbPaperbarkRootCurtain" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="27" unique_id=1578875332 instance=ExtResource("21_nndea")]
+position = Vector2(616, -40)
+
+[node name="BbPaperbarkRootCurtain2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="28" unique_id=2084576778 instance=ExtResource("21_nndea")]
+position = Vector2(552, -40)
+
+[node name="BbPaperbarkRootCurtain3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="29" unique_id=3104594 instance=ExtResource("21_nndea")]
+position = Vector2(512, -40)
+
+[node name="BbPaperbarkSheets" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="30" unique_id=1907920087 instance=ExtResource("22_n6nxc")]
+position = Vector2(176, 344)
+
+[node name="BbPaperbarkStumpHide" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="31" unique_id=1217376814 instance=ExtResource("23_rqaet")]
+position = Vector2(504, 272)
+
+[node name="BbPaperbarkStumpHide2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="32" unique_id=1867703779 instance=ExtResource("23_rqaet")]
+position = Vector2(240, 272)
+
+[node name="BbRedGumSnag" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="33" unique_id=241092496 instance=ExtResource("24_mony0")]
+position = Vector2(608, 280)
+
+[node name="BbVelesunioMusselOpen" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="34" unique_id=459006438 instance=ExtResource("25_77cx5")]
+position = Vector2(600, 280)
+
+[node name="BbWaterSnowflakeFloating" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="35" unique_id=10708041 instance=ExtResource("26_bbyxk")]
+position = Vector2(208, 0)
+
+[node name="BbWaterSnowflakeFloating5" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="36" unique_id=801678421 instance=ExtResource("26_bbyxk")]
+position = Vector2(272, 0)
+
+[node name="BbWaterSnowflakeFloating6" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="37" unique_id=825962059 instance=ExtResource("26_bbyxk")]
+position = Vector2(336, 0)
+
+[node name="BbWaterSnowflakeFloating7" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="38" unique_id=864119115 instance=ExtResource("26_bbyxk")]
+position = Vector2(400, 0)
+
+[node name="BbWaterSnowflakeFloating8" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="39" unique_id=1231137688 instance=ExtResource("26_bbyxk")]
+position = Vector2(464, 0)
+
+[node name="BbWaterSnowflakeFloating2" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="40" unique_id=1792012141 instance=ExtResource("26_bbyxk")]
+position = Vector2(144, 0)
+
+[node name="BbWaterSnowflakeFloating3" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="41" unique_id=1901402701 instance=ExtResource("26_bbyxk")]
+position = Vector2(80, 0)
+
+[node name="BbWaterSnowflakeFloating4" parent="Props" parent_id_path=PackedInt32Array(1262492340) index="42" unique_id=603211267 instance=ExtResource("26_bbyxk")]
+position = Vector2(16, 0)

@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://cejtorpwwnbtt" path="res://assets/environments/freshwater/forest_stream/vegetation/plants/fs_liverwort_rock.png" id="1_tex"]
+
+[node name="FsLiverwortRock" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-16, -27)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-15, -6, -15, -5, -14, -5, -14, -3, -13, -3, -13, -2, -12, -2, -12, -1, 10, -1, 10, -2, 11, -2, 11, -3, 12, -3, 12, -4, 13, -4, 13, -6)

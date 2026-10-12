@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://bwlkco3q0o0m2" path="res://assets/environments/freshwater/billabong/vegetation/roots/bb_paperbark_root_curtain.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://cvo60uvkuyu08" path="res://game/environment/swaying_plant.gd" id="2_sway"]
+
+[node name="BbPaperbarkRootCurtain" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-40, 0)
+script = ExtResource("2_sway")
+max_angle = 0.03

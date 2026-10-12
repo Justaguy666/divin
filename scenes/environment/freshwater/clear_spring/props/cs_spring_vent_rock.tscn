@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://c3jq3xum0xk5i" path="res://assets/environments/freshwater/clear_spring/decoration/rocks/cs_spring_vent_rock.png" id="1_tex"]
+
+[node name="CsSpringVentRock" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-25, -33)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-22, -6, -22, -5, -21, -5, -21, -4, -19, -4, -19, -3, -18, -3, -18, -2, -15, -2, -15, -1, 13, -1, 13, -2, 19, -2, 19, -3, 20, -3, 20, -4, 21, -4, 21, -6)
