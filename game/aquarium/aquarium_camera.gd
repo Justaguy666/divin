@@ -35,7 +35,5 @@ func _process(delta: float) -> void:
 	)
 
 	var target: Vector2 = _center + offset_px
-	if AquariumManager.selector_open:
-		target = _center
 	position = position.lerp(target, 1 - exp(-smoothing * delta))
 	

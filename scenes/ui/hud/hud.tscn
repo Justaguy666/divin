@@ -5,9 +5,9 @@
 [ext_resource type="Script" uid="uid://b44g0cyv6h5df" path="res://game/ui/hud/hud.gd" id="2_rhl22"]
 [ext_resource type="Texture2D" uid="uid://dkah630r3u5q3" path="res://assets/ui/ui_hud_aquarium_pressed.png" id="3_rhl22"]
 [ext_resource type="Texture2D" uid="uid://dih8wbvrpkvd7" path="res://assets/ui/ui_hud_aquarium_hover.png" id="4_u5uos"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_hud_settings_normal.png" id="5_set_n"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_hud_settings_pressed.png" id="6_set_p"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_hud_settings_hover.png" id="7_set_h"]
+[ext_resource type="Texture2D" uid="uid://dij6if0k1vhiv" path="res://assets/ui/ui_hud_settings_normal.png" id="5_set_n"]
+[ext_resource type="Texture2D" uid="uid://cvxjc73iq56ox" path="res://assets/ui/ui_hud_settings_pressed.png" id="6_set_p"]
+[ext_resource type="Texture2D" uid="uid://dtnfnuu8ddayh" path="res://assets/ui/ui_hud_settings_hover.png" id="7_set_h"]
 
 [node name="HUD" type="Control" unique_id=667711894]
 layout_mode = 3
@@ -32,6 +32,7 @@ theme_override_constants/margin_top = 8
 theme_override_constants/margin_right = 8
 
 [node name="Buttons" type="HBoxContainer" parent="Margin" unique_id=2089301303]
+unique_name_in_owner = true
 layout_mode = 2
 
 [node name="AquariumButton" type="TextureButton" parent="Margin/Buttons" unique_id=1171081646]
