@@ -1,7 +1,7 @@
-[gd_resource type="TileSet" format=3]
+[gd_resource type="TileSet" format=3 uid="uid://nsndlbhlus3t"]
 
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/clear_spring/tiles/ground/cs_substrate_atlas.png" id="1_sub"]
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/clear_spring/tiles/terrain/cs_sand_slopes_atlas.png" id="2_bank"]
+[ext_resource type="Texture2D" uid="uid://df5sjv2viod21" path="res://assets/environments/freshwater/clear_spring/tiles/ground/cs_substrate_atlas.png" id="1_sub"]
+[ext_resource type="Texture2D" uid="uid://byhe34bm7fvkq" path="res://assets/environments/freshwater/clear_spring/tiles/terrain/cs_sand_slopes_atlas.png" id="2_bank"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sub"]
 texture = ExtResource("1_sub")

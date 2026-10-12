@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://bsg3fx2q2dcib" path="res://assets/environments/freshwater/clear_spring/vegetation/plants/cs_chara_muskgrass.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://cvo60uvkuyu08" path="res://game/environment/swaying_plant.gd" id="2_sway"]
+
+[node name="CsCharaMuskgrass" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-22, -38)
+script = ExtResource("2_sway")
+max_angle = 0.05

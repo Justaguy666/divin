@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://ctkumuv20o5gc" path="res://assets/environments/freshwater/billabong/decoration/debris/bb_paperbark_sheets.png" id="1_tex"]
+
+[node name="BbPaperbarkSheets" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-17, -13)

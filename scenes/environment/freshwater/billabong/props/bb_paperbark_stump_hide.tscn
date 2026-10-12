@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://b2ag72h0oiqc1" path="res://assets/environments/freshwater/billabong/decoration/misc/bb_paperbark_stump_hide.png" id="1_tex"]
+
+[node name="BbPaperbarkStumpHide" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-27, -50)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-21, -6, -21, -5, -22, -5, -22, -4, -23, -4, -23, -3, -25, -3, -25, -2, -26, -2, -26, -1, 26, -1, 26, -2, 25, -2, 25, -3, 22, -3, 22, -4, 21, -4, 21, -5, 20, -5, 20, -6)

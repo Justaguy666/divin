@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://mcga8mtgvfq7" path="res://assets/environments/freshwater/forest_stream/decoration/shells/fs_caddis_case_leaf.png" id="1_tex"]
+
+[node name="FsCaddisCaseLeaf" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-9, -7)

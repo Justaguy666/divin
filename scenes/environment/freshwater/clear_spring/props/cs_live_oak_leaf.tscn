@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://c0trx2ka80v" path="res://assets/environments/freshwater/clear_spring/decoration/debris/cs_live_oak_leaf.png" id="1_tex"]
+
+[node name="CsLiveOakLeaf" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-8, -9)

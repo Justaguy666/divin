@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://ddade4mb16ogm" path="res://assets/environments/freshwater/billabong/decoration/debris/bb_gum_leaf_red.png" id="1_tex"]
+
+[node name="BbGumLeafRed" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-17, -11)

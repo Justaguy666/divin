@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://c3svyfimkdtp6" path="res://assets/environments/freshwater/billabong/decoration/misc/bb_red_gum_snag.png" id="1_tex"]
+
+[node name="BbRedGumSnag" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-60, -51)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-57, -6, -57, -5, -56, -5, -56, -4, -55, -4, -55, -3, -54, -3, -54, -2, -51, -2, -48, -2, -48, -3, -46, -3, -46, -4, -41, -4, -41, -5, -33, -5, -33, -6)

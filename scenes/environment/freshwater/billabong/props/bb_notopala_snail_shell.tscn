@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://cjart0rsas108" path="res://assets/environments/freshwater/billabong/decoration/shells/bb_notopala_snail_shell.png" id="1_tex"]
+
+[node name="BbNotopalaSnailShell" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-9, -19)
