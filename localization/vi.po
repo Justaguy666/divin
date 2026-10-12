@@ -1,0 +1,356 @@
+# Vietnamese translation for Divin for the following files:
+# res://scenes/ui/menus/settings_menu.tscn
+# res://scenes/ui/aquarium/aquarium_card.tscn
+# res://scenes/ui/aquarium/aquarium_selector.tscn
+# res://game/ui/aquarium/aquarium_selector.gd
+# res://localization/extra_strings.gd
+#
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Divin\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8-bit\n"
+"Language: vi\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: scenes/ui/menus/settings_menu.tscn
+msgid "Settings"
+msgstr "Cài đặt"
+
+#: scenes/ui/menus/settings_menu.tscn
+msgid "General"
+msgstr "Chung"
+
+#: scenes/ui/menus/settings_menu.tscn
+msgid "Audio"
+msgstr "Âm thanh"
+
+#: scenes/ui/menus/settings_menu.tscn
+msgid "Language"
+msgstr "Ngôn ngữ"
+
+#: scenes/ui/aquarium/aquarium_card.tscn
+msgid "SoonLabel"
+msgstr "Sắp ra mắt"
+
+#: scenes/ui/aquarium/aquarium_card.tscn
+msgid "Soon"
+msgstr "Sắp có"
+
+#: scenes/ui/aquarium/aquarium_selector.tscn
+msgid "Select Aquarium"
+msgstr "Chọn bể cá"
+
+#: scenes/ui/aquarium/aquarium_selector.tscn
+msgid "Fresh Water"
+msgstr "Nước ngọt"
+
+#: scenes/ui/aquarium/aquarium_selector.tscn
+msgid "Marine"
+msgstr "Nước mặn"
+
+#: scenes/ui/aquarium/aquarium_selector.tscn
+msgid "Special"
+msgstr "Đặc biệt"
+
+#: scenes/ui/aquarium/aquarium_selector.tscn
+msgid "Go ›"
+msgstr "Đến ›"
+
+#: localization/extra_strings.gd:12
+msgid "Ancient Cold Lake"
+msgstr "Hồ lạnh cổ đại"
+
+#: localization/extra_strings.gd:13
+msgid "An ultra-clear, icy lake full of ancient endemics."
+msgstr "Hồ băng giá trong vắt, đầy những loài đặc hữu cổ xưa."
+
+#: localization/extra_strings.gd:15
+msgid "Antarctic Water"
+msgstr "Nước Nam Cực"
+
+#: localization/extra_strings.gd:16
+msgid "An icy polar sea beneath the Antarctic ice."
+msgstr "Vùng biển cực băng giá bên dưới lớp băng Nam Cực."
+
+#: localization/extra_strings.gd:18
+msgid "Asian Peat Swamp"
+msgstr "Đầm than bùn châu Á"
+
+#: localization/extra_strings.gd:19
+msgid "Wine-dark peat water in a tropical swamp forest."
+msgstr "Nước than bùn sẫm màu rượu vang trong rừng đầm lầy nhiệt đới."
+
+#: localization/extra_strings.gd:21
+msgid "Arctic Water"
+msgstr "Nước Bắc Cực"
+
+#: localization/extra_strings.gd:22
+msgid "Cold, ice-grey Arctic shallows."
+msgstr "Vùng nước nông Bắc Cực lạnh giá, xám màu băng."
+
+#: localization/extra_strings.gd:24
+msgid "Billabong"
+msgstr "Hồ Billabong"
+
+#: localization/extra_strings.gd:25
+msgid "A teal Australian oxbow pool."
+msgstr "Hồ móng ngựa xanh ngọc ở nước Úc."
+
+#: localization/extra_strings.gd:27
+msgid "Blackwater"
+msgstr "Suối nước đen"
+
+#: localization/extra_strings.gd:28
+msgid "A tea-coloured Amazon stream under amber light."
+msgstr "Dòng suối Amazon màu nước trà dưới ánh sáng hổ phách."
+
+#: localization/extra_strings.gd:30
+msgid "Bayou"
+msgstr "Lạch Bayou"
+
+#: localization/extra_strings.gd:31
+msgid "Slow olive water among cypress roots."
+msgstr "Dòng nước xanh ô liu chảy chậm giữa rễ cây bách."
+
+#: localization/extra_strings.gd:33
+msgid "Coral Reef"
+msgstr "Rạn san hô"
+
+#: localization/extra_strings.gd:34
+msgid "A busy reef bursting with coral and colour."
+msgstr "Rạn san hô nhộn nhịp, rực rỡ sắc màu."
+
+#: localization/extra_strings.gd:36
+msgid "Cenote"
+msgstr "Hố sụt Cenote"
+
+#: localization/extra_strings.gd:37
+msgid "A sunlit sinkhole of clear turquoise water."
+msgstr "Hố sụt ngập nắng với làn nước xanh ngọc trong vắt."
+
+#: localization/extra_strings.gd:39
+msgid "Clear Spring"
+msgstr "Suối trong"
+
+#: localization/extra_strings.gd:40
+msgid "Crystal-clear spring water over pale sand."
+msgstr "Nước suối trong vắt trên nền cát nhạt màu."
+
+#: localization/extra_strings.gd:42
+msgid "Cold Water"
+msgstr "Biển lạnh"
+
+#: localization/extra_strings.gd:43
+msgid "A steel-blue northern sea, cold and rich."
+msgstr "Vùng biển phương Bắc xanh màu thép, lạnh và giàu sự sống."
+
+#: localization/extra_strings.gd:45
+msgid "Desert Spring"
+msgstr "Suối sa mạc"
+
+#: localization/extra_strings.gd:46
+msgid "A tiny warm spring hidden in the desert."
+msgstr "Con suối ấm nhỏ ẩn giữa sa mạc."
+
+#: localization/extra_strings.gd:48
+msgid "Deep Water"
+msgstr "Biển sâu"
+
+#: localization/extra_strings.gd:49
+msgid "Dark depths far below the sunlight."
+msgstr "Vùng sâu tăm tối, xa khỏi ánh mặt trời."
+
+#: localization/extra_strings.gd:51
+msgid "Forest Stream"
+msgstr "Suối rừng"
+
+#: localization/extra_strings.gd:52
+msgid "A shaded woodland brook full of roots and moss."
+msgstr "Con suối rợp bóng cây, đầy rễ và rêu."
+
+#: localization/extra_strings.gd:54
+msgid "Galapagos Upwelling"
+msgstr "Dòng trồi Galápagos"
+
+#: localization/extra_strings.gd:55
+msgid "Nutrient-rich currents around volcanic islands."
+msgstr "Dòng hải lưu giàu dinh dưỡng quanh các đảo núi lửa."
+
+#: localization/extra_strings.gd:57
+msgid "High Andes Lake"
+msgstr "Hồ cao nguyên Andes"
+
+#: localization/extra_strings.gd:58
+msgid "A cold, clear lake high in the Andes."
+msgstr "Hồ nước lạnh, trong vắt trên dãy Andes."
+
+#: localization/extra_strings.gd:60
+msgid "Hillstream"
+msgstr "Suối núi"
+
+#: localization/extra_strings.gd:61
+msgid "Fast, oxygen-rich rapids over smooth pebbles."
+msgstr "Ghềnh nước chảy xiết, giàu oxy trên nền sỏi tròn."
+
+#: localization/extra_strings.gd:63
+msgid "Hydrothermal Vent"
+msgstr "Miệng phun thủy nhiệt"
+
+#: localization/extra_strings.gd:64
+msgid "Black smokers glowing on the deep-sea floor."
+msgstr "Những ống khói đen phát sáng dưới đáy biển sâu."
+
+#: localization/extra_strings.gd:66
+msgid "Kelp Forest"
+msgstr "Rừng tảo bẹ"
+
+#: localization/extra_strings.gd:67
+msgid "Tall golden-green kelp in cool coastal water."
+msgstr "Tảo bẹ vàng lục cao vút trong vùng nước ven bờ mát lạnh."
+
+#: localization/extra_strings.gd:69
+msgid "Koi Pond"
+msgstr "Hồ cá Koi"
+
+#: localization/extra_strings.gd:70
+msgid "A calm garden pond with jade-green water."
+msgstr "Hồ vườn yên tĩnh với làn nước xanh ngọc bích."
+
+#: localization/extra_strings.gd:72
+msgid "Mangrove"
+msgstr "Rừng ngập mặn"
+
+#: localization/extra_strings.gd:73
+msgid "Tangled mangrove roots where the sea meets the land."
+msgstr "Rễ đước chằng chịt nơi biển gặp đất liền."
+
+#: localization/extra_strings.gd:75
+msgid "Muck Sand"
+msgstr "Cát bùn"
+
+#: localization/extra_strings.gd:76
+msgid "Dark volcanic sand hiding strange critters."
+msgstr "Cát núi lửa sẫm màu ẩn giấu những sinh vật kỳ lạ."
+
+#: localization/extra_strings.gd:78
+msgid "Muddy River"
+msgstr "Sông đục"
+
+#: localization/extra_strings.gd:79
+msgid "A murky lowland river with soft silt banks."
+msgstr "Dòng sông đồng bằng đục ngầu với bờ phù sa mềm."
+
+#: localization/extra_strings.gd:81
+msgid "Marsh Swamp"
+msgstr "Đầm lầy"
+
+#: localization/extra_strings.gd:82
+msgid "Still, weedy wetland water under green shade."
+msgstr "Vùng đất ngập nước tĩnh lặng, um tùm cỏ dưới bóng xanh."
+
+#: localization/extra_strings.gd:84
+msgid "Ocean"
+msgstr "Đại dương"
+
+#: localization/extra_strings.gd:85
+msgid "Open blue water near the sea surface."
+msgstr "Vùng nước xanh thẳm gần mặt biển."
+
+#: localization/extra_strings.gd:87
+msgid "Open Pelagic"
+msgstr "Biển khơi"
+
+#: localization/extra_strings.gd:88
+msgid "Endless blue open ocean."
+msgstr "Đại dương xanh bao la vô tận."
+
+#: localization/extra_strings.gd:90
+msgid "Planted Freshwater"
+msgstr "Bể thủy sinh"
+
+#: localization/extra_strings.gd:91
+msgid "A bright, plant-filled tank of clear water."
+msgstr "Bể nước trong sáng sủa, đầy cây thủy sinh."
+
+#: localization/extra_strings.gd:93
+msgid "Rocky Coast"
+msgstr "Bờ đá"
+
+#: localization/extra_strings.gd:94
+msgid "Wave-washed rocks and tide pools."
+msgstr "Ghềnh đá sóng vỗ và những vũng thủy triều."
+
+#: localization/extra_strings.gd:96
+msgid "Rift Lake"
+msgstr "Hồ thung lũng Rift"
+
+#: localization/extra_strings.gd:97
+msgid "A deep blue African lake with rocky reefs."
+msgstr "Hồ châu Phi xanh thẳm với những rạn đá."
+
+#: localization/extra_strings.gd:99
+msgid "Rocky River"
+msgstr "Sông đá"
+
+#: localization/extra_strings.gd:100
+msgid "Cool, fast water over smooth river stones."
+msgstr "Dòng nước mát chảy xiết trên những hòn đá cuội."
+
+#: localization/extra_strings.gd:102
+msgid "Seagrass Meadow"
+msgstr "Đồng cỏ biển"
+
+#: localization/extra_strings.gd:103
+msgid "Swaying seagrass beds in sunlit shallows."
+msgstr "Thảm cỏ biển đung đưa trong vùng nước nông đầy nắng."
+
+#: localization/extra_strings.gd:105
+msgid "Cold Seep"
+msgstr "Mạch thấm lạnh"
+
+#: localization/extra_strings.gd:106
+msgid "Methane seeps on the dark ocean floor."
+msgstr "Mạch khí mê-tan rỉ ra dưới đáy đại dương tăm tối."
+
+#: localization/extra_strings.gd:108
+msgid "Sargassum Sea"
+msgstr "Biển rong mơ"
+
+#: localization/extra_strings.gd:109
+msgid "Floating golden seaweed mats far out at sea."
+msgstr "Những thảm rong vàng trôi nổi giữa biển khơi."
+
+#: localization/extra_strings.gd:111
+msgid "Tropical"
+msgstr "Nhiệt đới"
+
+#: localization/extra_strings.gd:112
+msgid "Warm, clear tropical shallows."
+msgstr "Vùng nước nông nhiệt đới ấm áp, trong xanh."
+
+#: localization/extra_strings.gd:114
+msgid "Twilight Zone"
+msgstr "Vùng chạng vạng"
+
+#: localization/extra_strings.gd:115
+msgid "Dim midwater where the light fades to black."
+msgstr "Tầng nước giữa mờ tối, nơi ánh sáng nhạt dần thành bóng đen."
+
+#: localization/extra_strings.gd:117
+msgid "Underwater Cave"
+msgstr "Hang ngầm"
+
+#: localization/extra_strings.gd:118
+msgid "A pitch-dark flooded cave."
+msgstr "Hang động ngập nước tối đen như mực."
+
+msgid "Divin"
+msgstr "Divin"
+
+#: localization/extra_strings.gd
+msgid "You're here"
+msgstr "Bạn đang ở đây"
