@@ -18,25 +18,23 @@
 [ext_resource type="Texture2D" uid="uid://bljee572q8dc5" path="res://assets/ui/ui_card_hover.png" id="t_ui_card_hover"]
 [ext_resource type="Texture2D" uid="uid://bbhode5us4dtv" path="res://assets/ui/ui_card_normal.png" id="t_ui_card_normal"]
 [ext_resource type="Texture2D" uid="uid://dkwj2v8dc7phl" path="res://assets/ui/ui_card_selected.png" id="t_ui_card_selected"]
+[ext_resource type="Texture2D" uid="uid://c3i186ikcalaf" path="res://assets/ui/ui_content_panel.png" id="t_ui_content_panel"]
+[ext_resource type="Texture2D" uid="uid://eegcna017c3g" path="res://assets/ui/ui_divider.png" id="t_ui_divider"]
+[ext_resource type="Texture2D" uid="uid://b0su5214bvxbr" path="res://assets/ui/ui_divider_row.png" id="t_ui_divider_row"]
 [ext_resource type="Texture2D" uid="uid://bjbeqtvy17mrm" path="res://assets/ui/ui_panel.png" id="t_ui_panel"]
 [ext_resource type="Texture2D" uid="uid://dr0gpf1al3j4d" path="res://assets/ui/ui_radio_off.png" id="t_ui_radio_off"]
 [ext_resource type="Texture2D" uid="uid://4rq81g5pxfwb" path="res://assets/ui/ui_radio_on.png" id="t_ui_radio_on"]
 [ext_resource type="Texture2D" uid="uid://c2sev2aav3ma2" path="res://assets/ui/ui_scroll_grabber.png" id="t_ui_scroll_grabber"]
 [ext_resource type="Texture2D" uid="uid://262t7ylj81qk" path="res://assets/ui/ui_scroll_grabber_hover.png" id="t_ui_scroll_grabber_hover"]
 [ext_resource type="Texture2D" uid="uid://7wbifu3vv45p" path="res://assets/ui/ui_scroll_track.png" id="t_ui_scroll_track"]
-[ext_resource type="Texture2D" uid="uid://bm5gdbnpcyjf8" path="res://assets/ui/ui_tab_hover.png" id="t_ui_tab_hover"]
-[ext_resource type="Texture2D" uid="uid://d1qo4e8ok70vl" path="res://assets/ui/ui_tab_normal.png" id="t_ui_tab_normal"]
 [ext_resource type="Texture2D" uid="uid://cr235sblwsbee" path="res://assets/ui/ui_tab_selected.png" id="t_ui_tab_selected"]
+[ext_resource type="Texture2D" uid="uid://03ss3bdf6wxf" path="res://assets/ui/ui_tab_side_hover.png" id="t_ui_tab_side_hover"]
+[ext_resource type="Texture2D" uid="uid://chp8xxum3tw1j" path="res://assets/ui/ui_tab_side_normal.png" id="t_ui_tab_side_normal"]
+[ext_resource type="Texture2D" uid="uid://btpu1d3rfo33x" path="res://assets/ui/ui_tab_side_selected.png" id="t_ui_tab_side_selected"]
+[ext_resource type="Texture2D" uid="uid://6teop7c8s6td" path="res://assets/ui/ui_tab_top_hover.png" id="t_ui_tab_top_hover"]
+[ext_resource type="Texture2D" uid="uid://b8dyyy4500qwa" path="res://assets/ui/ui_tab_top_normal.png" id="t_ui_tab_top_normal"]
+[ext_resource type="Texture2D" uid="uid://dmijmhd01lsqt" path="res://assets/ui/ui_tab_top_selected.png" id="t_ui_tab_top_selected"]
 
-[ext_resource type="Texture2D" path="res://assets/ui/ui_content_panel.png" id="t_ui_content_panel"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_divider.png" id="t_ui_divider"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_divider_row.png" id="t_ui_divider_row"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_tab_top_normal.png" id="t_ui_tab_top_normal"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_tab_top_hover.png" id="t_ui_tab_top_hover"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_tab_top_selected.png" id="t_ui_tab_top_selected"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_tab_side_normal.png" id="t_ui_tab_side_normal"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_tab_side_hover.png" id="t_ui_tab_side_hover"]
-[ext_resource type="Texture2D" path="res://assets/ui/ui_tab_side_selected.png" id="t_ui_tab_side_selected"]
 [sub_resource type="StyleBoxTexture" id="card_d"]
 content_margin_left = 3.0
 content_margin_top = 3.0
@@ -139,6 +137,31 @@ texture_margin_top = 5.0
 texture_margin_right = 5.0
 texture_margin_bottom = 5.0
 
+[sub_resource type="StyleBoxTexture" id="content_panel"]
+content_margin_left = 8.0
+content_margin_top = 6.0
+content_margin_right = 8.0
+content_margin_bottom = 6.0
+texture = ExtResource("t_ui_content_panel")
+texture_margin_left = 4.0
+texture_margin_top = 4.0
+texture_margin_right = 4.0
+texture_margin_bottom = 4.0
+
+[sub_resource type="StyleBoxTexture" id="line_div"]
+content_margin_left = 0.0
+content_margin_top = 1.0
+content_margin_right = 0.0
+content_margin_bottom = 1.0
+texture = ExtResource("t_ui_divider")
+texture_margin_left = 12.0
+texture_margin_right = 12.0
+
+[sub_resource type="FontVariation" id="fv_heading"]
+base_font = ExtResource("f_bold")
+spacing_top = -4
+spacing_bottom = -4
+
 [sub_resource type="StyleBoxTexture" id="panel"]
 content_margin_left = 10.0
 content_margin_top = 8.0
@@ -226,63 +249,18 @@ base_font = ExtResource("f_it")
 fallbacks = Array[Font]([SubResource("fallback")])
 base_font = ExtResource("f_reg")
 
+[sub_resource type="StyleBoxTexture" id="line_row"]
+content_margin_left = 0.0
+content_margin_top = 1.0
+content_margin_right = 0.0
+content_margin_bottom = 1.0
+texture = ExtResource("t_ui_divider_row")
+texture_margin_left = 12.0
+texture_margin_right = 12.0
+
 [sub_resource type="FontVariation" id="fv_bold_ui"]
 base_font = ExtResource("f_bold")
 spacing_top = -4
-
-[sub_resource type="FontVariation" id="fv_heading"]
-base_font = ExtResource("f_bold")
-spacing_top = -4
-spacing_bottom = -4
-
-[sub_resource type="FontVariation" id="fv_title"]
-base_font = ExtResource("f_bold")
-spacing_top = -6
-spacing_bottom = -6
-
-[sub_resource type="StyleBoxTexture" id="s_grab"]
-content_margin_left = 3.0
-content_margin_top = 3.0
-content_margin_right = 3.0
-content_margin_bottom = 3.0
-texture = ExtResource("t_ui_scroll_grabber")
-texture_margin_left = 3.0
-texture_margin_top = 3.0
-texture_margin_right = 3.0
-texture_margin_bottom = 3.0
-
-[sub_resource type="StyleBoxTexture" id="s_grab_h"]
-content_margin_left = 3.0
-content_margin_top = 3.0
-content_margin_right = 3.0
-content_margin_bottom = 3.0
-texture = ExtResource("t_ui_scroll_grabber_hover")
-texture_margin_left = 3.0
-texture_margin_top = 3.0
-texture_margin_right = 3.0
-texture_margin_bottom = 3.0
-
-[sub_resource type="StyleBoxTexture" id="s_track"]
-content_margin_left = 3.0
-content_margin_top = 3.0
-content_margin_right = 3.0
-content_margin_bottom = 3.0
-texture = ExtResource("t_ui_scroll_track")
-texture_margin_left = 3.0
-texture_margin_top = 3.0
-texture_margin_right = 3.0
-texture_margin_bottom = 3.0
-
-[sub_resource type="StyleBoxTexture" id="content_panel"]
-content_margin_left = 8.0
-content_margin_top = 6.0
-content_margin_right = 8.0
-content_margin_bottom = 6.0
-texture = ExtResource("t_ui_content_panel")
-texture_margin_left = 4.0
-texture_margin_top = 4.0
-texture_margin_right = 4.0
-texture_margin_bottom = 4.0
 
 [sub_resource type="StyleBoxTexture" id="stab_n"]
 content_margin_left = 8.0
@@ -352,27 +330,43 @@ texture_margin_right = 5.0
 texture_margin_bottom = 3.0
 expand_margin_bottom = 2.0
 
-[sub_resource type="StyleBoxTexture" id="line_div"]
-content_margin_left = 0.0
-content_margin_top = 1.0
-content_margin_right = 0.0
-content_margin_bottom = 1.0
-texture = ExtResource("t_ui_divider")
-texture_margin_left = 12.0
-texture_margin_top = 0.0
-texture_margin_right = 12.0
-texture_margin_bottom = 0.0
+[sub_resource type="FontVariation" id="fv_title"]
+base_font = ExtResource("f_bold")
+spacing_top = -6
+spacing_bottom = -6
 
-[sub_resource type="StyleBoxTexture" id="line_row"]
-content_margin_left = 0.0
-content_margin_top = 1.0
-content_margin_right = 0.0
-content_margin_bottom = 1.0
-texture = ExtResource("t_ui_divider_row")
-texture_margin_left = 12.0
-texture_margin_top = 0.0
-texture_margin_right = 12.0
-texture_margin_bottom = 0.0
+[sub_resource type="StyleBoxTexture" id="s_grab"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+texture = ExtResource("t_ui_scroll_grabber")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id="s_grab_h"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+texture = ExtResource("t_ui_scroll_grabber_hover")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id="s_track"]
+content_margin_left = 3.0
+content_margin_top = 3.0
+content_margin_right = 3.0
+content_margin_bottom = 3.0
+texture = ExtResource("t_ui_scroll_track")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
 
 [resource]
 default_font = ExtResource("23_illpn")
@@ -396,6 +390,10 @@ Button/styles/hover = SubResource("btn_h")
 Button/styles/hover_pressed = SubResource("btn_p")
 Button/styles/normal = SubResource("btn_n")
 Button/styles/pressed = SubResource("btn_p")
+ContentPanel/base_type = &"PanelContainer"
+ContentPanel/styles/panel = SubResource("content_panel")
+HSeparator/constants/separation = 6
+HSeparator/styles/separator = SubResource("line_div")
 HeadingLabel/base_type = &"Label"
 HeadingLabel/constants/shadow_offset_y = 2
 HeadingLabel/font_sizes/font_size = 32
@@ -444,10 +442,6 @@ RichTextLabel/fonts/bold_font = SubResource("fv_bold")
 RichTextLabel/fonts/bold_italics_font = SubResource("fv_bi")
 RichTextLabel/fonts/italics_font = SubResource("fv_it")
 RichTextLabel/fonts/normal_font = SubResource("fv_reg")
-ContentPanel/base_type = &"PanelContainer"
-ContentPanel/styles/panel = SubResource("content_panel")
-HSeparator/constants/separation = 6
-HSeparator/styles/separator = SubResource("line_div")
 RowSeparator/base_type = &"HSeparator"
 RowSeparator/constants/separation = 8
 RowSeparator/styles/separator = SubResource("line_row")

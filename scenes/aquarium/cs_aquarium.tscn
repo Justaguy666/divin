@@ -26,7 +26,7 @@
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_pike_cichlid.tscn" id="24_pike_c"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_banded_knifefish.tscn" id="25_banded"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_banded_cichlid.tscn" id="26_banded"]
-[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_florida_manatee.tscn" id="27_florid"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_piracanjuba.tscn" id="27_piraca"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_golden_dorado.tscn" id="28_golden"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_pacu.tscn" id="29_pacu"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_pintado.tscn" id="30_pintad"]
@@ -209,7 +209,7 @@ position = Vector2(42.9, 228.6)
 [node name="CsBandedCichlid" parent="Creatures" unique_id=1066538156 instance=ExtResource("26_banded")]
 position = Vector2(470.9, 226.3)
 
-[node name="CsFloridaManatee" parent="Creatures" unique_id=1182104329 instance=ExtResource("27_florid")]
+[node name="CsPiracanjuba" parent="Creatures" unique_id=1182104329 instance=ExtResource("27_piraca")]
 position = Vector2(426.3, 163.0)
 
 [node name="CsGoldenDorado" parent="Creatures" unique_id=1294488164 instance=ExtResource("28_golden")]

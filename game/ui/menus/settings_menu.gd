@@ -24,10 +24,10 @@ func _ready() -> void:
 		tabs[i].button_group = _tab_group
 		tabs[i].pressed.connect(_show_page.bind(i))
 	language_option.auto_translate_mode = Node.AUTO_TRANSLATE_MODE_DISABLED
-	for language in Localization.SUPPORTED_LANGUAGES:
+	for language in LocalizationManager.SUPPORTED_LANGUAGES:
 		language_option.add_icon_item(
 			FLAGS[language], 
-			Localization.LANGUAGE_NAMES[language]
+			LocalizationManager.LANGUAGE_NAMES[language]
 		)
 		language_option.set_item_metadata(
 			language_option.item_count - 1,
@@ -91,7 +91,7 @@ func _show_page(index: int) -> void:
 
 # Tự động select theo ngôn ngữ hiện tại
 func _select_current_language() -> void:
-	var current_language := Localization.get_language()
+	var current_language := LocalizationManager.get_language()
 	for i in language_option.item_count:
 		if language_option.get_item_metadata(i) == current_language:
 			language_option.select(i)
@@ -100,7 +100,7 @@ func _select_current_language() -> void:
 
 # Xử lý sự kiện chọn ngôn ngữ
 func _on_language_selected(index: int) -> void:
-	Localization.set_language(language_option.get_item_metadata(index))
+	LocalizationManager.set_language(language_option.get_item_metadata(index))
 
 
 # Click ra ngoài tự động close

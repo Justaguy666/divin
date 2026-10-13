@@ -54,7 +54,7 @@ metadata/_edit_lock_ = true
 
 [node name="Ground" parent="." index="4" unique_id=1875096136]
 position = Vector2(96, 72)
-tile_map_data = PackedByteArray("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")
+tile_map_data = PackedByteArray("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")
 tile_set = ExtResource("5_tiles")
 metadata/_edit_lock_ = true
 
@@ -165,114 +165,104 @@ position = Vector2(86.7, 273)
 metadata/_edit_lock_ = true
 
 [node name="BwRedRootFloater" parent="Props" index="24" unique_id=290387433 instance=ExtResource("21_nknbb")]
-position = Vector2(43.3, -7)
-metadata/_edit_lock_ = true
+position = Vector2(45, -3)
 
 [node name="BwRedRootFloater2" parent="Props" index="25" unique_id=2073778197 instance=ExtResource("21_nknbb")]
-position = Vector2(105.6, -7)
-metadata/_edit_lock_ = true
+position = Vector2(106, -3)
 
 [node name="BwRedRootFloater4" parent="Props" index="26" unique_id=495343947 instance=ExtResource("21_nknbb")]
-position = Vector2(168.9, -7)
-metadata/_edit_lock_ = true
+position = Vector2(169, -3)
 
 [node name="BwRedRootFloater5" parent="Props" index="27" unique_id=1506321152 instance=ExtResource("21_nknbb")]
-position = Vector2(232.2, -6)
-metadata/_edit_lock_ = true
+position = Vector2(232, -3)
 
-[node name="BwRedRootFloater6" parent="Props" index="28" unique_id=2008160748 instance=ExtResource("21_nknbb")]
-position = Vector2(600, -6)
-metadata/_edit_lock_ = true
+[node name="BwRedRootFloater8" parent="Props" index="28" unique_id=710415414 instance=ExtResource("21_nknbb")]
+position = Vector2(288, -3)
 
-[node name="BwRedRootFloater7" parent="Props" index="29" unique_id=78621042 instance=ExtResource("21_nknbb")]
-position = Vector2(662.2, -6)
-metadata/_edit_lock_ = true
+[node name="BwRedRootFloater6" parent="Props" index="29" unique_id=2008160748 instance=ExtResource("21_nknbb")]
+position = Vector2(571, -3)
 
-[node name="BwRedRootFloater3" parent="Props" index="30" unique_id=632305987 instance=ExtResource("21_nknbb")]
-position = Vector2(-18.9, -7)
-metadata/_edit_lock_ = true
+[node name="BwRedRootFloater7" parent="Props" index="30" unique_id=78621042 instance=ExtResource("21_nknbb")]
+position = Vector2(627, -3)
 
-[node name="BwRedSword" parent="Props" index="31" unique_id=402685966 instance=ExtResource("22_rfm6c")]
+[node name="BwRedRootFloater3" parent="Props" index="31" unique_id=632305987 instance=ExtResource("21_nknbb")]
+position = Vector2(-19, -3)
+
+[node name="BwRedSword" parent="Props" index="32" unique_id=402685966 instance=ExtResource("22_rfm6c")]
 position = Vector2(147.8, 274)
-metadata/_edit_lock_ = true
 
-[node name="BwRootCurtain" parent="Props" index="32" unique_id=1246821712 instance=ExtResource("23_chrx1")]
+[node name="BwRootCurtain" parent="Props" index="33" unique_id=1246821712 instance=ExtResource("23_chrx1")]
 position = Vector2(56.7, 312)
 metadata/_edit_lock_ = true
 
-[node name="BwRootCurtain2" parent="Props" index="33" unique_id=1125745212 instance=ExtResource("23_chrx1")]
+[node name="BwRootCurtain2" parent="Props" index="34" unique_id=1125745212 instance=ExtResource("23_chrx1")]
 position = Vector2(317.8, 319)
 metadata/_edit_lock_ = true
 
-[node name="BwRootCurtain3" parent="Props" index="34" unique_id=18741043 instance=ExtResource("23_chrx1")]
+[node name="BwRootCurtain3" parent="Props" index="35" unique_id=18741043 instance=ExtResource("23_chrx1")]
 position = Vector2(553.3, 323)
 metadata/_edit_lock_ = true
 
-[node name="BwSalviniaStripTile32" parent="Props" index="35" unique_id=1886648423 instance=ExtResource("24_m252p")]
-position = Vector2(455.6, -5)
-metadata/_edit_lock_ = true
+[node name="BwSalviniaStripTile32" parent="Props" index="36" unique_id=1886648423 instance=ExtResource("24_m252p")]
+position = Vector2(458, -3)
 
-[node name="BwSalviniaStripTile33" parent="Props" index="36" unique_id=1014138182 instance=ExtResource("24_m252p")]
-position = Vector2(490, -6)
-metadata/_edit_lock_ = true
+[node name="BwSalviniaStripTile33" parent="Props" index="37" unique_id=1014138182 instance=ExtResource("24_m252p")]
+position = Vector2(490, -3)
 
-[node name="BwSalviniaStripTile34" parent="Props" index="37" unique_id=1949065843 instance=ExtResource("24_m252p")]
-position = Vector2(420, -6)
-metadata/_edit_lock_ = true
+[node name="BwSalviniaStripTile34" parent="Props" index="38" unique_id=1949065843 instance=ExtResource("24_m252p")]
+position = Vector2(426, -3)
 
-[node name="BwSalviniaStripTile35" parent="Props" index="38" unique_id=1599667549 instance=ExtResource("24_m252p")]
-position = Vector2(386.7, -6)
-metadata/_edit_lock_ = true
+[node name="BwSalviniaStripTile35" parent="Props" index="39" unique_id=1599667549 instance=ExtResource("24_m252p")]
+position = Vector2(394, -3)
 
-[node name="BwSalviniaStripTile36" parent="Props" index="39" unique_id=1482492811 instance=ExtResource("24_m252p")]
-position = Vector2(352.2, -5)
-metadata/_edit_lock_ = true
+[node name="BwSalviniaStripTile36" parent="Props" index="40" unique_id=1482492811 instance=ExtResource("24_m252p")]
+position = Vector2(362, -3)
 
-[node name="BwSeedPod" parent="Props" index="40" unique_id=2015965538 instance=ExtResource("25_8btqu")]
+[node name="BwSeedPod" parent="Props" index="41" unique_id=2015965538 instance=ExtResource("25_8btqu")]
 position = Vector2(174.4, 339)
 metadata/_edit_lock_ = true
 
-[node name="BwSproutsS" parent="Props" index="41" unique_id=1305288873 instance=ExtResource("26_n3bor")]
+[node name="BwSproutsS" parent="Props" index="42" unique_id=1305288873 instance=ExtResource("26_n3bor")]
 position = Vector2(143.3, 277)
 metadata/_edit_lock_ = true
 
-[node name="BwSproutsS2" parent="Props" index="42" unique_id=604725789 instance=ExtResource("26_n3bor")]
+[node name="BwSproutsS2" parent="Props" index="43" unique_id=604725789 instance=ExtResource("26_n3bor")]
 position = Vector2(162.2, 277)
 metadata/_edit_lock_ = true
 
-[node name="BwSproutsS3" parent="Props" index="43" unique_id=374757083 instance=ExtResource("26_n3bor")]
+[node name="BwSproutsS3" parent="Props" index="44" unique_id=374757083 instance=ExtResource("26_n3bor")]
 position = Vector2(125.6, 275)
 metadata/_edit_lock_ = true
 
-[node name="BwSproutsS4" parent="Props" index="44" unique_id=1006146147 instance=ExtResource("26_n3bor")]
+[node name="BwSproutsS4" parent="Props" index="45" unique_id=1006146147 instance=ExtResource("26_n3bor")]
 position = Vector2(491.1, 277)
 metadata/_edit_lock_ = true
 
-[node name="BwSproutsS5" parent="Props" index="45" unique_id=1158394039 instance=ExtResource("26_n3bor")]
+[node name="BwSproutsS5" parent="Props" index="46" unique_id=1158394039 instance=ExtResource("26_n3bor")]
 position = Vector2(506.7, 278)
 metadata/_edit_lock_ = true
 
-[node name="BwSproutsS6" parent="Props" index="46" unique_id=1884612199 instance=ExtResource("26_n3bor")]
+[node name="BwSproutsS6" parent="Props" index="47" unique_id=1884612199 instance=ExtResource("26_n3bor")]
 position = Vector2(516.7, 277)
 metadata/_edit_lock_ = true
 
-[node name="BwTwigs" parent="Props" index="47" unique_id=1179902130 instance=ExtResource("27_lk626")]
+[node name="BwTwigs" parent="Props" index="48" unique_id=1179902130 instance=ExtResource("27_lk626")]
 position = Vector2(251.1, 331)
 metadata/_edit_lock_ = true
 
-[node name="BwTwigs2" parent="Props" index="48" unique_id=1500392236 instance=ExtResource("27_lk626")]
+[node name="BwTwigs2" parent="Props" index="49" unique_id=1500392236 instance=ExtResource("27_lk626")]
 position = Vector2(366.7, 332)
 metadata/_edit_lock_ = true
 
-[node name="BwTwigs3" parent="Props" index="49" unique_id=211945423 instance=ExtResource("27_lk626")]
+[node name="BwTwigs3" parent="Props" index="50" unique_id=211945423 instance=ExtResource("27_lk626")]
 position = Vector2(507.8, 333)
 metadata/_edit_lock_ = true
 
-[node name="BwTwigs4" parent="Props" index="50" unique_id=725604863 instance=ExtResource("27_lk626")]
+[node name="BwTwigs4" parent="Props" index="51" unique_id=725604863 instance=ExtResource("27_lk626")]
 position = Vector2(17.8, 339)
 metadata/_edit_lock_ = true
 
-[node name="BwTwigs5" parent="Props" index="51" unique_id=839231846 instance=ExtResource("27_lk626")]
+[node name="BwTwigs5" parent="Props" index="52" unique_id=839231846 instance=ExtResource("27_lk626")]
 position = Vector2(601.1, 319)
 metadata/_edit_lock_ = true
 
