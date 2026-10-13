@@ -18,8 +18,9 @@ config/icon="res://icon.svg"
 [autoload]
 
 Config="*uid://x7p22lvcvw03"
-Localization="*uid://b56p02knyu5b5"
 AquariumManager="*uid://c0t3o1wphl562"
+AudioManager="*uid://dcu4b1w0iscta"
+LocalizationManager="*uid://b56p02knyu5b5"
 
 [display]
 

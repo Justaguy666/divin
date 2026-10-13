@@ -1,7 +1,7 @@
-[gd_resource type="TileSet" format=3]
+[gd_resource type="TileSet" format=3 uid="uid://wk1ye0yhib7a"]
 
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/forest_stream/tiles/ground/fs_substrate_atlas.png" id="1_sub"]
-[ext_resource type="Texture2D" path="res://assets/environments/freshwater/forest_stream/tiles/terrain/fs_bank_slopes_atlas.png" id="2_bank"]
+[ext_resource type="Texture2D" uid="uid://bxtf8b70gjbp2" path="res://assets/environments/freshwater/forest_stream/tiles/ground/fs_substrate_atlas.png" id="1_sub"]
+[ext_resource type="Texture2D" uid="uid://bwg6x2dkbfir2" path="res://assets/environments/freshwater/forest_stream/tiles/terrain/fs_bank_slopes_atlas.png" id="2_bank"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sub"]
 texture = ExtResource("1_sub")
