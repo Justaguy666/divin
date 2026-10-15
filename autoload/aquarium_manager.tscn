@@ -39,6 +39,6 @@
 [ext_resource type="Resource" path="res://data/environments/tz.tres" id="aq_tz"]
 [ext_resource type="Resource" path="res://data/environments/uc.tres" id="aq_uc"]
 
-[node name="AquariumManager" type="Node2D" unique_id=1641989661]
+[node name="AquariumManager" type="Node" unique_id=463180651]
 script = ExtResource("1_f3nqo")
 aquariums = Array[ExtResource("2_info")]([ExtResource("aq_pf"), ExtResource("aq_bw"), ExtResource("aq_cs"), ExtResource("aq_fs"), ExtResource("aq_ms"), ExtResource("aq_ac"), ExtResource("aq_by"), ExtResource("aq_bb"), ExtResource("aq_rr"), ExtResource("aq_rl"), ExtResource("aq_mr"), ExtResource("aq_kp"), ExtResource("aq_ap"), ExtResource("aq_ha"), ExtResource("aq_hs"), ExtResource("aq_tp"), ExtResource("aq_ce"), ExtResource("aq_sg"), ExtResource("aq_kf"), ExtResource("aq_rc"), ExtResource("aq_mg"), ExtResource("aq_mk"), ExtResource("aq_ob"), ExtResource("aq_cw"), ExtResource("aq_gu"), ExtResource("aq_op"), ExtResource("aq_sr"), ExtResource("aq_dw"), ExtResource("aq_tz"), ExtResource("aq_cn"), ExtResource("aq_ds"), ExtResource("aq_uc"), ExtResource("aq_ar"), ExtResource("aq_an"), ExtResource("aq_hv"), ExtResource("aq_sp")])

@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://bqa188w2at2bs"]
+
+[ext_resource type="Script" uid="uid://dcu4b1w0iscta" path="res://autoload/audio_manager.gd" id="1_u6vuv"]
+[ext_resource type="Script" uid="uid://bpvijtir5uobp" path="res://game/audio/music_player.gd" id="2_q68eh"]
+[ext_resource type="Script" uid="uid://ovpj7trlhgkc" path="res://game/audio/ambience_player.gd" id="3_0kjgv"]
+[ext_resource type="Script" uid="uid://cxhe2cd01vu03" path="res://game/audio/ui_sound_player.gd" id="4_5l778"]
+
+[node name="AudioManager" type="Node" unique_id=37865986]
+script = ExtResource("1_u6vuv")
+
+[node name="Music" type="Node" parent="." unique_id=941509750]
+script = ExtResource("2_q68eh")
+metadata/_custom_type_script = "uid://bpvijtir5uobp"
+
+[node name="Ambience" type="Node" parent="." unique_id=1222626249]
+script = ExtResource("3_0kjgv")
+metadata/_custom_type_script = "uid://ovpj7trlhgkc"
+
+[node name="UI" type="Node" parent="." unique_id=652781546]
+script = ExtResource("4_5l778")
+metadata/_custom_type_script = "uid://cxhe2cd01vu03"
