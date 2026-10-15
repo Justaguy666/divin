@@ -30,7 +30,10 @@ func _ready() -> void:
 # Xử lý sự kiện
 func _unhandled_input(event: InputEvent) -> void:
 	if event.is_action_pressed("toggle_aquarium_menu"):
-		close() if visible else open()
+		if visible:
+			close() 
+		else:
+			open()
 		get_viewport().set_input_as_handled()
 	elif visible and event.is_action_pressed("ui_cancel"):
 		close()

@@ -16,3 +16,6 @@ enum Category {
 @export var thumbnail: Texture2D
 @export var available: bool = true # false = sắp có
 @export_multiline var description: String = ""
+@export_group("Audio")
+@export var music: AudioStream # Nhạc nền
+@export var ambience: Array[AudioStream] = [] # các lớp ambient
