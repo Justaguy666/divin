@@ -75,6 +75,8 @@ func close() -> void:
 	if not visible:
 		return
 		
+	AudioManager.save_volumes()
+		
 	var tw := create_tween()
 	tw.tween_property(self, "modulate:a", 0.0, 0.12)
 	tw.tween_callback(hide)

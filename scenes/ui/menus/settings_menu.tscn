@@ -48,7 +48,6 @@ layout_mode = 2
 [node name="Title" type="Label" parent="Center/Panel/VBox/Header" unique_id=199758844]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 4
 theme_type_variation = &"HeadingLabel"
 text = "Settings"
 
@@ -116,7 +115,6 @@ layout_mode = 2
 [node name="LanguageLabel" type="Label" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage/LanguageRow" unique_id=130057130]
 layout_mode = 2
 size_flags_horizontal = 3
-size_flags_vertical = 4
 text = "Language"
 
 [node name="LanguageOption" type="OptionButton" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage/LanguageRow" unique_id=1811494635]
@@ -141,10 +139,3 @@ custom_minimum_size = Vector2(0, 18)
 layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "Audio"
-
-[node name="SoonLabel" type="Label" parent="Center/Panel/VBox/Body/Content/Pages/AudioPage" unique_id=478221093]
-custom_minimum_size = Vector2(0, 24)
-layout_mode = 2
-theme_type_variation = &"MutedLabel"
-text = "Soon"
-vertical_alignment = 1

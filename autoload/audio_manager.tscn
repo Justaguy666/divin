@@ -4,9 +4,21 @@
 [ext_resource type="Script" uid="uid://bpvijtir5uobp" path="res://game/audio/music_player.gd" id="2_q68eh"]
 [ext_resource type="Script" uid="uid://ovpj7trlhgkc" path="res://game/audio/ambience_player.gd" id="3_0kjgv"]
 [ext_resource type="Script" uid="uid://cxhe2cd01vu03" path="res://game/audio/ui_sound_player.gd" id="4_5l778"]
+[ext_resource type="AudioStream" uid="uid://bk2mn22pg2h3k" path="res://audio/sfx/ui/ui_button_press.wav" id="5_f0pwr"]
+[ext_resource type="AudioStream" uid="uid://dup0p26qldlnn" path="res://audio/sfx/ui/ui_button_hover.wav" id="6_kipf1"]
+[ext_resource type="AudioStream" uid="uid://bp6j1amrugjhv" path="res://audio/sfx/ui/ui_action_cancel.wav" id="7_pp21f"]
+[ext_resource type="AudioStream" uid="uid://bclr5ftjrtp1p" path="res://audio/sfx/ui/ui_action_confirm.wav" id="8_kipf1"]
+[ext_resource type="AudioStream" uid="uid://cfx26nls2qkgc" path="res://audio/music/bgm_freshwater.ogg" id="9_bgm_fw"]
+[ext_resource type="AudioStream" uid="uid://blkqqt4evhus" path="res://audio/music/bgm_marine.ogg" id="10_bgm_ma"]
+[ext_resource type="AudioStream" uid="uid://drpu6taf06e4l" path="res://audio/music/bgm_special.ogg" id="11_bgm_sp"]
+[ext_resource type="AudioStream" uid="uid://b1wxcb8x8p5xk" path="res://audio/music/bgm_default.ogg" id="12_bgm_df"]
 
 [node name="AudioManager" type="Node" unique_id=37865986]
 script = ExtResource("1_u6vuv")
+freshwater_music = ExtResource("9_bgm_fw")
+marine_music = ExtResource("10_bgm_ma")
+special_music = ExtResource("11_bgm_sp")
+default_music = ExtResource("12_bgm_df")
 
 [node name="Music" type="Node" parent="." unique_id=941509750]
 script = ExtResource("2_q68eh")
@@ -18,4 +30,10 @@ metadata/_custom_type_script = "uid://ovpj7trlhgkc"
 
 [node name="UI" type="Node" parent="." unique_id=652781546]
 script = ExtResource("4_5l778")
+sounds = Dictionary[StringName, AudioStream]({
+&"action_cancel": ExtResource("7_pp21f"),
+&"action_confirm": ExtResource("8_kipf1"),
+&"button_hover": ExtResource("6_kipf1"),
+&"button_press": ExtResource("5_f0pwr")
+})
 metadata/_custom_type_script = "uid://cxhe2cd01vu03"

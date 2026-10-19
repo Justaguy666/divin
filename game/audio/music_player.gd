@@ -33,7 +33,7 @@ func play(stream: AudioStream, fade: float = FADE_TIME) -> void:
 		new.play()
 		AudioFade.fade(new, 0.0, fade) # 0.0 -> bật tiếng
 	else:
-		stop(fade)
+		new.stop()
 		new.stream = null
 		
 	if old.playing:
@@ -42,3 +42,11 @@ func play(stream: AudioStream, fade: float = FADE_TIME) -> void:
 
 func stop(fade: float = FADE_TIME) -> void:
 	play(null, fade)
+
+
+## Chỉ dùng khi test: nhảy tới gần cuối bài để nghe chỗ nối loop
+func debug_seek_to_loop(seconds_before_end: float = 3.0) -> void:
+	if _player_current.stream == null or not _player_current.playing:
+		return
+	var length := _player_current.stream.get_length()
+	_player_current.seek(maxf(0.0, length - seconds_before_end))
