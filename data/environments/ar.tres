@@ -1,7 +1,10 @@
-[gd_resource type="Resource" script_class="AquariumInfo" format=3]
+[gd_resource type="Resource" script_class="AquariumInfo" format=3 uid="uid://bahwh6shkdrka"]
 
 [ext_resource type="Script" uid="uid://bqvvotesiihnm" path="res://game/aquarium/aquarium_info.gd" id="1_info"]
-[ext_resource type="Texture2D" path="res://assets/ui/thumbnails/ar.png" id="2_thumb"]
+[ext_resource type="Texture2D" uid="uid://bmdg7hkopeltf" path="res://assets/ui/thumbnails/ar.png" id="2_thumb"]
+[ext_resource type="AudioStream" uid="uid://brsul0qwexin5" path="res://audio/ambient/common/amb_underwater_bed.ogg" id="amb_bed"]
+[ext_resource type="AudioStream" uid="uid://ddiw1hi8e4fw3" path="res://audio/ambient/common/amb_bubbles.ogg" id="amb_bubbles"]
+[ext_resource type="AudioStream" uid="uid://blds4arhlbh8o" path="res://audio/ambient/biomes/amb_ice.ogg" id="amb_ice"]
 
 [resource]
 script = ExtResource("1_info")
@@ -12,4 +15,5 @@ scene_path = "res://scenes/aquarium/ar_aquarium.tscn"
 thumbnail = ExtResource("2_thumb")
 available = false
 description = "Cold, ice-grey Arctic shallows."
+ambience = Array[AudioStream]([ExtResource("amb_bed"), ExtResource("amb_bubbles"), ExtResource("amb_ice")])
 metadata/_custom_type_script = "uid://bqvvotesiihnm"

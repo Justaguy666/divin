@@ -1,7 +1,11 @@
-[gd_resource type="Resource" script_class="AquariumInfo" format=3]
+[gd_resource type="Resource" script_class="AquariumInfo" format=3 uid="uid://dj0bfhr5secbq"]
 
 [ext_resource type="Script" uid="uid://bqvvotesiihnm" path="res://game/aquarium/aquarium_info.gd" id="1_info"]
-[ext_resource type="Texture2D" path="res://assets/ui/thumbnails/rc.png" id="2_thumb"]
+[ext_resource type="Texture2D" uid="uid://bh07nxxqkinav" path="res://assets/ui/thumbnails/rc.png" id="2_thumb"]
+[ext_resource type="AudioStream" uid="uid://brsul0qwexin5" path="res://audio/ambient/common/amb_underwater_bed.ogg" id="amb_bed"]
+[ext_resource type="AudioStream" uid="uid://ddiw1hi8e4fw3" path="res://audio/ambient/common/amb_bubbles.ogg" id="amb_bubbles"]
+[ext_resource type="AudioStream" uid="uid://cfeojko7tl3dc" path="res://audio/ambient/biomes/amb_ocean_deep.ogg" id="amb_ocean"]
+[ext_resource type="AudioStream" uid="uid://dd200ia1cf38d" path="res://audio/ambient/biomes/amb_sea_swell.ogg" id="amb_swell"]
 
 [resource]
 script = ExtResource("1_info")
@@ -12,4 +16,5 @@ scene_path = "res://scenes/aquarium/rc_aquarium.tscn"
 thumbnail = ExtResource("2_thumb")
 available = false
 description = "Wave-washed rocks and tide pools."
+ambience = Array[AudioStream]([ExtResource("amb_bed"), ExtResource("amb_bubbles"), ExtResource("amb_ocean"), ExtResource("amb_swell")])
 metadata/_custom_type_script = "uid://bqvvotesiihnm"

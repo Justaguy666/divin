@@ -1,15 +1,17 @@
 [gd_resource type="Resource" script_class="AquariumInfo" format=3 uid="uid://dau7n0xgm551b"]
 
 [ext_resource type="Script" uid="uid://bqvvotesiihnm" path="res://game/aquarium/aquarium_info.gd" id="1_info"]
-[ext_resource type="Texture2D" path="res://assets/ui/thumbnails/pf.png" id="2_thumb"]
+[ext_resource type="Texture2D" uid="uid://bgncvjcplqwsl" path="res://assets/ui/thumbnails/pf.png" id="2_thumb"]
+[ext_resource type="AudioStream" uid="uid://brsul0qwexin5" path="res://audio/ambient/common/amb_underwater_bed.ogg" id="amb_bed"]
+[ext_resource type="AudioStream" uid="uid://ddiw1hi8e4fw3" path="res://audio/ambient/common/amb_bubbles.ogg" id="amb_bubbles"]
+[ext_resource type="AudioStream" uid="uid://biiuu6flab83d" path="res://audio/ambient/biomes/amb_stream.ogg" id="amb_stream"]
 
 [resource]
 script = ExtResource("1_info")
 id = "pf"
 display_name = "Planted Freshwater"
-category = 0
 scene_path = "res://scenes/aquarium/pf_aquarium.tscn"
 thumbnail = ExtResource("2_thumb")
-available = true
 description = "A bright, plant-filled tank of clear water."
+ambience = Array[AudioStream]([ExtResource("amb_bed"), ExtResource("amb_bubbles"), ExtResource("amb_stream")])
 metadata/_custom_type_script = "uid://bqvvotesiihnm"

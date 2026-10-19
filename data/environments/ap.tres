@@ -1,15 +1,18 @@
-[gd_resource type="Resource" script_class="AquariumInfo" format=3]
+[gd_resource type="Resource" script_class="AquariumInfo" format=3 uid="uid://1lftuxws4pfi"]
 
 [ext_resource type="Script" uid="uid://bqvvotesiihnm" path="res://game/aquarium/aquarium_info.gd" id="1_info"]
-[ext_resource type="Texture2D" path="res://assets/ui/thumbnails/ap.png" id="2_thumb"]
+[ext_resource type="Texture2D" uid="uid://cl6i50uisdri6" path="res://assets/ui/thumbnails/ap.png" id="2_thumb"]
+[ext_resource type="AudioStream" uid="uid://brsul0qwexin5" path="res://audio/ambient/common/amb_underwater_bed.ogg" id="amb_bed"]
+[ext_resource type="AudioStream" uid="uid://ddiw1hi8e4fw3" path="res://audio/ambient/common/amb_bubbles.ogg" id="amb_bubbles"]
+[ext_resource type="AudioStream" uid="uid://biiuu6flab83d" path="res://audio/ambient/biomes/amb_stream.ogg" id="amb_stream"]
 
 [resource]
 script = ExtResource("1_info")
 id = "ap"
 display_name = "Asian Peat Swamp"
-category = 0
 scene_path = "res://scenes/aquarium/ap_aquarium.tscn"
 thumbnail = ExtResource("2_thumb")
 available = false
 description = "Wine-dark peat water in a tropical swamp forest."
+ambience = Array[AudioStream]([ExtResource("amb_bed"), ExtResource("amb_bubbles"), ExtResource("amb_stream")])
 metadata/_custom_type_script = "uid://bqvvotesiihnm"
