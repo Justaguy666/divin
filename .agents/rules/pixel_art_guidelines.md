@@ -25,10 +25,13 @@ Tank/viewport is 640x360; creature sprites are drawn at 1:1 pixel scale (no scal
 ## 2. Rendering & Shapes (Core Style)
 - **Silhouette first**: every species has its own body profile (depth, head shape, fin positions). Never reuse another species' body template and only recolour it.
 - **Form Shading**: Light always comes from above. Shade forms rounded per column. Add 1-2 highlight pixels on the back or forehead to define volume.
-- **Outlines**: Never use pure black. Outline = a near-black tinted toward the biome/body colour, with the lit top edge one step lighter (values per biome below).
+- **Outlines**: Never use pure black and never one fixed near-black for the whole sprite. Each outline pixel = a dark shade of the body colour right next to it (same hue, about 55% of its lightness; keep it roughly between OKLab L 0.17 and 0.42), with the lit top edge one step lighter. A light biome tint (~10%) may be mixed in (tint values per biome below).
+  - Outlines may vary along the body, but each outline pixel must be a dark shade of the body colour next to it (e.g. blue head -> dark blue outline, orange flank -> dark brown-orange outline). Never one fixed outline colour on a multi-coloured fish.
 - **Markings**: Hand-place bars, stripes, spots and blotches. Sparse fixed-seed speckles are fine for scales/spangles; never a uniform noise texture or regularly repeating pattern that reads as a grid.
 - **Fins**: soft, translucent (alpha ~150-230), with rays and a smooth base→edge gradient; signature fin colours (red edges, black tips, white leading edges) go on the rim or tip. Long filaments must sit on a fin membrane — bare dark lines read as "spider legs".
 - **Eyes**: Dark pupil + highlight + coloured ring (e.g. red ring for discus/altum, red upper iris for diamond tetra).
+- **Bellies**: never a single flat colour. Give the underside a soft tonal gradient (rim/bounce light on the lowest edge, a gentle warm/cool drift along the length, patches of one-step variation or a dither band along the ventral line).
+- **Backward swimmers** (cuttlefish, squid when jetting, etc.): the E-facing frames show the mantle leading and the arms/tentacles/eyes trailing behind, because the animal moves tail-first.
 - **Translucent species** (glass bloodfin, golomyanka, isaza): lower the body alpha behind the head and show spine / gut / swim-bladder pixels.
 
 ## 3. Biome Styles
@@ -49,7 +52,7 @@ Blackwater biomes represent tannin-rich "tea" water, dim amber light from above,
 - **Mid-tones**: Must have a light amber cast (`#be7c3c`, ~12% opacity) and be slightly desaturated.
 - **Highlights**: Must be warm gold (`#ffe2a0`). NEVER use pure white.
 - **Translucent Fins**: Must be tinted amber and slightly more transparent than typical freshwater assets.
-- **Outline**: `#1a0e0a`, lit edge `#5a3420`.
+- **Outline**: per-pixel dark shade of the adjacent body colour, lightly tinted toward warm `#1a0e0a`; lit top edge one step lighter (tint reference `#5a3420`).
 - **EXCEPTION (Iridescence)**: Signature neon/iridescent lines or markings (e.g., the cardinal tetra's blue line, discus turquoise lines, apistogramma cheek spangles) are **NOT graded** (hue 165-230°, saturated). They must remain pure and bright so they glow against the dark water.
 
 ### 3.3 Ancient Cold Lake (prefix `ac_`)
@@ -58,7 +61,7 @@ Baikal-style ultra-clear, very cold, deep lake (species mix: Baikal core + Ohrid
 - **Mid-tones**: icy cast (`#96bed2`, ~10%), slightly desaturated (~8%).
 - **Highlights**: silver-white with a blue hint (`#ecf6fc`), never pure white.
 - **Translucent Fins**: glassy, tinted pale blue (`#b4d7eb`, ~15%) and a bit more transparent (alpha ×0.88).
-- **Outline**: `#0e1820`, lit edge `#3a5060`.
+- **Outline**: per-pixel dark shade of the adjacent body colour, lightly tinted toward cool `#0e1820`; lit top edge one step lighter (tint reference `#3a5060`).
 - **EXCEPTION (warm signatures)**: saturated reds/oranges/yellows (hue ≤55° or ≥330°) are **NOT graded** — char/taimen bellies, roach eye ring, ayu gill spot, amphipod shells, yellowfin sculpin fins — so they pop against the blue water.
 - Silvery species use the shared silver ramp `#3a4650 → #eef2f4`; golomyankas are translucent pinkish with visible gut.
 

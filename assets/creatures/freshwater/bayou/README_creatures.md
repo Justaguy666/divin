@@ -15,7 +15,7 @@ roster is fully aquatic.
   (bluegill chin, bluefin killifish fins, blue-crab claws) are NOT graded.
 
 ## Shapes / rendering
-- Per-column form shading, outline #18180c with lit top edge #4a4628, soft fins with rays, hand-placed markings.
+- Per-column form shading, outline = per-pixel dark shade of the adjacent body colour (light tint toward #18180c), lit top edge one step lighter, soft fins with rays, hand-placed markings.
 - Gars: diamond (ganoid) scale lattice, dorsal + anal set just in front of the tail, tapering snout with a flat lower jaw
   (alligator gar shows a row of fangs).
 - Turtles: carapace split into vertebral / costal / marginal scutes with seams and growth rings; legs emerge from under

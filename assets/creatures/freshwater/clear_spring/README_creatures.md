@@ -16,7 +16,7 @@ already used elsewhere (bayou sunfishes / gars / bass, blackwater tetras and ple
   stripes, molly sail edge) and blues (Suwannee bass cheeks, chanchito spangles) are NOT graded.
 
 ## Shapes / rendering
-- Per-column form shading, outline #0e1a20 with lit top edge #3e6670, soft fins with rays, hand-placed markings.
+- Per-column form shading, outline = per-pixel dark shade of the adjacent body colour (light tint toward #0e1a20), lit top edge one step lighter, soft fins with rays, hand-placed markings.
 - Characins (piraputanga, curimbatá, piau, dorado, pacu, tetras) carry an adipose fin; cichlids have a long single
   dorsal and rounded tail; the banded knifefish swims with a rippling ribbon anal fin.
 - Piracanjuba (64x26, endangered, endemic to the Paraná–Paraguay basin): silver with golden-olive back and brassy

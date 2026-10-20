@@ -12,7 +12,7 @@ Biome look: tannin "tea" water, dim amber light from above, dark humus floor. Ev
 
 ## Shapes / rendering (same base as planted_freshwater)
 - Form shading: light from above, rounded per column, 1–2 highlight pixels on back/forehead.
-- Outline: warm near-black #1a0e0a; lit top edge #5a3420.
+- Outline: per-pixel dark shade of the adjacent body colour, lightly tinted toward warm #1a0e0a; lit top edge one step lighter (never one fixed near-black).
 - Soft fins with rays and gradient; hand-placed markings (no repeating noise).
 - Eyes: dark pupil + warm highlight + coloured ring (red for discus/altum).
 

@@ -10,7 +10,7 @@ Biome look: very old, deep, crystal-clear cold lakes (Baikal, Biwa, Ohrid, Khöv
 - EXCEPTION – saturated warm signature colours (red / orange / yellow: char belly, taimen tail, koayu gill spot, yellowfin sculpin pectorals, Ohrid roach eye, trout spots) are NOT graded.
 
 ## Shapes / rendering (same base as planted_freshwater / blackwater)
-- Form shading: light from above, rounded per column; outline #0e1820 with lit top edge #3a5060.
+- Form shading: light from above, rounded per column; outline = per-pixel dark shade of the adjacent body colour, lightly tinted toward #0e1820, lit top edge one step lighter.
 - Salmonids: adipose fin, gill-cover arc, fork tail; graylings use a long "flag" dorsal with a coloured fringe and rows of spots.
 - Golomyankas and the deep-water sculpin are translucent (body alpha 165–215, backbone / gut visible).
 - Markings are hand-placed rows (spots, scutes, blotches), not repeating noise.

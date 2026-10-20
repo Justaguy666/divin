@@ -15,7 +15,7 @@ for rocky_river; species used in bayou / marsh_swamp / clear_spring are not repe
   warpaint and rosyface heads, longear and studfish, bluehead chub, river redhorse fins, mudpuppy gills) are NOT graded.
 
 ## Shapes / rendering
-- Per-column form shading, outline #121a10 with lit top edge #465a36, soft fins with rays, hand-placed markings.
+- Per-column form shading, outline = per-pixel dark shade of the adjacent body colour (light tint toward #121a10), lit top edge one step lighter, soft fins with rays, hand-placed markings.
 - Darters: blunt head, spiny + soft dorsal, rounded tail and a big pectoral fan for perching on stones.
 - Eel-like bodies (lamprey, hellbender, mudpuppy) use `tube_shade`: a 9-tone glossy round-body ramp with a broken wet
   highlight streak along the back and a paler belly; hellbender has lit lateral skin folds, mudpuppy feathery maroon

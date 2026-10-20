@@ -16,7 +16,7 @@ rainbowfish (Boeseman's, neon dwarf, threadfin) stay in planted_freshwater.
   are NOT graded.
 
 ## Shapes / rendering
-- Per-column form shading, outline #141e1c with lit top edge #3e5650, soft fins with rays, hand-placed markings.
+- Per-column form shading, outline = per-pixel dark shade of the adjacent body colour (light tint toward #141e1c), lit top edge one step lighter, soft fins with rays, hand-placed markings.
 - Rainbowfish: arched back, small first dorsal, long second dorsal + anal reaching the tail; blue-eyes have a bright
   blue eye ring and long striped / spotted male fins.
 - Eel-tailed catfish (tandan, Rendahl's) and the lungfish have a continuous fringe fin round a pointed tail.

@@ -14,7 +14,7 @@ red swamp crawfish) are left for the bayou biome.
   axolotl pinks) and iridescent blues (sunbleak stripe, pygmy / bluespotted sunfish spangles) are NOT graded.
 
 ## Shapes / rendering
-- Same base as the other freshwater biomes: per-column form shading, outline #141a10 with lit top edge #3e4a30,
+- Same base as the other freshwater biomes: per-column form shading, outline = per-pixel dark shade of the adjacent body colour (light tint toward #141a10), lit top edge one step lighter,
   soft fins with rays, hand-placed markings.
 - Eels (swamp eel, European eel) and the tadpole undulate along the body over the 4 frames.
 - Non-fish swimmers: tadpole, great diving beetle (sculling hind legs), Chinese softshell turtle (paddling flippers).
