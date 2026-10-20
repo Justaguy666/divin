@@ -18,6 +18,9 @@ const REF_SIZE: Vector2 = Vector2(30, 16)
 ## Vùng mặt sàn mà CHÂN của crawler được phép di chuyển
 @export var floor_y: float = 268.0
 @export var floor_height: float = 16.0
+## Đường phân cách giữa mặt sàn và phần bên dưới sàn (y toàn cục).
+## Chân crawler không bao giờ vượt quá đường này.
+@export var floor_line: float = 283.0
 
 ## Chuyển động bob theo trục Y
 @export var bob_speed: float = 4.0 # Tần số dao động
@@ -59,7 +62,7 @@ var _bob_time: float = 0.0
 
 var floor_end: float:
 	get:
-		return floor_y + floor_height
+		return minf(floor_y + floor_height, floor_line)
 
 
 func _ready() -> void:
