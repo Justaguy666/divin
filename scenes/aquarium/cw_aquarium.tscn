@@ -2,6 +2,46 @@
 
 [ext_resource type="PackedScene" path="res://scenes/environment/marine/cold_water/cold_water.tscn" id="1_env"]
 [ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_cam"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_atlantic_herring.tscn" id="3_atlant"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_lesser_sandeel.tscn" id="4_lesser"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_poor_cod.tscn" id="5_poor_c"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_goldsinny_wrasse.tscn" id="6_goldsi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_corkwing_wrasse.tscn" id="7_corkwi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_rock_cook_wrasse.tscn" id="8_rock_c"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_two_spotted_goby.tscn" id="9_two_sp"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_black_goby.tscn" id="10_black_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_fifteen_spined_stickleback.tscn" id="11_fiftee"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_cunner.tscn" id="12_cunner"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_radiated_shanny.tscn" id="13_radiat"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_montagus_sea_snail.tscn" id="14_montag"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_atlantic_mackerel.tscn" id="15_atlant"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_pollock.tscn" id="16_polloc"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_haddock.tscn" id="17_haddoc"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_ballan_wrasse.tscn" id="18_ballan"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_cuckoo_wrasse.tscn" id="19_cuckoo"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_tautog.tscn" id="20_tautog"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_lumpfish.tscn" id="21_lumpfi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_sea_raven.tscn" id="22_sea_ra"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_snake_pipefish.tscn" id="23_snake_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_john_dory.tscn" id="24_john_d"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_red_gurnard.tscn" id="25_red_gu"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_common_cuttlefish.tscn" id="26_common"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_atlantic_cod.tscn" id="27_atlant"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_atlantic_wolffish.tscn" id="28_atlant"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_atlantic_halibut.tscn" id="29_atlant"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_ling.tscn" id="30_ling"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_spiny_dogfish.tscn" id="31_spiny_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_thornback_ray.tscn" id="32_thornb"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_european_lobster.tscn" id="33_europe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_edible_crab.tscn" id="34_edible"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_squat_lobster.tscn" id="35_squat_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_northern_shrimp.tscn" id="36_northe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_common_hermit_crab.tscn" id="37_common"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_common_whelk.tscn" id="38_common"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_orange_footed_sea_cucumber.tscn" id="39_orange"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_monkfish.tscn" id="40_monkfi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_shorthorn_sculpin.tscn" id="41_shorth"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/marine/cold_water/cw_rock_gunnel.tscn" id="42_rock_g"]
 
 [node name="CwAquarium" type="Node2D" unique_id=770412284]
 
@@ -12,6 +52,219 @@ position = Vector2(320, 180)
 script = ExtResource("2_cam")
 
 [node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="CwAtlanticHerring" parent="Creatures" unique_id=1109130909 instance=ExtResource("3_atlant")]
+position = Vector2(106.7, 100.4)
+
+[node name="CwAtlanticHerring2" parent="Creatures" unique_id=1908632805 instance=ExtResource("3_atlant")]
+position = Vector2(402.4, 165.2)
+
+[node name="CwAtlanticHerring3" parent="Creatures" unique_id=1205201396 instance=ExtResource("3_atlant")]
+position = Vector2(165.0, 114.5)
+
+[node name="CwAtlanticHerring4" parent="Creatures" unique_id=1819043942 instance=ExtResource("3_atlant")]
+position = Vector2(275.5, 110.4)
+
+[node name="CwAtlanticHerring5" parent="Creatures" unique_id=1622815966 instance=ExtResource("3_atlant")]
+position = Vector2(449.1, 138.6)
+
+[node name="CwLesserSandeel" parent="Creatures" unique_id=15443529 instance=ExtResource("4_lesser")]
+position = Vector2(472.9, 228.0)
+
+[node name="CwLesserSandeel2" parent="Creatures" unique_id=1763981654 instance=ExtResource("4_lesser")]
+position = Vector2(384.0, 216.8)
+
+[node name="CwLesserSandeel3" parent="Creatures" unique_id=1923329923 instance=ExtResource("4_lesser")]
+position = Vector2(94.9, 213.4)
+
+[node name="CwLesserSandeel4" parent="Creatures" unique_id=461454016 instance=ExtResource("4_lesser")]
+position = Vector2(423.7, 236.1)
+
+[node name="CwPoorCod" parent="Creatures" unique_id=775870089 instance=ExtResource("5_poor_c")]
+position = Vector2(262.4, 183.7)
+
+[node name="CwPoorCod2" parent="Creatures" unique_id=1112920858 instance=ExtResource("5_poor_c")]
+position = Vector2(490.9, 232.0)
+
+[node name="CwGoldsinnyWrasse" parent="Creatures" unique_id=202554048 instance=ExtResource("6_goldsi")]
+position = Vector2(397.1, 203.2)
+
+[node name="CwGoldsinnyWrasse2" parent="Creatures" unique_id=992361665 instance=ExtResource("6_goldsi")]
+position = Vector2(352.2, 158.4)
+
+[node name="CwGoldsinnyWrasse3" parent="Creatures" unique_id=1548490248 instance=ExtResource("6_goldsi")]
+position = Vector2(118.9, 195.1)
+
+[node name="CwCorkwingWrasse" parent="Creatures" unique_id=1536565232 instance=ExtResource("7_corkwi")]
+position = Vector2(363.4, 111.1)
+
+[node name="CwCorkwingWrasse2" parent="Creatures" unique_id=204742841 instance=ExtResource("7_corkwi")]
+position = Vector2(246.6, 165.2)
+
+[node name="CwRockCookWrasse" parent="Creatures" unique_id=1080424140 instance=ExtResource("8_rock_c")]
+position = Vector2(263.3, 204.3)
+
+[node name="CwRockCookWrasse2" parent="Creatures" unique_id=1733461376 instance=ExtResource("8_rock_c")]
+position = Vector2(525.6, 191.6)
+
+[node name="CwTwoSpottedGoby" parent="Creatures" unique_id=1064480422 instance=ExtResource("9_two_sp")]
+position = Vector2(460.1, 235.6)
+
+[node name="CwTwoSpottedGoby2" parent="Creatures" unique_id=1823502072 instance=ExtResource("9_two_sp")]
+position = Vector2(263.0, 234.0)
+
+[node name="CwBlackGoby" parent="Creatures" unique_id=1039052623 instance=ExtResource("10_black_")]
+position = Vector2(275.2, 242.8)
+
+[node name="CwBlackGoby2" parent="Creatures" unique_id=1245911712 instance=ExtResource("10_black_")]
+position = Vector2(327.3, 240.9)
+
+[node name="CwFifteenSpinedStickleback" parent="Creatures" unique_id=114985539 instance=ExtResource("11_fiftee")]
+position = Vector2(165.7, 44.0)
+
+[node name="CwFifteenSpinedStickleback2" parent="Creatures" unique_id=1449851399 instance=ExtResource("11_fiftee")]
+position = Vector2(579.1, 92.9)
+
+[node name="CwFifteenSpinedStickleback3" parent="Creatures" unique_id=1019403914 instance=ExtResource("11_fiftee")]
+position = Vector2(97.4, 105.2)
+
+[node name="CwCunner" parent="Creatures" unique_id=1834563884 instance=ExtResource("12_cunner")]
+position = Vector2(119.8, 225.5)
+
+[node name="CwCunner2" parent="Creatures" unique_id=990962682 instance=ExtResource("12_cunner")]
+position = Vector2(536.1, 200.0)
+
+[node name="CwRadiatedShanny" parent="Creatures" unique_id=1181736371 instance=ExtResource("13_radiat")]
+position = Vector2(417.6, 236.6)
+
+[node name="CwRadiatedShanny2" parent="Creatures" unique_id=670624554 instance=ExtResource("13_radiat")]
+position = Vector2(180.6, 228.5)
+
+[node name="CwMontagusSeaSnail" parent="Creatures" unique_id=1509638417 instance=ExtResource("14_montag")]
+position = Vector2(347.0, 230.0)
+
+[node name="CwAtlanticMackerel" parent="Creatures" unique_id=940003948 instance=ExtResource("15_atlant")]
+position = Vector2(308.2, 146.5)
+
+[node name="CwAtlanticMackerel2" parent="Creatures" unique_id=29921982 instance=ExtResource("15_atlant")]
+position = Vector2(153.4, 139.5)
+
+[node name="CwAtlanticMackerel3" parent="Creatures" unique_id=1292634459 instance=ExtResource("15_atlant")]
+position = Vector2(58.5, 115.9)
+
+[node name="CwAtlanticMackerel4" parent="Creatures" unique_id=1061230891 instance=ExtResource("15_atlant")]
+position = Vector2(578.0, 135.7)
+
+[node name="CwPollock" parent="Creatures" unique_id=1497450111 instance=ExtResource("16_polloc")]
+position = Vector2(241.6, 94.8)
+
+[node name="CwPollock2" parent="Creatures" unique_id=1784194105 instance=ExtResource("16_polloc")]
+position = Vector2(311.9, 136.5)
+
+[node name="CwHaddock" parent="Creatures" unique_id=1435709118 instance=ExtResource("17_haddoc")]
+position = Vector2(318.4, 192.3)
+
+[node name="CwHaddock2" parent="Creatures" unique_id=690015955 instance=ExtResource("17_haddoc")]
+position = Vector2(548.1, 223.7)
+
+[node name="CwBallanWrasse" parent="Creatures" unique_id=951566439 instance=ExtResource("18_ballan")]
+position = Vector2(296.3, 218.4)
+
+[node name="CwCuckooWrasse" parent="Creatures" unique_id=1116326317 instance=ExtResource("19_cuckoo")]
+position = Vector2(426.0, 207.5)
+
+[node name="CwTautog" parent="Creatures" unique_id=403094368 instance=ExtResource("20_tautog")]
+position = Vector2(184.9, 230.1)
+
+[node name="CwLumpfish" parent="Creatures" unique_id=1038958731 instance=ExtResource("21_lumpfi")]
+position = Vector2(581.7, 189.3)
+
+[node name="CwSeaRaven" parent="Creatures" unique_id=1949743989 instance=ExtResource("22_sea_ra")]
+position = Vector2(566.5, 226.5)
+
+[node name="CwSnakePipefish" parent="Creatures" unique_id=1615354225 instance=ExtResource("23_snake_")]
+position = Vector2(319.1, 165.6)
+
+[node name="CwSnakePipefish2" parent="Creatures" unique_id=1978127322 instance=ExtResource("23_snake_")]
+position = Vector2(519.7, 169.6)
+
+[node name="CwJohnDory" parent="Creatures" unique_id=1256914894 instance=ExtResource("24_john_d")]
+position = Vector2(47.9, 98.0)
+
+[node name="CwRedGurnard" parent="Creatures" unique_id=1320252184 instance=ExtResource("25_red_gu")]
+position = Vector2(346.1, 234.8)
+
+[node name="CwCommonCuttlefish" parent="Creatures" unique_id=1343747693 instance=ExtResource("26_common")]
+position = Vector2(484.5, 136.3)
+
+[node name="CwAtlanticCod" parent="Creatures" unique_id=586677607 instance=ExtResource("27_atlant")]
+position = Vector2(65.0, 173.0)
+
+[node name="CwAtlanticWolffish" parent="Creatures" unique_id=342346521 instance=ExtResource("28_atlant")]
+position = Vector2(414.3, 229.6)
+
+[node name="CwAtlanticHalibut" parent="Creatures" unique_id=1243264613 instance=ExtResource("29_atlant")]
+position = Vector2(42.9, 227.3)
+
+[node name="CwLing" parent="Creatures" unique_id=1066538156 instance=ExtResource("30_ling")]
+position = Vector2(470.9, 228.3)
+
+[node name="CwSpinyDogfish" parent="Creatures" unique_id=1182104329 instance=ExtResource("31_spiny_")]
+position = Vector2(426.3, 184.3)
+
+[node name="CwThornbackRay" parent="Creatures" unique_id=1294488164 instance=ExtResource("32_thornb")]
+position = Vector2(164.8, 232.1)
+
+[node name="CwEuropeanLobster" parent="Creatures" unique_id=1093880930 instance=ExtResource("33_europe")]
+position = Vector2(538.1, 267.1)
+
+[node name="CwEdibleCrab" parent="Creatures" unique_id=907173430 instance=ExtResource("34_edible")]
+position = Vector2(198.6, 267.1)
+
+[node name="CwEdibleCrab2" parent="Creatures" unique_id=300653602 instance=ExtResource("34_edible")]
+position = Vector2(417.8, 267.1)
+
+[node name="CwSquatLobster" parent="Creatures" unique_id=1974982201 instance=ExtResource("35_squat_")]
+position = Vector2(484.4, 267.1)
+
+[node name="CwSquatLobster2" parent="Creatures" unique_id=1100281509 instance=ExtResource("35_squat_")]
+position = Vector2(369.9, 267.1)
+
+[node name="CwNorthernShrimp" parent="Creatures" unique_id=1745156034 instance=ExtResource("36_northe")]
+position = Vector2(269.0, 267.1)
+
+[node name="CwNorthernShrimp2" parent="Creatures" unique_id=1742821252 instance=ExtResource("36_northe")]
+position = Vector2(116.2, 267.1)
+
+[node name="CwNorthernShrimp3" parent="Creatures" unique_id=40347965 instance=ExtResource("36_northe")]
+position = Vector2(144.1, 267.1)
+
+[node name="CwCommonHermitCrab" parent="Creatures" unique_id=846118410 instance=ExtResource("37_common")]
+position = Vector2(586.1, 267.1)
+
+[node name="CwCommonHermitCrab2" parent="Creatures" unique_id=120327760 instance=ExtResource("37_common")]
+position = Vector2(544.9, 267.1)
+
+[node name="CwCommonWhelk" parent="Creatures" unique_id=1397859509 instance=ExtResource("38_common")]
+position = Vector2(513.6, 267.1)
+
+[node name="CwCommonWhelk2" parent="Creatures" unique_id=1662561109 instance=ExtResource("38_common")]
+position = Vector2(235.0, 267.1)
+
+[node name="CwOrangeFootedSeaCucumber" parent="Creatures" unique_id=64937544 instance=ExtResource("39_orange")]
+position = Vector2(578.1, 267.1)
+
+[node name="CwMonkfish" parent="Creatures" unique_id=713859355 instance=ExtResource("40_monkfi")]
+position = Vector2(326.0, 267.1)
+
+[node name="CwShorthornSculpin" parent="Creatures" unique_id=976669115 instance=ExtResource("41_shorth")]
+position = Vector2(426.0, 267.1)
+
+[node name="CwShorthornSculpin2" parent="Creatures" unique_id=270646204 instance=ExtResource("41_shorth")]
+position = Vector2(219.1, 267.1)
+
+[node name="CwRockGunnel" parent="Creatures" unique_id=1011978954 instance=ExtResource("42_rock_g")]
+position = Vector2(318.6, 267.1)
 
 [node name="Food" type="Node2D" parent="." unique_id=191782434]
 

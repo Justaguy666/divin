@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://dejkmftgw2yw7" path="res://assets/environments/marine/cold_water/decoration/debris/cw_kelp_blade_drift.png" id="1_tex"]
+
+[node name="CwKelpBladeDrift" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-29, -12)

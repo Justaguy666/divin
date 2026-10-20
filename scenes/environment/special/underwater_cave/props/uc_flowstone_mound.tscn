@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://po4w152cfqdp" path="res://assets/environments/special/underwater_cave/decoration/formations/uc_flowstone_mound.png" id="1_tex"]
+
+[node name="UcFlowstoneMound" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-30, -31)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-28, -6, -28, -3, -29, -3, -29, -2, -28, -2, -28, -1, 27, -1, 27, -2, 28, -2, 28, -6)

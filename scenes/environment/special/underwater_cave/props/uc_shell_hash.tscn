@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://fri6h5tt6p8f" path="res://assets/environments/special/underwater_cave/decoration/shells/uc_shell_hash.png" id="1_tex"]
+
+[node name="UcShellHash" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-20, -6)

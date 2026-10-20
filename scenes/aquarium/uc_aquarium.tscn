@@ -2,6 +2,46 @@
 
 [ext_resource type="PackedScene" path="res://scenes/environment/special/underwater_cave/underwater_cave.tscn" id="1_env"]
 [ext_resource type="Script" uid="uid://gb78bb7wo25b" path="res://game/aquarium/aquarium_camera.gd" id="2_cam"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_red_cardinalfish.tscn" id="3_red_ca"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_steinitzs_cave_goby.tscn" id="4_steini"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_liechtensteins_goby.tscn" id="5_liecht"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_leopard_spotted_goby.tscn" id="6_leopar"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_black_cave_brotula.tscn" id="7_black_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_cuban_cave_cusk_eel.tscn" id="8_cuban_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_glassy_sweeper.tscn" id="9_glassy"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_golden_sweeper.tscn" id="10_golden"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_blackface_blenny.tscn" id="11_blackf"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_bentuvias_goby.tscn" id="12_bentuv"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_blue_devilfish.tscn" id="13_blue_d"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_sawcheek_cardinalfish.tscn" id="14_sawche"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_atlantic_spadefish.tscn" id="15_atlant"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_blackbar_soldierfish.tscn" id="16_blackb"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_brown_meagre.tscn" id="17_brown_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_dwarf_lionfish.tscn" id="18_dwarf_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_forkbeard.tscn" id="19_forkbe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_glasseye.tscn" id="20_glasse"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_longspine_squirrelfish.tscn" id="21_longsp"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_painted_comber.tscn" id="22_painte"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_pearlfish.tscn" id="23_pearlf"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_red_bigeye.tscn" id="24_red_bi"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_swallowtail_seaperch.tscn" id="25_swallo"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_yellowtail_snapper.tscn" id="26_yellow"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_atlantic_tarpon.tscn" id="27_atlant"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_dusky_grouper.tscn" id="28_dusky_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_european_conger.tscn" id="29_europe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_goliath_grouper.tscn" id="30_goliat"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_nurse_shark.tscn" id="31_nurse_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_sand_tiger_shark.tscn" id="32_sand_t"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_caribbean_spiny_lobster.tscn" id="33_caribb"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_slipper_lobster.tscn" id="34_slippe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_banded_coral_shrimp.tscn" id="35_banded"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_hawaiian_red_shrimp.tscn" id="36_hawaii"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_mediterranean_spider_crab.tscn" id="37_medite"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_common_octopus.tscn" id="38_common"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_spotted_moray.tscn" id="39_spotte"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_madeira_rockfish.tscn" id="40_madeir"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_trumpet_triton.tscn" id="41_trumpe"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/special/underwater_cave/uc_giant_isopod.tscn" id="42_giant_"]
 
 [node name="UcAquarium" type="Node2D" unique_id=770412284]
 
@@ -12,6 +52,225 @@ position = Vector2(320, 180)
 script = ExtResource("2_cam")
 
 [node name="Creatures" type="Node2D" parent="." unique_id=1029281314]
+
+[node name="UcRedCardinalfish" parent="Creatures" unique_id=39129473 instance=ExtResource("3_red_ca")]
+position = Vector2(100.7, 120.2)
+
+[node name="UcRedCardinalfish2" parent="Creatures" unique_id=1353730542 instance=ExtResource("3_red_ca")]
+position = Vector2(406.9, 164.2)
+
+[node name="UcRedCardinalfish3" parent="Creatures" unique_id=396686181 instance=ExtResource("3_red_ca")]
+position = Vector2(546.4, 82.6)
+
+[node name="UcRedCardinalfish4" parent="Creatures" unique_id=630323531 instance=ExtResource("3_red_ca")]
+position = Vector2(234.7, 82.0)
+
+[node name="UcRedCardinalfish5" parent="Creatures" unique_id=1427812139 instance=ExtResource("3_red_ca")]
+position = Vector2(424.6, 68.3)
+
+[node name="UcSteinitzsCaveGoby" parent="Creatures" unique_id=1623402601 instance=ExtResource("4_steini")]
+position = Vector2(231.3, 229.3)
+
+[node name="UcSteinitzsCaveGoby2" parent="Creatures" unique_id=557747668 instance=ExtResource("4_steini")]
+position = Vector2(503.2, 240.4)
+
+[node name="UcLiechtensteinsGoby" parent="Creatures" unique_id=1586403012 instance=ExtResource("5_liecht")]
+position = Vector2(278.2, 215.8)
+
+[node name="UcLiechtensteinsGoby2" parent="Creatures" unique_id=481327686 instance=ExtResource("5_liecht")]
+position = Vector2(531.8, 236.6)
+
+[node name="UcLeopardSpottedGoby" parent="Creatures" unique_id=1872181851 instance=ExtResource("6_leopar")]
+position = Vector2(262.9, 232.2)
+
+[node name="UcLeopardSpottedGoby2" parent="Creatures" unique_id=1592058885 instance=ExtResource("6_leopar")]
+position = Vector2(483.2, 232.0)
+
+[node name="UcBlackCaveBrotula" parent="Creatures" unique_id=277101832 instance=ExtResource("7_black_")]
+position = Vector2(481.4, 221.1)
+
+[node name="UcBlackCaveBrotula2" parent="Creatures" unique_id=1857643495 instance=ExtResource("7_black_")]
+position = Vector2(471.0, 235.6)
+
+[node name="UcCubanCaveCuskEel" parent="Creatures" unique_id=564416070 instance=ExtResource("8_cuban_")]
+position = Vector2(474.6, 192.1)
+
+[node name="UcCubanCaveCuskEel2" parent="Creatures" unique_id=1646479011 instance=ExtResource("8_cuban_")]
+position = Vector2(334.1, 188.2)
+
+[node name="UcGlassySweeper" parent="Creatures" unique_id=1640686155 instance=ExtResource("9_glassy")]
+position = Vector2(272.1, 138.4)
+
+[node name="UcGlassySweeper2" parent="Creatures" unique_id=178802228 instance=ExtResource("9_glassy")]
+position = Vector2(139.3, 140.9)
+
+[node name="UcGlassySweeper3" parent="Creatures" unique_id=1615196443 instance=ExtResource("9_glassy")]
+position = Vector2(489.7, 143.9)
+
+[node name="UcGlassySweeper4" parent="Creatures" unique_id=1064253126 instance=ExtResource("9_glassy")]
+position = Vector2(470.0, 119.9)
+
+[node name="UcGlassySweeper5" parent="Creatures" unique_id=660609928 instance=ExtResource("9_glassy")]
+position = Vector2(168.7, 72.4)
+
+[node name="UcGoldenSweeper" parent="Creatures" unique_id=1435863419 instance=ExtResource("10_golden")]
+position = Vector2(369.8, 161.9)
+
+[node name="UcGoldenSweeper2" parent="Creatures" unique_id=1356338825 instance=ExtResource("10_golden")]
+position = Vector2(90.5, 71.5)
+
+[node name="UcGoldenSweeper3" parent="Creatures" unique_id=982706864 instance=ExtResource("10_golden")]
+position = Vector2(107.8, 84.1)
+
+[node name="UcGoldenSweeper4" parent="Creatures" unique_id=1359054356 instance=ExtResource("10_golden")]
+position = Vector2(47.8, 71.5)
+
+[node name="UcBlackfaceBlenny" parent="Creatures" unique_id=623341620 instance=ExtResource("11_blackf")]
+position = Vector2(227.6, 221.4)
+
+[node name="UcBlackfaceBlenny2" parent="Creatures" unique_id=1003259026 instance=ExtResource("11_blackf")]
+position = Vector2(320.8, 237.6)
+
+[node name="UcBentuviasGoby" parent="Creatures" unique_id=1000246512 instance=ExtResource("12_bentuv")]
+position = Vector2(155.0, 242.6)
+
+[node name="UcBentuviasGoby2" parent="Creatures" unique_id=526100924 instance=ExtResource("12_bentuv")]
+position = Vector2(143.9, 234.5)
+
+[node name="UcBlueDevilfish" parent="Creatures" unique_id=1694770379 instance=ExtResource("13_blue_d")]
+position = Vector2(379.9, 188.4)
+
+[node name="UcBlueDevilfish2" parent="Creatures" unique_id=1272905089 instance=ExtResource("13_blue_d")]
+position = Vector2(185.5, 201.7)
+
+[node name="UcSawcheekCardinalfish" parent="Creatures" unique_id=1614069932 instance=ExtResource("14_sawche")]
+position = Vector2(352.4, 112.4)
+
+[node name="UcSawcheekCardinalfish2" parent="Creatures" unique_id=1694046078 instance=ExtResource("14_sawche")]
+position = Vector2(409.9, 114.3)
+
+[node name="UcSawcheekCardinalfish3" parent="Creatures" unique_id=309595613 instance=ExtResource("14_sawche")]
+position = Vector2(90.8, 144.6)
+
+[node name="UcSawcheekCardinalfish4" parent="Creatures" unique_id=300482805 instance=ExtResource("14_sawche")]
+position = Vector2(414.0, 138.6)
+
+[node name="UcAtlanticSpadefish" parent="Creatures" unique_id=929713717 instance=ExtResource("15_atlant")]
+position = Vector2(592.7, 156.1)
+
+[node name="UcBlackbarSoldierfish" parent="Creatures" unique_id=1242325647 instance=ExtResource("16_blackb")]
+position = Vector2(191.6, 132.1)
+
+[node name="UcBlackbarSoldierfish2" parent="Creatures" unique_id=1129112362 instance=ExtResource("16_blackb")]
+position = Vector2(335.9, 192.6)
+
+[node name="UcBrownMeagre" parent="Creatures" unique_id=1008169069 instance=ExtResource("17_brown_")]
+position = Vector2(525.6, 205.2)
+
+[node name="UcBrownMeagre2" parent="Creatures" unique_id=634273359 instance=ExtResource("17_brown_")]
+position = Vector2(117.7, 212.9)
+
+[node name="UcDwarfLionfish" parent="Creatures" unique_id=1278447096 instance=ExtResource("18_dwarf_")]
+position = Vector2(521.8, 169.1)
+
+[node name="UcForkbeard" parent="Creatures" unique_id=1857300416 instance=ExtResource("19_forkbe")]
+position = Vector2(209.9, 193.2)
+
+[node name="UcGlasseye" parent="Creatures" unique_id=557316776 instance=ExtResource("20_glasse")]
+position = Vector2(366.6, 167.7)
+
+[node name="UcLongspineSquirrelfish" parent="Creatures" unique_id=423099559 instance=ExtResource("21_longsp")]
+position = Vector2(423.6, 191.6)
+
+[node name="UcLongspineSquirrelfish2" parent="Creatures" unique_id=551646170 instance=ExtResource("21_longsp")]
+position = Vector2(511.1, 109.7)
+
+[node name="UcPaintedComber" parent="Creatures" unique_id=96343812 instance=ExtResource("22_painte")]
+position = Vector2(270.7, 159.2)
+
+[node name="UcPearlfish" parent="Creatures" unique_id=874262652 instance=ExtResource("23_pearlf")]
+position = Vector2(466.3, 195.5)
+
+[node name="UcRedBigeye" parent="Creatures" unique_id=1235479790 instance=ExtResource("24_red_bi")]
+position = Vector2(413.7, 122.3)
+
+[node name="UcRedBigeye2" parent="Creatures" unique_id=277732794 instance=ExtResource("24_red_bi")]
+position = Vector2(528.5, 158.6)
+
+[node name="UcSwallowtailSeaperch" parent="Creatures" unique_id=905974880 instance=ExtResource("25_swallo")]
+position = Vector2(407.1, 135.8)
+
+[node name="UcSwallowtailSeaperch2" parent="Creatures" unique_id=435971971 instance=ExtResource("25_swallo")]
+position = Vector2(180.8, 76.5)
+
+[node name="UcYellowtailSnapper" parent="Creatures" unique_id=681664883 instance=ExtResource("26_yellow")]
+position = Vector2(553.2, 119.1)
+
+[node name="UcYellowtailSnapper2" parent="Creatures" unique_id=1331827589 instance=ExtResource("26_yellow")]
+position = Vector2(405.0, 67.6)
+
+[node name="UcYellowtailSnapper3" parent="Creatures" unique_id=723316290 instance=ExtResource("26_yellow")]
+position = Vector2(135.4, 181.7)
+
+[node name="UcAtlanticTarpon" parent="Creatures" unique_id=1863884910 instance=ExtResource("27_atlant")]
+position = Vector2(519.8, 95.2)
+
+[node name="UcDuskyGrouper" parent="Creatures" unique_id=38046236 instance=ExtResource("28_dusky_")]
+position = Vector2(115.1, 161.2)
+
+[node name="UcEuropeanConger" parent="Creatures" unique_id=1090772638 instance=ExtResource("29_europe")]
+position = Vector2(360.6, 234.2)
+
+[node name="UcGoliathGrouper" parent="Creatures" unique_id=622464630 instance=ExtResource("30_goliat")]
+position = Vector2(225.0, 160.0)
+
+[node name="UcNurseShark" parent="Creatures" unique_id=1522223199 instance=ExtResource("31_nurse_")]
+position = Vector2(92.6, 221.5)
+
+[node name="UcSandTigerShark" parent="Creatures" unique_id=227390641 instance=ExtResource("32_sand_t")]
+position = Vector2(174.0, 109.5)
+
+[node name="UcCaribbeanSpinyLobster" parent="Creatures" unique_id=1229710509 instance=ExtResource("33_caribb")]
+position = Vector2(137.0, 267.1)
+
+[node name="UcCaribbeanSpinyLobster2" parent="Creatures" unique_id=1546515975 instance=ExtResource("33_caribb")]
+position = Vector2(114.5, 267.1)
+
+[node name="UcSlipperLobster" parent="Creatures" unique_id=1076370586 instance=ExtResource("34_slippe")]
+position = Vector2(331.7, 267.1)
+
+[node name="UcBandedCoralShrimp" parent="Creatures" unique_id=534217180 instance=ExtResource("35_banded")]
+position = Vector2(75.0, 267.1)
+
+[node name="UcBandedCoralShrimp2" parent="Creatures" unique_id=1089310463 instance=ExtResource("35_banded")]
+position = Vector2(572.8, 267.1)
+
+[node name="UcHawaiianRedShrimp" parent="Creatures" unique_id=137326457 instance=ExtResource("36_hawaii")]
+position = Vector2(400.9, 267.1)
+
+[node name="UcHawaiianRedShrimp2" parent="Creatures" unique_id=984963424 instance=ExtResource("36_hawaii")]
+position = Vector2(529.6, 267.1)
+
+[node name="UcHawaiianRedShrimp3" parent="Creatures" unique_id=376193441 instance=ExtResource("36_hawaii")]
+position = Vector2(573.6, 267.1)
+
+[node name="UcMediterraneanSpiderCrab" parent="Creatures" unique_id=414749926 instance=ExtResource("37_medite")]
+position = Vector2(295.3, 267.1)
+
+[node name="UcCommonOctopus" parent="Creatures" unique_id=210375683 instance=ExtResource("38_common")]
+position = Vector2(405.9, 267.1)
+
+[node name="UcSpottedMoray" parent="Creatures" unique_id=1222560227 instance=ExtResource("39_spotte")]
+position = Vector2(152.8, 267.1)
+
+[node name="UcMadeiraRockfish" parent="Creatures" unique_id=1956117721 instance=ExtResource("40_madeir")]
+position = Vector2(407.3, 267.1)
+
+[node name="UcTrumpetTriton" parent="Creatures" unique_id=155109774 instance=ExtResource("41_trumpe")]
+position = Vector2(330.3, 267.1)
+
+[node name="UcGiantIsopod" parent="Creatures" unique_id=458041598 instance=ExtResource("42_giant_")]
+position = Vector2(160.3, 267.1)
 
 [node name="Food" type="Node2D" parent="." unique_id=191782434]
 

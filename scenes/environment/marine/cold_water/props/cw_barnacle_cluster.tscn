@@ -1,0 +1,8 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://d6g6nbcj00fr" path="res://assets/environments/marine/cold_water/decoration/shells/cw_barnacle_cluster.png" id="1_tex"]
+
+[node name="CwBarnacleCluster" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-14, -10)

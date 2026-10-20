@@ -1,0 +1,11 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://dco084cqbd3em" path="res://assets/environments/special/underwater_cave/vegetation/grass/uc_hydroid_fuzz.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://cvo60uvkuyu08" path="res://game/environment/swaying_plant.gd" id="2_sway"]
+
+[node name="UcHydroidFuzz" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-13, -9)
+script = ExtResource("2_sway")
+max_angle = 0.02

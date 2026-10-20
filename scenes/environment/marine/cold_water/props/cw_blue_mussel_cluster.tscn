@@ -1,0 +1,15 @@
+[gd_scene format=3]
+
+[ext_resource type="Texture2D" uid="uid://dni6oi0jw4b4o" path="res://assets/environments/marine/cold_water/decoration/shells/cw_blue_mussel_cluster.png" id="1_tex"]
+
+[node name="CwBlueMusselCluster" type="Sprite2D"]
+texture = ExtResource("1_tex")
+centered = false
+offset = Vector2(-18, -18)
+
+[node name="Footprint" type="StaticBody2D" parent="."]
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
+polygon = PackedVector2Array(-17, -6, -17, -5, -16, -5, -16, -4, -14, -4, -14, -3, -11, -3, -11, -2, -10, -2, -10, -1, 15, -1, 15, -2, 16, -2, 16, -4, 15, -4, 15, -5, 4, -5, 4, -6)
