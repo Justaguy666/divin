@@ -64,6 +64,7 @@ func open() -> void:
 	_select_current_language()
 	_show_page(_current_page)
 	modulate.a = 0.0
+	AudioManager.UI.play(&"button_press")
 	show()
 	create_tween().tween_property(self, "modulate:a", 1.0, 0.15)
 	tabs[_current_page].grab_focus.call_deferred()
@@ -74,7 +75,8 @@ func close() -> void:
 	# không hiện thì không cần đóng
 	if not visible:
 		return
-		
+	AudioManager.UI.play(&"action_cancel")
+	
 	AudioManager.save_volumes()
 		
 	var tw := create_tween()

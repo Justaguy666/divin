@@ -41,6 +41,7 @@ layout_mode = 2
 texture_normal = ExtResource("2_kfuf0")
 texture_pressed = ExtResource("3_rhl22")
 texture_hover = ExtResource("4_u5uos")
+metadata/ui_press_sound = &""
 
 [node name="SettingsButton" type="TextureButton" parent="Margin/Buttons" unique_id=1327167858]
 unique_name_in_owner = true
@@ -48,3 +49,4 @@ layout_mode = 2
 texture_normal = ExtResource("5_set_n")
 texture_pressed = ExtResource("6_set_p")
 texture_hover = ExtResource("7_set_h")
+metadata/ui_press_sound = &""

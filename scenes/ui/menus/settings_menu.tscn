@@ -58,6 +58,7 @@ size_flags_vertical = 4
 texture_normal = ExtResource("3_mbts0")
 texture_pressed = ExtResource("4_cheay")
 texture_hover = ExtResource("5_mqqf1")
+metadata/ui_press_sound = &""
 
 [node name="HeaderDivider" type="HSeparator" parent="Center/Panel/VBox" unique_id=1840237711]
 layout_mode = 2

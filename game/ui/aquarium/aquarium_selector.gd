@@ -56,6 +56,7 @@ func open() -> void:
 	_show_category(category)
 	AquariumManager.selector_open = true
 	modulate.a = 0.0
+	AudioManager.UI.play(&"button_press")
 	show()
 	create_tween().tween_property(self, "modulate:a", 1.0, 0.15)
 
@@ -65,7 +66,7 @@ func close() -> void:
 	# không hiện thì không cần đóng
 	if not visible:
 		return
-		
+	AudioManager.UI.play(&"action_cancel")
 	AquariumManager.selector_open = false
 	var tw := create_tween()
 	tw.tween_property(self, "modulate:a", 0.0, 0.12)
@@ -123,6 +124,7 @@ func _select(info: AquariumInfo) -> void:
 # Chuyển môi trường
 func _confirm() -> void:
 	if _selected and _selected.available:
+		AudioManager.UI.play(&"action_confirm")
 		aquarium_chosen.emit(_selected)
 		
 

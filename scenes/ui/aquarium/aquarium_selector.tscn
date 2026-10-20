@@ -61,6 +61,7 @@ size_flags_vertical = 4
 texture_normal = ExtResource("close_normal")
 texture_pressed = ExtResource("close_pressed")
 texture_hover = ExtResource("close_hover")
+metadata/ui_press_sound = &""
 
 [node name="HeaderDivider" type="HSeparator" parent="Center/Panel/VBox" unique_id=2064813371]
 layout_mode = 2
@@ -129,3 +130,4 @@ custom_minimum_size = Vector2(90, 26)
 layout_mode = 2
 theme_type_variation = &"PrimaryButton"
 text = "Go ›"
+metadata/ui_press_sound = &""
