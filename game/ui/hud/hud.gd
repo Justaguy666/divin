@@ -58,12 +58,19 @@ func _wake() -> void:
 
 # Hết giờ: mờ đi, trừ khi chuột đang đứng yên trên nút
 func _on_idle_timeout() -> void:
-	if buttons.get_global_rect().has_point(get_global_mouse_position()):
+	if _menu_open() or buttons.get_global_rect().has_point(get_global_mouse_position()):
 		_idle_timer.start() # làm mới timer liên tục
 		return
 	_is_idle = true
 	_fade_to(idle_alpha, fade_out_time)
 	Input.mouse_mode = Input.MOUSE_MODE_HIDDEN
+
+
+func _menu_open() -> bool:
+	for menu in get_tree().get_nodes_in_group("modal_menu"):
+		if menu.visible:
+			return true
+	return false
 
 		
 func _fade_to(alpha: float, duration: float) -> void:
