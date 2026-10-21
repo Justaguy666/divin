@@ -29,7 +29,14 @@ Tank/viewport is 640x360; creature sprites are drawn at 1:1 pixel scale (no scal
   - Outlines may vary along the body, but each outline pixel must be a dark shade of the body colour next to it (e.g. blue head -> dark blue outline, orange flank -> dark brown-orange outline). Never one fixed outline colour on a multi-coloured fish.
 - **Markings**: Hand-place bars, stripes, spots and blotches. Sparse fixed-seed speckles are fine for scales/spangles; never a uniform noise texture or regularly repeating pattern that reads as a grid.
 - **Fins**: soft, translucent (alpha ~150-230), with rays and a smooth base→edge gradient; signature fin colours (red edges, black tips, white leading edges) go on the rim or tip. Long filaments must sit on a fin membrane — bare dark lines read as "spider legs".
-- **Eyes**: Dark pupil + highlight + coloured ring (e.g. red ring for discus/altum, red upper iris for diamond tetra).
+- **Eyes** (standard set by the planted-freshwater sprites):
+  - Core = exactly 2 px stacked vertically: a white/off-white highlight directly ABOVE a single near-black pupil. Never side by side, never diagonal, never a 2-px-wide or tall black pupil.
+  - Highlight colour: the sprite's own off-white (`#f0ece0`, `#fbe4b2`, `#eff1e5` or similar, warm gold in blackwater); pupil: near-black from the palette (e.g. `#100905`). No pure `#ffffff`/`#000000`.
+  - Exactly one eye per visible side. Remove any second white dot, fake eye or dark blob (spots, mouth ends, band ends) that reads as another eye near the head. Exception: flatfish (halibut, flounder) show both eyes on the top side, each with the same 2-px core and ring, spaced identically in E, SE and NE.
+  - Optional coloured ring (e.g. red for discus/altum, orange `#c89040` for bass): pixels hugging the pupil, normally the bottom-left corner (left of, below and diagonal to the pupil). On busy/banded or low-contrast bodies (banded grunter, mackerel) this contrasting ring is REQUIRED so the eye stands out from the pattern.
+  - Keep the cells around the eye calm: no checkerboard of light/dark pixels, no extra highlight pixels beside the eye; subocular/cheek bars must not run into the pupil.
+  - Place the eye at the same anatomical spot in E, SE and NE (rays/flat-headed species: near the front of the head, not mid-body) and keep it in the same relative position in all 4 frames.
+- **Mouths**: do not draw a horizontal (or diagonal) dark mouth line across the head. At most a 1-3 px dark notch at the snout tip; avoid pixels at the tip that read as a second eye.
 - **Bellies**: never a single flat colour. Give the underside a soft tonal gradient (rim/bounce light on the lowest edge, a gentle warm/cool drift along the length, patches of one-step variation or a dither band along the ventral line).
 - **Backward swimmers** (cuttlefish, squid when jetting, etc.): the E-facing frames show the mantle leading and the arms/tentacles/eyes trailing behind, because the animal moves tail-first.
 - **Translucent species** (glass bloodfin, golomyanka, isaza): lower the body alpha behind the head and show spine / gut / swim-bladder pixels.
