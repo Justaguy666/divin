@@ -33,10 +33,10 @@ Sea stars, urchins and anemones are left to props; jellyfish are reserved for a 
 ## Roster (40 species: 30 swimmers, 10 crawlers)
 | Group | Species (frame) |
 |---|---|
-| Small | red cardinalfish, Steinitz's cave goby, Liechtenstein's goby, leopard-spotted goby, black cave brotula, Cuban cave cusk-eel, glassy sweeper, golden sweeper, blackface blenny, Bentuvia's goby, blue devilfish, sawcheek cardinalfish (all 32x28) |
-| Medium | Atlantic spadefish 40x44, blackbar soldierfish 40x28, brown meagre 44x26, dwarf lionfish 44x32, forkbeard 46x28, glasseye 40x30, longspine squirrelfish 46x26, painted comber 44x24, pearlfish 56x18, red bigeye 40x28, swallowtail seaperch 44x28, yellowtail snapper 54x30 |
-| Showpiece | Atlantic tarpon 84x44, dusky grouper 68x42, European conger 92x30, goliath grouper 76x50, nurse shark 84x38, sand tiger shark 88x38 |
-| Crawlers | Caribbean spiny lobster 64x26, slipper lobster 48x18, banded coral shrimp 42x22, Hawaiian red shrimp 20x12, Mediterranean spider crab 46x32, common octopus 50x28, spotted moray 70x18, Madeira rockfish 42x20, trumpet triton 46x30, giant isopod 46x20 |
+| Small | red cardinalfish, Steinitz's cave goby, Liechtenstein's goby, leopard-spotted goby, black cave brotula, Cuban cave cusk-eel, glassy sweeper, golden sweeper, blackface blenny, Bentuvia's goby, blue devilfish, sawcheek cardinalfish (all 34x28) |
+| Medium | Atlantic spadefish 34x36, blackbar soldierfish 36x22, brown meagre 38x22, dwarf lionfish 38x24, forkbeard 38x22, glasseye 36x24, longspine squirrelfish 40x24, painted comber 38x20, pearlfish 42x14, red bigeye 36x22, swallowtail seaperch 38x22, yellowtail snapper 46x24 |
+| Showpiece | Atlantic tarpon 60x30, dusky grouper 50x30, European conger 62x20, goliath grouper 52x32, nurse shark 62x18, sand tiger shark 60x20 |
+| Crawlers | Caribbean spiny lobster 48x18, slipper lobster 42x16, banded coral shrimp 38x20, Hawaiian red shrimp 24x12, Mediterranean spider crab 38x28, common octopus 38x26, spotted moray 58x16, Madeira rockfish 34x16, trumpet triton 34x22, giant isopod 34x18 |
 
 ## Swim layers (scene `area`, world y: surface 0, ground 264)
 - Open cave water (40–200): cardinalfish, sweepers, swallowtail seaperch, yellowtail snapper, spadefish, tarpon, sand tiger.

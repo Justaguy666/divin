@@ -32,10 +32,10 @@ Sea stars, urchins and anemones are left to props; jellyfish are reserved for a 
 ## Roster (40 species: 30 swimmers, 10 crawlers)
 | Group | Species (frame) |
 |---|---|
-| Small | Atlantic herring, lesser sandeel, poor cod, goldsinny wrasse, corkwing wrasse, rock cook wrasse, two-spotted goby, black goby, fifteen-spined stickleback, cunner, radiated shanny, Montagu's sea snail (all 32x28) |
-| Medium | Atlantic mackerel 48x24, pollock 48x26, haddock 48x26, ballan wrasse 44x26, cuckoo wrasse 44x24, tautog 40x26, lumpfish 36x32, sea raven 40x28, snake pipefish 52x14, John Dory 40x40, red gurnard 44x26, common cuttlefish 40x28 |
-| Showpiece | Atlantic cod 68x36, Atlantic wolffish 64x30, Atlantic halibut 72x40, ling 76x26, spiny dogfish 76x26, thornback ray 72x30 |
-| Crawlers | European lobster 60x24, edible crab 48x26, squat lobster 30x16, northern shrimp 30x14, common hermit crab 30x24, common whelk 34x26, orange-footed sea cucumber 44x16, monkfish 56x22, shorthorn sculpin 40x16, rock gunnel 46x12 |
+| Small | Atlantic herring, lesser sandeel (36x28), poor cod, goldsinny wrasse, corkwing wrasse, rock cook wrasse, two-spotted goby, black goby, cunner, radiated shanny, Montagu's sea snail (34x28), fifteen-spined stickleback (32x28) |
+| Medium | Atlantic mackerel 44x20, pollock 44x22, haddock 42x24, ballan wrasse 38x22, cuckoo wrasse 38x20, tautog 36x22, lumpfish 34x28, sea raven 36x24, snake pipefish 44x12, John Dory 34x34, red gurnard 40x22, common cuttlefish 38x20 |
+| Showpiece | Atlantic cod 48x26, Atlantic wolffish 46x20, Atlantic halibut 48x28, ling 56x20, spiny dogfish 58x20, thornback ray 52x22 |
+| Crawlers | European lobster 46x22, edible crab 38x20, squat lobster 34x16, northern shrimp 32x18, common hermit crab 26x20, common whelk 32x20, orange-footed sea cucumber 36x16, monkfish 46x18, shorthorn sculpin 38x16, rock gunnel 40x10 |
 
 ## Swim layers (scene `area`, world y: surface 0, ground 264)
 - Upper: herring, mackerel, stickleback, dogfish (20–200).
