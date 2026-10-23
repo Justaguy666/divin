@@ -19,3 +19,4 @@ desktop.ini
 *.gdignore.disabled
 .agents/mcp_config.json
 _audit/
+__pycache__/

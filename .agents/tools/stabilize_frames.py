@@ -1,4 +1,5 @@
-"""Make the static parts of every frame identical to frame 0 of its row: wherever the ORIGINAL (git HEAD) frames agree
+"""Usage: stabilize_frames.py [--orig <dir of unprocessed sheets>] <processed sheets...>  (default original = git HEAD)
+Make the static parts of every frame identical to frame 0 of its row: wherever the ORIGINAL (git HEAD) frames agree
 pixel-for-pixel with their row's frame 0, the processed frame takes the processed frame 0 pixel."""
 import sys, io, re, os, subprocess, glob
 import numpy as np
@@ -8,9 +9,14 @@ def head(path):
     rel = os.path.relpath(path, R).replace(os.sep, '/')
     b = subprocess.run(['git', '-C', R, 'show', f'HEAD:{rel}'], capture_output=True).stdout
     return np.array(Image.open(io.BytesIO(b)).convert('RGBA')) if b else None
-for p in sys.argv[1:]:
+args = sys.argv[1:]
+orig_dir = None
+if args and args[0] == '--orig':
+    orig_dir, args = args[1], args[2:]
+for p in args:
     m = re.search(r'_(\d+)x(\d+)_4f', p); fw, fh = int(m[1]), int(m[2])
-    o = head(p); n = np.array(Image.open(p).convert('RGBA'))
+    o = np.array(Image.open(os.path.join(orig_dir, os.path.basename(p))).convert('RGBA')) if orig_dir else head(p)
+    n = np.array(Image.open(p).convert('RGBA'))
     if o is None or o.shape != n.shape: print('skip', p); continue
     ch = 0
     for y0 in range(0, n.shape[0], fh):
