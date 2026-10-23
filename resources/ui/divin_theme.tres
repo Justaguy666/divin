@@ -27,6 +27,10 @@
 [ext_resource type="Texture2D" uid="uid://c2sev2aav3ma2" path="res://assets/ui/ui_scroll_grabber.png" id="t_ui_scroll_grabber"]
 [ext_resource type="Texture2D" uid="uid://262t7ylj81qk" path="res://assets/ui/ui_scroll_grabber_hover.png" id="t_ui_scroll_grabber_hover"]
 [ext_resource type="Texture2D" uid="uid://7wbifu3vv45p" path="res://assets/ui/ui_scroll_track.png" id="t_ui_scroll_track"]
+[ext_resource type="Texture2D" uid="uid://dbtktcwaqr6cl" path="res://assets/ui/ui_slider_fill.png" id="t_ui_slider_fill"]
+[ext_resource type="Texture2D" uid="uid://c2426aenmeoav" path="res://assets/ui/ui_slider_grabber.png" id="t_ui_slider_grabber"]
+[ext_resource type="Texture2D" uid="uid://c02um6qq1ggj2" path="res://assets/ui/ui_slider_grabber_hover.png" id="t_ui_slider_grabber_hover"]
+[ext_resource type="Texture2D" uid="uid://dx4xfice4xl3b" path="res://assets/ui/ui_slider_track.png" id="t_ui_slider_track"]
 [ext_resource type="Texture2D" uid="uid://cr235sblwsbee" path="res://assets/ui/ui_tab_selected.png" id="t_ui_tab_selected"]
 [ext_resource type="Texture2D" uid="uid://03ss3bdf6wxf" path="res://assets/ui/ui_tab_side_hover.png" id="t_ui_tab_side_hover"]
 [ext_resource type="Texture2D" uid="uid://chp8xxum3tw1j" path="res://assets/ui/ui_tab_side_normal.png" id="t_ui_tab_side_normal"]
@@ -156,6 +160,20 @@ content_margin_bottom = 1.0
 texture = ExtResource("t_ui_divider")
 texture_margin_left = 12.0
 texture_margin_right = 12.0
+
+[sub_resource type="StyleBoxTexture" id="s_slider_fill"]
+texture = ExtResource("t_ui_slider_fill")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
+
+[sub_resource type="StyleBoxTexture" id="s_slider_track"]
+texture = ExtResource("t_ui_slider_track")
+texture_margin_left = 3.0
+texture_margin_top = 3.0
+texture_margin_right = 3.0
+texture_margin_bottom = 3.0
 
 [sub_resource type="FontVariation" id="fv_heading"]
 base_font = ExtResource("f_bold")
@@ -394,6 +412,12 @@ ContentPanel/base_type = &"PanelContainer"
 ContentPanel/styles/panel = SubResource("content_panel")
 HSeparator/constants/separation = 6
 HSeparator/styles/separator = SubResource("line_div")
+HSlider/constants/center_grabber = 0
+HSlider/icons/grabber = ExtResource("t_ui_slider_grabber")
+HSlider/icons/grabber_highlight = ExtResource("t_ui_slider_grabber_hover")
+HSlider/styles/grabber_area = SubResource("s_slider_fill")
+HSlider/styles/grabber_area_highlight = SubResource("s_slider_fill")
+HSlider/styles/slider = SubResource("s_slider_track")
 HeadingLabel/base_type = &"Label"
 HeadingLabel/constants/shadow_offset_y = 2
 HeadingLabel/font_sizes/font_size = 32

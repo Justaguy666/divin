@@ -35,7 +35,7 @@ grow_horizontal = 2
 grow_vertical = 2
 
 [node name="Panel" type="PanelContainer" parent="Center" unique_id=343049727]
-custom_minimum_size = Vector2(360, 200)
+custom_minimum_size = Vector2(369, 250)
 layout_mode = 2
 
 [node name="VBox" type="VBoxContainer" parent="Center/Panel" unique_id=608472210]
@@ -108,26 +108,6 @@ custom_minimum_size = Vector2(0, 18)
 layout_mode = 2
 theme_type_variation = &"SectionLabel"
 text = "General"
-
-[node name="LanguageRow" type="HBoxContainer" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage" unique_id=235035440]
-custom_minimum_size = Vector2(0, 24)
-layout_mode = 2
-
-[node name="LanguageLabel" type="Label" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage/LanguageRow" unique_id=130057130]
-layout_mode = 2
-size_flags_horizontal = 3
-text = "Language"
-
-[node name="LanguageOption" type="OptionButton" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage/LanguageRow" unique_id=1811494635]
-unique_name_in_owner = true
-custom_minimum_size = Vector2(120, 0)
-layout_mode = 2
-size_flags_vertical = 4
-theme_override_constants/h_separation = 6
-
-[node name="LanguageDivider" type="HSeparator" parent="Center/Panel/VBox/Body/Content/Pages/GeneralPage" unique_id=1592846630]
-layout_mode = 2
-theme_type_variation = &"RowSeparator"
 
 [node name="AudioPage" type="VBoxContainer" parent="Center/Panel/VBox/Body/Content/Pages" unique_id=1956554143]
 unique_name_in_owner = true
