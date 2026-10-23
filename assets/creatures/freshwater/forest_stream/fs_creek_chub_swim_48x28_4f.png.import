@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://3v2r31o3gdrf"
-path="res://.godot/imported/fs_fallfish_swim_48x26_4f.png-dd4ef569e54eccdf8b516feef97d3198.ctex"
+uid="uid://bd17gdo22dsyj"
+path="res://.godot/imported/fs_creek_chub_swim_48x28_4f.png-48f3f981789f8486b35fd3b99af55ed7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_fallfish_swim_48x26_4f.png"
-dest_files=["res://.godot/imported/fs_fallfish_swim_48x26_4f.png-dd4ef569e54eccdf8b516feef97d3198.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_creek_chub_swim_48x28_4f.png"
+dest_files=["res://.godot/imported/fs_creek_chub_swim_48x28_4f.png-48f3f981789f8486b35fd3b99af55ed7.ctex"]
 
 [params]
 
