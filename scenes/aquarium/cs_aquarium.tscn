@@ -37,9 +37,9 @@
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_toad_headed_turtle.tscn" id="35_toad_h"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_florida_cave_crayfish.tscn" id="36_florid"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_pantanal_crab.tscn" id="37_pantan"]
-[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_florida_cave_amphipod.tscn" id="38_florid"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_cambeva.tscn" id="38_florid"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_rasp_elimia.tscn" id="39_rasp_e"]
-[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_florida_pondhorn.tscn" id="40_florid"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_fat_sleeper.tscn" id="40_florid"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_cascarudo.tscn" id="41_cascar"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/clear_spring/cs_southern_flounder.tscn" id="42_southe"]
 
@@ -251,13 +251,13 @@ position = Vector2(326.0, 267.1)
 [node name="CsPantanalCrab2" parent="Creatures" unique_id=976669115 instance=ExtResource("37_pantan")]
 position = Vector2(426.0, 267.1)
 
-[node name="CsFloridaCaveAmphipod" parent="Creatures" unique_id=270646204 instance=ExtResource("38_florid")]
+[node name="CsCambeva" parent="Creatures" unique_id=270646204 instance=ExtResource("38_florid")]
 position = Vector2(219.1, 267.1)
 
-[node name="CsFloridaCaveAmphipod2" parent="Creatures" unique_id=1011978954 instance=ExtResource("38_florid")]
+[node name="CsCambeva2" parent="Creatures" unique_id=1011978954 instance=ExtResource("38_florid")]
 position = Vector2(318.6, 267.1)
 
-[node name="CsFloridaCaveAmphipod3" parent="Creatures" unique_id=1738592513 instance=ExtResource("38_florid")]
+[node name="CsCambeva3" parent="Creatures" unique_id=1738592513 instance=ExtResource("38_florid")]
 position = Vector2(361.5, 267.1)
 
 [node name="CsRaspElimia" parent="Creatures" unique_id=1279725117 instance=ExtResource("39_rasp_e")]
@@ -266,7 +266,7 @@ position = Vector2(129.0, 267.1)
 [node name="CsRaspElimia2" parent="Creatures" unique_id=941165154 instance=ExtResource("39_rasp_e")]
 position = Vector2(331.4, 267.1)
 
-[node name="CsFloridaPondhorn" parent="Creatures" unique_id=995302549 instance=ExtResource("40_florid")]
+[node name="CsFatSleeper" parent="Creatures" unique_id=995302549 instance=ExtResource("40_florid")]
 position = Vector2(391.5, 267.1)
 
 [node name="CsCascarudo" parent="Creatures" unique_id=1467064010 instance=ExtResource("41_cascar")]
