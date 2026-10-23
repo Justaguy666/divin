@@ -14,7 +14,9 @@ def eye_mask(a, body):
         for x in range(W):
             if not body[y, x]: continue
             hh, ll, ss = colorsys.rgb_to_hls(*(a[y, x, :3] / 255))
-            if ll > 0.72 and (a[y, x, :3].max() - a[y, x, :3].min()) < 70 and colorsys.rgb_to_hls(*(a[y + 1, x, :3] / 255))[1] < 0.3:
+            ys = np.nonzero(body[:, x])[0]
+            upper = y + 1 <= ys.min() + (ys.max() - ys.min()) * 0.6           # eyes sit in the upper part of the head
+            if upper and ll > 0.72 and (a[y, x, :3].max() - a[y, x, :3].min()) < 70 and colorsys.rgb_to_hls(*(a[y + 1, x, :3] / 255))[1] < 0.3:
                 keep[max(0, y - 1):y + 3, max(0, x - 1):x + 2] = True
     return keep
 def soften_frame(f, T=18, w_halo=0.38, w_band=0.28, w2=0.16):

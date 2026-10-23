@@ -35,6 +35,9 @@ These numbers come from measuring the originals and are checked by `.agents/tool
   light belly meets a dark back, and never a bar or spot cut straight into the body colour.
 - Markings keep their dark core; the surrounding body gets a halo ring (≈40% toward the marking, then ≈15%).
 - Two large regions meeting (back / belly, red belly / white flank) get a 2-px band of intermediates on both sides.
+- Light bellies (white, beige, skin) and fins never get a near-black rim: the edge is ~70% of the adjacent colour's
+  lightness in the same hue, no dark seam where body meets a fin, no stray dark specks inside a light belly band.
+  `.agents/tools/relight_outline.py <out_dir> <sheets...>` fixes these.
 - `.agents/tools/soften_boundaries.py <out_dir> <sheets...>` applies exactly this (eyes, outline and fins untouched); run
   it when the audit flags `hard_step`, then compare before/after.
 
