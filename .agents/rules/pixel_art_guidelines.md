@@ -8,6 +8,51 @@ trigger: "When generating, evaluating, or discussing pixel art, spritesheets, or
 These rules define the correct way to draw pixel art assets for creatures in the game. All creatures must adhere to strict rendering, shading, and spritesheet layout rules to ensure visual consistency across the project.
 Tank/viewport is 640x360; creature sprites are drawn at 1:1 pixel scale (no scaling in-engine).
 
+## 0. Style Contract (read first, check every batch)
+The pf_ and bw_ originals (commits 5547197, 72167f7) are the quality bar. Later biomes drifted away from it: longer
+torpedo bodies, smaller fins, flatter or noisier palettes, lower value contrast, and fish coloured like their background.
+These numbers come from measuring the originals and are checked by `.agents/tools/creature_audit.py`.
+
+**Before drafting a biome**
+- Open `.agents/rules/refs/style_reference.png` and keep it next to every preview. Compare against the image, not against memory or a summary.
+- Roster: at least 40% of the swimmers must be deep-bodied or showy (body length/height < 2.0: discs, cichlids,
+  gouramis, sunfish, groupers, angelfish, barbs). Do not fill a roster with gars, pikes, catfish and eels only.
+- Each species needs at least one accent that contrasts with the biome background (complementary hue, a light/dark
+  pattern, or a saturated fin/eye/marking). Drab species get it from a pattern (bars, spots, a pale belly, a coloured fin edge).
+
+**Measured targets (biome averages, swimmers)**
+| Metric | pf_/bw_ originals | Required |
+|---|---|---|
+| Body aspect (bbox width / height) | 1.70 / 2.03 | mean ≤ 2.25, ≥ 40% of species < 2.0 |
+| Translucent fin share of the sprite | 35% / 30% | mean ≥ 25%, each swimmer ≥ 18% |
+| Unique colours per frame (median) | ~66 | 45–110 (fewer = flat, more = noisy gradient/dither) |
+| Value range (L* 95th–5th percentile) | 73 | mean ≥ 68 |
+| Fish whose mean colour is within ΔE 20 of the far background | 0% / 47% | ≤ 50% (each fish must pass the accent rule anyway) |
+| Hard steps: interior pixel pairs jumping > ΔE 28 between two flat runs | – | ≤ 8% per sprite |
+
+**Colour transitions (as in pf_/bw_/ac_)**
+- Back → flank → belly and every marking edge go through 1–2 intermediate tones. Never a straight horizontal line where a
+  light belly meets a dark back, and never a bar or spot cut straight into the body colour.
+- Markings keep their dark core; the surrounding body gets a halo ring (≈40% toward the marking, then ≈15%).
+- Two large regions meeting (back / belly, red belly / white flank) get a 2-px band of intermediates on both sides.
+- `.agents/tools/soften_boundaries.py <out_dir> <sheets...>` applies exactly this (eyes, outline and fins untouched); run
+  it when the audit flags `hard_step`, then compare before/after.
+
+**Frame consistency**
+- Any recolour, texture, mottle or softening pass must give the static body the same pixels in all 4 frames of a row
+  (fixed seed, never a per-frame seed or a per-frame clustering result). After such a pass run
+  `.agents/tools/stabilize_frames.py <sheets...>` (copies frame 0 onto every pixel that was identical in the original).
+- Walking crawlers: the shell / body is drawn once and reused; only legs, claws, antennae and foot change.
+
+**Workflow**
+- Run `python .agents/tools/creature_audit.py <group>/<biome> --montage _audit/<prefix>.png` before every preview. Fix
+  FAIL lines first, then show the montage (reference strips plus the new biome on its own background) to the user.
+- Do not build a new biome by chaining the previous biome's library (monkey-patched shading, extra gloss, dither or
+  sheen passes, biome grades stacked on grades). Start from the pf_/bw_ construction: a per-species silhouette, a 5–7 tone
+  ramp, big translucent fins, hand-placed markings, then one light biome grade.
+- Do not run project-wide post-process passes (outline retint, eye/mouth standardisation, head rounding) without a
+  before/after montage of pf_ and bw_ approved by the user. Such passes changed the originals too (pf_ value range 157→147).
+
 ## 1. Spritesheet Layouts and Animation
 - **Swimmers (Fish)**:
   - Layout: 6 rows corresponding to directions (E, SE, SW, W, NW, NE). No straight N/S rows.

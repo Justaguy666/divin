@@ -18,3 +18,4 @@ desktop.ini
 .env
 *.gdignore.disabled
 .agents/mcp_config.json
+_audit/
