@@ -34,7 +34,7 @@ roster is fully aquatic.
 | Small schooling | western mosquitofish, least killifish, golden topminnow, blackstripe topminnow, bluefin killifish, rainwater killifish, taillight shiner, pugnose minnow, bantam sunfish, cypress darter, brook silverside, threadfin shad (all 32x28) |
 | Medium | bluegill 36x32, redear sunfish 36x32, warmouth 36x30, flier 36x32, white crappie 40x32, largemouth bass 48x28, pirate perch 36x24, central mudminnow 36x20, channel catfish 52x24, freshwater drum 44x30, spotted gar 56x16, longnose gar 60x14 |
 | Showpiece | alligator gar 72x20, bowfin 56x22, paddlefish 72x24, flathead catfish 64x24, bigmouth buffalo 56x30, juvenile American alligator 72x20 |
-| Crawlers | red swamp crawfish 40x20, alligator snapping turtle 40x22, common musk turtle 32x18, three-toed amphiuma 56x12, lesser siren 48x14, Mississippi grass shrimp 28x14, giant water bug 36x16, tadpole madtom 32x14, hogchoker 34x12, juvenile blue crab 32x20 (front view, walks sideways) |
+| Crawlers | red swamp crawfish 40x20, alligator snapping turtle 40x22, common musk turtle 32x18, three-toed amphiuma 56x12, lesser siren 48x14, Mississippi grass shrimp 28x14, rainbow snake 46x12 (replaces the giant water bug), tadpole madtom 32x14, hogchoker 34x12, juvenile blue crab 32x20 (front view, walks sideways) |
 
 ## Swim layers (scene `area`, world y: surface 0, ground 264)
 - Surface: alligator (0–60), brook silverside (4–80), mosquitofish, topminnows, least killifish.
@@ -45,3 +45,11 @@ roster is fully aquatic.
 
 ## Aquarium (`scenes/aquarium/by_aquarium.tscn`)
 74 creatures: small schoolers 2–4 each, medium 1–2, showpieces 1 each, crawlers 1–3 each.
+
+## Redesign (Oct 2026)
+- 30 swimmers redrawn with the pf/bw/ac style system: one hue family per fish, flat single-colour markings, one small accent
+  (bluegill belly, redear ear spot, taillight shiner tail, bluefin killifish fins), fins in the body family and different per species.
+- Biome grade is `GRADE_BY` in the generator: shadows #1c1e10, straw cast #aa9e5a, highlights #f0e8c8. Fish lean to tan, steel blue,
+  silver and pale straw so they read against the olive background.
+- Crawlers were recoloured with lighter ramps (shapes kept); the water bug was replaced by a rainbow snake. The alligator keeps its old shape, recoloured.
+- Audit: 20/40 sprites closer than dE 20 to the background mean (blend share 0.50); olive-brown fish are the weakest.

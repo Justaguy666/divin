@@ -37,7 +37,7 @@ rainbowfish (Boeseman's, neon dwarf, threadfin) stay in planted_freshwater.
 | Small | checkered, western, exquisite, black-banded rainbowfish, delicate / Pacific / spotted blue-eye, sailfin glassfish, empire gudgeon, purple-spotted gudgeon, Midgley's carp gudgeon, fly-specked hardyhead (all 32x28) |
 | Medium | spangled perch 40x30, banded grunter 40x30, sooty grunter 44x32, seven-spot archerfish 44x30, primitive archerfish 40x28, mouth almighty 40x30, bony bream 40x30, Hyrtl's tandan 48x22, Rendahl's catfish 40x20, salmon-tailed catfish 52x24, freshwater longtom 60x14, snub-nosed garfish 44x14 |
 | Showpiece | barramundi 64x28, northern saratoga 64x22, freshwater sawfish 80x24, freshwater whipray 64x24, oxeye tarpon 56x26, Australian lungfish 72x22 |
-| Crawlers | redclaw crayfish 44x20, cherabin 52x16, glass shrimp 24x12, Notopala river snail 24x20, Velesunio mussel 32x16, water scorpion 40x12, northern snake-necked turtle 48x20, pig-nosed turtle 44x22, northern snapping turtle 40x22, Arafura file snake 64x12 |
+| Crawlers | redclaw crayfish 44x20, cherabin 52x16, glass shrimp 24x12, Notopala river snail 24x20, Mary River turtle 40x14 (replaces the mussel), tadpole shrimp 32x12 (replaces the water scorpion), northern snake-necked turtle 48x20, pig-nosed turtle 44x22, northern snapping turtle 40x22, Arafura file snake 64x12 |
 
 ## Swim layers (scene `area`, world y: surface 0, ground 264)
 - Surface: archerfish (0–80), saratoga (0–90), longtom, garfish, blue-eyes, hardyhead.
@@ -48,3 +48,12 @@ rainbowfish (Boeseman's, neon dwarf, threadfin) stay in planted_freshwater.
 
 ## Aquarium (`scenes/aquarium/bb_aquarium.tscn`)
 74 creatures: small schoolers 2–4 each, medium 1–3, showpieces 1 each, crawlers 1–3 each.
+
+## Redesign (Oct 2026)
+- 30 swimmers redrawn with the pf/bw/ac style system: one hue family per fish, flat single-colour markings, one small accent
+  (blue-eye ring, rainbowfish fin tint, gudgeon spots), fins in the body family and different per species.
+- Biome grade is `GRADE_BB` in the generator: shadows #1a2420, teal cast #60968c, highlights #ece4ce. Fish avoid mid-teal so they
+  stay off the teal background; ochre, straw, silver and brown-grey families carry the roster.
+- Crawlers were recoloured with lighter ramps (shapes kept); the insect and the mussel were replaced by a turtle and a crustacean.
+- The whipray keeps its oblique disc, only recoloured.
+- Audit: 15/40 sprites closer than dE 20 to the background mean (blend share 0.38).

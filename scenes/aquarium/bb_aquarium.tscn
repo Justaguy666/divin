@@ -36,8 +36,8 @@
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/billabong/bb_cherabin.tscn" id="34_cherab"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/billabong/bb_glass_shrimp.tscn" id="35_glass_"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/billabong/bb_notopala_river_snail.tscn" id="36_notopa"]
-[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/billabong/bb_velesunio_mussel.tscn" id="37_velesu"]
-[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/billabong/bb_water_scorpion.tscn" id="38_water_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/billabong/bb_mary_river_turtle.tscn" id="37_velesu"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/billabong/bb_tadpole_shrimp.tscn" id="38_water_"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/billabong/bb_northern_snake_necked_turtle.tscn" id="39_northe"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/billabong/bb_pig_nosed_turtle.tscn" id="40_pig_no"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/billabong/bb_northern_snapping_turtle.tscn" id="41_northe"]
@@ -257,10 +257,10 @@ position = Vector2(318.6, 267.1)
 [node name="BbNotopalaRiverSnail2" parent="Creatures" unique_id=1738592513 instance=ExtResource("36_notopa")]
 position = Vector2(361.5, 267.1)
 
-[node name="BbVelesunioMussel" parent="Creatures" unique_id=1279725117 instance=ExtResource("37_velesu")]
+[node name="BbMaryRiverTurtle" parent="Creatures" unique_id=1279725117 instance=ExtResource("37_velesu")]
 position = Vector2(129.0, 267.1)
 
-[node name="BbWaterScorpion" parent="Creatures" unique_id=941165154 instance=ExtResource("38_water_")]
+[node name="BbTadpoleShrimp" parent="Creatures" unique_id=941165154 instance=ExtResource("38_water_")]
 position = Vector2(331.4, 267.1)
 
 [node name="BbNorthernSnakeNeckedTurtle" parent="Creatures" unique_id=995302549 instance=ExtResource("39_northe")]

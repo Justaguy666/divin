@@ -38,7 +38,7 @@
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_three_toed_amphiuma.tscn" id="36_three_"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_lesser_siren.tscn" id="37_lesser"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_mississippi_grass_shrimp.tscn" id="38_missis"]
-[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_giant_water_bug.tscn" id="39_giant_"]
+[ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_rainbow_snake.tscn" id="39_giant_"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_tadpole_madtom.tscn" id="40_tadpol"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_hogchoker.tscn" id="41_hogcho"]
 [ext_resource type="PackedScene" path="res://scenes/creatures/freshwater/bayou/by_blue_crab.tscn" id="42_blue_c"]
@@ -257,7 +257,7 @@ position = Vector2(219.1, 267.1)
 [node name="ByMississippiGrassShrimp3" parent="Creatures" unique_id=1011978954 instance=ExtResource("38_missis")]
 position = Vector2(318.6, 267.1)
 
-[node name="ByGiantWaterBug" parent="Creatures" unique_id=1738592513 instance=ExtResource("39_giant_")]
+[node name="ByRainbowSnake" parent="Creatures" unique_id=1738592513 instance=ExtResource("39_giant_")]
 position = Vector2(361.5, 267.1)
 
 [node name="ByTadpoleMadtom" parent="Creatures" unique_id=1279725117 instance=ExtResource("40_tadpol")]
