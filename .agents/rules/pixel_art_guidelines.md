@@ -9,7 +9,7 @@ These rules define the correct way to draw pixel art assets for creatures in the
 Tank/viewport is 640x360; creature sprites are drawn at 1:1 pixel scale (no scaling in-engine).
 
 ## 0. Style Contract (read first, check every batch)
-The pf_ and bw_ originals (commits 5547197, 72167f7) are the quality bar. Later biomes drifted away from it: longer
+The pf_, bw_ and ac_ sprites are the quality bar (user-confirmed; pf_/bw_ originals are commits 5547197, 72167f7). Later biomes drifted away from it: longer
 torpedo bodies, smaller fins, flatter or noisier palettes, lower value contrast, and fish coloured like their background.
 These numbers come from measuring the originals and are checked by `.agents/tools/creature_audit.py`.
 
@@ -17,29 +17,49 @@ These numbers come from measuring the originals and are checked by `.agents/tool
 - Open `.agents/rules/refs/style_reference.png` and keep it next to every preview. Compare against the image, not against memory or a summary.
 - Roster: at least 40% of the swimmers must be deep-bodied or showy (body length/height < 2.0: discs, cichlids,
   gouramis, sunfish, groupers, angelfish, barbs). Do not fill a roster with gars, pikes, catfish and eels only.
-- Each species needs at least one accent that contrasts with the biome background (complementary hue, a light/dark
-  pattern, or a saturated fin/eye/marking). Drab species get it from a pattern (bars, spots, a pale belly, a coloured fin edge).
+- Each species needs one accent that separates it from the background **by value or pattern first** (dark mass, pale
+  belly, bar/stripe/spot), not by a complementary hue. A saturated accent colour is allowed only as a small area
+  (≤ ~10% of the sprite: eye ring, gill spot, tail/anal fin) and stays muted. The cs_ redo showed that red/orange/yellow
+  bodies on a teal background read as stickers from another game; bw_ gold-on-brown and ac_ silver-on-blue stay in
+  the background's hue family.
 
 **Measured targets (biome averages, swimmers)**
 | Metric | pf_/bw_ originals | Required |
 |---|---|---|
 | Body aspect (bbox width / height) | 1.70 / 2.03 | mean ≤ 2.25, ≥ 40% of species < 2.0 |
 | Translucent fin share of the sprite | 35% / 30% | mean ≥ 25%, each swimmer ≥ 18% |
-| Unique colours per frame (median) | ~66 | 45–110 (fewer = flat, more = noisy gradient/dither) |
+| Unique colours per frame (median, audit counts every pixel incl. fins) | ~66 (measured bw 73, pf 77, ac 85) | 45–110 (fewer = flat, more = noisy gradient/dither). Note: opaque body pixels only number ~35 (bw) / ~49 (pf, ac); cs_ was built at ~32 by the audit's count and is accepted by the user, so this FAIL is known for cs_ |
 | Value range (L* 95th–5th percentile) | 73 | mean ≥ 68 |
 | Fish whose mean colour is within ΔE 20 of the far background | 0% / 47% | ≤ 50% (each fish must pass the accent rule anyway) |
 | Hard steps: interior pixel pairs jumping > ΔE 28 between two flat runs | – | ≤ 8% per sprite |
 
 **Colour transitions (as in pf_/bw_/ac_)**
-- Back → flank → belly and every marking edge go through 1–2 intermediate tones. Never a straight horizontal line where a
-  light belly meets a dark back, and never a bar or spot cut straight into the body colour.
-- Markings keep their dark core; the surrounding body gets a halo ring (≈40% toward the marking, then ≈15%).
+- Back → flank → belly go through 1–2 intermediate tones. Never a straight horizontal line where a light belly meets
+  a dark back.
+- Markings (bars, stripes, spots, blotches) are **one flat colour each**: no translucent edge, no halo ring, no gradient
+  inside the marking. Intermediate tones belong to the broad body regions, not to markings (the bw_ patterns are single
+  colours; halos and alpha < 1 on marks made cs_ look noisy).
 - Two large regions meeting (back / belly, red belly / white flank) get a 2-px band of intermediates on both sides.
 - Light bellies (white, beige, skin) and fins never get a near-black rim: the edge is ~70% of the adjacent colour's
   lightness in the same hue, no dark seam where body meets a fin, no stray dark specks inside a light belly band.
   `.agents/tools/relight_outline.py <out_dir> <sheets...>` fixes these.
 - `.agents/tools/soften_boundaries.py <out_dir> <sheets...>` applies exactly this (eyes, outline and fins untouched); run
   it when the audit flags `hard_step`, then compare before/after.
+
+**Value structure and palette (lessons from the cs_ redo, measured on bw_/pf_/ac_ sprites, opaque pixels)**
+- One hue family per fish: ≥ ~75% of the chromatic pixels sit in one 30° hue sector (bw 81%, pf 73%, ac 86%; the first cs_
+  version had 55–66%). Build the palette as a 3-stop ramp (dark / mid / light) of that family and map every colour
+  through it by lightness; do not give every region its own hue.
+- Muted chroma: 90th-percentile OKLab chroma ≈ 0.07–0.17 (bw 0.11, pf 0.17, ac 0.065). Single accents may reach ~0.15.
+- Big dark masses: ~17–35% of the pixels have lightness < 0.35 in OKLab (bw 34%, pf 22%, ac 17%; the first cs_ batch 15%).
+  Get them from the back, a vertical/lateral band or a large blotch, not from scattered dots.
+- Lightness range of the sprite: 5th percentile ≈ 0.18–0.23, 95th ≈ 0.85–0.90; keep highlights below ~0.9.
+- Fins are the body's own family, one step darker/more opaque than a pale glass fin; vary them per species
+  (dark solid, pale translucent, pale with dark rim, or body-family with a small muted warm tail/anal) and in size, so
+  a biome does not read as one fin recipe.
+- Body shape: measure with fins removed (binary opening). bw_/pf_ median length/height ≈ 1.7–1.8, ac_ ≈ 2.5, cs_ ≈ 2.2;
+  deep species need a fish-like oval (length ≥ ~1.5 × height), not a disc; a body fill ratio near 0.7 reads as the oval.
+- Variety: every species gets its own marking layout. Avoid several species sharing "dark lateral stripe + pale belly".
 
 **Frame consistency**
 - Any recolour, texture, mottle or softening pass must give the static body the same pixels in all 4 frames of a row
@@ -55,6 +75,10 @@ These numbers come from measuring the originals and are checked by `.agents/tool
   ramp, big translucent fins, hand-placed markings, then one light biome grade.
 - Do not run project-wide post-process passes (outline retint, eye/mouth standardisation, head rounding) without a
   before/after montage of pf_ and bw_ approved by the user. Such passes changed the originals too (pf_ value range 157→147).
+
+**Generator pitfalls learned in the cs_ redo**
+- When a sheet is rebuilt at a new size, delete the old-size PNG/.import and update `frame_size` and the texture path in the `.tscn`; a stale old-size file silently shows up in previews.
+- The audit's `hard_step` and `blend_share` flags fire on 25–70% of the approved bw_/ac_ sprites; treat them as hints, not as failures, and compare against pf_/bw_/ac_ side by side instead.
 
 ## 1. Spritesheet Layouts and Animation
 - **Swimmers (Fish)**:
@@ -83,8 +107,8 @@ These numbers come from measuring the originals and are checked by `.agents/tool
 - **Smooth transitions**: no flat monochrome areas and no hard colour boundaries. Every colour-region join (back → flank → belly) gets 1-2 intermediate tones; the belly is pulled ~20-26% toward the body's dominant hue. Body parts of crawlers meet with a soft intermediate tone, never a dark interior line.
 - **Outlines**: Never use pure black and never one fixed near-black for the whole sprite. Each outline pixel = a mid-dark shade of the body colour right next to it (same hue, chroma kept, about 70% of its lightness; roughly OKLab L 0.24-0.62), with the lit top edge one step lighter and the lower edge only slightly darker toward the water. Where the body meets a fin or another body part there is no dark line: the edge pixel is only ~20% toward the outline shade, and fin pixels touching the body take ~40% of the body colour at full opacity so fins grow out of the body. A light biome tint (~10%) may be mixed in (tint values per biome below).
   - Outlines may vary along the body, but each outline pixel must be a dark shade of the body colour next to it (e.g. blue head -> dark blue outline, orange flank -> dark brown-orange outline). Never one fixed outline colour on a multi-coloured fish.
-- **Markings**: Hand-place bars, stripes, spots and blotches, each with 1-2 halo rings of intermediate tone, with breathing room between them; no lone 1-px dots. A marking must be ≥2 px so it survives in every row. Sparse fixed-seed speckles are fine for scales/spangles; never a uniform noise texture or regularly repeating pattern that reads as a grid.
-- **Fins**: drawn only OUTSIDE the body silhouette — no fin base or ray lines across the body (the pectoral may show as a soft lighter patch on the flank). Soft, translucent (alpha ~150-230), with rays and a smooth base→edge gradient; signature fin colours (red edges, black tips, white leading edges) go on the rim or tip. Long filaments must sit on a fin membrane — bare dark lines read as "spider legs".
+- **Markings**: Hand-place bars, stripes, spots and blotches as flat single-colour shapes (no halo ring, no translucency), with breathing room between them; no lone 1-px dots. A marking must be ≥2 px so it survives in every row. Sparse fixed-seed speckles are fine for scales/spangles; never a uniform noise texture or regularly repeating pattern that reads as a grid.
+- **Fins**: drawn only OUTSIDE the body silhouette — no fin base or ray lines across the body (the pectoral may show as a soft lighter patch on the flank). Body-family colour, alpha ~150-240 (solid dark fins are fine on dark species), with rays and a smooth base→edge gradient; signature fin colours (red edges, black tips, white leading edges) go on the rim or tip. Long filaments must sit on a fin membrane — bare dark lines read as "spider legs".
 - **Eyes** (standard set by the planted-freshwater sprites):
   - Core = exactly 2 px stacked vertically: a white/off-white highlight directly ABOVE a single near-black pupil. Never side by side, never diagonal, never a 2-px-wide or tall black pupil.
   - Highlight colour: the sprite's own off-white (`#f0ece0`, `#fbe4b2`, `#eff1e5` or similar, warm gold in blackwater); pupil: near-black from the palette (e.g. `#100905`). No pure `#ffffff`/`#000000`.
@@ -138,10 +162,11 @@ Baikal-style ultra-clear, very cold, deep lake (species mix: Baikal core + Ohrid
 - Fins tinted dark blue (14% toward `#283c50`).
 - Not graded: saturated reds/oranges/yellows, blues and blind-fish pinks (cardinalfish, soldierfish, shrimps, crabs).
 
-### 3.6 Clear Spring (prefix `cs_`) — lightest grade
-- Shadows → blue-teal `#122230` (~25% at black), mid-tones a faint turquoise cast (`#5aaaaa`, ~6%), highlights → `#f4faf8`; no extra desaturation.
-- Fins tinted aqua (12% toward `#96c8c8`) and ~6% more transparent; outline tint `#0e1a20`.
-- Not graded: saturated reds/oranges/yellows (dorado, characin fins, redbreast breast, flagfish stripes, molly sail edge) and blues (Suwannee bass cheeks, chanchito spangles).
+### 3.6 Clear Spring (prefix `cs_`) — light, cool grade (redesigned: 40 species, one hue family each)
+- Grade used by the generator: shadows → `#0c2c36` (weight 0.34), mid-tones cast `#46b0ac` (~12%), highlights → `#faf6e2`, desaturation ~6%; fins tinted aqua (`#7cc4c0`, ~22%); outline tint `#0e1a20`.
+- Palette rule: each species is a lightness ramp of ONE muted family taken from its own colour (olive, teal-blue, ochre, steel, sand-grey…), never rainbow. Warm colour only as a small muted accent (eye ring, gill spot, tail/anal fin of dorado, piracanjuba, piraputanga, Moenkhausia, piau, lambari, a few sunfish spots).
+- Do NOT use the "keep ungraded" exemption for body regions or big marks: using it on every species made cs_ look like another game. Exempt only tiny accents.
+- Roster notes: no crustaceans/insects/bivalves of the freshwater tiers that the biome replaces (amphipods and the pondhorn mussel became cambeva and fat sleeper); crayfish, crab, elimia and two turtles remain as crawlers.
 
 ### 3.7 Biomes without finished creatures yet — art direction
 Apply the same mechanism (shadow tint, mid-tone cast, highlight colour, fin tint, signature exception) when their creatures are made. Directions below come from each biome's water tint and backgrounds; confirm before the first batch.
