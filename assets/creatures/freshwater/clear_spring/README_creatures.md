@@ -16,7 +16,13 @@ already used elsewhere (bayou sunfishes / gars / bass, blackwater tetras and ple
   stripes, molly sail edge) and blues (Suwannee bass cheeks, chanchito spangles) are NOT graded.
 
 ## Shapes / rendering
-- Per-column form shading, outline = per-pixel dark shade of the adjacent body colour (light tint toward #0e1a20), lit top edge one step lighter, soft fins with rays, hand-placed markings.
+- Form shading in light bands (lit upper band, specular bump, broken wet sheen, bounce light on the lowest row); back→flank→belly
+  joins blended with 2 intermediate tones, belly pulled ~20% toward the body hue; markings get 1–2 halo rings, no lone 1px noise.
+- Fins only outside the body silhouette (pectoral = soft lit patch); eye = 1px highlight above 1px pupil; no mouth.
+- Animation: body static, fins flutter ±1–1.5 px at the outer edge, caudal trailing edge 1–2 px; knifefish anal fin runs a wave.
+- Outline = per-pixel dark shade of the body colour (tint toward #0e1a20), lit top edge, lower edge darkened toward the water;
+  crawler parts join with soft intermediate tones; crustacean legs/antennae are separate 1px lines; ≥1px frame margin,
+  crawler feet on the last row.
 - Characins (piraputanga, curimbatá, piau, dorado, pacu, tetras) carry an adipose fin; cichlids have a long single
   dorsal and rounded tail; the banded knifefish swims with a rippling ribbon anal fin.
 - Piracanjuba (64x26, endangered, endemic to the Paraná–Paraguay basin): silver with golden-olive back and brassy
@@ -34,9 +40,9 @@ already used elsewhere (bayou sunfishes / gars / bass, blackwater tetras and ple
 | Group | Species (frame) |
 |---|---|
 | Small | sailfin molly, Florida flagfish, Seminole killifish, coastal shiner, ironcolor shiner, spotted sunfish, swamp darter, tidewater silverside, yellowtail lambari, Moenkhausia bonita, Buenos Aires tetra, spotted pyrrhulina (all 32x28) |
-| Medium | redbreast sunfish 36x32, Suwannee bass 44x28, striped mullet 44x24, Florida gar 56x16, lake chubsucker 40x26, piraputanga 44x28, curimbatá 44x28, three-spot piau 40x22, chanchito 40x30, pike cichlid 48x22, banded knifefish 52x16, banded cichlid 36x28 |
-| Showpiece | piracanjuba 64x26, golden dorado 64x26, pacu 56x36, pintado 80x22, common snook 64x24, Gulf sturgeon 80x24 |
-| Crawlers | cascudo 44x16, loggerhead musk turtle 32x18, toad-headed turtle 40x20, Florida cave crayfish 40x20, Pantanal crab 32x20, Florida cave amphipod 20x10, rasp elimia 20x20, Florida pondhorn 32x16, cascarudo 36x16, southern flounder 44x14 |
+| Medium | redbreast sunfish 34x30, Suwannee bass 44x26, striped mullet 44x22, Florida gar 52x16, lake chubsucker 36x26, piraputanga 44x24, curimbatá 44x28, three-spot piau 40x22, chanchito 36x30, pike cichlid 46x20, banded knifefish 46x16, banded cichlid 34x28 |
+| Showpiece | piracanjuba 54x26, golden dorado 50x26, pacu 44x36, pintado 58x24, common snook 52x26, Gulf sturgeon 60x20 |
+| Crawlers | cascudo 40x14, loggerhead musk turtle 32x12, toad-headed turtle 36x12, Florida cave crayfish 40x16, Pantanal crab 34x16, Florida cave amphipod 24x12, rasp elimia 22x14, Florida pondhorn 30x12, cascarudo 36x14, southern flounder 38x8 |
 
 ## Swim layers (scene `area`, world y: surface 0, ground 264)
 - Surface: silverside (4–80), molly, pyrrhulina, Seminole killifish, mullet, Florida gar.
