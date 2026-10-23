@@ -45,3 +45,11 @@ red swamp crawfish) are left for the bayou biome.
 
 ## Aquarium (`scenes/aquarium/ms_aquarium.tscn`)
 75 creatures: small schoolers 2–4 each, tadpoles 4, medium 1–2, showpieces 1 each, crawlers 1–2 each.
+
+## 2026-10 recolour (style contract pass)
+All 40 sheets were recoloured so the fish stop blending into the olive water (fish within ΔE 20 of the background:
+70% → 20%). Each species now carries its real display colours with a back → flank → belly tonal gradient and soft
+mottling (bitterlings violet / pink, sunbleak blue-silver, stickleback blue with red throat, golden shiner / tench /
+eel gold, pike green, snakehead tan with irregular dark blotches, wels brown-grey, crawlers in warm browns), signature
+reds / oranges / blues kept. Fins of the fish were enlarged ×1.25–1.3 and enclosed gaps filled. The olive mid-tone cast
+of `ms_grade` is no longer used. Scripts: `~/work/audit/recolor.py`, `grad.py`, `finscale.py`, `fillholes.py`.
