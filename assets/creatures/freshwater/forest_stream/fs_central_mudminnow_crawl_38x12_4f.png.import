@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bs3c8q2eycces"
-path="res://.godot/imported/cs_loggerhead_musk_turtle_crawl_32x14_4f.png-891d6cc5cc87087de5c786ee8c7d0a5d.ctex"
+uid="uid://b3ltti38krd7f"
+path="res://.godot/imported/fs_central_mudminnow_crawl_38x12_4f.png-9a5935d6927205da026b60aac8980ed8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/clear_spring/cs_loggerhead_musk_turtle_crawl_32x14_4f.png"
-dest_files=["res://.godot/imported/cs_loggerhead_musk_turtle_crawl_32x14_4f.png-891d6cc5cc87087de5c786ee8c7d0a5d.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_central_mudminnow_crawl_38x12_4f.png"
+dest_files=["res://.godot/imported/fs_central_mudminnow_crawl_38x12_4f.png-9a5935d6927205da026b60aac8980ed8.ctex"]
 
 [params]
 

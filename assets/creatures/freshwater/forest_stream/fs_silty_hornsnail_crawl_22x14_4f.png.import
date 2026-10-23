@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://62okabvjvdq8"
-path="res://.godot/imported/fs_bluehead_chub_swim_44x24_4f.png-ce786fd109b3e75cbe860793771964e9.ctex"
+uid="uid://v7edgfw46vhx"
+path="res://.godot/imported/fs_silty_hornsnail_crawl_22x14_4f.png-b59c5615ab2383d78c98e0090105e8e2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_bluehead_chub_swim_44x24_4f.png"
-dest_files=["res://.godot/imported/fs_bluehead_chub_swim_44x24_4f.png-ce786fd109b3e75cbe860793771964e9.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_silty_hornsnail_crawl_22x14_4f.png"
+dest_files=["res://.godot/imported/fs_silty_hornsnail_crawl_22x14_4f.png-b59c5615ab2383d78c98e0090105e8e2.ctex"]
 
 [params]
 

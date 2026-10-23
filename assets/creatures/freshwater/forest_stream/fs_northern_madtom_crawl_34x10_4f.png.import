@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://uwkqmu0vq2sm"
-path="res://.godot/imported/fs_muskellunge_swim_80x28_4f.png-9475db72742c0c9798a8c362a5346bc7.ctex"
+uid="uid://cu07v6pi8ol4j"
+path="res://.godot/imported/fs_northern_madtom_crawl_34x10_4f.png-566c7dc4826ef240c0b6a75c9185f589.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_muskellunge_swim_80x28_4f.png"
-dest_files=["res://.godot/imported/fs_muskellunge_swim_80x28_4f.png-9475db72742c0c9798a8c362a5346bc7.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_northern_madtom_crawl_34x10_4f.png"
+dest_files=["res://.godot/imported/fs_northern_madtom_crawl_34x10_4f.png-566c7dc4826ef240c0b6a75c9185f589.ctex"]
 
 [params]
 

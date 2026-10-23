@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b381kt2g1y2b4"
-path="res://.godot/imported/fs_central_stoneroller_swim_40x22_4f.png-ef731809725a8624cf36e9f5413fc365.ctex"
+uid="uid://omtembi4ogne"
+path="res://.godot/imported/ms_ruffe_crawl_36x12_4f.png-d5de18cb0b2d854d8e44fb1f616afb69.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_central_stoneroller_swim_40x22_4f.png"
-dest_files=["res://.godot/imported/fs_central_stoneroller_swim_40x22_4f.png-ef731809725a8624cf36e9f5413fc365.ctex"]
+source_file="res://assets/creatures/freshwater/marsh_swamp/ms_ruffe_crawl_36x12_4f.png"
+dest_files=["res://.godot/imported/ms_ruffe_crawl_36x12_4f.png-d5de18cb0b2d854d8e44fb1f616afb69.ctex"]
 
 [params]
 

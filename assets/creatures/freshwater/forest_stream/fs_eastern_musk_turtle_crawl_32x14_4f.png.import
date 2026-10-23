@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://wpussadxb5na"
-path="res://.godot/imported/fs_river_redhorse_swim_56x26_4f.png-565844714ff8a31633f8d36ae0d71c25.ctex"
+uid="uid://o5yfd4xiv5nm"
+path="res://.godot/imported/fs_eastern_musk_turtle_crawl_32x14_4f.png-c41676064846bcb718fc2415d86c469e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_river_redhorse_swim_56x26_4f.png"
-dest_files=["res://.godot/imported/fs_river_redhorse_swim_56x26_4f.png-565844714ff8a31633f8d36ae0d71c25.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_eastern_musk_turtle_crawl_32x14_4f.png"
+dest_files=["res://.godot/imported/fs_eastern_musk_turtle_crawl_32x14_4f.png-c41676064846bcb718fc2415d86c469e.ctex"]
 
 [params]
 

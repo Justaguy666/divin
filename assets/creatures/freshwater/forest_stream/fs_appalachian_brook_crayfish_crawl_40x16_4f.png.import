@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://lf1pwfxs3fpl"
-path="res://.godot/imported/fs_fallfish_swim_52x30_4f.png-509c7af8c3bdfac6e428cac1d54a429a.ctex"
+uid="uid://cprlabvcr2b7p"
+path="res://.godot/imported/fs_appalachian_brook_crayfish_crawl_40x16_4f.png-22d4148dfc358e2d4080566456423e01.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_fallfish_swim_52x30_4f.png"
-dest_files=["res://.godot/imported/fs_fallfish_swim_52x30_4f.png-509c7af8c3bdfac6e428cac1d54a429a.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_appalachian_brook_crayfish_crawl_40x16_4f.png"
+dest_files=["res://.godot/imported/fs_appalachian_brook_crayfish_crawl_40x16_4f.png-22d4148dfc358e2d4080566456423e01.ctex"]
 
 [params]
 
