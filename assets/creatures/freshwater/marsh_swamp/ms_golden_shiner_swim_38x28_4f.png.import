@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbfdsucr8r1fy"
-path="res://.godot/imported/ms_grass_pickerel_swim_48x20_4f.png-d75a54062817117f5499aece48e22304.ctex"
+uid="uid://14j4fq2oj3m2"
+path="res://.godot/imported/ms_golden_shiner_swim_38x28_4f.png-a3cd50bb5bb4b70636a3260507ed6dae.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/marsh_swamp/ms_grass_pickerel_swim_48x20_4f.png"
-dest_files=["res://.godot/imported/ms_grass_pickerel_swim_48x20_4f.png-d75a54062817117f5499aece48e22304.ctex"]
+source_file="res://assets/creatures/freshwater/marsh_swamp/ms_golden_shiner_swim_38x28_4f.png"
+dest_files=["res://.godot/imported/ms_golden_shiner_swim_38x28_4f.png-a3cd50bb5bb4b70636a3260507ed6dae.ctex"]
 
 [params]
 

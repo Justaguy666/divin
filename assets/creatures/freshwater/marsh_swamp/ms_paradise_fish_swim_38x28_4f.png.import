@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cm4qrk6ibl0p6"
-path="res://.godot/imported/ms_paradise_fish_swim_36x28_4f.png-fbb67a2b7e8b1f296010b80dff442fdc.ctex"
+uid="uid://cd3bh0s60l55g"
+path="res://.godot/imported/ms_paradise_fish_swim_38x28_4f.png-0d8039a79fce8148c92cc3558f91a7ed.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/marsh_swamp/ms_paradise_fish_swim_36x28_4f.png"
-dest_files=["res://.godot/imported/ms_paradise_fish_swim_36x28_4f.png-fbb67a2b7e8b1f296010b80dff442fdc.ctex"]
+source_file="res://assets/creatures/freshwater/marsh_swamp/ms_paradise_fish_swim_38x28_4f.png"
+dest_files=["res://.godot/imported/ms_paradise_fish_swim_38x28_4f.png-0d8039a79fce8148c92cc3558f91a7ed.ctex"]
 
 [params]
 

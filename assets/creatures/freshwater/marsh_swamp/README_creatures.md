@@ -5,7 +5,15 @@ below. Theme: temperate marshes, fens and bogs of the Northern Hemisphere (Europ
 marshes, Atlantic peat bogs). The big southern-US icons (gars, bowfin, channel catfish, crappie, mudminnows,
 red swamp crawfish) are left for the bayou biome.
 
-## Colour grade (`ms_grade`, applied to every finished frame)
+## Redesign note
+All creatures were redrawn or recoloured to match the pf_/bw_/ac_ style (see `.agents/rules/pixel_art_guidelines.md` section 0):
+one muted hue family per species, flat single-colour markings, large dark masses, per-species patterns and fin styles.
+Insects and the swan mussel were replaced (great diving beetle -> crucian carp, dragonfly nymph -> ruffe, caddisfly
+larva -> stone loach, swan mussel -> European bullhead). Weatherfish, newts, axolotl, pond turtle, noble crayfish,
+great pond snail, softshell turtle and tadpole keep their original drawings, recoloured to the shared palette.
+Generator grade: shadows #1a2014, mid cast #8c965a (~12%), highlights #e6ecd6, fins tinted #96966a (~20%), outline tint #141a10.
+
+## Colour grade (legacy description of the original ms_ batch)
 - Shadows (lum < 0.3) sink toward dark moss (26, 32, 20).
 - Mid-tones get an olive cast (140, 150, 90, ~10%); everything is desaturated ~8%.
 - Highlights move toward pale green-grey (226, 234, 214).
@@ -30,10 +38,10 @@ red swamp crawfish) are left for the bayou biome.
 | Group | Species (frame) |
 |---|---|
 | Small schooling | European bitterling, rosy bitterling, sunbleak, medaka, topmouth gudgeon, three-spined stickleback, ninespine stickleback, Okefenokee pygmy sunfish, blackbanded sunfish, bluespotted sunfish, banded killifish, northern redbelly dace (all 32x28) |
-| Small special | frog tadpole 24x16, great diving beetle 32x20 |
-| Medium | paradise fish 36x28, rudd 40x28, tench 44x28, golden shiner 36x28, pumpkinseed 36x32, Amur sleeper 40x24, European perch 44x30, grass pickerel 48x20, Asian swamp eel 56x14, black bullhead 44x24 |
-| Showpiece | northern pike 64x24, northern snakehead 60x24, European eel 64x16, wels catfish 72x24, mandarin fish 48x30, Chinese softshell turtle 48x28 |
-| Crawlers | European weatherfish 40x14, great crested newt 40x16, axolotl 40x20, Chinese fire-bellied newt 36x14, European pond turtle 36x20, noble crayfish 40x20, great pond snail 24x26, swan mussel 32x16, dragonfly nymph 36x14, caddisfly larva 28x12 |
+| Small special | frog tadpole 24x16, crucian carp 38x28 |
+| Medium | paradise fish 38x28, rudd 40x28, tench 44x28, golden shiner 38x28, pumpkinseed 36x32, Amur sleeper 40x24, European perch 44x30, grass pickerel 48x22, Asian swamp eel 56x14, black bullhead 44x24 |
+| Showpiece | northern pike 64x24, northern snakehead 60x24, European eel 64x16, wels catfish 74x26, mandarin fish 48x34, Chinese softshell turtle 48x28 |
+| Crawlers | European weatherfish 40x14, great crested newt 40x16, axolotl 40x20, Chinese fire-bellied newt 36x14, European pond turtle 36x20, noble crayfish 40x20, great pond snail 24x26, European bullhead 34x14, ruffe 36x12, stone loach 42x10 |
 
 ## Swim layers (scene `area`, world y: surface 0, ground 264)
 - Surface: medaka (6–90), banded killifish (6–110), sunbleak (8–110), golden shiner, diving beetle, tadpoles.

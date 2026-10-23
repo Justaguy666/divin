@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dro6yy8qi0aqt"
-path="res://.godot/imported/ms_swan_mussel_crawl_32x16_4f.png-d8c7a02cb97bbcb50492b62c3f9b7bc4.ctex"
+uid="uid://ca3fjd4yelxdt"
+path="res://.godot/imported/ms_grass_pickerel_swim_48x22_4f.png-93b7d706efbe4bd39f8c8c6f91c5dc58.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/marsh_swamp/ms_swan_mussel_crawl_32x16_4f.png"
-dest_files=["res://.godot/imported/ms_swan_mussel_crawl_32x16_4f.png-d8c7a02cb97bbcb50492b62c3f9b7bc4.ctex"]
+source_file="res://assets/creatures/freshwater/marsh_swamp/ms_grass_pickerel_swim_48x22_4f.png"
+dest_files=["res://.godot/imported/ms_grass_pickerel_swim_48x22_4f.png-93b7d706efbe4bd39f8c8c6f91c5dc58.ctex"]
 
 [params]
 
