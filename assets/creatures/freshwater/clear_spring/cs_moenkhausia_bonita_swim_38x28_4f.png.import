@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dqmr7v5l6r6pe"
-path="res://.godot/imported/cs_lake_chubsucker_swim_44x28_4f.png-526ebaa502dd55b26c27ff57a722021a.ctex"
+uid="uid://bvjg6aqhwt0wc"
+path="res://.godot/imported/cs_moenkhausia_bonita_swim_38x28_4f.png-6213d0a69c50ebd59df97fffad226e43.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/clear_spring/cs_lake_chubsucker_swim_44x28_4f.png"
-dest_files=["res://.godot/imported/cs_lake_chubsucker_swim_44x28_4f.png-526ebaa502dd55b26c27ff57a722021a.ctex"]
+source_file="res://assets/creatures/freshwater/clear_spring/cs_moenkhausia_bonita_swim_38x28_4f.png"
+dest_files=["res://.godot/imported/cs_moenkhausia_bonita_swim_38x28_4f.png-6213d0a69c50ebd59df97fffad226e43.ctex"]
 
 [params]
 

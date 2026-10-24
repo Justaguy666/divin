@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b5b5lk5e36c7o"
-path="res://.godot/imported/cs_spotted_pyrrhulina_swim_36x26_4f.png-1eecc7fa4f0c086f5a7ec2e080cc4d6c.ctex"
+uid="uid://cgu15t3ykrhy0"
+path="res://.godot/imported/cs_curimbata_swim_58x34_4f.png-4ad3699c99b138742c162c7cb4497d17.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/clear_spring/cs_spotted_pyrrhulina_swim_36x26_4f.png"
-dest_files=["res://.godot/imported/cs_spotted_pyrrhulina_swim_36x26_4f.png-1eecc7fa4f0c086f5a7ec2e080cc4d6c.ctex"]
+source_file="res://assets/creatures/freshwater/clear_spring/cs_curimbata_swim_58x34_4f.png"
+dest_files=["res://.godot/imported/cs_curimbata_swim_58x34_4f.png-4ad3699c99b138742c162c7cb4497d17.ctex"]
 
 [params]
 

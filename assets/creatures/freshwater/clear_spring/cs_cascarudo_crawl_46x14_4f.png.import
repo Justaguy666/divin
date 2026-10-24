@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bk4a4puy17jiq"
-path="res://.godot/imported/cs_moenkhausia_bonita_swim_36x28_4f.png-a974194b6b33ca51fc63b2b70093bfe2.ctex"
+uid="uid://dki6v3mny3wug"
+path="res://.godot/imported/cs_cascarudo_crawl_46x14_4f.png-872e31b26105108ee37ce08da5c8f997.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/clear_spring/cs_moenkhausia_bonita_swim_36x28_4f.png"
-dest_files=["res://.godot/imported/cs_moenkhausia_bonita_swim_36x28_4f.png-a974194b6b33ca51fc63b2b70093bfe2.ctex"]
+source_file="res://assets/creatures/freshwater/clear_spring/cs_cascarudo_crawl_46x14_4f.png"
+dest_files=["res://.godot/imported/cs_cascarudo_crawl_46x14_4f.png-872e31b26105108ee37ce08da5c8f997.ctex"]
 
 [params]
 

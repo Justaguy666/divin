@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://168vwjt78gud"
-path="res://.godot/imported/cs_cascarudo_crawl_46x16_4f.png-792c29391ae147af738f1e75839dcfb6.ctex"
+uid="uid://d4es8da23qppw"
+path="res://.godot/imported/cs_piraputanga_swim_56x28_4f.png-0cfa78fcc595594edf73f89cdce9500f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/clear_spring/cs_cascarudo_crawl_46x16_4f.png"
-dest_files=["res://.godot/imported/cs_cascarudo_crawl_46x16_4f.png-792c29391ae147af738f1e75839dcfb6.ctex"]
+source_file="res://assets/creatures/freshwater/clear_spring/cs_piraputanga_swim_56x28_4f.png"
+dest_files=["res://.godot/imported/cs_piraputanga_swim_56x28_4f.png-0cfa78fcc595594edf73f89cdce9500f.ctex"]
 
 [params]
 

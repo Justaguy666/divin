@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cbbg6j1hi47na"
-path="res://.godot/imported/cs_piraputanga_swim_56x26_4f.png-8b382052a7bfa8a25aafae8d449e5617.ctex"
+uid="uid://mmaxvu4g5k7k"
+path="res://.godot/imported/cs_lake_chubsucker_swim_46x30_4f.png-450a646ea1171d514289dd885cf8b9e1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/clear_spring/cs_piraputanga_swim_56x26_4f.png"
-dest_files=["res://.godot/imported/cs_piraputanga_swim_56x26_4f.png-8b382052a7bfa8a25aafae8d449e5617.ctex"]
+source_file="res://assets/creatures/freshwater/clear_spring/cs_lake_chubsucker_swim_46x30_4f.png"
+dest_files=["res://.godot/imported/cs_lake_chubsucker_swim_46x30_4f.png-450a646ea1171d514289dd885cf8b9e1.ctex"]
 
 [params]
 
