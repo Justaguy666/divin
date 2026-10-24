@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c675q2tmpsua2"
-path="res://.godot/imported/fs_rock_bass_swim_44x30_4f.png-08e50b5f8919bd6920575d67cb511105.ctex"
+uid="uid://m633mexibrh3"
+path="res://.godot/imported/fs_rock_bass_swim_44x32_4f.png-412badd2766129400ab5af91b5ee6f04.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_rock_bass_swim_44x30_4f.png"
-dest_files=["res://.godot/imported/fs_rock_bass_swim_44x30_4f.png-08e50b5f8919bd6920575d67cb511105.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_rock_bass_swim_44x32_4f.png"
+dest_files=["res://.godot/imported/fs_rock_bass_swim_44x32_4f.png-412badd2766129400ab5af91b5ee6f04.ctex"]
 
 [params]
 
