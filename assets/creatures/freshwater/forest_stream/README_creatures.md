@@ -25,6 +25,8 @@ the forest-stream ramp below and re-outlined with the BW outline rule (the mudpu
   belly edge with the row above it pulled down. Stair-corner nubs are removed.
 - Markings are flat colours or a fixed number of body tones darker; eyes are a warm highlight over a dark pupil with iris pixels
   behind and a dark socket below.
+- Pelvic fins hang below the belly behind the pectorals (October 2026 fix: an earlier version of the fin builder folded them
+  up into the body, where they barely showed).
 
 ## Sheets
 - Swimmers: 6 rows E, SE, SW, W, NW, NE x 4 frames (A-B-A-C); tilt 25 deg (small), 20-22 deg (darters), 15 deg (deep), 8-14 deg (long).
@@ -38,8 +40,8 @@ snail walk on the floor.
 
 | Group | Species (frame) |
 |---|---|
-| Small minnows, topminnow and darters | blacknose dace 36x24, longnose dace 38x24, southern redbelly dace 34x24, rosyside dace 38x26, warpaint shiner 38x26, saffron shiner 36x24, rosyface shiner 36x24, northern studfish 38x26, central mudminnow 34x24, rainbow darter 32x20, greenside darter 36x22, redline darter 32x22, tangerine darter 40x24, fantail darter 34x24, tessellated darter 32x20 |
-| Medium and large swimmers | central stoneroller 44x26, bluehead chub 46x28, creek chub 48x28, fallfish 56x28, northern hog sucker 48x24, white sucker 54x26, river redhorse 60x30, longear sunfish 40x30, rock bass 44x30, smallmouth bass 60x30, logperch 46x22, walleye 66x28, sauger 62x26, muskellunge 80x28, american shad 60x30, american brook lamprey 48x16 |
+| Small minnows, topminnow and darters | blacknose dace 36x24, longnose dace 38x24, southern redbelly dace 34x24, rosyside dace 38x26, warpaint shiner 38x26, saffron shiner 34x24, rosyface shiner 36x24, northern studfish 38x26, central mudminnow 34x24, rainbow darter 32x20, greenside darter 36x22, redline darter 32x22, tangerine darter 40x24, fantail darter 34x24, tessellated darter 32x20 |
+| Medium and large swimmers | central stoneroller 44x26, bluehead chub 46x28, creek chub 48x28, fallfish 56x28, northern hog sucker 48x24, white sucker 54x26, river redhorse 60x30, longear sunfish 40x30, rock bass 44x30, smallmouth bass 60x30, logperch 46x22, walleye 66x28, sauger 60x26, muskellunge 80x28, american shad 60x30, american brook lamprey 48x16 |
 | Bottom dwellers and crawlers | northern madtom 36x14, stonecat 44x16, mottled sculpin 36x16, hellbender 58x16, mudpuppy 46x16, appalachian brook crayfish 52x14, rusty crayfish 52x14, eastern musk turtle 32x14, silty hornsnail 28x20 |
 
 ## Species notes and scene tuning
@@ -50,7 +52,7 @@ snail walk on the floor.
 | southern redbelly dace | swim 34x24 | y 40-200, speed 26 | Chrosomus erythrogaster: two black lateral stripes (thin upper, broad lower) split by a golden stripe, scarlet belly, olive back with small dark spots, yellow fins |
 | rosyside dace | swim 38x26 | y 40-200, speed 28 | Clinostomus funduloides: deeper dace with a big mouth, olive back with dark-edged scales, silver sides, rosy-red patch on the lower flank, a faint dark lateral stripe under a thin gold line |
 | warpaint shiner | swim 38x26 | y 30-190, speed 28 | Luxilus coccogenis: deep silvery shiner, red bar on the upper gill cover and a red snout ("war paint"), black shoulder bar, dorsal fin with a black band near the top, olive back, dark tail margin |
-| saffron shiner | swim 36x24 | y 40-200, speed 28 | Notropis rubricroceus: breeding males blaze saffron-red over body and fins, dark olive back, dusky lateral stripe |
+| saffron shiner | swim 34x24 | y 40-200, speed 28 | Notropis rubricroceus: breeding males blaze saffron-red over body and fins, dark olive back, dusky lateral stripe |
 | rosyface shiner | swim 36x24 | y 20-170, speed 30 | Notropis rubellus: slender with a pointed snout, rosy-red head in breeding season, silver sides with a thin dark lateral line, olive back with a dark mid-dorsal stripe |
 | northern studfish | swim 38x26 | y 4-110, speed 22 | Fundulus catenatus: large topminnow, flat head, blue-grey sides with rows of red-brown spots forming chains, orange fins with a dark edge in males, dorsal set far back |
 | central mudminnow | swim 34x24 | y 170-250, speed 14 | Umbra limi: stout cylindrical, olive-brown with faint bars and fine mottling, a black vertical bar across the tail base, rounded fins, dorsal set far back over the anal |
@@ -72,7 +74,7 @@ snail walk on the floor.
 | smallmouth bass | swim 60x30 | y 60-230, speed 24 | Micropterus dolomieu: bronze-brown bass with faint dark vertical bars, three dark bars radiating back from the red-orange eye, notched dorsal, emarginate tail |
 | logperch | swim 46x22 | y 196-258, speed 16 | Percina caprodes: long darter with a pig-like conical snout, yellow-olive body with 15-20 tiger bars alternating long and short, orange band on the first dorsal in males |
 | walleye | swim 66x28 | y 120-250, speed 20 | Sander vitreus: long olive-gold percid, five dark saddles, big glassy eye, sharp teeth, a black blotch at the rear base of the spiny dorsal, white tip on the lower tail lobe |
-| sauger | swim 62x26 | y 140-254, speed 18 | Sander canadensis: like the walleye but brassy-brown with three or four distinct blotchy saddles, rows of black spots on the spiny dorsal, no white tail tip |
+| sauger | swim 60x26 | y 140-254, speed 18 | Sander canadensis: like the walleye but brassy-brown with three or four distinct blotchy saddles, rows of black spots on the spiny dorsal, no white tail tip |
 | muskellunge | swim 80x28 | y 20-200, speed 16 | Esox masquinongy: very long pike with a duckbill snout, dorsal and anal fins set far back, olive-bronze with dark vertical bars, pale belly, dark spots on the reddish-bronze fins, forked tail |
 | american shad | swim 60x30 | y 20-180, speed 30 | Alosa sapidissima: deep, compressed, silvery herring with a greenish-blue back, a black shoulder spot followed by a row of smaller spots, saw-edged belly, deeply forked tail |
 | american brook lamprey | swim 48x16 | y 220-258, speed 10 | Lethenteron appendix: eel-like, no paired fins, an oval sucking disc for a mouth, a row of seven gill pores behind the eye, two low dorsal fins running into the tail fin, grey-brown back, pale belly |

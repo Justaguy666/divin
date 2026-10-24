@@ -27,6 +27,8 @@ newts, black for the turtle), the softshell turtle's flippers were shortened, an
   belly edge with the row above it pulled down. Stair-corner nubs are removed.
 - Markings are flat colours or a fixed number of body tones darker; fish eyes are a warm highlight over a dark pupil with iris
   pixels behind and a dark socket below.
+- Pelvic fins hang below the belly behind the pectorals (October 2026 fix: an earlier version of the fin builder folded them
+  up into the body, where they barely showed).
 
 ## Sheets
 - Swimmers: 6 rows E, SE, SW, W, NW, NE x 4 frames (A-B-A-C); tilt 25 deg (small), 15-20 deg (deep), 8-14 deg (long).
@@ -40,7 +42,7 @@ turtle, the pond snail and the crayfish walk on the floor.
 
 | Group | Species (frame) |
 |---|---|
-| Small swimmers | european bitterling 36x24, rosy bitterling 36x24, sunbleak 36x24, medaka 32x22, topmouth gudgeon 36x24, three spined stickleback 34x22, ninespine stickleback 32x22, okefenokee pygmy sunfish 28x20, blackbanded sunfish 32x26, bluespotted sunfish 32x26, banded killifish 36x24, northern redbelly dace 34x24, golden shiner 44x26, paradise fish 42x26, frog tadpole 30x20 |
+| Small swimmers | european bitterling 36x24, rosy bitterling 36x24, sunbleak 36x24, medaka 32x22, topmouth gudgeon 36x24, three spined stickleback 32x22, ninespine stickleback 32x22, okefenokee pygmy sunfish 28x20, blackbanded sunfish 32x26, bluespotted sunfish 32x26, banded killifish 36x24, northern redbelly dace 34x24, golden shiner 44x26, paradise fish 42x28, frog tadpole 30x20 |
 | Medium and large swimmers | crucian carp 48x30, rudd 46x28, tench 54x30, european perch 48x28, ruffe 38x24, pumpkinseed 42x30, amur sleeper 40x26, mandarin fish 56x34, black bullhead 52x26, grass pickerel 52x22, asian swamp eel 58x16, european eel 64x20, northern snakehead 64x24, northern pike 80x28, wels catfish 96x30 |
 | Bottom fish, amphibians, turtles, snail, crayfish | stone loach 38x14, european weatherfish 52x12, european bullhead 36x16, axolotl 40x20, chinese fire bellied newt 38x14, great crested newt 40x16, chinese softshell turtle 50x30, european pond turtle 36x20, great pond snail 26x20, noble crayfish 52x14 |
 
@@ -52,7 +54,7 @@ turtle, the pond snail and the crayfish walk on the floor.
 | sunbleak | swim 36x24 | y 0-110, speed 30 | Leucaspius delineatus: slender little silverfish, bright silver lateral band, olive back, upturned mouth, translucent fins |
 | medaka | swim 32x22 | y 0-90, speed 22 | Oryzias latipes (wild type): tiny, flat back and upturned mouth, big eye, translucent olive-tan with dark scale edges, a long anal fin and a small dorsal set far back, truncate tail |
 | topmouth gudgeon | swim 36x24 | y 80-230, speed 24 | Pseudorasbora parva: small upturned mouth, silvery-olive with a dark stripe along the side and dark crescents on the back scales |
-| three spined stickleback | swim 34x22 | y 60-230, speed 20 | Gasterosteus aculeatus (breeding male): three free spines in front of the dorsal, bony side plates, slender keeled tail stalk, red throat and belly, blue eye, green-grey back, strong pelvic spine |
+| three spined stickleback | swim 32x22 | y 60-230, speed 20 | Gasterosteus aculeatus (breeding male): three free spines in front of the dorsal, bony side plates, slender keeled tail stalk, red throat and belly, blue eye, green-grey back, strong pelvic spine |
 | ninespine stickleback | swim 32x22 | y 100-240, speed 18 | Pungitius pungitius: slender, a row of nine small spines along the back, olive-brown mottled with dark bars, narrow tail stalk |
 | okefenokee pygmy sunfish | swim 28x20 | y 150-250, speed 10 | Elassoma okefenokee (male): tiny and dark, near-black body with iridescent blue-green flecks and faint bars, rounded fins edged in blue |
 | blackbanded sunfish | swim 32x26 | y 100-230, speed 14 | Enneacanthus chaetodon: deep disc, silver-cream with six bold black vertical bands (the first through the eye), a red-orange front edge on the pelvic fins, rounded tail |
@@ -60,7 +62,7 @@ turtle, the pond snail and the crayfish walk on the floor.
 | banded killifish | swim 36x24 | y 4-120, speed 22 | Fundulus diaphanus: slender killifish with a flat head, olive-tan with 12-20 thin dark vertical bars, pale belly, dorsal set far back over the anal |
 | northern redbelly dace | swim 34x24 | y 40-200, speed 26 | Chrosomus eos: small dace with two dark side stripes (the upper one breaking into spots toward the tail), red belly in males, olive back with dark speckles, yellowish fins |
 | golden shiner | swim 44x26 | y 30-190, speed 26 | Notemigonus crysoleucas: deep compressed shiner, brassy-gold sides, olive back, a lateral line that dips low, small upturned mouth, orange-tinted fins in spring |
-| paradise fish | swim 42x26 | y 0-150, speed 16 | Macropodus opercularis: alternating blue and red-orange vertical bands, a blue-black gill spot ringed orange, long flowing dorsal and anal fins, deeply forked tail with trailing filaments, thread-like pelvic fins |
+| paradise fish | swim 42x28 | y 0-150, speed 16 | Macropodus opercularis: alternating blue and red-orange vertical bands, a blue-black gill spot ringed orange, long flowing dorsal and anal fins, deeply forked tail with trailing filaments, thread-like pelvic fins |
 | frog tadpole | swim 30x20 | y 120-256, speed 12 | frog tadpole: round body flowing into a long muscular tail with fin folds above and below, olive-brown with dark speckles, eyes set on the sides of the head, no paired fins |
 | crucian carp | swim 48x30 | y 120-250, speed 14 | Carassius carassius: deep, high-arched back, bronze-gold to olive, long convex dorsal fin, rounded fins, slightly forked tail, no barbels |
 | rudd | swim 46x28 | y 20-180, speed 22 | Scardinius erythrophthalmus: deep, compressed, brassy-gold sides, bright red pelvic, anal and tail fins, red-orange eye, dorsal set behind the pelvics, upturned mouth |

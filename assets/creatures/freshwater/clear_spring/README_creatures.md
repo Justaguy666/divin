@@ -25,6 +25,8 @@ size, texture or colour was used. Each species was first defined by its real ana
 - Eyes: warm highlight pixel above a dark pupil, iris colour on the back side, a dark socket pixel under the pupil; large fish use
   a one-step wider eye.
 - Silhouettes are spindle shaped with a pointed snout for small fish; deep-bodied fish keep a sloping forehead.
+- Pelvic fins hang below the belly behind the pectorals (October 2026 fix: an earlier version of the fin builder folded them
+  up into the body, where they barely showed).
 
 ## Sheets
 - Swimmers: 6 rows E, SE, SW, W, NW, NE x 4 frames (A-B-A-C); tilt 25 deg (small), 15-16 deg (deep), 8-12 deg (long).
@@ -37,8 +39,8 @@ size, texture or colour was used. Each species was first defined by its real ana
 | Group | Species (frame) |
 |---|---|
 | Small swimmers | buenos aires tetra 38x28, coastal shiner 38x26, ironcolor shiner 36x26, moenkhausia bonita 36x26, yellowtail lambari 40x28, spotted pyrrhulina 36x26, seminole killifish 38x26, swamp darter 30x22, tidewater silverside 38x24, florida flagfish 36x26, sailfin molly 38x30 |
-| Medium swimmers | banded cichlid 44x34, chanchito 42x30, pike cichlid 50x22, lake chubsucker 44x28, redbreast sunfish 44x32, spotted sunfish 40x30, suwannee bass 48x26, three spot piau 50x24, striped mullet 50x22, banded knifefish 50x18 |
-| Large swimmers | curimbata 58x32, piraputanga 56x26, piracanjuba 62x30, golden dorado 64x30, common snook 64x30, florida gar 62x26, pacu 58x42, pintado 84x28, gulf sturgeon 76x26 |
+| Medium swimmers | banded cichlid 44x36, chanchito 42x32, pike cichlid 50x22, lake chubsucker 44x28, redbreast sunfish 44x32, spotted sunfish 40x30, suwannee bass 48x26, three spot piau 50x24, striped mullet 50x22, banded knifefish 50x18 |
+| Large swimmers | curimbata 58x32, piraputanga 56x26, piracanjuba 62x30, golden dorado 64x30, common snook 64x30, florida gar 62x26, pacu 58x42, pintado 84x28, gulf sturgeon 78x26 |
 | Bottom dwellers and crawlers | cambeva 42x16, cascarudo 44x16, cascudo 46x26, fat sleeper 40x22, southern flounder 40x26, florida cave crayfish 52x14, pantanal crab 34x20, loggerhead musk turtle 36x16, toad headed turtle 40x14, rasp elimia 26x18 |
 
 ## Species notes and scene tuning
@@ -55,8 +57,8 @@ size, texture or colour was used. Each species was first defined by its real ana
 | tidewater silverside | swim 38x24 | y 0-80, speed 32 | slender and translucent: pale olive-straw, bright silver stripe with a dark upper edge, two small dorsals, long anal, big eye |
 | florida flagfish | swim 36x26 | y 120-240, speed 16 | deep compressed killifish: olive-gold with rows of red horizontal lines (the "flag"), dark blotch mid-side under a long dorsal |
 | sailfin molly | swim 38x30 | y 0-120, speed 18 | male: huge sail dorsal from the nape, olive-grey with rows of dark-edged scales, orange margin + dark spots on the sail, orange-edged tail |
-| banded cichlid | swim 44x34 | y 90-230, speed 16 | Heros severus: deep oval, yellow-olive gold, 7 faint bars, the last bar on the peduncle bold from dorsal to anal base, red-brown dots on the cheek, long pointed dorsal + anal reaching past the tail base, red eye |
-| chanchito | swim 42x30 | y 110-240, speed 16 | Australoheros facetus: olive-brown chameleon cichlid, 6 dark bars, a dark blotch mid-side, blue-green iridescent cheek spots, red eye |
+| banded cichlid | swim 44x36 | y 90-230, speed 16 | Heros severus: deep oval, yellow-olive gold, 7 faint bars, the last bar on the peduncle bold from dorsal to anal base, red-brown dots on the cheek, long pointed dorsal + anal reaching past the tail base, red eye |
+| chanchito | swim 42x32 | y 110-240, speed 16 | Australoheros facetus: olive-brown chameleon cichlid, 6 dark bars, a dark blotch mid-side, blue-green iridescent cheek spots, red eye |
 | pike cichlid | swim 50x22 | y 150-250, speed 22 | Crenicichla lepidota: long pike-like cichlid, projecting lower jaw, dark stripe snout-eye-body, gold-ringed black ocellus behind the pectoral, black spot on the tail base, long low dorsal along the back |
 | lake chubsucker | swim 44x28 | y 150-250, speed 16 | Erimyzon sucetta: stout oval sucker, brassy olive with dark-edged scales, small mouth under the snout, high rounded dorsal |
 | redbreast sunfish | swim 44x32 | y 60-220, speed 18 | Lepomis auritus: long narrow black ear flap, orange-red breast and belly, olive back, orange spots, blue lines on the cheek |
@@ -73,7 +75,7 @@ size, texture or colour was used. Each species was first defined by its real ana
 | florida gar | swim 62x26 | y 10-140, speed 14 | Lepisosteus platyrhincus: long cylindrical gar with a short broad snout, olive-brown back, dark round spots all over the head, body and fins, pale yellowish belly, dorsal and anal set far back opposite each other, rounded spotted tail |
 | pacu | swim 58x42 | y 60-220, speed 18 | Piaractus mesopotamicus: very deep disc-like body, grey-silver back, darker grey sides, yellow-orange belly and throat, dark fins, small mouth with blunt teeth, small adipose |
 | pintado | swim 84x28 | y 190-256, speed 16 | Pseudoplatystoma corruscans: long shovel-nosed catfish, flattened head, very long barbels, grey back with dark round spots and short vertical bars on the upper flank, white belly, forked spotted tail, adipose |
-| gulf sturgeon | swim 76x26 | y 200-256, speed 14 | Acipenser oxyrinchus desotoi: huge, shark-like, shovel snout with four barbels underneath, rows of pale bony scutes (one along the back, one along the side, one above the belly), brown-grey back, pale belly, upper tail lobe much longer |
+| gulf sturgeon | swim 78x26 | y 200-256, speed 14 | Acipenser oxyrinchus desotoi: huge, shark-like, shovel snout with four barbels underneath, rows of pale bony scutes (one along the back, one along the side, one above the belly), brown-grey back, pale belly, upper tail lobe much longer |
 | cambeva | crawl 42x16 | floor, speed 10 | Trichomycterus pencil catfish: long cylindrical, flattened head, tiny eyes on top, nasal and maxillary barbels, brown-olive with irregular dark spots, dorsal set far back, rounded tail |
 | cascarudo | crawl 44x16 | floor, speed 8 | Callichthys callichthys: armoured catfish, two rows of overlapping bony plates meeting at a midline seam, dark olive-brown, blunt flattened head, two pairs of long barbels, short spined dorsal, adipose spine, rounded tail |
 | cascudo | crawl 46x26 | floor, speed 6 | Hypostomus pleco: flat belly and high arched back, brown body covered in dark spots, rows of bony plates, sail-like dorsal, ventral sucker mouth, eye high on the head, forked tail with a longer lower lobe, adipose |
