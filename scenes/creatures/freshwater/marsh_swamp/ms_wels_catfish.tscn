@@ -1,13 +1,13 @@
 [gd_scene format=3]
 
 [ext_resource type="PackedScene" uid="uid://ua86u84h3ug2" path="res://scenes/creatures/_shared/swimmer_base.tscn" id="1_base"]
-[ext_resource type="Texture2D" path="res://assets/creatures/freshwater/marsh_swamp/ms_wels_catfish_swim_74x26_4f.png" id="2_sheet"]
+[ext_resource type="Texture2D" path="res://assets/creatures/freshwater/marsh_swamp/ms_wels_catfish_swim_96x30_4f.png" id="2_sheet"]
 
-[node name="MsWelsCatfish" unique_id=1782019148 instance=ExtResource("1_base")]
-rest_time = Vector2(2, 6)
-crowd_radius = 120.0
+[node name="MsWelsCatfish" instance=ExtResource("1_base")]
+rest_time = Vector2(1.5, 4.0)
+crowd_radius = 150.0
 sheet = ExtResource("2_sheet")
-frame_size = Vector2i(74, 26)
-animation_fps = 5.0
-speed = 7.0
-area = Rect2(0, 205, 640, 47)
+frame_size = Vector2i(96, 30)
+animation_fps = 6.0
+speed = 12.0
+area = Rect2(0, 200, 640, 56)
