@@ -1,13 +1,13 @@
 [gd_scene format=3]
 
 [ext_resource type="PackedScene" uid="uid://ua86u84h3ug2" path="res://scenes/creatures/_shared/swimmer_base.tscn" id="1_base"]
-[ext_resource type="Texture2D" path="res://assets/creatures/special/underwater_cave/uc_blackbar_soldierfish_swim_36x22_4f.png" id="2_sheet"]
+[ext_resource type="Texture2D" path="res://assets/creatures/special/underwater_cave/uc_blackbar_soldierfish_swim_42x28_4f.png" id="2_sheet"]
 
-[node name="UcBlackbarSoldierfish" unique_id=1782019148 instance=ExtResource("1_base")]
-rest_time = Vector2(1, 3)
-crowd_radius = 50.0
+[node name="UcBlackbarSoldierfish" instance=ExtResource("1_base")]
+rest_time = Vector2(1.0, 3.0)
+crowd_radius = 55.0
 sheet = ExtResource("2_sheet")
-frame_size = Vector2i(36, 22)
+frame_size = Vector2i(42, 28)
 animation_fps = 8.0
-speed = 10.0
-area = Rect2(0, 80, 640, 140)
+speed = 12.0
+area = Rect2(0, 80, 640, 150)
