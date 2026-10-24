@@ -1,14 +1,14 @@
 [gd_scene format=3]
 
 [ext_resource type="PackedScene" uid="uid://dlpfppvngbl4j" path="res://scenes/creatures/_shared/crawler_base.tscn" id="1_base"]
-[ext_resource type="Texture2D" path="res://assets/creatures/freshwater/billabong/bb_arafura_file_snake_crawl_64x12_4f.png" id="2_sheet"]
+[ext_resource type="Texture2D" path="res://assets/creatures/freshwater/billabong/bb_arafura_file_snake_crawl_70x10_4f.png" id="2_sheet"]
 
-[node name="BbArafuraFileSnake" unique_id=1905958987 instance=ExtResource("1_base")]
-floor_height = 9.0
+[node name="BbArafuraFileSnake" instance=ExtResource("1_base")]
 bob_amount = 0.0
-move_time = Vector2(2, 5)
+move_time = Vector2(3, 6)
 idle_time = Vector2(3, 8)
+crowd_radius = Vector2(90, 8)
 sheet = ExtResource("2_sheet")
-frame_size = Vector2i(64, 12)
-animation_fps = 6.0
-speed = 4.0
+frame_size = Vector2i(70, 10)
+animation_fps = 5.0
+speed = 6.0
