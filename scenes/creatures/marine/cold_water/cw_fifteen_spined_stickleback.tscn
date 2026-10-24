@@ -1,11 +1,13 @@
 [gd_scene format=3]
 
 [ext_resource type="PackedScene" uid="uid://ua86u84h3ug2" path="res://scenes/creatures/_shared/swimmer_base.tscn" id="1_base"]
-[ext_resource type="Texture2D" path="res://assets/creatures/marine/cold_water/cw_fifteen_spined_stickleback_swim_32x28_4f.png" id="2_sheet"]
+[ext_resource type="Texture2D" path="res://assets/creatures/marine/cold_water/cw_fifteen_spined_stickleback_swim_44x16_4f.png" id="2_sheet"]
 
-[node name="CwFifteenSpinedStickleback" unique_id=1782019148 instance=ExtResource("1_base")]
+[node name="CwFifteenSpinedStickleback" instance=ExtResource("1_base")]
+rest_time = Vector2(1.0, 3.0)
+crowd_radius = 55.0
 sheet = ExtResource("2_sheet")
-frame_size = Vector2i(32, 28)
-animation_fps = 10.0
-speed = 14.0
-area = Rect2(0, 20, 640, 140)
+frame_size = Vector2i(44, 16)
+animation_fps = 8.0
+speed = 12.0
+area = Rect2(0, 100, 640, 140)

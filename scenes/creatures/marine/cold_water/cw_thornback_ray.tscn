@@ -1,13 +1,14 @@
 [gd_scene format=3]
 
-[ext_resource type="PackedScene" uid="uid://ua86u84h3ug2" path="res://scenes/creatures/_shared/swimmer_base.tscn" id="1_base"]
-[ext_resource type="Texture2D" path="res://assets/creatures/marine/cold_water/cw_thornback_ray_swim_52x22_4f.png" id="2_sheet"]
+[ext_resource type="PackedScene" uid="uid://dlpfppvngbl4j" path="res://scenes/creatures/_shared/crawler_base.tscn" id="1_base"]
+[ext_resource type="Texture2D" path="res://assets/creatures/marine/cold_water/cw_thornback_ray_crawl_60x12_4f.png" id="2_sheet"]
 
-[node name="CwThornbackRay" unique_id=1782019148 instance=ExtResource("1_base")]
-rest_time = Vector2(2, 6)
-crowd_radius = 100.0
+[node name="CwThornbackRay" instance=ExtResource("1_base")]
+bob_amount = 0.0
+move_time = Vector2(2, 5)
+idle_time = Vector2(3, 8)
+crowd_radius = Vector2(75, 8)
 sheet = ExtResource("2_sheet")
-frame_size = Vector2i(52, 22)
-animation_fps = 6.0
-speed = 9.0
-area = Rect2(0, 210, 640, 40)
+frame_size = Vector2i(60, 12)
+animation_fps = 5.0
+speed = 6.0
