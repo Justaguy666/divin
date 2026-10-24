@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://y5hck8jcctte"
-path="res://.godot/imported/fs_river_redhorse_swim_60x30_4f.png-2bcd88b1646c3fe788424d0a78f8685c.ctex"
+uid="uid://b55kpokiijqgh"
+path="res://.godot/imported/fs_smallmouth_bass_swim_60x32_4f.png-2c025070bb93c2d5fc2c813db7352d6e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_river_redhorse_swim_60x30_4f.png"
-dest_files=["res://.godot/imported/fs_river_redhorse_swim_60x30_4f.png-2bcd88b1646c3fe788424d0a78f8685c.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_smallmouth_bass_swim_60x32_4f.png"
+dest_files=["res://.godot/imported/fs_smallmouth_bass_swim_60x32_4f.png-2c025070bb93c2d5fc2c813db7352d6e.ctex"]
 
 [params]
 

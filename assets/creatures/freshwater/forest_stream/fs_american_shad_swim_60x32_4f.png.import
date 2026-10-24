@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dw8oicca6meug"
-path="res://.godot/imported/fs_warpaint_shiner_swim_38x26_4f.png-e2ec564bac71219a5caec5a63e86ef9b.ctex"
+uid="uid://cyt5wjvndgq1s"
+path="res://.godot/imported/fs_american_shad_swim_60x32_4f.png-b3ffbe01955a3603e7dee219704b5b20.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_warpaint_shiner_swim_38x26_4f.png"
-dest_files=["res://.godot/imported/fs_warpaint_shiner_swim_38x26_4f.png-e2ec564bac71219a5caec5a63e86ef9b.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_american_shad_swim_60x32_4f.png"
+dest_files=["res://.godot/imported/fs_american_shad_swim_60x32_4f.png-b3ffbe01955a3603e7dee219704b5b20.ctex"]
 
 [params]
 

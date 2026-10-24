@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ctw7odqfsfwym"
-path="res://.godot/imported/fs_stonecat_crawl_44x16_4f.png-bf06cc659bcea1193354afd8b663946d.ctex"
+uid="uid://caa1gs56rmxe0"
+path="res://.godot/imported/fs_warpaint_shiner_swim_38x28_4f.png-77f6043b0013eb4e3c6d99073d876887.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_stonecat_crawl_44x16_4f.png"
-dest_files=["res://.godot/imported/fs_stonecat_crawl_44x16_4f.png-bf06cc659bcea1193354afd8b663946d.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_warpaint_shiner_swim_38x28_4f.png"
+dest_files=["res://.godot/imported/fs_warpaint_shiner_swim_38x28_4f.png-77f6043b0013eb4e3c6d99073d876887.ctex"]
 
 [params]
 

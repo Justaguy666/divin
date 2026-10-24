@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://gx87sxu0blvj"
-path="res://.godot/imported/fs_mottled_sculpin_crawl_36x16_4f.png-5706f56820678223d9907913fce69119.ctex"
+uid="uid://bn1htmvgo27fi"
+path="res://.godot/imported/fs_stonecat_crawl_46x14_4f.png-79eb4c587f62e815281e9994cf328864.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_mottled_sculpin_crawl_36x16_4f.png"
-dest_files=["res://.godot/imported/fs_mottled_sculpin_crawl_36x16_4f.png-5706f56820678223d9907913fce69119.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_stonecat_crawl_46x14_4f.png"
+dest_files=["res://.godot/imported/fs_stonecat_crawl_46x14_4f.png-79eb4c587f62e815281e9994cf328864.ctex"]
 
 [params]
 

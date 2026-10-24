@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ds65gfhcem8qm"
-path="res://.godot/imported/fs_logperch_swim_46x22_4f.png-344e01c0d866535cd01318bf3cd64223.ctex"
+uid="uid://ipfe0e1sfay1"
+path="res://.godot/imported/fs_redline_darter_swim_32x20_4f.png-ec99066e2bca5d3d9dd7cca0d16a8c2c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_logperch_swim_46x22_4f.png"
-dest_files=["res://.godot/imported/fs_logperch_swim_46x22_4f.png-344e01c0d866535cd01318bf3cd64223.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_redline_darter_swim_32x20_4f.png"
+dest_files=["res://.godot/imported/fs_redline_darter_swim_32x20_4f.png-ec99066e2bca5d3d9dd7cca0d16a8c2c.ctex"]
 
 [params]
 

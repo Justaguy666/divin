@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpx35cny6td7g"
-path="res://.godot/imported/fs_fallfish_swim_56x28_4f.png-de1731f4c71fe52c5df67781da405c45.ctex"
+uid="uid://b8a6mvp78pt2e"
+path="res://.godot/imported/fs_river_redhorse_swim_60x32_4f.png-0f5c4988cd2f33aaa4e675ac4c4af6c5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_fallfish_swim_56x28_4f.png"
-dest_files=["res://.godot/imported/fs_fallfish_swim_56x28_4f.png-de1731f4c71fe52c5df67781da405c45.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_river_redhorse_swim_60x32_4f.png"
+dest_files=["res://.godot/imported/fs_river_redhorse_swim_60x32_4f.png-0f5c4988cd2f33aaa4e675ac4c4af6c5.ctex"]
 
 [params]
 

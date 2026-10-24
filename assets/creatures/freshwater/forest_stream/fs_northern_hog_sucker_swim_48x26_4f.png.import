@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bpuaaw2nu1qnm"
-path="res://.godot/imported/fs_redline_darter_swim_32x22_4f.png-3958cf1ed4f1bcc9c513f15db3fd51a7.ctex"
+uid="uid://cv0rvtdo50lwd"
+path="res://.godot/imported/fs_northern_hog_sucker_swim_48x26_4f.png-a8f7f4ceb31e5d34f7919335ee141e9f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_redline_darter_swim_32x22_4f.png"
-dest_files=["res://.godot/imported/fs_redline_darter_swim_32x22_4f.png-3958cf1ed4f1bcc9c513f15db3fd51a7.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_northern_hog_sucker_swim_48x26_4f.png"
+dest_files=["res://.godot/imported/fs_northern_hog_sucker_swim_48x26_4f.png-a8f7f4ceb31e5d34f7919335ee141e9f.ctex"]
 
 [params]
 

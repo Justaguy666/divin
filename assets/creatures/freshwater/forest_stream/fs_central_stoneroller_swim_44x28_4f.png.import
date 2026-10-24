@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dlrv3wak5p1yh"
-path="res://.godot/imported/fs_smallmouth_bass_swim_60x30_4f.png-a13433aef88cd0370c9cd3c91ba79a1b.ctex"
+uid="uid://cxne4pxyysrl2"
+path="res://.godot/imported/fs_central_stoneroller_swim_44x28_4f.png-0f0998e97582adf5e35bed2d926a036b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_smallmouth_bass_swim_60x30_4f.png"
-dest_files=["res://.godot/imported/fs_smallmouth_bass_swim_60x30_4f.png-a13433aef88cd0370c9cd3c91ba79a1b.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_central_stoneroller_swim_44x28_4f.png"
+dest_files=["res://.godot/imported/fs_central_stoneroller_swim_44x28_4f.png-0f0998e97582adf5e35bed2d926a036b.ctex"]
 
 [params]
 

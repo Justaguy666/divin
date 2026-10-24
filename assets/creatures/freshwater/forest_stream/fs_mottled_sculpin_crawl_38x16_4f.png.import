@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ck7rjupl2ttas"
-path="res://.godot/imported/fs_american_shad_swim_60x30_4f.png-bd0ca1925d123a641fdd9a23b91f6d7a.ctex"
+uid="uid://qtw7su3frg8m"
+path="res://.godot/imported/fs_mottled_sculpin_crawl_38x16_4f.png-20461e0a3cda251fe39895319dd0824a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/forest_stream/fs_american_shad_swim_60x30_4f.png"
-dest_files=["res://.godot/imported/fs_american_shad_swim_60x30_4f.png-bd0ca1925d123a641fdd9a23b91f6d7a.ctex"]
+source_file="res://assets/creatures/freshwater/forest_stream/fs_mottled_sculpin_crawl_38x16_4f.png"
+dest_files=["res://.godot/imported/fs_mottled_sculpin_crawl_38x16_4f.png-20461e0a3cda251fe39895319dd0824a.ctex"]
 
 [params]
 
