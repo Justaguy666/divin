@@ -28,7 +28,7 @@ msgstr "Chung"
 msgid "Audio"
 msgstr "Âm thanh"
 
-#: scenes/ui/menus/settings_menu.tscn
+#: localization/extra_strings.gd
 msgid "Language"
 msgstr "Ngôn ngữ"
 
@@ -354,3 +354,23 @@ msgstr "Divin"
 #: localization/extra_strings.gd
 msgid "You're here"
 msgstr "Bạn đang ở đây"
+
+#: localization/extra_strings.gd
+msgid "Master Volume"
+msgstr "Âm lượng tổng"
+
+#: localization/extra_strings.gd
+msgid "Music"
+msgstr "Âm nhạc"
+
+#: localization/extra_strings.gd
+msgid "Ambience"
+msgstr "Âm thanh nền"
+
+#: localization/extra_strings.gd
+msgid "Sound Effects"
+msgstr "Hiệu ứng"
+
+#: localization/extra_strings.gd
+msgid "Interface"
+msgstr "Giao diện"

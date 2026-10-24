@@ -10,6 +10,14 @@ extends Object
 func _strings() -> void:
 	# Footer selector: gán trong code không qua tr()
 	tr("You're here")
+	# Settings > General: nhãn gán trong code (settings_menu.gd, _add_row)
+	tr("Language")
+	# Settings > Audio: nhãn thanh âm lượng gán trong code (settings_menu.gd, VOLUME_LABELS)
+	tr("Master Volume")
+	tr("Music")
+	tr("Ambience")
+	tr("Sound Effects")
+	tr("Interface")
 	# ac
 	tr("Ancient Cold Lake")
 	tr("An ultra-clear, icy lake full of ancient endemics.")
