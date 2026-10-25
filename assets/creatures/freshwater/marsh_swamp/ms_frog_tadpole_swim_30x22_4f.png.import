@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://benkqbhlyr5cb"
-path="res://.godot/imported/ms_european_bullhead_crawl_36x16_4f.png-c52851da7c68181b4c3910290ddf03d5.ctex"
+uid="uid://cuqevodunff10"
+path="res://.godot/imported/ms_frog_tadpole_swim_30x22_4f.png-e3caf33c06930c0b0ae565f7159f826f.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/marsh_swamp/ms_european_bullhead_crawl_36x16_4f.png"
-dest_files=["res://.godot/imported/ms_european_bullhead_crawl_36x16_4f.png-c52851da7c68181b4c3910290ddf03d5.ctex"]
+source_file="res://assets/creatures/freshwater/marsh_swamp/ms_frog_tadpole_swim_30x22_4f.png"
+dest_files=["res://.godot/imported/ms_frog_tadpole_swim_30x22_4f.png-e3caf33c06930c0b0ae565f7159f826f.ctex"]
 
 [params]
 

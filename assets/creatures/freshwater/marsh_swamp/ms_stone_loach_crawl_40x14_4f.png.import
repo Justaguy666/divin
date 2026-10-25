@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://muurioyqg1bx"
-path="res://.godot/imported/ms_northern_snakehead_swim_64x24_4f.png-01289dca29d3428307859da1c1c026a1.ctex"
+uid="uid://uw4pow7vg0ba"
+path="res://.godot/imported/ms_stone_loach_crawl_40x14_4f.png-85d595e49005afae43611430e34e0c68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/marsh_swamp/ms_northern_snakehead_swim_64x24_4f.png"
-dest_files=["res://.godot/imported/ms_northern_snakehead_swim_64x24_4f.png-01289dca29d3428307859da1c1c026a1.ctex"]
+source_file="res://assets/creatures/freshwater/marsh_swamp/ms_stone_loach_crawl_40x14_4f.png"
+dest_files=["res://.godot/imported/ms_stone_loach_crawl_40x14_4f.png-85d595e49005afae43611430e34e0c68.ctex"]
 
 [params]
 

@@ -14,7 +14,7 @@ const SIZE_WEIGHT: Vector2 = Vector2(0.3, 0.5)
 const REF_SIZE: Vector2 = Vector2(30, 14)
 
 ## Cá nghiêng khi bơi lệch lên/xuống quá ngưỡng này (0 = ngang, 1 = nghiêng)
-@export var tilt_threshold: float = 0.3
+@export var tilt_threshold: float = 0.2
 ## Thời gian dừng lại nghỉ giữa các lần bơi (giây, min-max)
 @export var rest_time: Vector2 = Vector2(0.3, 1.5)
 

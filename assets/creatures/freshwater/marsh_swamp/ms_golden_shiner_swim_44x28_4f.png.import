@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cfkjryt3x3ekm"
-path="res://.godot/imported/ms_topmouth_gudgeon_swim_36x24_4f.png-61bd144751f0ac3a3f00789db9efc93c.ctex"
+uid="uid://bc1860tr8xv1l"
+path="res://.godot/imported/ms_golden_shiner_swim_44x28_4f.png-162b32f55ef6778877ada51582ba260e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/creatures/freshwater/marsh_swamp/ms_topmouth_gudgeon_swim_36x24_4f.png"
-dest_files=["res://.godot/imported/ms_topmouth_gudgeon_swim_36x24_4f.png-61bd144751f0ac3a3f00789db9efc93c.ctex"]
+source_file="res://assets/creatures/freshwater/marsh_swamp/ms_golden_shiner_swim_44x28_4f.png"
+dest_files=["res://.godot/imported/ms_golden_shiner_swim_44x28_4f.png-162b32f55ef6778877ada51582ba260e.ctex"]
 
 [params]
 

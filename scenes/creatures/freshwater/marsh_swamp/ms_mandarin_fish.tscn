@@ -8,6 +8,6 @@ rest_time = Vector2(2.0, 5.0)
 crowd_radius = 95.0
 sheet = ExtResource("2_sheet")
 frame_size = Vector2i(56, 34)
-animation_fps = 7.0
+animation_fps = 6.0
 speed = 14.0
 area = Rect2(0, 140, 640, 110)
