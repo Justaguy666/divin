@@ -1,6 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Texture2D" uid="uid://c3jq3xum0xk5i" path="res://assets/environments/freshwater/clear_spring/decoration/rocks/cs_spring_vent_rock.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://dilk6mf8xx3p1" path="res://game/effects/bubbles/bubble_emitter.gd" id="2_emitter"]
 
 [node name="CsSpringVentRock" type="Sprite2D"]
 texture = ExtResource("1_tex")
@@ -13,3 +14,10 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-22, -6, -22, -5, -21, -5, -21, -4, -19, -4, -19, -3, -18, -3, -18, -2, -15, -2, -15, -1, 13, -1, 13, -2, 19, -2, 19, -3, 20, -3, 20, -4, 21, -4, 21, -6)
+
+[node name="BubbleEmitter" type="Node2D" parent="."]
+position = Vector2(0, -32)
+script = ExtResource("2_emitter")
+emit_interval = Vector2(1.5, 3.5)
+burst_count = Vector2i(2, 4)
+

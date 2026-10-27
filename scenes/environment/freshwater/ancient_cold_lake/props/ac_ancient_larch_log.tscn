@@ -1,6 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Texture2D" uid="uid://cifkrxgrfbyjm" path="res://assets/environments/freshwater/ancient_cold_lake/decoration/debris/ac_ancient_larch_log.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://dilk6mf8xx3p1" path="res://game/effects/bubbles/bubble_emitter.gd" id="2_emitter"]
 
 [node name="AcAncientLarchLog" type="Sprite2D"]
 texture = ExtResource("1_tex")
@@ -13,3 +14,10 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-55, -6, -55, -5, -54, -5, -54, -4, -53, -4, -53, -3, -52, -3, -52, -2, -50, -2, -50, -1, 44, -1, 44, -2, 51, -2, 51, -3, 53, -3, 53, -4, 54, -4, 54, -5, 55, -5, 55, -6)
+
+[node name="BubbleEmitter" type="Node2D" parent="."]
+position = Vector2(5, -28)
+script = ExtResource("2_emitter")
+emit_interval = Vector2(6, 12)
+burst_count = Vector2i(1, 2)
+

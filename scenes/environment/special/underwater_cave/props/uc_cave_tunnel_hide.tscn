@@ -1,6 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Texture2D" uid="uid://cny6te0afv0kr" path="res://assets/environments/special/underwater_cave/decoration/misc/uc_cave_tunnel_hide.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://dilk6mf8xx3p1" path="res://game/effects/bubbles/bubble_emitter.gd" id="2_emitter"]
 
 [node name="UcCaveTunnelHide" type="Sprite2D"]
 texture = ExtResource("1_tex")
@@ -13,3 +14,10 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-43, -6, -43, -4, -42, -4, -42, -3, -41, -3, -41, -2, 0, -2, 41, -2, 41, -3, 42, -3, 42, -4, 43, -4, 43, -6)
+
+[node name="BubbleEmitter" type="Node2D" parent="."]
+position = Vector2(0, -20)
+script = ExtResource("2_emitter")
+emit_interval = Vector2(5, 10)
+burst_count = Vector2i(1, 3)
+

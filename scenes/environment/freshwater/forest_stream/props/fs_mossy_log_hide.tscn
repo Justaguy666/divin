@@ -1,6 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Texture2D" uid="uid://dc78p84xvsyw2" path="res://assets/environments/freshwater/forest_stream/decoration/misc/fs_mossy_log_hide.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://dilk6mf8xx3p1" path="res://game/effects/bubbles/bubble_emitter.gd" id="2_emitter"]
 
 [node name="FsMossyLogHide" type="Sprite2D"]
 texture = ExtResource("1_tex")
@@ -13,3 +14,10 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-43, -6, -43, -5, -42, -5, -42, -4, -41, -4, -41, -3, -40, -3, -40, -2, -39, -2, -39, -1, 27, -1, 27, -2, 32, -2, 32, -3, 38, -3, 38, -4, 40, -4, 40, -5, 41, -5, 41, -6)
+
+[node name="BubbleEmitter" type="Node2D" parent="."]
+position = Vector2(-2, -25)
+script = ExtResource("2_emitter")
+emit_interval = Vector2(5, 10)
+burst_count = Vector2i(1, 2)
+

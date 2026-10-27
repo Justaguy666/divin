@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://3nb4alsreohl"]
 
 [ext_resource type="Texture2D" uid="uid://88ficfvqk30m" path="res://assets/environments/freshwater/planted_freshwater/decoration/misc/pf_driftwood_log.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://dilk6mf8xx3p1" path="res://game/effects/bubbles/bubble_emitter.gd" id="2_emitter"]
 
 [node name="PfDriftwoodLog" type="Sprite2D"]
 texture = ExtResource("1_tex")
@@ -13,3 +14,10 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-37, -6, -37, -4, -36, -4, -36, -3, -35, -3, -35, -2, -34, -2, -34, -1, 28, -1, 28, -2, 29, -2, 29, -4, 28, -4, 28, -5, 26, -5, 26, -6)
+
+[node name="BubbleEmitter" type="Node2D" parent="."]
+position = Vector2(0, -30)
+script = ExtResource("2_emitter")
+emit_interval = Vector2(5, 10)
+burst_count = Vector2i(1, 2)
+

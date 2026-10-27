@@ -1,6 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Texture2D" uid="uid://c3svyfimkdtp6" path="res://assets/environments/freshwater/billabong/decoration/misc/bb_red_gum_snag.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://dilk6mf8xx3p1" path="res://game/effects/bubbles/bubble_emitter.gd" id="2_emitter"]
 
 [node name="BbRedGumSnag" type="Sprite2D"]
 texture = ExtResource("1_tex")
@@ -13,3 +14,10 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-57, -6, -57, -5, -56, -5, -56, -4, -55, -4, -55, -3, -54, -3, -54, -2, -51, -2, -48, -2, -48, -3, -46, -3, -46, -4, -41, -4, -41, -5, -33, -5, -33, -6)
+
+[node name="BubbleEmitter" type="Node2D" parent="."]
+position = Vector2(0, -30)
+script = ExtResource("2_emitter")
+emit_interval = Vector2(4, 9)
+burst_count = Vector2i(1, 3)
+

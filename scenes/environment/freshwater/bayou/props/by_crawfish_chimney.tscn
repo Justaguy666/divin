@@ -1,6 +1,7 @@
 [gd_scene format=3]
 
 [ext_resource type="Texture2D" uid="uid://bmfr2bd2h8hnb" path="res://assets/environments/freshwater/bayou/decoration/misc/by_crawfish_chimney.png" id="1_tex"]
+[ext_resource type="Script" uid="uid://dilk6mf8xx3p1" path="res://game/effects/bubbles/bubble_emitter.gd" id="2_emitter"]
 
 [node name="ByCrawfishChimney" type="Sprite2D"]
 texture = ExtResource("1_tex")
@@ -13,3 +14,10 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-9, -6, -9, -4, -11, -4, -11, -3, -12, -3, -12, -2, -11, -2, -11, -1, 10, -1, 10, -2, 11, -2, 11, -3, 10, -3, 10, -4, 6, -4, 6, -6)
+
+[node name="BubbleEmitter" type="Node2D" parent="."]
+position = Vector2(-1, -29)
+script = ExtResource("2_emitter")
+emit_interval = Vector2(3, 7)
+burst_count = Vector2i(1, 3)
+

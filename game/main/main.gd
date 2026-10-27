@@ -53,6 +53,7 @@ func switch_to(info: AquariumInfo) -> void:
 		holder.remove_child(_current_node)
 		_current_node.queue_free()
 	_current_node = packed.instantiate()
+	_current_node.add_to_group(&"aquarium")
 	holder.add_child(_current_node)
 	AquariumManager.set_current(info)
 	

@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://c8wi2kc8yyfae"]
+
+[ext_resource type="Script" uid="uid://2ea5pntf71ro" path="res://game/effects/bubbles/bubble.gd" id="1_w1f37"]
+
+[node name="Bubble" type="Node2D" unique_id=944710656]
+script = ExtResource("1_w1f37")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=149895014]
