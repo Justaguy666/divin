@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://bdkq66k5yxh2n"]
 
-[ext_resource type="Shader" uid="uid://dsjuytv3opfyu" path="res://shaders/environment/grass_sway.gdshader" id="1_eulsu"]
+[ext_resource type="Shader" uid="uid://dcly3cvd26pt" path="res://shaders/environment/grass_sway.gdshader" id="1_eulsu"]
 [ext_resource type="Script" uid="uid://8e2j8h6w8mro" path="res://game/environment/editor_static_parallax.gd" id="2_parallax"]
 [ext_resource type="Script" path="res://game/environment/water_surface.gd" id="3_surface"]
 
