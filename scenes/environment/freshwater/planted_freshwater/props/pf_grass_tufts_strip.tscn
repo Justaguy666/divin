@@ -3,6 +3,8 @@
 [ext_resource type="Texture2D" uid="uid://xafpvuhk0462" path="res://assets/environments/freshwater/planted_freshwater/vegetation/grass/pf_grass_tufts_strip.png" id="1_tex"]
 [ext_resource type="Script" uid="uid://cvo60uvkuyu08" path="res://game/environment/swaying_plant.gd" id="2_2grdm"]
 
+[ext_resource type="PackedScene" uid="uid://euvivl3iwlpq" path="res://scenes/effects/bubbles/o2_pearling.tscn" id="3_pearl"]
+
 [node name="PfGrassTuftsStrip" type="Sprite2D" unique_id=890040594]
 texture = ExtResource("1_tex")
 centered = false
@@ -10,3 +12,6 @@ offset = Vector2(-7, -12)
 hframes = 5
 script = ExtResource("2_2grdm")
 max_angle = 0.17
+
+[node name="O2Pearling" parent="." instance=ExtResource("3_pearl")]
+position = Vector2(0, -10)

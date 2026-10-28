@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cdl2mnmiui02m" path="res://assets/environments/freshwater/planted_freshwater/decoration/misc/pf_moss_ball.png" id="1_tex"]
 
+[ext_resource type="PackedScene" uid="uid://euvivl3iwlpq" path="res://scenes/effects/bubbles/o2_pearling.tscn" id="3_pearl"]
+
 [node name="PfMossBall" type="Sprite2D"]
 texture = ExtResource("1_tex")
 centered = false
@@ -13,3 +15,6 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-6, -6, -6, -4, -5, -4, -5, -3, -4, -3, -4, -2, -1, -2, -1, -1, 0, -1, 0, -2, 4, -2, 4, -4, 5, -4, 5, -5, 6, -5, 6, -6)
+
+[node name="O2Pearling" parent="." instance=ExtResource("3_pearl")]
+position = Vector2(-3, -16)

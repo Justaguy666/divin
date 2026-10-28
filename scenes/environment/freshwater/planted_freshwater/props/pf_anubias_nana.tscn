@@ -2,6 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bh7s6vqqaadr7" path="res://assets/environments/freshwater/planted_freshwater/vegetation/plants/pf_anubias_nana.png" id="1_tex"]
 [ext_resource type="Script" uid="uid://cvo60uvkuyu08" path="res://game/environment/swaying_plant.gd" id="2_sway"]
+[ext_resource type="PackedScene" uid="uid://euvivl3iwlpq" path="res://scenes/effects/bubbles/o2_pearling.tscn" id="3_pearl"]
 
 [node name="PfAnubiasNana" type="Sprite2D"]
 texture = ExtResource("1_tex")
@@ -9,3 +10,6 @@ centered = false
 offset = Vector2(-32, -28)
 script = ExtResource("2_sway")
 max_angle = 0.025
+
+[node name="O2Pearling" parent="." instance=ExtResource("3_pearl")]
+position = Vector2(8, -27)
