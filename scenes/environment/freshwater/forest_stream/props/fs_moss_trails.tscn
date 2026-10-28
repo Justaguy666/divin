@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://c8e1ubi2y2rs5" path="res://assets/environments/freshwater/forest_stream/vegetation/plants/fs_moss_trails.png" id="1_tex"]
 
+[ext_resource type="PackedScene" uid="uid://euvivl3iwlpq" path="res://scenes/effects/bubbles/o2_pearling.tscn" id="3_pearl"]
+
 [node name="FsMossTrails" type="Sprite2D"]
 texture = ExtResource("1_tex")
 centered = false
@@ -13,3 +15,6 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-26, -6, -26, -5, -25, -5, -25, -3, -24, -3, -24, -2, -23, -2, -23, -1, -7, -1, -7, -2, -6, -2, -6, -3, -5, -3, -5, -4, -4, -4, -4, -6)
+
+[node name="O2Pearling" parent="." instance=ExtResource("3_pearl")]
+position = Vector2(-12, -18)

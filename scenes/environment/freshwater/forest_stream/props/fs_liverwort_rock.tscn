@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://cejtorpwwnbtt" path="res://assets/environments/freshwater/forest_stream/vegetation/plants/fs_liverwort_rock.png" id="1_tex"]
 
+[ext_resource type="PackedScene" uid="uid://euvivl3iwlpq" path="res://scenes/effects/bubbles/o2_pearling.tscn" id="3_pearl"]
+
 [node name="FsLiverwortRock" type="Sprite2D"]
 texture = ExtResource("1_tex")
 centered = false
@@ -13,3 +15,6 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-15, -6, -15, -5, -14, -5, -14, -3, -13, -3, -13, -2, -12, -2, -12, -1, 10, -1, 10, -2, 11, -2, 11, -3, 12, -3, 12, -4, 13, -4, 13, -6)
+
+[node name="O2Pearling" parent="." instance=ExtResource("3_pearl")]
+position = Vector2(-9, -26)

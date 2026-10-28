@@ -3,9 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://ktnmy0swjt0i" path="res://assets/environments/freshwater/clear_spring/vegetation/plants/cs_tape_grass_tall.png" id="1_tex"]
 [ext_resource type="Script" uid="uid://cvo60uvkuyu08" path="res://game/environment/swaying_plant.gd" id="2_sway"]
 
+[ext_resource type="PackedScene" uid="uid://euvivl3iwlpq" path="res://scenes/effects/bubbles/o2_pearling.tscn" id="3_pearl"]
+
 [node name="CsTapeGrassTall" type="Sprite2D"]
 texture = ExtResource("1_tex")
 centered = false
 offset = Vector2(-14, -109)
 script = ExtResource("2_sway")
 max_angle = 0.035
+
+[node name="O2Pearling" parent="." instance=ExtResource("3_pearl")]
+position = Vector2(10, -108)

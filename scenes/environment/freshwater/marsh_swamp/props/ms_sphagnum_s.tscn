@@ -2,7 +2,12 @@
 
 [ext_resource type="Texture2D" uid="uid://dl10wqppbh6wh" path="res://assets/environments/freshwater/marsh_swamp/vegetation/grass/ms_sphagnum_s.png" id="1_tex"]
 
+[ext_resource type="PackedScene" uid="uid://euvivl3iwlpq" path="res://scenes/effects/bubbles/o2_pearling.tscn" id="3_pearl"]
+
 [node name="MsSphagnumS" type="Sprite2D"]
 texture = ExtResource("1_tex")
 centered = false
 offset = Vector2(-11, -15)
+
+[node name="O2Pearling" parent="." instance=ExtResource("3_pearl")]
+position = Vector2(1, -14)

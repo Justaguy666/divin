@@ -2,6 +2,8 @@
 
 [ext_resource type="Texture2D" uid="uid://d23tyq0uot5ci" path="res://assets/environments/freshwater/clear_spring/vegetation/plants/cs_algae_tuft_rock.png" id="1_tex"]
 
+[ext_resource type="PackedScene" uid="uid://euvivl3iwlpq" path="res://scenes/effects/bubbles/o2_pearling.tscn" id="3_pearl"]
+
 [node name="CsAlgaeTuftRock" type="Sprite2D"]
 texture = ExtResource("1_tex")
 centered = false
@@ -13,3 +15,6 @@ collision_mask = 0
 
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Footprint"]
 polygon = PackedVector2Array(-11, -6, -11, -3, -10, -3, -10, -2, -9, -2, -9, -1, 7, -1, 7, -2, 8, -2, 8, -3, 9, -3, 9, -4, 10, -4, 10, -6)
+
+[node name="O2Pearling" parent="." instance=ExtResource("3_pearl")]
+position = Vector2(3, -33)

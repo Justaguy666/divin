@@ -84,6 +84,8 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_leaves"]
 size = Vector2(45, 3)
 
+[ext_resource type="PackedScene" uid="uid://euvivl3iwlpq" path="res://scenes/effects/bubbles/o2_pearling.tscn" id="3_pearl"]
+
 [node name="MsBladderwort" type="AnimatedSprite2D"]
 sprite_frames = SubResource("SpriteFrames_sway")
 animation = &"sway"
@@ -98,3 +100,6 @@ collision_mask = 0
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Leaves"]
 position = Vector2(-2, 1.5)
 shape = SubResource("RectangleShape2D_leaves")
+
+[node name="O2Pearling" parent="." instance=ExtResource("3_pearl")]
+position = Vector2(-25, -11)

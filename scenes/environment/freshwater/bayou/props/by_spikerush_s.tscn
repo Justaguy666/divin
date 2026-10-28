@@ -3,9 +3,14 @@
 [ext_resource type="Texture2D" uid="uid://tsrabgui5k5w" path="res://assets/environments/freshwater/bayou/vegetation/grass/by_spikerush_s.png" id="1_tex"]
 [ext_resource type="Script" uid="uid://cvo60uvkuyu08" path="res://game/environment/swaying_plant.gd" id="2_sway"]
 
+[ext_resource type="PackedScene" uid="uid://euvivl3iwlpq" path="res://scenes/effects/bubbles/o2_pearling.tscn" id="3_pearl"]
+
 [node name="BySpikerushS" type="Sprite2D"]
 texture = ExtResource("1_tex")
 centered = false
 offset = Vector2(-11, -22)
 script = ExtResource("2_sway")
 max_angle = 0.09
+
+[node name="O2Pearling" parent="." instance=ExtResource("3_pearl")]
+position = Vector2(8, -21)
