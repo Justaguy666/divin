@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://euvivl3iwlpq"]
+
+[ext_resource type="Script" uid="uid://bcccbuqpqyc4s" path="res://game/effects/bubbles/o2_pearling.gd" id="1_1m0qy"]
+
+[node name="O2Pearling" type="Node2D" unique_id=2099768575]
+script = ExtResource("1_1m0qy")
+
+[node name="Sprite" type="AnimatedSprite2D" parent="." unique_id=529854817]
