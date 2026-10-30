@@ -20,3 +20,6 @@ desktop.ini
 .agents/mcp_config.json
 _audit/
 __pycache__/
+
+# sprite generator build output (.agents/tools/creature_gen)
+_gen/
