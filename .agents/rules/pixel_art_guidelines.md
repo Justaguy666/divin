@@ -44,7 +44,7 @@ The user identifies `pf_`, `bw_` and `ac_` as the satisfying reference families.
 **Colour transitions and value structure**
 - Use a readable value path across large anatomical regions. A broad back–belly boundary usually benefits from one or two transition tones; let the species' markings and body shape determine their placement instead of drawing a fixed horizontal band.
 - Keep markings simple enough to read at native scale. Flat fills are a reliable starting point; a deliberate highlight, texture or softened edge is acceptable when it clarifies the species, material or lighting.
-- Avoid near-black seams on light bellies and at fin attachments. Outline colour and weight should relate to the adjacent region; inspect the join at native scale before running an automated relight or soften pass.
+- Avoid near-black seams on light bellies and at fin attachments. Outline colour and weight should relate to the adjacent region; inspect the join at native scale; do not fix it with a sprite-wide automated pass.
 - Keep a coherent palette, but allow distinct hues for natural markings and anatomical regions. The approved references range from PF's more colourful palette to AC's muted silver-blue; neither a 75% hue-family threshold nor one chroma/dark-share range describes all three.
 - Fins should feel attached to the body and read as membranes or solid fins. Vary silhouette, size, opacity and accent by species instead of applying one biome-wide recipe.
 - Estimate body shape with the silhouette and species anatomy in view. Automated opening/aspect values can help locate outliers, but they do not define whether an oval, disc, eel or ray is correct.
@@ -55,6 +55,7 @@ The user identifies `pf_`, `bw_` and `ac_` as the satisfying reference families.
 - Walking crawlers reuse the shell/body; only legs, claws, antennae and feet should carry the walk motion.
 
 **Workflow**
+- Generator-made biomes (`cs`, `fs`, `ms`, `bb`, `by`, `cw`, `uc`) are code in `.agents/tools/creature_gen/` (species modules, renderer, palettes, gaits, install). Restyle or extend them with `.agents/rules/creature_workflow.md` - the process used for cs / fs / ms (and the v4 pass for cs) in October 2026 - instead of editing their PNGs by hand.
 - Run `python .agents/tools/creature_audit.py <group>/<biome> --montage _audit/<prefix>.png` before a preview. Resolve structural sheet errors, then use advisory flags to choose sprites for visual review against the accepted references.
 - Build each biome from per-species silhouettes, a controlled palette, readable fins and hand-placed markings, followed by at most one light biome grade. Do not stack the previous biome's gloss, dither, sheen or shading passes.
 - Do not run project-wide outline, eye or head-shape post-processes without a before/after montage of PF and BW accepted references.
@@ -64,7 +65,7 @@ The user identifies `pf_`, `bw_` and `ac_` as the satisfying reference families.
 - **Swimmers (Fish)**:
   - Layout: 6 rows corresponding to directions (E, SE, SW, W, NW, NE). No straight N/S rows.
   - Animation: 4 frames per row, 0.12 s per frame in the `.aseprite`, pattern A-B-A-C (frame 3 = frame 1).
-  - **The body is static** (body bend = 0 px — bending makes the shading/markings flicker). Only fins move: dorsal/anal/pelvic/pectoral flutter ±1-1.5 px at the outer edge with the base anchored; the caudal moves only ~1-2 px at the trailing edge.
+  - **The body is static** (body bend = 0 px — bending makes the shading/markings flicker). Only fins move, each fin kind in its own way (never one motion copied to every fin): the caudal swings up and down as one piece, about 1-2 px at the trailing edge (in pf / bw / ac 83-93% of the tail pixels change every frame); dorsal/anal/pelvic/pectoral flutter ±1-1.5 px at the outer edge with the base anchored and do not mirror the tail; the anal fin follows the tail's vertical direction. Generator biomes set this per species with a gait (`gait.py`).
   - Eels and long-finned species (conger, ling, pipefish, cusk-eels, knifefish): tail fixed, a travelling sine wave runs along the long dorsal/anal fin (4 phases) plus pectoral fanning.
   - Draw only the E-facing frames; SE/NE are the E frames rotated (RotSprite), W/SW/NW are mirrors.
   - Tilt: 25° for small fish, 12-20° for deep-bodied/larger fish, 8-10° for very long fish (needlefish, arowana, sturgeon).
@@ -83,12 +84,12 @@ The user identifies `pf_`, `bw_` and `ac_` as the satisfying reference families.
 
 ## 2. Rendering & Shapes (Core Style)
 - **Silhouette first**: every species has its own body profile (depth, head shape, fin positions). Never reuse another species' body template and only recolour it.
-- **Form shading**: light usually comes from above. Use a small, intentional ramp to describe the form; highlights are optional when the sprite is already readable or a different lighting cue is intended.
+- **Form shading**: light usually comes from above. Measured on pf / bw / ac (October 2026): light tones climb in small even steps (about 0.10 OKLab L; pf 0.085) and sit in the upper third of the body (bw 0.33 from the back); the brightest tenth is only one small step (~0.13) above its neighbours; the back under the dorsal fin is not darker than the body. No round / elliptical highlight patch, and do not remove light by capping every tone at a mid value (that flattens the body). A matte species is fine on request, but it still mixes its tones visibly (steps 0.06-0.09).
 - **Transitions**: flat colour regions and crisp boundaries are valid pixel-art choices. Add intermediate tones where a broad anatomical plane needs volume; do not force gradients or the same band shape onto every species. A belly may shift toward the body hue, but the 20–26% figure is a starting experiment, not a fixed formula.
 - **Outlines**: prefer an outline related to the adjacent body colour. Avoid using one fixed near-black across a multicoloured sprite; near-black or pure black pixels are allowed when they serve the eye, silhouette or local contrast (the accepted PF snapshot contains a small number of exact-black pixels). Where a body meets a fin, avoid a seam that makes them look detached, but judge the join at native scale rather than applying a fixed RGB/OKLab percentage to every edge.
   - Outlines may vary along the body, but each outline pixel must be a dark shade of the body colour next to it (e.g. blue head -> dark blue outline, orange flank -> dark brown-orange outline). Never one fixed outline colour on a multi-coloured fish.
 - **Markings**: Hand-place bars, stripes, spots and blotches so their shape reads at native scale. Flat fills are a reliable default; a highlight, translucent edge or small detail may be intentional if it supports the species. Avoid accidental halos, stray pixels and uniform noise that obscures the marking.
-- **Fins**: drawn only OUTSIDE the body silhouette — no fin base or ray lines across the body (the pectoral may show as a soft lighter patch on the flank). Body-family colour, alpha ~150-240 (solid dark fins are fine on dark species), with rays and a smooth base→edge gradient; signature fin colours (red edges, black tips, white leading edges) go on the rim or tip. Long filaments must sit on a fin membrane — bare dark lines read as "spider legs".
+- **Fins**: drawn only OUTSIDE the body silhouette — no fin base or ray lines across the body (the pectoral may show as a soft lighter patch on the flank). Body-family colour close to the body's tone (pf / bw / ac: 0.03-0.14 lighter), alpha ~150-240 falling smoothly from base to edge (solid dark fins are fine on dark species); rays are faint colour lines, never alpha stripes; 10+ colours per fin (membrane lightening toward the edge, soft mottle) rather than one flat tint; signature fin colours (red edges, black tips, white leading edges) go on the rim or tip. Long filaments must sit on a fin membrane — bare dark lines read as "spider legs".
 - **Eyes** (standard set by the planted-freshwater sprites):
   - Core = exactly 2 px stacked vertically: a white/off-white highlight directly ABOVE a single near-black pupil. Never side by side, never diagonal, never a 2-px-wide or tall black pupil.
   - Highlight colour: the sprite's own off-white (`#f0ece0`, `#fbe4b2`, `#eff1e5` or similar, warm gold in blackwater); pupil: near-black from the palette (e.g. `#100905`). No pure `#ffffff`/`#000000`.
@@ -97,12 +98,12 @@ The user identifies `pf_`, `bw_` and `ac_` as the satisfying reference families.
   - Keep the cells around the eye calm: no checkerboard of light/dark pixels, no extra highlight pixels beside the eye; subocular/cheek bars must not run into the pupil.
   - Place the eye at the same anatomical spot in E, SE and NE (rays/flat-headed species: near the front of the head, not mid-body) and keep it in the same relative position in all 4 frames.
 - **Mouths**: none on small heads (a mouth slit or white teeth read as a second eye). Do not draw a horizontal (or diagonal) dark mouth line across the head. At most a 1-3 px dark notch at the snout tip; avoid pixels at the tip that read as a second eye.
-- **Bellies**: never a single flat colour. Give the underside a soft tonal gradient (rim/bounce light on the lowest edge, a gentle warm/cool drift along the length, patches of one-step variation or a dither band along the ventral line).
+- **Bellies**: never a single flat colour. Give the underside a soft tonal gradient (rim/bounce light on the lowest edge, a gentle warm/cool drift along the length, patches of one-step variation or a dither band along the ventral line). In generator biomes the one-volume shading supplies this gradient (v4 swimmers add neighbouring tones mixed in 2 px clusters, fixed across frames); never 1 px checkers or lone single pixels.
 - **Backward swimmers** (cuttlefish, squid when jetting, etc.): the E-facing frames show the mantle leading and the arms/tentacles/eyes trailing behind, because the animal moves tail-first.
 - **Translucent species** (glass bloodfin, golomyanka, isaza): lower the body alpha behind the head and show spine / gut / swim-bladder pixels.
 
 ## 3. Biome Styles
-Each biome has ONE shared style for all of its creatures. Grades are applied to every finished frame as a post-process; the listed signature colours are excluded from the grade.
+Each biome has ONE shared style for all of its creatures. In the hand-made reference biomes (pf, bw, ac) it is a grade applied to every finished frame; the generator-made biomes (3.4) apply their look while rendering. The listed signature colours are excluded from the grade.
 
 ### 3.1 Planted Freshwater (prefix `pf_`) — reference style, no grade
 Clear, bright, slightly green-tinted aquarium light.
@@ -132,35 +133,30 @@ Baikal-style ultra-clear, very cold, deep lake (species mix: Baikal core + Ohrid
 - **EXCEPTION (warm signatures)**: saturated reds/oranges/yellows (hue ≤55° or ≥330°) are **NOT graded** — char/taimen bellies, roach eye ring, ayu gill spot, amphipod shells, yellowfin sculpin fins — so they pop against the blue water.
 - Silvery species use the shared silver ramp `#3a4650 → #eef2f4`; golomyankas are translucent pinkish with visible gut.
 
-### 3.4 Cold Water (prefix `cw_`)
-- Shadows → steel blue (`#121e2a`), faint grey-blue mid cast, highlights → cold white; saturation is NOT reduced.
-- Fins tinted pale steel (10% toward `#82aac3`), alpha ≥ ~190, darker saturated rim.
-- Not graded: saturated reds/oranges/yellows and blues (cuckoo wrasse, lumpfish belly, gurnard, crabs, lobster).
+### 3.4 Generator-made biomes (`cs`, `fs`, `ms`, `bb`, `by`, `cw`, `uc`)
+Their look is code (`.agents/tools/creature_gen/pal.py`) and is documented once, in each biome's README: water measurements,
+colour families or palette, shadow / highlight / fin tints, gaits and the species sets. The process and each biome's stage
+(v1, v3 restyle, v4 reference match) are in `.agents/rules/creature_workflow.md`. Do not copy those numbers here.
 
-### 3.5 Underwater Cave (prefix `uc_`)
-- Shadows → near-black `#0a0e12`, faint dark blue-grey mid cast, highlights dimmed, ~8% darker overall.
-- Fins tinted dark blue (14% toward `#283c50`).
-- Not graded: saturated reds/oranges/yellows, blues and blind-fish pinks (cardinalfish, soldierfish, shrimps, crabs).
+| Biome (prefix) | Water | README |
+|---|---|---|
+| clear spring (`cs_`) | very light cyan-teal | `assets/creatures/freshwater/clear_spring/README_creatures.md` |
+| forest stream (`fs_`) | leaf green | `assets/creatures/freshwater/forest_stream/README_creatures.md` |
+| marsh swamp (`ms_`) | dark murky olive | `assets/creatures/freshwater/marsh_swamp/README_creatures.md` |
+| billabong (`bb_`) | tea-teal over red-ochre clay | `assets/creatures/freshwater/billabong/README_creatures.md` |
+| bayou (`by_`) | tea-dark olive | `assets/creatures/freshwater/bayou/README_creatures.md` |
+| cold water (`cw_`) | deep steel blue | `assets/creatures/marine/cold_water/README_creatures.md` |
+| underwater cave (`uc_`) | near-black, faint blue glow | `assets/creatures/special/underwater_cave/README_creatures.md` |
 
-### 3.6 Clear Spring (prefix `cs_`) — light, cool grade (redesigned: 40 species, one hue family each)
-- Grade used by the generator: shadows → `#0c2c36` (weight 0.34), mid-tones cast `#46b0ac` (~12%), highlights → `#faf6e2`, desaturation ~6%; fins tinted aqua (`#7cc4c0`, ~22%); outline tint `#0e1a20`.
-- Palette rule: each species is a lightness ramp of ONE muted family taken from its own colour (olive, teal-blue, ochre, steel, sand-grey…), never rainbow. Warm colour only as a small muted accent (eye ring, gill spot, tail/anal fin of dorado, piracanjuba, piraputanga, Moenkhausia, piau, lambari, a few sunfish spots).
-- Do NOT use the "keep ungraded" exemption for body regions or big marks: using it on every species made cs_ look like another game. Exempt only tiny accents.
-- Roster notes: no crustaceans/insects/bivalves of the freshwater tiers that the biome replaces (amphipods and the pondhorn mussel became cambeva and fat sleeper); crayfish, crab, elimia and two turtles remain as crawlers.
-
-### 3.7 Biomes without finished creatures yet — art direction
-Apply the same mechanism (shadow tint, mid-tone cast, highlight colour, fin tint, signature exception) when their creatures are made. Directions below come from each biome's water tint and backgrounds; confirm before the first batch.
+### 3.5 Biomes without finished creatures yet — art direction
+Apply the same mechanism (shadow tint, mid-tone cast, highlight colour, fin tint, signature exception) when their creatures are made; for generator-made biomes use the v3 colour fit instead (`.agents/rules/creature_workflow.md`, stage 1: measure the water, derive colour families, keep bodies out of the discord band). Directions below come from each biome's water tint and backgrounds; confirm before the first batch.
 
 | Biome (prefix) | Shadows → | Mid-tone cast | Highlights | Fin tint | Keep ungraded |
 |---|---|---|---|---|---|
 | rocky_river (`rr_`) | cool slate `#1c2a30` | light teal | clear white-cyan | clear, faint teal | trout spots, red fin edges |
-| forest_stream (`fs_`) | mossy green-black `#18241a` | soft green | pale yellow-green | green-tinted | red/orange spawning colours |
 | rift_lake (`rl_`) | deep cobalt `#141c34` | blue | cool white | blue-tinted | cichlid yellows/oranges and blues (all saturated colours) |
 | muddy_river (`mr_`) | olive-brown `#241e12` | khaki, desaturated more (~15%) | dull cream | murky brown, less transparent | none (low contrast biome) |
-| marsh_swamp (`ms_`) | dark moss `#1a2014` | olive | pale green-grey | green-brown | red/orange eyes and bellies |
 | koi_pond (`kp_`) | jade-grey `#16262a` | light jade | warm white | jade-tinted | koi reds, oranges, golds |
-| bayou (`by_`) | olive-black `#1c1e10` | olive-yellow | pale straw | olive | reds |
-| billabong (`bb_`) | teal-brown `#1a2420` | teal | sandy white | teal | rainbowfish iridescence |
 | asian_peat_swamp (`ap_`) | wine-brown `#24100e` | wine-red cast | warm rose-gold | wine-tinted | iridescent blues/greens |
 | high_andes_lake (`ha_`) | cobalt-grey `#16203a` | light cobalt | cold white | pale cobalt | orange/red |
 | hillstream (`hs_`) | grey-green `#1a2624` | light turquoise | white | clear turquoise | loach/goby colours |
