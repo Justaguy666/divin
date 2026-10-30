@@ -24,7 +24,19 @@ colour family nor its complement - so they looked pasted on. v3 renders each bod
 every species from fixed colour families derived from the background, and redesigns every species as one memorable set (body
 shape + fin set + barbels / filaments + pattern + colour). Motion (the swimming gaits) is unchanged.
 
+Style v4 (October 2026, the 30 swimmers): shading and fins measured against the ac / bw / pf sprites species by species (110
+features per sprite, compared as distributions and against the reference fish of the same shape, not as averages). v3 bodies
+were too flat or too glossy: the light tones jumped 0.23 in lightness from tone 3 to tone 4 (bw: about 0.10 per step), so the
+brightest pixels stood out as a patch, the light sat mid-body (bw: upper third) and the back under the dorsal fin was darker than
+the body. Fins drew their rays as alpha stripes, used 6-7 colours (refs 10-13), sat 0.17-0.32 lighter than the body (refs
+0.03-0.14) and moved mostly at the tips. v4 keeps every species' anatomy, set, colours and frame size and changes how they are
+rendered (generator `v4/build_v4.py cs`, settings per species in `v4/params/cs.json`; process in
+`.agents/rules/creature_workflow.md`, stage 2). Pacu and banded cichlid are kept matte on purpose.
+
 ## Water and colour families (v3)
+For the 30 swimmers the v4 pass ("Shading and fins" below) replaces the lit tones 4-5, the highlight colour and the fin
+rendering described here; the families, hue rule, chroma and tones 0-3 still apply. Crawlers keep v3 as written.
+
 - The background (far + mid + near) is one cyan-teal hue (OKLab hue -176) at low chroma (0.055-0.09) and very light where the fish
   swim: L 0.81 at the surface, 0.71 at mid depth, 0.54-0.60 just above the floor; the floor and rocks are dark grey-green. There is
   no warm colour in the scene.
@@ -60,6 +72,8 @@ shape + fin set + barbels / filaments + pattern + colour). Motion (the swimming 
   rim; coloured signature fins a slightly deeper rim of their own hue and a little more opacity. Fin markings run through the margin.
 
 ## Rendering (v3: smooth, as in bw)
+Swimmers: texture, bottom outline, fin junctions and eyes as changed by v4 (next section); crawlers as written.
+
 - One volume per body: in every column the value only falls away from the brightest pixel (upward to the back, downward to the
   belly) - no light/dark/light stripes. Deep bodies get a one-step darker inner rim (the bw severum look). Signature patches
   (breasts, chin) stay at mid depth: never washed out, never muddy.
@@ -75,6 +89,24 @@ shape + fin set + barbels / filaments + pattern + colour). Motion (the swimming 
   a dark socket pixel under the pupil; large fish use a one-step wider eye.
 - Every species is one memorable set - body shape + fin set + barbels / filaments + pattern + colour - listed in the species notes.
 - Pelvic fins hang below the belly behind the pectorals.
+
+## Shading and fins (v4, swimmers)
+- Light tones climb in even steps of about 0.11 (bw 0.11, pf 0.085); the brightest tenth of the body is one small step above its
+  neighbours (median 0.13, bw deep-bodied fish 0.13). The light sits in the upper third (0.35 from the back edge; bw 0.33, pf
+  0.35) and the band under the back stays about +0.06 above the body's median instead of darkening. No highlight spot, no
+  near-white: the lightest tone a body may use is set per species (pacu and banded cichlid stop one step lower: matte).
+- Neighbouring tones mix in small clusters where the form turns (2 px cells, anchored to the body so frames do not flicker); no
+  single pixel sits alone in another colour. The largest flat one-colour area is about 18% of the body (refs at most 26%).
+- Colour: lights drift a few degrees toward yellow and darks away from it (bw +8 / +7, ours +4 / +5); dark tones are desaturated
+  like the refs; outline hues stay out of the water's discord band; the bottom outline follows the body's lightness instead of a
+  fixed floor; the outline continues where the body meets a translucent fin. Pupil #060d0c with a cool catchlight #e3eeec.
+- Fins: alpha falls smoothly from the base (about 180) to the free edge (about 155, edge pixels a little thinner) with no ray
+  alpha; the membrane lightens from base to edge in four bands with a soft mottle, rays are only a faint colour line; fins carry
+  10-15 colours and sit close to the body's tone (median +0.02 to +0.05).
+- Fin motion keeps each species' gait and gives each fin kind its own movement: the tail swings up and down as one piece (most of
+  its pixels change every frame, as in the refs); dorsal and anal fins move at the trailing tips (tips / ripple / whole per gait)
+  and trace a loop - back in frame B, lifting away from the body in D - instead of mirroring the tail; the anal fin follows the
+  tail's vertical direction; pectorals scull or flap per gait. Frames A and C stay identical.
 
 ## Sheets
 - Swimmers: 6 rows E, SE, SW, W, NW, NE x 4 frames (A-B-A-C); tilt 25 deg (small), 15-16 deg (deep), 8-12 deg (long).
@@ -92,7 +124,7 @@ therefore has a gait (a table in the sprite generator) that sets which fins move
 
 | Gait | Motion | fps | Species |
 |---|---|---|---|
-| dart | only the caudal lobe tips flick, the rest holds still | 10-11 | coastal shiner, ironcolor shiner, tidewater silverside (11) |
+| dart | quick tail beat, the other fins hold still | 10-11 | coastal shiner, ironcolor shiner, tidewater silverside (11) |
 | tetra | tail plus the whole dorsal and anal fins sway | 10 | buenos aires tetra, moenkhausia bonita |
 | cruise | tail-led, dorsal and anal flutter only at the rear tips | 7-10 | yellowtail lambari (10), lake chubsucker (7), three spot piau, striped mullet (9), curimbata, common snook (7) |
 | power | wide tail beat, other fins quiet | 8-9 | golden dorado (8), piraputanga, piracanjuba |
@@ -108,6 +140,9 @@ therefore has a gait (a table in the sprite generator) that sets which fins move
 | catfish | long anal fin ripples, barbels sway | 6 | pintado |
 | sturgeon | heavy slow tail beat, barbels | 5 | gulf sturgeon |
 | ribbon | only the anal ribbon fin waves | 8 | banded knifefish |
+
+Since v4 the tail swings as one piece in every gait (as in the refs); the gait still decides which other fins move, how, and
+the beat.
 
 ## Roster (40 species: 30 swimmers, 10 crawlers)
 | Group | Species (frame) |
