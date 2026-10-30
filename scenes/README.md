@@ -1,33 +1,48 @@
-# scenes/ — cấu trúc
+# Scene Architecture & Structure (`scenes/`)
 
-Mỗi file .tscn = một "prefab" có thể instance. Script đi kèm nằm ở game/ theo cùng tên nhánh
-(vd. scenes/creatures/_shared/swimmer_base.tscn  <->  game/creatures/swimmer.gd).
+Every `.tscn` file is an instantiable scene or prefab. Matching GDScript files reside under `game/` with parallel directory naming (e.g. `scenes/creatures/_shared/swimmer_base.tscn` <-> `game/creatures/swimmer.gd`).
+
+Viewport resolution: **640x360** (rendered 1:1, pixel snap enabled; default window 1280x720, stretch mode `viewport` with aspect `expand`).
 
 ```
 scenes/
-├─ main/                    main.tscn (scene khởi chạy), boot / loading
-├─ aquarium/                aquarium.tscn — root của bể: camera cố định 384x216, chứa environment + creatures + food + effects
-│  └─ layers/               template các lớp: bg_far, bg_mid, bg_near, fg (TileMapLayer / Sprite2D)
+├─ main/
+│  └─ main.tscn                     Startup scene: manages AquariumHolder, FadeLayer, and CanvasLayer UI
+├─ aquarium/
+│  └─ <id>_aquarium.tscn            36 biome aquarium scenes (e.g. pf_aquarium.tscn, cs_aquarium.tscn):
+│                                   holds Environment instance + Creatures + Food + Effects
 ├─ environment/
-│  ├─ _shared/              environment_base.tscn — khung chung: 4 lớp + water surface + ambient effects
-│  ├─ freshwater/<biome>/   <biome>.tscn kế thừa environment_base (vd. planted_freshwater.tscn)
-│  │   └─ props/            (planted_freshwater) prefab cây/đá/lũa riêng của biome, dùng asset pf_*
-│  ├─ marine/<biome>/
-│  └─ special/<biome>/
-├─ creatures/               mọi sinh vật di chuyển trong bể (chủ yếu là cá)
-│  ├─ _shared/              creature_base.tscn (phần chung)
-│  │                        swimmer_base.tscn (bơi: cá, tôm bơi) · crawler_base.tscn (bò đáy: cua, ốc, sên biển)
-│  │                        drifter_base.tscn (trôi: sứa) — đều kế thừa creature_base
-│  └─ freshwater|marine|special/<biome>/   mỗi loài một .tscn kế thừa swimmer/crawler/drifter_base
-├─ decoration/              decor dùng chung nhiều biome (cây, đá, lũa, vỏ ốc, san hô, khác)
-│  └─ _shared/              decoration_base.tscn (Sprite2D + sway shader tuỳ chọn)
-├─ effects/                 bubbles, particles, water, lighting (GPUParticles2D / AnimatedSprite2D)
-├─ food/                    các loại thức ăn
-└─ ui/                      hud, aquarium, environment, creatures, menus, components (nút, panel tái sử dụng)
+│  ├─ _shared/
+│  │  └─ environment_base.tscn      Base parallax tank template:
+│  │                                BgFar / BgMid / BgNear (Parallax2D)
+│  │                                WaterSurface (ColorRect with shader)
+│  │                                Ground + FloorOverlay (TileMapLayer)
+│  │                                Props (Node2D, group "floor_sort")
+│  │                                Fg (Parallax2D)
+│  └─ <category>/<biome>/
+│     ├─ <biome>.tscn               Inherited scene from environment_base.tscn with biome TileSet & backgrounds
+│     └─ props/                     Biome-specific prop scenes (rocks, plants, wood, shells)
+├─ creatures/
+│  ├─ _shared/
+│  │  ├─ swimmer_base.tscn          Base swimmer scene (Swimmer script, 6 swimming directions, crowd avoidance)
+│  │  └─ crawler_base.tscn          Base crawler scene (Crawler script, 4 walk/idle directions, floor tracking)
+│  └─ <category>/<biome>/
+│     └─ <pre>_<species>.tscn       Per-species inherited scene from swimmer_base or crawler_base
+├─ ui/
+│  ├─ hud/                          hud.tscn (bottom drawer buttons for AquariumSelector & Settings)
+│  ├─ aquarium/                     aquarium_selector.tscn, aquarium_card.tscn (biome switching grid)
+│  └─ menus/                        settings_menu.tscn (audio sliders, locale switcher)
+├─ effects/                         (Future expansion) Bubbles, particles, water, lighting
+└─ food/                            (Future expansion) Fish food pellets & flakes
 ```
 
-Quy ước
-- Tên file snake_case, trùng tên node gốc: planted_freshwater.tscn -> node "PlantedFreshwater".
-- Thư mục bắt đầu bằng `_shared` chứa scene gốc để kế thừa (New Inherited Scene).
-- Biome mới: tạo <biome>.tscn kế thừa environment/_shared/environment_base.tscn, chỉ thay TileSet, background và props.
-- Asset (png) ở assets/, TileSet/Material (.tres) ở resources/, scene (.tscn) ở scenes/, script (.gd) ở game/.
+## Conventions
+
+- **File naming**: `snake_case` matching the root node name (e.g. `planted_freshwater.tscn` -> node `PlantedFreshwater`).
+- **Inherited scenes**: Folders named `_shared` contain the template scenes meant for inheritance (`New Inherited Scene`).
+- **Asset / Scene separation**:
+  - Raw visual assets (`.png`, `.aseprite`) live under `assets/`.
+  - Resources (`.tres`, `TileSet`, Materials) live under `resources/` or `data/`.
+  - Scene definitions (`.tscn`) live under `scenes/`.
+  - Scripts (`.gd`) live under `game/` or `autoload/`.
+- **New biomes**: Create `<biome>.tscn` inheriting `environment/_shared/environment_base.tscn`, configure the TileSet, background textures, and local props under `props/`.
